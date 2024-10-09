@@ -31,10 +31,8 @@
         -:   26:
         -:   27:struct __identity {
         -:   28:  template <class _Tp>
-function _ZNKSt3__110__identityclB8ne180100IRNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEOT_SA_ called 1 returned 100% blocks executed 100%
-        1:   29:  _LIBCPP_NODISCARD _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR _Tp&& operator()(_Tp&& __t) const _NOEXCEPT {
-        1:   30:    return std::forward<_Tp>(__t);
-        1:   30-block  0
+        -:   29:  _LIBCPP_NODISCARD _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR _Tp&& operator()(_Tp&& __t) const _NOEXCEPT {
+        -:   30:    return std::forward<_Tp>(__t);
         -:   31:  }
         -:   32:
         -:   33:  using is_transparent = void;
@@ -51,8 +49,10 @@ function _ZNKSt3__110__identityclB8ne180100IRNS_12basic_stringIcNS_11char_traits
         -:   44:
         -:   45:struct identity {
         -:   46:  template <class _Tp>
-        -:   47:  _LIBCPP_NODISCARD_EXT _LIBCPP_HIDE_FROM_ABI constexpr _Tp&& operator()(_Tp&& __t) const noexcept {
-        -:   48:    return std::forward<_Tp>(__t);
+function _ZNKSt3__18identityclB8ne180100IRNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEOT_SA_ called 3 returned 100% blocks executed 100%
+        3:   47:  _LIBCPP_NODISCARD_EXT _LIBCPP_HIDE_FROM_ABI constexpr _Tp&& operator()(_Tp&& __t) const noexcept {
+        3:   48:    return std::forward<_Tp>(__t);
+        3:   48-block  0
         -:   49:  }
         -:   50:
         -:   51:  using is_transparent = void;

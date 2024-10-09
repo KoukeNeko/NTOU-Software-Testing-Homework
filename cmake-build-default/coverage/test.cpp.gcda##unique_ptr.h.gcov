@@ -181,14 +181,14 @@ branch  3 never executed
         -:  164:
         -:  165:public:
         -:  166:  template <bool _Dummy = true, class = _EnableIfDeleterDefaultConstructible<_Dummy> >
-function _ZNSt3__110unique_ptrINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_14default_deleteIS6_EEEC1B8ne180100ILb1EvEEv called 1 returned 100% blocks executed 100%
-function _ZNSt3__110unique_ptrINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_14default_deleteIS6_EEEC2B8ne180100ILb1EvEEv called 1 returned 100% blocks executed 66%
-        2:  167:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR unique_ptr() _NOEXCEPT : __ptr_(__value_init_tag(), __value_init_tag()) {}
-        1:  167-block  0
-        1:  167-block  1
-branch  0 taken 1
+function _ZNSt3__110unique_ptrINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_14default_deleteIS6_EEEC1B8ne180100ILb1EvEEv called 2 returned 100% blocks executed 100%
+function _ZNSt3__110unique_ptrINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_14default_deleteIS6_EEEC2B8ne180100ILb1EvEEv called 2 returned 100% blocks executed 66%
+        4:  167:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR unique_ptr() _NOEXCEPT : __ptr_(__value_init_tag(), __value_init_tag()) {}
+        2:  167-block  0
+        2:  167-block  1
+branch  0 taken 2
 branch  1 taken 0
-        1:  167-block  2
+        2:  167-block  2
     $$$$$:  167-block  3
         -:  168:
         -:  169:  template <bool _Dummy = true, class = _EnableIfDeleterDefaultConstructible<_Dummy> >
@@ -260,13 +260,13 @@ branch  1 taken 0
         -:  235:
 function _ZNSt3__110unique_ptrINS_18basic_stringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_14default_deleteIS6_EEED1B8ne180100Ev called 57 returned 100% blocks executed 100%
 function _ZNSt3__110unique_ptrINS_18basic_stringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_14default_deleteIS6_EEED2B8ne180100Ev called 57 returned 100% blocks executed 100%
-function _ZNSt3__110unique_ptrINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_14default_deleteIS6_EEED1B8ne180100Ev called 1 returned 100% blocks executed 100%
-function _ZNSt3__110unique_ptrINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_14default_deleteIS6_EEED2B8ne180100Ev called 1 returned 100% blocks executed 100%
-      116:  236:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX23 ~unique_ptr() { reset(); }
+function _ZNSt3__110unique_ptrINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_14default_deleteIS6_EEED1B8ne180100Ev called 2 returned 100% blocks executed 100%
+function _ZNSt3__110unique_ptrINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_14default_deleteIS6_EEED2B8ne180100Ev called 2 returned 100% blocks executed 100%
+      118:  236:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX23 ~unique_ptr() { reset(); }
        57:  236-block  0
        57:  236-block  1
-        1:  236-block  2
-        1:  236-block  3
+        2:  236-block  2
+        2:  236-block  3
         -:  237:
         -:  238:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX23 unique_ptr& operator=(nullptr_t) _NOEXCEPT {
         -:  239:    reset();
@@ -297,23 +297,23 @@ function _ZNKSt3__110unique_ptrINS_12basic_stringIcNS_11char_traitsIcEENS_9alloc
         -:  260:  }
         -:  261:
 function _ZNSt3__110unique_ptrINS_18basic_stringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_14default_deleteIS6_EEE5resetB8ne180100EPS6_ called 57 returned 100% blocks executed 100%
-function _ZNSt3__110unique_ptrINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_14default_deleteIS6_EEE5resetB8ne180100EPS6_ called 1 returned 100% blocks executed 66%
-       58:  262:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX23 void reset(pointer __p = pointer()) _NOEXCEPT {
-       58:  263:    pointer __tmp  = __ptr_.first();
-       58:  264:    __ptr_.first() = __p;
-       58:  265:    if (__tmp)
+function _ZNSt3__110unique_ptrINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_14default_deleteIS6_EEE5resetB8ne180100EPS6_ called 2 returned 100% blocks executed 66%
+       59:  262:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX23 void reset(pointer __p = pointer()) _NOEXCEPT {
+       59:  263:    pointer __tmp  = __ptr_.first();
+       59:  264:    __ptr_.first() = __p;
+       59:  265:    if (__tmp)
        57:  265-block  0
 branch  0 taken 57
 branch  1 taken 0
-        1:  265-block  1
+        2:  265-block  1
 branch  2 taken 0
-branch  3 taken 1
+branch  3 taken 2
        57:  266:      __ptr_.second()(__tmp);
        57:  266-block  0
     $$$$$:  266-block  1
-       58:  267:  }
+       59:  267:  }
        57:  267-block  0
-        1:  267-block  1
+        2:  267-block  1
         -:  268:
         -:  269:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX23 void swap(unique_ptr& __u) _NOEXCEPT { __ptr_.swap(__u.__ptr_); }
         -:  270:};

@@ -40,14 +40,14 @@
         -:   35:_LIBCPP_BEGIN_NAMESPACE_STD
         -:   36:
         -:   37:template <class _Size>
-function _ZNSt3__110__loadwordB8ne180100ImEET_PKv called 44 returned 100% blocks executed 100%
-function _ZNSt3__110__loadwordB8ne180100IjEET_PKv called 4 returned 100% blocks executed 100%
-       48:   38:inline _LIBCPP_HIDE_FROM_ABI _Size __loadword(const void* __p) {
+function _ZNSt3__110__loadwordB8ne180100ImEET_PKv called 50 returned 100% blocks executed 100%
+function _ZNSt3__110__loadwordB8ne180100IjEET_PKv called 6 returned 100% blocks executed 100%
+       56:   38:inline _LIBCPP_HIDE_FROM_ABI _Size __loadword(const void* __p) {
         -:   39:  _Size __r;
-       48:   40:  std::memcpy(&__r, __p, sizeof(__r));
-       48:   41:  return __r;
-       44:   41-block  0
-        4:   41-block  1
+       56:   40:  std::memcpy(&__r, __p, sizeof(__r));
+       56:   41:  return __r;
+       50:   41-block  0
+        6:   41-block  1
         -:   42:}
         -:   43:
         -:   44:// We use murmur2 when size_t is 32 bits, and cityhash64 when size_t
@@ -95,22 +95,22 @@ function _ZNSt3__110__loadwordB8ne180100IjEET_PKv called 4 returned 100% blocks 
         -:   86:struct __murmur2_or_cityhash<_Size, 64> {
         -:   87:  // cityhash64
         -:   88:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_DISABLE_UBSAN_UNSIGNED_INTEGER_CHECK _Size
-function _ZNKSt3__121__murmur2_or_cityhashImLm64EEclB8ne180100EPKvm called 17 returned 100% blocks executed 38%
-       17:   89:  operator()(const void* __key, _Size __len) const {
-       17:   90:    const char* __s = static_cast<const char*>(__key);
-       17:   91:    if (__len <= 32) {
-       17:   91-block  0
-branch  0 taken 17
+function _ZNKSt3__121__murmur2_or_cityhashImLm64EEclB8ne180100EPKvm called 20 returned 100% blocks executed 38%
+       20:   89:  operator()(const void* __key, _Size __len) const {
+       20:   90:    const char* __s = static_cast<const char*>(__key);
+       20:   91:    if (__len <= 32) {
+       20:   91-block  0
+branch  0 taken 20
 branch  1 taken 0
-       17:   92:      if (__len <= 16) {
-       17:   92-block  0
-branch  0 taken 10
-branch  1 taken 7
-       10:   93:        return __hash_len_0_to_16(__s, __len);
-       10:   93-block  0
+       20:   92:      if (__len <= 16) {
+       20:   92-block  0
+branch  0 taken 12
+branch  1 taken 8
+       12:   93:        return __hash_len_0_to_16(__s, __len);
+       12:   93-block  0
         -:   94:      } else {
-        7:   95:        return __hash_len_17_to_32(__s, __len);
-        7:   95-block  0
+        8:   95:        return __hash_len_17_to_32(__s, __len);
+        8:   95-block  0
         -:   96:      }
     #####:   97:    } else if (__len <= 64) {
     $$$$$:   97-block  0
@@ -152,8 +152,8 @@ branch  1 never executed
     $$$$$:  125-block  0
     $$$$$:  125-block  1
     #####:  126:                         __hash_len_16(__v.second, __w.second) + __x);
-       17:  127:  }
-       17:  127-block  0
+       20:  127:  }
+       20:  127-block  0
         -:  128:
         -:  129:private:
         -:  130:  // Some primes between 2^63 and 2^64.
@@ -162,62 +162,62 @@ branch  1 never executed
         -:  133:  static const _Size __k2 = 0x9ae16a3b2f90404fULL;
         -:  134:  static const _Size __k3 = 0xc949d7c7509e6557ULL;
         -:  135:
-function _ZNSt3__121__murmur2_or_cityhashImLm64EE8__rotateB8ne180100Emi called 21 returned 100% blocks executed 75%
-       21:  136:  _LIBCPP_HIDE_FROM_ABI static _Size __rotate(_Size __val, int __shift) {
-       21:  137:    return __shift == 0 ? __val : ((__val >> __shift) | (__val << (64 - __shift)));
-       21:  137-block  0
+function _ZNSt3__121__murmur2_or_cityhashImLm64EE8__rotateB8ne180100Emi called 24 returned 100% blocks executed 75%
+       24:  136:  _LIBCPP_HIDE_FROM_ABI static _Size __rotate(_Size __val, int __shift) {
+       24:  137:    return __shift == 0 ? __val : ((__val >> __shift) | (__val << (64 - __shift)));
+       24:  137-block  0
 branch  0 taken 0
-branch  1 taken 21
+branch  1 taken 24
     $$$$$:  137-block  1
-       21:  137-block  2
-       21:  137-block  3
+       24:  137-block  2
+       24:  137-block  3
         -:  138:  }
         -:  139:
-function _ZNSt3__121__murmur2_or_cityhashImLm64EE22__rotate_by_at_least_1B8ne180100Emi called 8 returned 100% blocks executed 100%
-        8:  140:  _LIBCPP_HIDE_FROM_ABI static _Size __rotate_by_at_least_1(_Size __val, int __shift) {
-        8:  141:    return (__val >> __shift) | (__val << (64 - __shift));
-        8:  141-block  0
+function _ZNSt3__121__murmur2_or_cityhashImLm64EE22__rotate_by_at_least_1B8ne180100Emi called 9 returned 100% blocks executed 100%
+        9:  140:  _LIBCPP_HIDE_FROM_ABI static _Size __rotate_by_at_least_1(_Size __val, int __shift) {
+        9:  141:    return (__val >> __shift) | (__val << (64 - __shift));
+        9:  141-block  0
         -:  142:  }
         -:  143:
 function _ZNSt3__121__murmur2_or_cityhashImLm64EE11__shift_mixB8ne180100Em called 0 returned 0% blocks executed 0%
     #####:  144:  _LIBCPP_HIDE_FROM_ABI static _Size __shift_mix(_Size __val) { return __val ^ (__val >> 47); }
     $$$$$:  144-block  0
         -:  145:
-function _ZNSt3__121__murmur2_or_cityhashImLm64EE13__hash_len_16B8ne180100Emm called 17 returned 100% blocks executed 100%
-       17:  146:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_DISABLE_UBSAN_UNSIGNED_INTEGER_CHECK static _Size __hash_len_16(_Size __u, _Size __v) {
-       17:  147:    const _Size __mul = 0x9ddfea08eb382d69ULL;
-       17:  148:    _Size __a         = (__u ^ __v) * __mul;
-       17:  149:    __a ^= (__a >> 47);
-       17:  150:    _Size __b = (__v ^ __a) * __mul;
-       17:  151:    __b ^= (__b >> 47);
-       17:  152:    __b *= __mul;
-       17:  153:    return __b;
-       17:  153-block  0
+function _ZNSt3__121__murmur2_or_cityhashImLm64EE13__hash_len_16B8ne180100Emm called 20 returned 100% blocks executed 100%
+       20:  146:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_DISABLE_UBSAN_UNSIGNED_INTEGER_CHECK static _Size __hash_len_16(_Size __u, _Size __v) {
+       20:  147:    const _Size __mul = 0x9ddfea08eb382d69ULL;
+       20:  148:    _Size __a         = (__u ^ __v) * __mul;
+       20:  149:    __a ^= (__a >> 47);
+       20:  150:    _Size __b = (__v ^ __a) * __mul;
+       20:  151:    __b ^= (__b >> 47);
+       20:  152:    __b *= __mul;
+       20:  153:    return __b;
+       20:  153-block  0
         -:  154:  }
         -:  155:
         -:  156:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_DISABLE_UBSAN_UNSIGNED_INTEGER_CHECK static _Size
-function _ZNSt3__121__murmur2_or_cityhashImLm64EE18__hash_len_0_to_16B8ne180100EPKcm called 10 returned 100% blocks executed 62%
-       10:  157:  __hash_len_0_to_16(const char* __s, _Size __len) {
-       10:  158:    if (__len > 8) {
-       10:  158-block  0
-branch  0 taken 8
-branch  1 taken 2
-        8:  159:      const _Size __a = std::__loadword<_Size>(__s);
-        8:  160:      const _Size __b = std::__loadword<_Size>(__s + __len - 8);
-        8:  161:      return __hash_len_16(__a, __rotate_by_at_least_1(__b + __len, __len)) ^ __b;
-        8:  161-block  0
+function _ZNSt3__121__murmur2_or_cityhashImLm64EE18__hash_len_0_to_16B8ne180100EPKcm called 12 returned 100% blocks executed 62%
+       12:  157:  __hash_len_0_to_16(const char* __s, _Size __len) {
+       12:  158:    if (__len > 8) {
+       12:  158-block  0
+branch  0 taken 9
+branch  1 taken 3
+        9:  159:      const _Size __a = std::__loadword<_Size>(__s);
+        9:  160:      const _Size __b = std::__loadword<_Size>(__s + __len - 8);
+        9:  161:      return __hash_len_16(__a, __rotate_by_at_least_1(__b + __len, __len)) ^ __b;
+        9:  161-block  0
         -:  162:    }
-        2:  163:    if (__len >= 4) {
-        2:  163-block  0
-branch  0 taken 2
+        3:  163:    if (__len >= 4) {
+        3:  163-block  0
+branch  0 taken 3
 branch  1 taken 0
-        2:  164:      const uint32_t __a = std::__loadword<uint32_t>(__s);
-        2:  165:      const uint32_t __b = std::__loadword<uint32_t>(__s + __len - 4);
+        3:  164:      const uint32_t __a = std::__loadword<uint32_t>(__s);
+        3:  165:      const uint32_t __b = std::__loadword<uint32_t>(__s + __len - 4);
         -:  166:#ifdef _LIBCPP_ABI_FIX_CITYHASH_IMPLEMENTATION
         -:  167:      return __hash_len_16(__len + (static_cast<_Size>(__a) << 3), __b);
         -:  168:#else
-        2:  169:      return __hash_len_16(__len + (__a << 3), __b);
-        2:  169-block  0
+        3:  169:      return __hash_len_16(__len + (__a << 3), __b);
+        3:  169-block  0
         -:  170:#endif
         -:  171:    }
     #####:  172:    if (__len > 0) {
@@ -234,19 +234,19 @@ branch  1 never executed
         -:  179:    }
     #####:  180:    return __k2;
     $$$$$:  180-block  0
-       10:  181:  }
-       10:  181-block  0
+       12:  181:  }
+       12:  181-block  0
         -:  182:
         -:  183:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_DISABLE_UBSAN_UNSIGNED_INTEGER_CHECK static _Size
-function _ZNSt3__121__murmur2_or_cityhashImLm64EE19__hash_len_17_to_32B8ne180100EPKcm called 7 returned 100% blocks executed 100%
-        7:  184:  __hash_len_17_to_32(const char* __s, _Size __len) {
-        7:  185:    const _Size __a = std::__loadword<_Size>(__s) * __k1;
-        7:  186:    const _Size __b = std::__loadword<_Size>(__s + 8);
-        7:  187:    const _Size __c = std::__loadword<_Size>(__s + __len - 8) * __k2;
-        7:  188:    const _Size __d = std::__loadword<_Size>(__s + __len - 16) * __k0;
-        7:  189:    return __hash_len_16(
-        7:  189-block  0
-        7:  190:        __rotate(__a - __b, 43) + __rotate(__c, 30) + __d, __a + __rotate(__b ^ __k3, 20) - __c + __len);
+function _ZNSt3__121__murmur2_or_cityhashImLm64EE19__hash_len_17_to_32B8ne180100EPKcm called 8 returned 100% blocks executed 100%
+        8:  184:  __hash_len_17_to_32(const char* __s, _Size __len) {
+        8:  185:    const _Size __a = std::__loadword<_Size>(__s) * __k1;
+        8:  186:    const _Size __b = std::__loadword<_Size>(__s + 8);
+        8:  187:    const _Size __c = std::__loadword<_Size>(__s + __len - 8) * __k2;
+        8:  188:    const _Size __d = std::__loadword<_Size>(__s + __len - 16) * __k0;
+        8:  189:    return __hash_len_16(
+        8:  189-block  0
+        8:  190:        __rotate(__a - __b, 43) + __rotate(__c, 30) + __d, __a + __rotate(__b ^ __k3, 20) - __c + __len);
         -:  191:  }
         -:  192:
         -:  193:  // Return a 16-byte hash for 48 bytes.  Quick and dirty.

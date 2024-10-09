@@ -344,11 +344,11 @@
         -:  339:template <class _Fp, class... _Args>
         -:  340:inline _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR
         -:  341:decltype(std::declval<_Fp>()(std::declval<_Args>()...))
-function _ZNSt3__18__invokeB8ne180100IRNS_10__identityEJRNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEDTclclsr3stdE7declvalIT_EEspclsr3stdE7declvalIT0_EEEEOSA_DpOSB_ called 1 returned 100% blocks executed 100%
-        1:  342:__invoke(_Fp&& __f, _Args&&... __args)
+function _ZNSt3__18__invokeB8ne180100IRNS_8identityEJRNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEDTclclsr3stdE7declvalIT_EEspclsr3stdE7declvalIT0_EEEEOSA_DpOSB_ called 3 returned 100% blocks executed 100%
+        3:  342:__invoke(_Fp&& __f, _Args&&... __args)
         -:  343:    _NOEXCEPT_(noexcept(static_cast<_Fp&&>(__f)(static_cast<_Args&&>(__args)...)))
-        1:  344:               { return static_cast<_Fp&&>(__f)(static_cast<_Args&&>(__args)...); }
-        1:  344-block  0
+        3:  344:               { return static_cast<_Fp&&>(__f)(static_cast<_Args&&>(__args)...); }
+        3:  344-block  0
         -:  345:// clang-format on
         -:  346:
         -:  347:// __invokable

@@ -98,9 +98,9 @@ function _ZNK7testing15AssertionResultntEv called 0 returned 0% blocks executed 
     $$$$$:   63-block  5
         -:   64:
         -:   65:// Makes a successful assertion result.
-function _ZN7testing16AssertionSuccessEv called 1 returned 100% blocks executed 100%
-        1:   66:AssertionResult AssertionSuccess() { return AssertionResult(true); }
-        1:   66-block  0
+function _ZN7testing16AssertionSuccessEv called 2 returned 100% blocks executed 100%
+        2:   66:AssertionResult AssertionSuccess() { return AssertionResult(true); }
+        2:   66-block  0
         -:   67:
         -:   68:// Makes a failed assertion result.
 function _ZN7testing16AssertionFailureEv called 0 returned 0% blocks executed 0%

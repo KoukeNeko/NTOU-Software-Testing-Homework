@@ -107,8 +107,8 @@ function _ZNSt3__116__non_trivial_ifILb1ENS_9allocatorINS_6vectorIN7testing8inte
 function _ZNSt3__116__non_trivial_ifILb1ENS_9allocatorImEEEC2B8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNSt3__116__non_trivial_ifILb1ENS_9allocatorINS_11__tree_nodeINS_12__value_typeINS_12basic_stringIcNS_11char_traitsIcEENS1_IcEEEEmEEPvEEEEEC2B8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNSt3__116__non_trivial_ifILb1ENS_9allocatorINS_11__list_nodeINS_4pairIcPKcEEPvEEEEEC2B8ne180100Ev called 0 returned 0% blocks executed 0%
-function _ZNSt3__116__non_trivial_ifILb1ENS_9allocatorIN7testing14TestPartResultEEEEC2B8ne180100Ev called 6 returned 100% blocks executed 100%
-function _ZNSt3__116__non_trivial_ifILb1ENS_9allocatorIN7testing12TestPropertyEEEEC2B8ne180100Ev called 6 returned 100% blocks executed 100%
+function _ZNSt3__116__non_trivial_ifILb1ENS_9allocatorIN7testing14TestPartResultEEEEC2B8ne180100Ev called 7 returned 100% blocks executed 100%
+function _ZNSt3__116__non_trivial_ifILb1ENS_9allocatorIN7testing12TestPropertyEEEEC2B8ne180100Ev called 7 returned 100% blocks executed 100%
 function _ZNSt3__116__non_trivial_ifILb1ENS_9allocatorIPN7testing8TestInfoEEEEC2B8ne180100Ev called 1 returned 100% blocks executed 100%
 function _ZNSt3__116__non_trivial_ifILb1ENS_9allocatorIiEEEC2B8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNSt3__116__non_trivial_ifILb1ENS_9allocatorIPN7testing17TestEventListenerEEEEC2B8ne180100Ev called 1 returned 100% blocks executed 100%
@@ -123,7 +123,7 @@ function _ZNSt3__116__non_trivial_ifILb1ENS_9allocatorINS_11__tree_nodeINS_12bas
 function _ZNSt3__116__non_trivial_ifILb1ENS_9allocatorIPNS_16__hash_node_baseIPNS_11__hash_nodeINS_17__hash_value_typeINS_12basic_stringIcNS_11char_traitsIcEENS1_IcEEEEPN7testing9TestSuiteEEEPvEEEEEEEC2B8ne180100Ev called 1 returned 100% blocks executed 100%
 function _ZNSt3__116__non_trivial_ifILb1ENS_9allocatorINS_11__hash_nodeINS_17__hash_value_typeINS_12basic_stringIcNS_11char_traitsIcEENS1_IcEEEEPN7testing9TestSuiteEEEPvEEEEEC2B8ne180100Ev called 1 returned 100% blocks executed 100%
 function _ZNSt3__116__non_trivial_ifILb1ENS_9allocatorIN7testing8internal9TraceInfoEEEEC2B8ne180100Ev called 0 returned 0% blocks executed 0%
-       33:   93:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR __non_trivial_if() _NOEXCEPT {}
+       35:   93:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR __non_trivial_if() _NOEXCEPT {}
     $$$$$:   93-block  0
     $$$$$:   93-block  1
     $$$$$:   93-block  2
@@ -136,8 +136,8 @@ function _ZNSt3__116__non_trivial_ifILb1ENS_9allocatorIN7testing8internal9TraceI
     $$$$$:   93-block  9
     $$$$$:   93-block 10
     $$$$$:   93-block 11
-        6:   93-block 12
-        6:   93-block 13
+        7:   93-block 12
+        7:   93-block 13
         1:   93-block 14
     $$$$$:   93-block 15
         1:   93-block 16
@@ -185,8 +185,8 @@ function _ZNSt3__19allocatorINS_6vectorIN7testing8internal13edit_distance8EditTy
 function _ZNSt3__19allocatorImEC2B8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNSt3__19allocatorINS_11__tree_nodeINS_12__value_typeINS_12basic_stringIcNS_11char_traitsIcEENS0_IcEEEEmEEPvEEEC2B8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNSt3__19allocatorINS_11__list_nodeINS_4pairIcPKcEEPvEEEC2B8ne180100Ev called 0 returned 0% blocks executed 0%
-function _ZNSt3__19allocatorIN7testing14TestPartResultEEC2B8ne180100Ev called 6 returned 100% blocks executed 100%
-function _ZNSt3__19allocatorIN7testing12TestPropertyEEC2B8ne180100Ev called 6 returned 100% blocks executed 100%
+function _ZNSt3__19allocatorIN7testing14TestPartResultEEC2B8ne180100Ev called 7 returned 100% blocks executed 100%
+function _ZNSt3__19allocatorIN7testing12TestPropertyEEC2B8ne180100Ev called 7 returned 100% blocks executed 100%
 function _ZNSt3__19allocatorIPN7testing8TestInfoEEC2B8ne180100Ev called 1 returned 100% blocks executed 100%
 function _ZNSt3__19allocatorIiEC2B8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNSt3__19allocatorIPN7testing17TestEventListenerEEC2B8ne180100Ev called 1 returned 100% blocks executed 100%
@@ -201,7 +201,7 @@ function _ZNSt3__19allocatorINS_11__tree_nodeINS_12basic_stringIcNS_11char_trait
 function _ZNSt3__19allocatorIPNS_16__hash_node_baseIPNS_11__hash_nodeINS_17__hash_value_typeINS_12basic_stringIcNS_11char_traitsIcEENS0_IcEEEEPN7testing9TestSuiteEEEPvEEEEEC2B8ne180100Ev called 1 returned 100% blocks executed 100%
 function _ZNSt3__19allocatorINS_11__hash_nodeINS_17__hash_value_typeINS_12basic_stringIcNS_11char_traitsIcEENS0_IcEEEEPN7testing9TestSuiteEEEPvEEEC2B8ne180100Ev called 1 returned 100% blocks executed 100%
 function _ZNSt3__19allocatorIN7testing8internal9TraceInfoEEC2B8ne180100Ev called 0 returned 0% blocks executed 0%
-       43:  114:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 allocator() _NOEXCEPT = default;
+       45:  114:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 allocator() _NOEXCEPT = default;
     $$$$$:  114-block  0
     $$$$$:  114-block  1
     $$$$$:  114-block  2
@@ -215,8 +215,8 @@ function _ZNSt3__19allocatorIN7testing8internal9TraceInfoEEC2B8ne180100Ev called
     $$$$$:  114-block 10
     $$$$$:  114-block 11
     $$$$$:  114-block 12
-        6:  114-block 13
-        6:  114-block 14
+        7:  114-block 13
+        7:  114-block 14
         1:  114-block 15
     $$$$$:  114-block 16
         1:  114-block 17
@@ -249,7 +249,7 @@ function _ZNSt3__19allocatorImE8allocateB8ne180100Em called 0 returned 0% blocks
 function _ZNSt3__19allocatorINS_11__tree_nodeINS_12__value_typeINS_12basic_stringIcNS_11char_traitsIcEENS0_IcEEEEmEEPvEEE8allocateB8ne180100Em called 0 returned 0% blocks executed 0%
 function _ZNSt3__19allocatorINS_11__list_nodeINS_4pairIcPKcEEPvEEE8allocateB8ne180100Em called 0 returned 0% blocks executed 0%
 function _ZNSt3__19allocatorIN7testing12TestPropertyEE8allocateB8ne180100Em called 0 returned 0% blocks executed 0%
-function _ZNSt3__19allocatorIPN7testing8TestInfoEE8allocateB8ne180100Em called 3 returned 100% blocks executed 66%
+function _ZNSt3__19allocatorIPN7testing8TestInfoEE8allocateB8ne180100Em called 4 returned 100% blocks executed 66%
 function _ZNSt3__19allocatorIiE8allocateB8ne180100Em called 0 returned 0% blocks executed 0%
 function _ZNSt3__19allocatorIPN7testing17TestEventListenerEE8allocateB8ne180100Em called 1 returned 100% blocks executed 66%
 function _ZNSt3__19allocatorIPN7testing11EnvironmentEE8allocateB8ne180100Em called 0 returned 0% blocks executed 0%
@@ -259,8 +259,8 @@ function _ZNSt3__19allocatorINS_11__tree_nodeINS_12basic_stringIcNS_11char_trait
 function _ZNSt3__19allocatorINS_11__tree_nodeINS_12__value_typeINS_12basic_stringIcNS_11char_traitsIcEENS0_IcEEEEN7testing8internal34TypeParameterizedTestSuiteRegistry30TypeParameterizedTestSuiteInfoEEEPvEEE8allocateB8ne180100Em called 0 returned 0% blocks executed 0%
 function _ZNSt3__19allocatorINS_11__hash_nodeINS_17__hash_value_typeINS_12basic_stringIcNS_11char_traitsIcEENS0_IcEEEEPN7testing9TestSuiteEEEPvEEE8allocateB8ne180100Em called 1 returned 100% blocks executed 66%
 function _ZNSt3__19allocatorIPNS_16__hash_node_baseIPNS_11__hash_nodeINS_17__hash_value_typeINS_12basic_stringIcNS_11char_traitsIcEENS0_IcEEEEPN7testing9TestSuiteEEEPvEEEEE8allocateB8ne180100Em called 1 returned 100% blocks executed 66%
-        9:  119:  _LIBCPP_NODISCARD_AFTER_CXX17 _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 _Tp* allocate(size_t __n) {
-        9:  120:    if (__n > allocator_traits<allocator>::max_size(*this))
+       10:  119:  _LIBCPP_NODISCARD_AFTER_CXX17 _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 _Tp* allocate(size_t __n) {
+       10:  120:    if (__n > allocator_traits<allocator>::max_size(*this))
     $$$$$:  120-block  0
 branch  0 never executed
 branch  1 never executed
@@ -303,9 +303,9 @@ branch 25 never executed
     $$$$$:  120-block 13
 branch 26 never executed
 branch 27 never executed
-        3:  120-block 14
+        4:  120-block 14
 branch 28 taken 0
-branch 29 taken 3
+branch 29 taken 4
     $$$$$:  120-block 15
 branch 30 never executed
 branch 31 never executed
@@ -361,7 +361,7 @@ branch 47 taken 1
         -:  122:    if (__libcpp_is_constant_evaluated()) {
         -:  123:      return static_cast<_Tp*>(::operator new(__n * sizeof(_Tp)));
         -:  124:    } else {
-        9:  125:      return static_cast<_Tp*>(std::__libcpp_allocate(__n * sizeof(_Tp), _LIBCPP_ALIGNOF(_Tp)));
+       10:  125:      return static_cast<_Tp*>(std::__libcpp_allocate(__n * sizeof(_Tp), _LIBCPP_ALIGNOF(_Tp)));
     $$$$$:  125-block  0
     $$$$$:  125-block  1
     $$$$$:  125-block  2
@@ -376,7 +376,7 @@ branch 47 taken 1
     $$$$$:  125-block 11
     $$$$$:  125-block 12
     $$$$$:  125-block 13
-        3:  125-block 14
+        4:  125-block 14
     $$$$$:  125-block 15
         1:  125-block 16
     $$$$$:  125-block 17
@@ -410,7 +410,7 @@ function _ZNSt3__19allocatorINS_11__tree_nodeINS_12__value_typeINS_12basic_strin
 function _ZNSt3__19allocatorINS_11__list_nodeINS_4pairIcPKcEEPvEEE10deallocateB8ne180100EPS7_m called 0 returned 0% blocks executed 0%
 function _ZNSt3__19allocatorIN7testing12TestPropertyEE10deallocateB8ne180100EPS2_m called 0 returned 0% blocks executed 0%
 function _ZNSt3__19allocatorIiE10deallocateB8ne180100EPim called 0 returned 0% blocks executed 0%
-function _ZNSt3__19allocatorIPN7testing8TestInfoEE10deallocateB8ne180100EPS3_m called 2 returned 100% blocks executed 66%
+function _ZNSt3__19allocatorIPN7testing8TestInfoEE10deallocateB8ne180100EPS3_m called 3 returned 100% blocks executed 66%
 function _ZNSt3__19allocatorIPN7testing17TestEventListenerEE10deallocateB8ne180100EPS3_m called 0 returned 0% blocks executed 0%
 function _ZNSt3__19allocatorIPN7testing11EnvironmentEE10deallocateB8ne180100EPS3_m called 0 returned 0% blocks executed 0%
 function _ZNSt3__19allocatorIN7testing8internal9TraceInfoEE10deallocateB8ne180100EPS3_m called 0 returned 0% blocks executed 0%
@@ -422,11 +422,11 @@ function _ZNSt3__19allocatorIPN7testing9TestSuiteEE10deallocateB8ne180100EPS3_m 
 function _ZNSt3__19allocatorINS_11__tree_nodeINS_12basic_stringIcNS_11char_traitsIcEENS0_IcEEEEPvEEE10deallocateB8ne180100EPS8_m called 0 returned 0% blocks executed 0%
 function _ZNSt3__19allocatorINS_11__hash_nodeINS_17__hash_value_typeINS_12basic_stringIcNS_11char_traitsIcEENS0_IcEEEEPN7testing9TestSuiteEEEPvEEE10deallocateB8ne180100EPSD_m called 0 returned 0% blocks executed 0%
 function _ZNSt3__19allocatorIPNS_16__hash_node_baseIPNS_11__hash_nodeINS_17__hash_value_typeINS_12basic_stringIcNS_11char_traitsIcEENS0_IcEEEEPN7testing9TestSuiteEEEPvEEEEE10deallocateB8ne180100EPSH_m called 0 returned 0% blocks executed 0%
-        4:  135:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 void deallocate(_Tp* __p, size_t __n) _NOEXCEPT {
+        5:  135:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 void deallocate(_Tp* __p, size_t __n) _NOEXCEPT {
         -:  136:    if (__libcpp_is_constant_evaluated()) {
         -:  137:      ::operator delete(__p);
         -:  138:    } else {
-        4:  139:      std::__libcpp_deallocate((void*)__p, __n * sizeof(_Tp), _LIBCPP_ALIGNOF(_Tp));
+        5:  139:      std::__libcpp_deallocate((void*)__p, __n * sizeof(_Tp), _LIBCPP_ALIGNOF(_Tp));
     $$$$$:  139-block  0
 branch  0 never executed
 branch  1 never executed
@@ -487,8 +487,8 @@ branch 27 never executed
 branch 28 never executed
 branch 29 never executed
     $$$$$:  139-block 29
-        2:  139-block 30
-branch 30 taken 2
+        3:  139-block 30
+branch 30 taken 3
 branch 31 taken 0
     $$$$$:  139-block 31
     $$$$$:  139-block 32
@@ -536,7 +536,7 @@ branch 52 never executed
 branch 53 never executed
     $$$$$:  139-block 53
         -:  140:    }
-        4:  141:  }
+        5:  141:  }
     $$$$$:  141-block  0
     $$$$$:  141-block  1
     $$$$$:  141-block  2
@@ -552,7 +552,7 @@ branch 53 never executed
     $$$$$:  141-block 12
     $$$$$:  141-block 13
     $$$$$:  141-block 14
-        2:  141-block 15
+        3:  141-block 15
     $$$$$:  141-block 16
     $$$$$:  141-block 17
     $$$$$:  141-block 18

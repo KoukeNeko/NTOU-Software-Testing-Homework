@@ -67,12 +67,12 @@
         -:   62:_LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 _ForwardIterator __destroy(_ForwardIterator, _ForwardIterator);
         -:   63:
         -:   64:template <class _Tp, __enable_if_t<!is_array<_Tp>::value, int> = 0>
-function _ZNSt3__112__destroy_atB8ne180100IiLi0EEEvPT_ called 7 returned 100% blocks executed 100%
-        7:   65:_LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 void __destroy_at(_Tp* __loc) {
+function _ZNSt3__112__destroy_atB8ne180100IiLi0EEEvPT_ called 19 returned 100% blocks executed 100%
+       19:   65:_LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 void __destroy_at(_Tp* __loc) {
         -:   66:  _LIBCPP_ASSERT_NON_NULL(__loc != nullptr, "null pointer given to destroy_at");
-        7:   67:  __loc->~_Tp();
-        7:   68:}
-        7:   68-block  0
+       19:   67:  __loc->~_Tp();
+       19:   68:}
+       19:   68-block  0
         -:   69:
         -:   70:#if _LIBCPP_STD_VER >= 20
         -:   71:template <class _Tp, __enable_if_t<is_array<_Tp>::value, int> = 0>

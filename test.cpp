@@ -3,6 +3,22 @@
 
 using namespace std;
 
+
+// Test for both "plus" and "sort" functionalities
+TEST(ModuleATest, TestAll) {
+    vector nums = {5, 3, 8, 6};
+    vector<int> nums_copy = nums;
+
+    // Test the "plus" configuration
+    int sum_result = module_A(nums, "plus");
+    EXPECT_EQ(sum_result, 22);  // 5 + 3 + 8 + 6 = 22
+
+    // Test the "sort" configuration on a copy to avoid interference
+    module_A(nums_copy, "sort");
+    const vector<int> expected_sorted = {3, 5, 6, 8};
+    EXPECT_EQ(nums_copy, expected_sorted);  // Check sorted order
+}
+
 // 測試 "plus" 功能
 TEST(ModuleATest, TestPlus) {
     vector nums = {1, 2, 3, 4};

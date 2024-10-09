@@ -96,10 +96,10 @@
         -:   91:template <class _Unique>
         -:   92:struct __non_trivial_if<true, _Unique> {
 function _ZNSt3__116__non_trivial_ifILb1ENS_9allocatorIcEEEC2B8ne180100Ev called 0 returned 0% blocks executed 0%
-function _ZNSt3__116__non_trivial_ifILb1ENS_9allocatorIiEEEC2B8ne180100Ev called 3 returned 100% blocks executed 100%
-        3:   93:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR __non_trivial_if() _NOEXCEPT {}
+function _ZNSt3__116__non_trivial_ifILb1ENS_9allocatorIiEEEC2B8ne180100Ev called 4 returned 100% blocks executed 100%
+        4:   93:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR __non_trivial_if() _NOEXCEPT {}
     $$$$$:   93-block  0
-        3:   93-block  1
+        4:   93-block  1
         -:   94:};
         -:   95:
         -:   96:// allocator
@@ -121,27 +121,27 @@ function _ZNSt3__116__non_trivial_ifILb1ENS_9allocatorIiEEEC2B8ne180100Ev called
         -:  112:#endif
         -:  113:
 function _ZNSt3__19allocatorIcEC2B8ne180100Ev called 0 returned 0% blocks executed 0%
-function _ZNSt3__19allocatorIiEC2B8ne180100Ev called 3 returned 100% blocks executed 100%
-        3:  114:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 allocator() _NOEXCEPT = default;
+function _ZNSt3__19allocatorIiEC2B8ne180100Ev called 4 returned 100% blocks executed 100%
+        4:  114:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 allocator() _NOEXCEPT = default;
     $$$$$:  114-block  0
-        3:  114-block  1
+        4:  114-block  1
         -:  115:
         -:  116:  template <class _Up>
         -:  117:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 allocator(const allocator<_Up>&) _NOEXCEPT {}
         -:  118:
-function _ZNSt3__19allocatorIiE8allocateB8ne180100Em called 5 returned 100% blocks executed 66%
-        5:  119:  _LIBCPP_NODISCARD_AFTER_CXX17 _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 _Tp* allocate(size_t __n) {
-        5:  120:    if (__n > allocator_traits<allocator>::max_size(*this))
-        5:  120-block  0
+function _ZNSt3__19allocatorIiE8allocateB8ne180100Em called 8 returned 100% blocks executed 66%
+        8:  119:  _LIBCPP_NODISCARD_AFTER_CXX17 _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 _Tp* allocate(size_t __n) {
+        8:  120:    if (__n > allocator_traits<allocator>::max_size(*this))
+        8:  120-block  0
 branch  0 taken 0
-branch  1 taken 5
+branch  1 taken 8
     #####:  121:      __throw_bad_array_new_length();
     $$$$$:  121-block  0
         -:  122:    if (__libcpp_is_constant_evaluated()) {
         -:  123:      return static_cast<_Tp*>(::operator new(__n * sizeof(_Tp)));
         -:  124:    } else {
-        5:  125:      return static_cast<_Tp*>(std::__libcpp_allocate(__n * sizeof(_Tp), _LIBCPP_ALIGNOF(_Tp)));
-        5:  125-block  0
+        8:  125:      return static_cast<_Tp*>(std::__libcpp_allocate(__n * sizeof(_Tp), _LIBCPP_ALIGNOF(_Tp)));
+        8:  125-block  0
         -:  126:    }
         -:  127:  }
         -:  128:
@@ -151,19 +151,19 @@ branch  1 taken 5
         -:  132:  }
         -:  133:#endif
         -:  134:
-function _ZNSt3__19allocatorIiE10deallocateB8ne180100EPim called 3 returned 100% blocks executed 66%
-        3:  135:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 void deallocate(_Tp* __p, size_t __n) _NOEXCEPT {
+function _ZNSt3__19allocatorIiE10deallocateB8ne180100EPim called 6 returned 100% blocks executed 66%
+        6:  135:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 void deallocate(_Tp* __p, size_t __n) _NOEXCEPT {
         -:  136:    if (__libcpp_is_constant_evaluated()) {
         -:  137:      ::operator delete(__p);
         -:  138:    } else {
-        3:  139:      std::__libcpp_deallocate((void*)__p, __n * sizeof(_Tp), _LIBCPP_ALIGNOF(_Tp));
-        3:  139-block  0
-branch  0 taken 3
+        6:  139:      std::__libcpp_deallocate((void*)__p, __n * sizeof(_Tp), _LIBCPP_ALIGNOF(_Tp));
+        6:  139-block  0
+branch  0 taken 6
 branch  1 taken 0
     $$$$$:  139-block  1
         -:  140:    }
-        3:  141:  }
-        3:  141-block  0
+        6:  141:  }
+        6:  141-block  0
         -:  142:
         -:  143:  // C++20 Removed members
         -:  144:#if _LIBCPP_STD_VER <= 17 || defined(_LIBCPP_ENABLE_CXX20_REMOVED_ALLOCATOR_MEMBERS)

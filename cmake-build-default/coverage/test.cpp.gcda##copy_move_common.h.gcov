@@ -65,14 +65,16 @@
         -:   60:
         -:   61:template <class _In, class _Out>
         -:   62:_LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX14 pair<_In*, _Out*>
-function _ZNSt3__119__copy_trivial_implB8ne180100IKiiEENS_4pairIPT_PT0_EES4_S4_S6_ called 1 returned 100% blocks executed 100%
-        1:   63:__copy_trivial_impl(_In* __first, _In* __last, _Out* __result) {
-        1:   64:  const size_t __n = static_cast<size_t>(__last - __first);
+function _ZNSt3__119__copy_trivial_implB8ne180100IKiiEENS_4pairIPT_PT0_EES4_S4_S6_ called 2 returned 100% blocks executed 100%
+function _ZNSt3__119__copy_trivial_implB8ne180100IiiEENS_4pairIPT_PT0_EES3_S3_S5_ called 1 returned 100% blocks executed 100%
+        3:   63:__copy_trivial_impl(_In* __first, _In* __last, _Out* __result) {
+        3:   64:  const size_t __n = static_cast<size_t>(__last - __first);
         -:   65:
-        1:   66:  std::__constexpr_memmove(__result, __first, __element_count(__n));
+        3:   66:  std::__constexpr_memmove(__result, __first, __element_count(__n));
         -:   67:
-        1:   68:  return std::make_pair(__last, __result + __n);
-        1:   68-block  0
+        3:   68:  return std::make_pair(__last, __result + __n);
+        2:   68-block  0
+        1:   68-block  1
         -:   69:}
         -:   70:
         -:   71:template <class _In, class _Out>
@@ -111,14 +113,17 @@ function _ZNSt3__119__copy_trivial_implB8ne180100IKiiEENS_4pairIPT_PT0_EES4_S4_S
         -:  104:          class _OutIter,
         -:  105:          __enable_if_t<__can_rewrap<_InIter, _Sent, _OutIter>::value, int> = 0>
         -:  106:_LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX17 pair<_InIter, _OutIter>
-function _ZNSt3__121__unwrap_and_dispatchB8ne180100INS_10__overloadINS_11__copy_loopINS_17_ClassicAlgPolicyEEENS_14__copy_trivialEEEPKiS8_PiLi0EEENS_4pairIT0_T2_EESB_T1_SC_ called 1 returned 100% blocks executed 100%
-        1:  107:__unwrap_and_dispatch(_InIter __first, _Sent __last, _OutIter __out_first) {
-        1:  108:  auto __range  = std::__unwrap_range(__first, std::move(__last));
-        1:  109:  auto __result = _Algorithm()(std::move(__range.first), std::move(__range.second), std::__unwrap_iter(__out_first));
-        2:  110:  return std::make_pair(std::__rewrap_range<_Sent>(std::move(__first), std::move(__result.first)),
-        1:  110-block  0
-        1:  110-block  1
-        1:  111:                        std::__rewrap_iter(std::move(__out_first), std::move(__result.second)));
+function _ZNSt3__121__unwrap_and_dispatchB8ne180100INS_10__overloadINS_11__copy_loopINS_17_ClassicAlgPolicyEEENS_14__copy_trivialEEEPKiS8_PiLi0EEENS_4pairIT0_T2_EESB_T1_SC_ called 2 returned 100% blocks executed 100%
+function _ZNSt3__121__unwrap_and_dispatchB8ne180100INS_10__overloadINS_11__copy_loopINS_17_ClassicAlgPolicyEEENS_14__copy_trivialEEEPiS7_S7_Li0EEENS_4pairIT0_T2_EES9_T1_SA_ called 1 returned 100% blocks executed 100%
+        3:  107:__unwrap_and_dispatch(_InIter __first, _Sent __last, _OutIter __out_first) {
+        3:  108:  auto __range  = std::__unwrap_range(__first, std::move(__last));
+        3:  109:  auto __result = _Algorithm()(std::move(__range.first), std::move(__range.second), std::__unwrap_iter(__out_first));
+        6:  110:  return std::make_pair(std::__rewrap_range<_Sent>(std::move(__first), std::move(__result.first)),
+        2:  110-block  0
+        2:  110-block  1
+        1:  110-block  2
+        1:  110-block  3
+        3:  111:                        std::__rewrap_iter(std::move(__out_first), std::move(__result.second)));
         -:  112:}
         -:  113:
         -:  114:template <class _Algorithm,
@@ -138,11 +143,13 @@ function _ZNSt3__121__unwrap_and_dispatchB8ne180100INS_10__overloadINS_11__copy_
         -:  128:          class _Sent,
         -:  129:          class _OutIter>
         -:  130:_LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX17 pair<_InIter, _OutIter>
-function _ZNSt3__123__dispatch_copy_or_moveB8ne180100INS_17_ClassicAlgPolicyENS_11__copy_loopIS1_EENS_14__copy_trivialEPKiS6_PiEENS_4pairIT2_T4_EES9_T3_SA_ called 1 returned 100% blocks executed 100%
-        1:  131:__dispatch_copy_or_move(_InIter __first, _Sent __last, _OutIter __out_first) {
+function _ZNSt3__123__dispatch_copy_or_moveB8ne180100INS_17_ClassicAlgPolicyENS_11__copy_loopIS1_EENS_14__copy_trivialEPKiS6_PiEENS_4pairIT2_T4_EES9_T3_SA_ called 2 returned 100% blocks executed 100%
+function _ZNSt3__123__dispatch_copy_or_moveB8ne180100INS_17_ClassicAlgPolicyENS_11__copy_loopIS1_EENS_14__copy_trivialEPiS5_S5_EENS_4pairIT2_T4_EES7_T3_S8_ called 1 returned 100% blocks executed 100%
+        3:  131:__dispatch_copy_or_move(_InIter __first, _Sent __last, _OutIter __out_first) {
         -:  132:  using _Algorithm = __overload<_NaiveAlgorithm, _OptimizedAlgorithm>;
-        1:  133:  return std::__unwrap_and_dispatch<_Algorithm>(std::move(__first), std::move(__last), std::move(__out_first));
-        1:  133-block  0
+        3:  133:  return std::__unwrap_and_dispatch<_Algorithm>(std::move(__first), std::move(__last), std::move(__out_first));
+        2:  133-block  0
+        1:  133-block  1
         -:  134:}
         -:  135:
         -:  136:_LIBCPP_END_NAMESPACE_STD

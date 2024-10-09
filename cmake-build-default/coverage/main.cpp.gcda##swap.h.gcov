@@ -42,14 +42,14 @@
         -:   37:#endif
         -:   38:
         -:   39:template <class _Tp>
-function _ZNSt3__14swapB8ne180100IiEENS_9enable_ifIXaasr21is_move_constructibleIT_EE5valuesr18is_move_assignableIS2_EE5valueEvE4typeERS2_S5_ called 0 returned 0% blocks executed 0%
-    #####:   40:inline _LIBCPP_HIDE_FROM_ABI __swap_result_t<_Tp> _LIBCPP_CONSTEXPR_SINCE_CXX20 swap(_Tp& __x, _Tp& __y)
+function _ZNSt3__14swapB8ne180100IiEENS_9enable_ifIXaasr21is_move_constructibleIT_EE5valuesr18is_move_assignableIS2_EE5valueEvE4typeERS2_S5_ called 2 returned 100% blocks executed 100%
+        2:   40:inline _LIBCPP_HIDE_FROM_ABI __swap_result_t<_Tp> _LIBCPP_CONSTEXPR_SINCE_CXX20 swap(_Tp& __x, _Tp& __y)
         -:   41:    _NOEXCEPT_(is_nothrow_move_constructible<_Tp>::value&& is_nothrow_move_assignable<_Tp>::value) {
-    #####:   42:  _Tp __t(std::move(__x));
-    #####:   43:  __x = std::move(__y);
-    #####:   44:  __y = std::move(__t);
-    #####:   45:}
-    $$$$$:   45-block  0
+        2:   42:  _Tp __t(std::move(__x));
+        2:   43:  __x = std::move(__y);
+        2:   44:  __y = std::move(__t);
+        2:   45:}
+        2:   45-block  0
         -:   46:
         -:   47:template <class _Tp, size_t _Np, __enable_if_t<__is_swappable<_Tp>::value, int> >
         -:   48:inline _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 void swap(_Tp (&__a)[_Np], _Tp (&__b)[_Np])

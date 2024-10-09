@@ -48,23 +48,23 @@
         -:   43:// generic implementation
         -:   44:template <class _Iter, class _Sent, class _Tp, class _Proj>
         -:   45:_LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX14 _Iter
-function _ZNSt3__111__find_implB8ne180100IPNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEES7_S6_NS_10__identityEEET_S9_T0_RKT1_RT2_ called 1 returned 100% blocks executed 71%
-        1:   46:__find_impl(_Iter __first, _Sent __last, const _Tp& __value, _Proj& __proj) {
-        1:   47:  for (; __first != __last; ++__first)
-        1:   47-block  0
-        1:   47-block  1
+function _ZNSt3__111__find_implB8ne180100IPNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEES7_S6_NS_8identityEEET_S9_T0_RKT1_RT2_ called 2 returned 100% blocks executed 100%
+        2:   46:__find_impl(_Iter __first, _Sent __last, const _Tp& __value, _Proj& __proj) {
+        3:   47:  for (; __first != __last; ++__first)
+        2:   47-block  0
+        3:   47-block  1
 branch  0 taken 0
+branch  1 taken 3
+        1:   47-block  2
+        3:   48:    if (std::__invoke(__proj, *__first) == __value)
+        3:   48-block  0
+branch  0 taken 2
 branch  1 taken 1
-    $$$$$:   47-block  2
-        1:   48:    if (std::__invoke(__proj, *__first) == __value)
-        1:   48-block  0
-branch  0 taken 1
-branch  1 taken 0
-    $$$$$:   48-block  1
-        1:   49:      break;
-        1:   49-block  0
-        1:   50:  return __first;
-        1:   50-block  0
+        1:   48-block  1
+        2:   49:      break;
+        2:   49-block  0
+        2:   50:  return __first;
+        2:   50-block  0
         -:   51:}
         -:   52:
         -:   53:// trivially equality comparable implementations
@@ -191,12 +191,10 @@ branch  1 taken 0
         -:  174:// public API
         -:  175:template <class _InputIterator, class _Tp>
         -:  176:_LIBCPP_NODISCARD_EXT inline _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 _InputIterator
-function _ZNSt3__14findB8ne180100INS_11__wrap_iterIPNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEES7_EET_SA_SA_RKT0_ called 1 returned 100% blocks executed 100%
-        1:  177:find(_InputIterator __first, _InputIterator __last, const _Tp& __value) {
+        -:  177:find(_InputIterator __first, _InputIterator __last, const _Tp& __value) {
         -:  178:  __identity __proj;
-        1:  179:  return std::__rewrap_iter(
-        1:  179-block  0
-        1:  180:      __first, std::__find_impl(std::__unwrap_iter(__first), std::__unwrap_iter(__last), __value, __proj));
+        -:  179:  return std::__rewrap_iter(
+        -:  180:      __first, std::__find_impl(std::__unwrap_iter(__first), std::__unwrap_iter(__last), __value, __proj));
         -:  181:}
         -:  182:
         -:  183:_LIBCPP_END_NAMESPACE_STD

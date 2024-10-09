@@ -338,7 +338,7 @@ function _ZN7testing8internal7CountIfINSt3__16vectorIPNS_8TestInfoENS2_9allocato
         -:  277:  // Implemented as an explicit loop since std::count_if() in libCstd on
         -:  278:  // Solaris has a non-standard signature.
        23:  279:  int count = 0;
-       63:  280:  for (auto it = c.begin(); it != c.end(); ++it) {
+       72:  280:  for (auto it = c.begin(); it != c.end(); ++it) {
         4:  280-block  0
         8:  280-block  1
 branch  0 taken 4
@@ -350,11 +350,11 @@ branch  2 taken 0
 branch  3 taken 10
     $$$$$:  280-block  5
         9:  280-block  6
-       45:  280-block  7
-branch  4 taken 36
+       54:  280-block  7
+branch  4 taken 45
 branch  5 taken 9
-       36:  280-block  8
-       40:  281:    if (predicate(*it)) ++count;
+       45:  280-block  8
+       49:  281:    if (predicate(*it)) ++count;
         2:  281-block  0
         2:  281-block  1
         2:  281-block  2
@@ -362,12 +362,12 @@ branch  5 taken 9
     $$$$$:  281-block  4
     $$$$$:  281-block  5
         5:  281-block  6
-       31:  281-block  7
+       40:  281-block  7
         5:  281-block  8
-       40:  282:  }
+       49:  282:  }
         4:  282-block  0
     $$$$$:  282-block  1
-       36:  282-block  2
+       45:  282-block  2
        23:  283:  return count;
         4:  283-block  0
        10:  283-block  1
@@ -391,17 +391,17 @@ function _ZN7testing8internal7ForEachINSt3__16vectorIPNS_11EnvironmentENS2_9allo
         -:  292:// Returns the i-th element of the vector, or default_value if i is not
         -:  293:// in range [0, v.size()).
         -:  294:template <typename E>
-function _ZN7testing8internal12GetElementOrIiEET_RKNSt3__16vectorIS2_NS3_9allocatorIS2_EEEEiS2_ called 5 returned 100% blocks executed 57%
-        5:  295:inline E GetElementOr(const std::vector<E>& v, int i, E default_value) {
-        5:  296:  return (i < 0 || i >= static_cast<int>(v.size())) ? default_value
-        5:  296-block  0
+function _ZN7testing8internal12GetElementOrIiEET_RKNSt3__16vectorIS2_NS3_9allocatorIS2_EEEEiS2_ called 6 returned 100% blocks executed 57%
+        6:  295:inline E GetElementOr(const std::vector<E>& v, int i, E default_value) {
+        6:  296:  return (i < 0 || i >= static_cast<int>(v.size())) ? default_value
+        6:  296-block  0
     $$$$$:  296-block  1
-        5:  296-block  2
+        6:  296-block  2
     $$$$$:  296-block  3
     $$$$$:  296-block  4
-        5:  296-block  5
-        5:  296-block  6
-        5:  297:                                                    : v[static_cast<size_t>(i)];
+        6:  296-block  5
+        6:  296-block  6
+        6:  297:                                                    : v[static_cast<size_t>(i)];
         -:  298:}
         -:  299:
         -:  300:// Performs an in-place shuffle of a range of the vector's elements.
@@ -840,9 +840,9 @@ branch  1 taken 1
         -:  606:  }
         -:  607:
         -:  608:  // Provides access to the event listener list.
-function _ZN7testing8internal12UnitTestImpl9listenersEv called 7 returned 100% blocks executed 100%
-        7:  609:  TestEventListeners* listeners() { return &listeners_; }
-        7:  609-block  0
+function _ZN7testing8internal12UnitTestImpl9listenersEv called 8 returned 100% blocks executed 100%
+        8:  609:  TestEventListeners* listeners() { return &listeners_; }
+        8:  609-block  0
         -:  610:
         -:  611:  // Returns the TestResult for the test that's currently running, or
         -:  612:  // the TestResult for the ad hoc test if no test is running.
@@ -910,8 +910,8 @@ function _ZNK7testing8internal12UnitTestImpl18ad_hoc_test_resultEv called 2 retu
         -:  672:  //   set_up_tc:    pointer to the function that sets up the test suite
         -:  673:  //   tear_down_tc: pointer to the function that tears down the test suite
         -:  674:  //   test_info:    the TestInfo object
-function _ZN7testing8internal12UnitTestImpl11AddTestInfoEPFvvES3_PNS_8TestInfoE called 4 returned 100% blocks executed 54%
-        4:  675:  void AddTestInfo(internal::SetUpTestSuiteFunc set_up_tc,
+function _ZN7testing8internal12UnitTestImpl11AddTestInfoEPFvvES3_PNS_8TestInfoE called 5 returned 100% blocks executed 54%
+        5:  675:  void AddTestInfo(internal::SetUpTestSuiteFunc set_up_tc,
         -:  676:                   internal::TearDownTestSuiteFunc tear_down_tc,
         -:  677:                   TestInfo* test_info) {
         -:  678:#if GTEST_HAS_FILE_SYSTEM
@@ -922,9 +922,9 @@ function _ZN7testing8internal12UnitTestImpl11AddTestInfoEPFvvES3_PNS_8TestInfoE 
         -:  683:    // RUN_ALL_TESTS().  Therefore we capture the current directory in
         -:  684:    // AddTestInfo(), which is called to register a TEST or TEST_F
         -:  685:    // before main() is reached.
-        4:  686:    if (original_working_dir_.IsEmpty()) {
+        5:  686:    if (original_working_dir_.IsEmpty()) {
         1:  686-block  0
-        3:  686-block  1
+        4:  686-block  1
         1:  687:      original_working_dir_ = FilePath::GetCurrentDir();
         1:  688:      GTEST_CHECK_(!original_working_dir_.IsEmpty())
         1:  688-block  0
@@ -941,11 +941,11 @@ branch  1 taken 0
         1:  690-block  0
         -:  691:#endif  // GTEST_HAS_FILE_SYSTEM
         -:  692:
-        8:  693:    GetTestSuite(test_info->test_suite_name_, test_info->type_param(),
-        4:  694:                 set_up_tc, tear_down_tc)
-        4:  695:        ->AddTestInfo(test_info);
-        4:  696:  }
-        4:  696-block  0
+       10:  693:    GetTestSuite(test_info->test_suite_name_, test_info->type_param(),
+        5:  694:                 set_up_tc, tear_down_tc)
+        5:  695:        ->AddTestInfo(test_info);
+        5:  696:  }
+        5:  696-block  0
         -:  697:
         -:  698:  // Returns ParameterizedTestSuiteRegistry object used to keep track of
         -:  699:  // value-parameterized tests and instantiate and register them.
@@ -1263,10 +1263,10 @@ function _ZN7testing8internal12UnitTestImpl21set_current_test_infoEPNS_8TestInfo
         -:  975:
         -:  976:// Convenience function for accessing the global UnitTest
         -:  977:// implementation object.
-function _ZN7testing8internal15GetUnitTestImplEv called 21 returned 100% blocks executed 100%
-       21:  978:inline UnitTestImpl* GetUnitTestImpl() {
-       21:  979:  return UnitTest::GetInstance()->impl();
-       21:  979-block  0
+function _ZN7testing8internal15GetUnitTestImplEv called 22 returned 100% blocks executed 100%
+       22:  978:inline UnitTestImpl* GetUnitTestImpl() {
+       22:  979:  return UnitTest::GetInstance()->impl();
+       22:  979-block  0
         -:  980:}
         -:  981:
         -:  982:#ifdef GTEST_USES_SIMPLE_RE

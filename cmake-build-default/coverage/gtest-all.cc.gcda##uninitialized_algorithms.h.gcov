@@ -831,13 +831,13 @@ branch  1 never executed
 function _ZNSt3__142__uninitialized_allocator_move_if_noexceptB8ne180100INS_9allocatorIPcEENS_16reverse_iteratorIPS2_EES6_S2_vEET1_RT_T0_SA_S7_ called 0 returned 0% blocks executed 0%
 function _ZNSt3__142__uninitialized_allocator_move_if_noexceptB8ne180100INS_9allocatorIN7testing8internal13edit_distance8EditTypeEEENS_16reverse_iteratorIPS5_EES9_S5_vEET1_RT_T0_SD_SA_ called 0 returned 0% blocks executed 0%
 function _ZNSt3__142__uninitialized_allocator_move_if_noexceptB8ne180100INS_9allocatorImEENS_16reverse_iteratorIPmEES5_mvEET1_RT_T0_S9_S6_ called 0 returned 0% blocks executed 0%
-function _ZNSt3__142__uninitialized_allocator_move_if_noexceptB8ne180100INS_9allocatorIPN7testing8TestInfoEEENS_16reverse_iteratorIPS4_EES8_S4_vEET1_RT_T0_SC_S9_ called 3 returned 100% blocks executed 100%
-function _ZNSt3__142__uninitialized_allocator_move_if_noexceptB8ne180100INS_9allocatorIiEENS_16reverse_iteratorIPiEES5_ivEET1_RT_T0_S9_S6_ called 4 returned 100% blocks executed 100%
+function _ZNSt3__142__uninitialized_allocator_move_if_noexceptB8ne180100INS_9allocatorIPN7testing8TestInfoEEENS_16reverse_iteratorIPS4_EES8_S4_vEET1_RT_T0_SC_S9_ called 4 returned 100% blocks executed 100%
+function _ZNSt3__142__uninitialized_allocator_move_if_noexceptB8ne180100INS_9allocatorIiEENS_16reverse_iteratorIPiEES5_ivEET1_RT_T0_S9_S6_ called 5 returned 100% blocks executed 100%
 function _ZNSt3__142__uninitialized_allocator_move_if_noexceptB8ne180100INS_9allocatorIPN7testing17TestEventListenerEEENS_16reverse_iteratorIPS4_EES8_S4_vEET1_RT_T0_SC_S9_ called 1 returned 100% blocks executed 100%
 function _ZNSt3__142__uninitialized_allocator_move_if_noexceptB8ne180100INS_9allocatorIPN7testing11EnvironmentEEENS_16reverse_iteratorIPS4_EES8_S4_vEET1_RT_T0_SC_S9_ called 0 returned 0% blocks executed 0%
 function _ZNSt3__142__uninitialized_allocator_move_if_noexceptB8ne180100INS_9allocatorIPN7testing9TestSuiteEEENS_16reverse_iteratorIPS4_EES8_S4_vEET1_RT_T0_SC_S9_ called 1 returned 100% blocks executed 100%
 function _ZNSt3__142__uninitialized_allocator_move_if_noexceptB8ne180100INS_9allocatorIPN7testing9TestSuiteEEEPS4_S6_S4_vEET1_RT_T0_SA_S7_ called 0 returned 0% blocks executed 0%
-        9:  638:__uninitialized_allocator_move_if_noexcept(_Alloc&, _Iter1 __first1, _Iter1 __last1, _Iter2 __first2) {
+       11:  638:__uninitialized_allocator_move_if_noexcept(_Alloc&, _Iter1 __first1, _Iter1 __last1, _Iter2 __first2) {
         -:  639:  if (__libcpp_is_constant_evaluated()) {
         -:  640:    while (__first1 != __last1) {
         -:  641:      std::__construct_at(std::__to_address(__first2), std::move(*__first1));
@@ -846,12 +846,12 @@ function _ZNSt3__142__uninitialized_allocator_move_if_noexceptB8ne180100INS_9all
         -:  644:    }
         -:  645:    return __first2;
         -:  646:  } else {
-        9:  647:    return std::move(__first1, __last1, __first2);
+       11:  647:    return std::move(__first1, __last1, __first2);
     $$$$$:  647-block  0
     $$$$$:  647-block  1
     $$$$$:  647-block  2
-        3:  647-block  3
-        4:  647-block  4
+        4:  647-block  3
+        5:  647-block  4
         1:  647-block  5
     $$$$$:  647-block  6
         1:  647-block  7

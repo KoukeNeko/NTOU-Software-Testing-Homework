@@ -576,8 +576,9 @@
         -:  571:              is_same<__remove_const_t<_In>, __remove_const_t<_Out> >::value &&
         -:  572:              __allocator_has_trivial_copy_construct<_Alloc, _RawTypeIn>::value>* = nullptr>
         -:  573:_LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 _Out*
-function _ZNSt3__135__uninitialized_allocator_copy_implB8ne180100INS_9allocatorIiEEKiiiLPv0EEEPT2_RT_PT0_SA_S6_ called 1 returned 100% blocks executed 100%
-        1:  574:__uninitialized_allocator_copy_impl(_Alloc&, _In* __first1, _In* __last1, _Out* __first2) {
+function _ZNSt3__135__uninitialized_allocator_copy_implB8ne180100INS_9allocatorIiEEKiiiLPv0EEEPT2_RT_PT0_SA_S6_ called 2 returned 100% blocks executed 100%
+function _ZNSt3__135__uninitialized_allocator_copy_implB8ne180100INS_9allocatorIiEEiiiLPv0EEEPT2_RT_PT0_S9_S5_ called 1 returned 100% blocks executed 100%
+        3:  574:__uninitialized_allocator_copy_impl(_Alloc&, _In* __first1, _In* __last1, _Out* __first2) {
         -:  575:  // TODO: Remove the const_cast once we drop support for std::allocator<T const>
         -:  576:  if (__libcpp_is_constant_evaluated()) {
         -:  577:    while (__first1 != __last1) {
@@ -587,20 +588,23 @@ function _ZNSt3__135__uninitialized_allocator_copy_implB8ne180100INS_9allocatorI
         -:  581:    }
         -:  582:    return __first2;
         -:  583:  } else {
-        1:  584:    return std::copy(__first1, __last1, const_cast<_RawTypeIn*>(__first2));
-        1:  584-block  0
+        3:  584:    return std::copy(__first1, __last1, const_cast<_RawTypeIn*>(__first2));
+        2:  584-block  0
+        1:  584-block  1
         -:  585:  }
         -:  586:}
         -:  587:
         -:  588:template <class _Alloc, class _Iter1, class _Sent1, class _Iter2>
         -:  589:_LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 _Iter2
-function _ZNSt3__130__uninitialized_allocator_copyB8ne180100INS_9allocatorIiEEPKiS4_PiEET2_RT_T0_T1_S6_ called 1 returned 100% blocks executed 100%
-        1:  590:__uninitialized_allocator_copy(_Alloc& __alloc, _Iter1 __first1, _Sent1 __last1, _Iter2 __first2) {
-        1:  591:  auto __unwrapped_range = std::__unwrap_range(__first1, __last1);
-        1:  592:  auto __result          = std::__uninitialized_allocator_copy_impl(
-        1:  593:      __alloc, __unwrapped_range.first, __unwrapped_range.second, std::__unwrap_iter(__first2));
-        1:  594:  return std::__rewrap_iter(__first2, __result);
-        1:  594-block  0
+function _ZNSt3__130__uninitialized_allocator_copyB8ne180100INS_9allocatorIiEEPKiS4_PiEET2_RT_T0_T1_S6_ called 2 returned 100% blocks executed 100%
+function _ZNSt3__130__uninitialized_allocator_copyB8ne180100INS_9allocatorIiEEPiS3_S3_EET2_RT_T0_T1_S4_ called 1 returned 100% blocks executed 100%
+        3:  590:__uninitialized_allocator_copy(_Alloc& __alloc, _Iter1 __first1, _Sent1 __last1, _Iter2 __first2) {
+        3:  591:  auto __unwrapped_range = std::__unwrap_range(__first1, __last1);
+        3:  592:  auto __result          = std::__uninitialized_allocator_copy_impl(
+        3:  593:      __alloc, __unwrapped_range.first, __unwrapped_range.second, std::__unwrap_iter(__first2));
+        3:  594:  return std::__rewrap_iter(__first2, __result);
+        2:  594-block  0
+        1:  594-block  1
         -:  595:}
         -:  596:
         -:  597:// Move-construct the elements [__first1, __last1) into [__first2, __first2 + N)

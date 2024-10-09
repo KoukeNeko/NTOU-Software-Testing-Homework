@@ -205,11 +205,11 @@
         -:  200:  static _LIBCPP_CONSTEXPR const type __min       = __libcpp_compute_min<type, digits, is_signed>::value;
         -:  201:  static _LIBCPP_CONSTEXPR const type __max       = is_signed ? type(type(~0) ^ __min) : type(~0);
         -:  202:  _LIBCPP_HIDE_FROM_ABI static _LIBCPP_CONSTEXPR type min() _NOEXCEPT { return __min; }
-function _ZNSt3__123__libcpp_numeric_limitsImLb1EE3maxB8ne180100Ev called 66 returned 100% blocks executed 100%
-function _ZNSt3__123__libcpp_numeric_limitsIlLb1EE3maxB8ne180100Ev called 27 returned 100% blocks executed 100%
-       93:  203:  _LIBCPP_HIDE_FROM_ABI static _LIBCPP_CONSTEXPR type max() _NOEXCEPT { return __max; }
-       66:  203-block  0
-       27:  203-block  1
+function _ZNSt3__123__libcpp_numeric_limitsImLb1EE3maxB8ne180100Ev called 76 returned 100% blocks executed 100%
+function _ZNSt3__123__libcpp_numeric_limitsIlLb1EE3maxB8ne180100Ev called 31 returned 100% blocks executed 100%
+      107:  203:  _LIBCPP_HIDE_FROM_ABI static _LIBCPP_CONSTEXPR type max() _NOEXCEPT { return __max; }
+       76:  203-block  0
+       31:  203-block  1
         -:  204:  _LIBCPP_HIDE_FROM_ABI static _LIBCPP_CONSTEXPR type lowest() _NOEXCEPT { return min(); }
         -:  205:
         -:  206:  static _LIBCPP_CONSTEXPR const bool is_integer = true;
@@ -452,11 +452,11 @@ function _ZNSt3__123__libcpp_numeric_limitsIlLb1EE3maxB8ne180100Ev called 27 ret
         -:  443:public:
         -:  444:  static _LIBCPP_CONSTEXPR const bool is_specialized = __base::is_specialized;
         -:  445:  _LIBCPP_HIDE_FROM_ABI static _LIBCPP_CONSTEXPR type min() _NOEXCEPT { return __base::min(); }
-function _ZNSt3__114numeric_limitsIlE3maxB8ne180100Ev called 27 returned 100% blocks executed 100%
-function _ZNSt3__114numeric_limitsImE3maxB8ne180100Ev called 66 returned 100% blocks executed 100%
-       93:  446:  _LIBCPP_HIDE_FROM_ABI static _LIBCPP_CONSTEXPR type max() _NOEXCEPT { return __base::max(); }
-       27:  446-block  0
-       66:  446-block  1
+function _ZNSt3__114numeric_limitsIlE3maxB8ne180100Ev called 31 returned 100% blocks executed 100%
+function _ZNSt3__114numeric_limitsImE3maxB8ne180100Ev called 76 returned 100% blocks executed 100%
+      107:  446:  _LIBCPP_HIDE_FROM_ABI static _LIBCPP_CONSTEXPR type max() _NOEXCEPT { return __base::max(); }
+       31:  446-block  0
+       76:  446-block  1
         -:  447:  _LIBCPP_HIDE_FROM_ABI static _LIBCPP_CONSTEXPR type lowest() _NOEXCEPT { return __base::lowest(); }
         -:  448:
         -:  449:  static _LIBCPP_CONSTEXPR const int digits       = __base::digits;

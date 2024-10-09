@@ -248,25 +248,25 @@ branch  5 taken 0
 function _ZNSt3__110unique_ptrINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_14default_deleteIS6_EEEC1B8ne180100ILb1EvEEPS6_ called 0 returned 0% blocks executed 0%
 function _ZNSt3__110unique_ptrINS_18basic_stringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_14default_deleteIS6_EEEC1B8ne180100ILb1EvEEPS6_ called 57 returned 100% blocks executed 100%
 function _ZNSt3__110unique_ptrIN7testing8internal14GTestFlagSaverENS_14default_deleteIS3_EEEC1B8ne180100ILb1EvEEPS3_ called 1 returned 100% blocks executed 100%
-function _ZNSt3__110unique_ptrIKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_14default_deleteIS7_EEEC1B8ne180100ILb1EvEEPS7_ called 9 returned 100% blocks executed 100%
+function _ZNSt3__110unique_ptrIKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_14default_deleteIS7_EEEC1B8ne180100ILb1EvEEPS7_ called 11 returned 100% blocks executed 100%
 function _ZNSt3__110unique_ptrIN7testing8internal16DeathTestFactoryENS_14default_deleteIS3_EEEC1B8ne180100ILb1EvEEPS3_ called 1 returned 100% blocks executed 100%
 function _ZNSt3__110unique_ptrIN7testing8internal17StreamingListener20AbstractSocketWriterENS_14default_deleteIS4_EEEC1B8ne180100ILb1EvEEPS4_ called 0 returned 0% blocks executed 0%
 function _ZNSt3__110unique_ptrIN7testing8internal17StreamingListener20AbstractSocketWriterENS_14default_deleteIS4_EEEC2B8ne180100ILb1EvEEPS4_ called 0 returned 0% blocks executed 0%
 function _ZNSt3__110unique_ptrINS_18basic_stringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_14default_deleteIS6_EEEC2B8ne180100ILb1EvEEPS6_ called 57 returned 100% blocks executed 66%
 function _ZNSt3__110unique_ptrINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_14default_deleteIS6_EEEC2B8ne180100ILb1EvEEPS6_ called 0 returned 0% blocks executed 0%
 function _ZNSt3__110unique_ptrIN7testing8internal14GTestFlagSaverENS_14default_deleteIS3_EEEC2B8ne180100ILb1EvEEPS3_ called 1 returned 100% blocks executed 66%
-function _ZNSt3__110unique_ptrIKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_14default_deleteIS7_EEEC2B8ne180100ILb1EvEEPS7_ called 9 returned 100% blocks executed 66%
+function _ZNSt3__110unique_ptrIKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_14default_deleteIS7_EEEC2B8ne180100ILb1EvEEPS7_ called 11 returned 100% blocks executed 66%
 function _ZNSt3__110unique_ptrIN7testing8internal11ThreadLocalIPNS1_31TestPartResultReporterInterfaceEE18ValueHolderFactoryENS_14default_deleteIS7_EEEC1B8ne180100ILb1EvEEPS7_ called 1 returned 100% blocks executed 100%
 function _ZNSt3__110unique_ptrIN7testing8internal11ThreadLocalIPNS1_31TestPartResultReporterInterfaceEE18ValueHolderFactoryENS_14default_deleteIS7_EEEC2B8ne180100ILb1EvEEPS7_ called 1 returned 100% blocks executed 66%
 function _ZNSt3__110unique_ptrIN7testing8internal16DeathTestFactoryENS_14default_deleteIS3_EEEC2B8ne180100ILb1EvEEPS3_ called 1 returned 100% blocks executed 66%
 function _ZNSt3__110unique_ptrIN7testing8internal11ThreadLocalINS_6vectorINS2_9TraceInfoENS_9allocatorIS5_EEEEE18ValueHolderFactoryENS_14default_deleteISA_EEEC1B8ne180100ILb1EvEEPSA_ called 1 returned 100% blocks executed 100%
 function _ZNSt3__110unique_ptrIN7testing8internal11ThreadLocalINS_6vectorINS2_9TraceInfoENS_9allocatorIS5_EEEEE18ValueHolderFactoryENS_14default_deleteISA_EEEC2B8ne180100ILb1EvEEPSA_ called 1 returned 100% blocks executed 66%
-      140:  174:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX23 explicit unique_ptr(pointer __p) _NOEXCEPT
-      140:  175:      : __ptr_(__p, __value_init_tag()) {}
+      144:  174:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX23 explicit unique_ptr(pointer __p) _NOEXCEPT
+      144:  175:      : __ptr_(__p, __value_init_tag()) {}
     $$$$$:  175-block  0
        57:  175-block  1
         1:  175-block  2
-        9:  175-block  3
+       11:  175-block  3
         1:  175-block  4
     $$$$$:  175-block  5
     $$$$$:  175-block  6
@@ -289,10 +289,10 @@ branch  6 taken 1
 branch  7 taken 0
         1:  175-block 16
     $$$$$:  175-block 17
-        9:  175-block 18
-branch  8 taken 9
+       11:  175-block 18
+branch  8 taken 11
 branch  9 taken 0
-        9:  175-block 19
+       11:  175-block 19
     $$$$$:  175-block 20
         1:  175-block 21
         1:  175-block 22
@@ -557,12 +557,12 @@ function _ZNSt3__110unique_ptrINS_11__hash_nodeINS_17__hash_value_typeINS_12basi
         -:  249:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX23 const deleter_type& get_deleter() const _NOEXCEPT {
         -:  250:    return __ptr_.second();
         -:  251:  }
-function _ZNKSt3__110unique_ptrIKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_14default_deleteIS7_EEEcvbB8ne180100Ev called 5 returned 100% blocks executed 100%
+function _ZNKSt3__110unique_ptrIKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_14default_deleteIS7_EEEcvbB8ne180100Ev called 6 returned 100% blocks executed 100%
 function _ZNKSt3__110unique_ptrINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_14default_deleteIS6_EEEcvbB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNKSt3__110unique_ptrIN7testing8internal24InternalRunDeathTestFlagENS_14default_deleteIS3_EEEcvbB8ne180100Ev called 2 returned 100% blocks executed 100%
-        7:  252:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX23 explicit operator bool() const _NOEXCEPT {
-        7:  253:    return __ptr_.first() != nullptr;
-        5:  253-block  0
+        8:  252:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX23 explicit operator bool() const _NOEXCEPT {
+        8:  253:    return __ptr_.first() != nullptr;
+        6:  253-block  0
     $$$$$:  253-block  1
         2:  253-block  2
         -:  254:  }
@@ -860,11 +860,11 @@ function _ZNSt3__110unique_ptrIA_PNS_16__hash_node_baseIPNS_11__hash_nodeINS_17_
         -:  410:    return *this;
         -:  411:  }
         -:  412:
-function _ZNKSt3__110unique_ptrIA_PNS_16__hash_node_baseIPNS_11__hash_nodeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEPvEEEENS_25__bucket_list_deallocatorINS6_ISD_EEEEEixB8ne180100Em called 9 returned 100% blocks executed 100%
+function _ZNKSt3__110unique_ptrIA_PNS_16__hash_node_baseIPNS_11__hash_nodeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEPvEEEENS_25__bucket_list_deallocatorINS6_ISD_EEEEEixB8ne180100Em called 10 returned 100% blocks executed 100%
 function _ZNKSt3__110unique_ptrIA_PNS_16__hash_node_baseIPNS_11__hash_nodeINS_17__hash_value_typeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEPN7testing9TestSuiteEEEPvEEEENS_25__bucket_list_deallocatorINS7_ISI_EEEEEixB8ne180100Em called 4 returned 100% blocks executed 100%
-       13:  413:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX23 __add_lvalue_reference_t<_Tp> operator[](size_t __i) const {
-       13:  414:    return __ptr_.first()[__i];
-        9:  414-block  0
+       14:  413:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX23 __add_lvalue_reference_t<_Tp> operator[](size_t __i) const {
+       14:  414:    return __ptr_.first()[__i];
+       10:  414-block  0
         4:  414-block  1
         -:  415:  }
         -:  416:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX23 pointer get() const _NOEXCEPT { return __ptr_.first(); }
@@ -875,11 +875,11 @@ function _ZNSt3__110unique_ptrIA_PNS_16__hash_node_baseIPNS_11__hash_nodeINS_17_
         7:  418-block  0
         2:  418-block  1
         -:  419:
-function _ZNKSt3__110unique_ptrIA_PNS_16__hash_node_baseIPNS_11__hash_nodeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEPvEEEENS_25__bucket_list_deallocatorINS6_ISD_EEEEE11get_deleterB8ne180100Ev called 18 returned 100% blocks executed 100%
+function _ZNKSt3__110unique_ptrIA_PNS_16__hash_node_baseIPNS_11__hash_nodeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEPvEEEENS_25__bucket_list_deallocatorINS6_ISD_EEEEE11get_deleterB8ne180100Ev called 21 returned 100% blocks executed 100%
 function _ZNKSt3__110unique_ptrIA_PNS_16__hash_node_baseIPNS_11__hash_nodeINS_17__hash_value_typeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEPN7testing9TestSuiteEEEPvEEEENS_25__bucket_list_deallocatorINS7_ISI_EEEEE11get_deleterB8ne180100Ev called 4 returned 100% blocks executed 100%
-       22:  420:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX23 const deleter_type& get_deleter() const _NOEXCEPT {
-       22:  421:    return __ptr_.second();
-       18:  421-block  0
+       25:  420:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX23 const deleter_type& get_deleter() const _NOEXCEPT {
+       25:  421:    return __ptr_.second();
+       21:  421-block  0
         4:  421-block  1
         -:  422:  }
         -:  423:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX23 explicit operator bool() const _NOEXCEPT {
@@ -995,12 +995,12 @@ function _ZNSt3__14swapB8ne180100INS_12basic_stringIcNS_11char_traitsIcEENS_9all
         -:  504:inline _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX23 bool
 function _ZNSt3__1eqB8ne180100INS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_14default_deleteIS6_EEEEbRKNS_10unique_ptrIT_T0_EEDn called 0 returned 0% blocks executed 0%
 function _ZNSt3__1eqB8ne180100IN7testing8internal24InternalRunDeathTestFlagENS_14default_deleteIS3_EEEEbRKNS_10unique_ptrIT_T0_EEDn called 2 returned 100% blocks executed 100%
-function _ZNSt3__1eqB8ne180100IKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_14default_deleteIS7_EEEEbRKNS_10unique_ptrIT_T0_EEDn called 5 returned 100% blocks executed 100%
-        7:  505:operator==(const unique_ptr<_T1, _D1>& __x, nullptr_t) _NOEXCEPT {
-        7:  506:  return !__x;
+function _ZNSt3__1eqB8ne180100IKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_14default_deleteIS7_EEEEbRKNS_10unique_ptrIT_T0_EEDn called 6 returned 100% blocks executed 100%
+        8:  505:operator==(const unique_ptr<_T1, _D1>& __x, nullptr_t) _NOEXCEPT {
+        8:  506:  return !__x;
     $$$$$:  506-block  0
         2:  506-block  1
-        5:  506-block  2
+        6:  506-block  2
         -:  507:}
         -:  508:
         -:  509:#if _LIBCPP_STD_VER <= 17

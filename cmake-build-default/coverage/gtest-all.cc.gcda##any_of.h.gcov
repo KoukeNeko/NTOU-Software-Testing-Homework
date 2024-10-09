@@ -26,37 +26,37 @@
         -:   21:template <class _InputIterator, class _Predicate>
         -:   22:_LIBCPP_NODISCARD_EXT inline _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 bool
 function _ZNSt3__16any_ofB8ne180100INS_11__wrap_iterIPKcEEZN7testing8internal12_GLOBAL__N_113IsGlobPatternERKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEE3$_0EEbT_SH_T0_ called 9 returned 100% blocks executed 100%
-function _ZNSt3__16any_ofB8ne180100INS_11__wrap_iterIPKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEZNK7testing8internal12_GLOBAL__N_114UnitTestFilter11MatchesNameERS8_EUlSF_E_EEbT_SH_T0_ called 13 returned 100% blocks executed 87%
-       22:   23:any_of(_InputIterator __first, _InputIterator __last, _Predicate __pred) {
-      114:   24:  for (; __first != __last; ++__first)
+function _ZNSt3__16any_ofB8ne180100INS_11__wrap_iterIPKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEZNK7testing8internal12_GLOBAL__N_114UnitTestFilter11MatchesNameERS8_EUlSF_E_EEbT_SH_T0_ called 16 returned 100% blocks executed 87%
+       25:   23:any_of(_InputIterator __first, _InputIterator __last, _Predicate __pred) {
+      123:   24:  for (; __first != __last; ++__first)
         9:   24-block  0
-       71:   24-block  1
-branch  0 taken 70
+       69:   24-block  1
+branch  0 taken 68
 branch  1 taken 1
-       62:   24-block  2
-       13:   24-block  3
-       43:   24-block  4
-branch  2 taken 30
-branch  3 taken 13
-       30:   24-block  5
-      100:   25:    if (__pred(*__first))
-       70:   25-block  0
+       60:   24-block  2
+       16:   24-block  3
+       54:   24-block  4
+branch  2 taken 38
+branch  3 taken 16
+       38:   24-block  5
+      106:   25:    if (__pred(*__first))
+       68:   25-block  0
 branch  0 taken 8
-branch  1 taken 62
-       62:   25-block  1
-       30:   25-block  2
+branch  1 taken 60
+       60:   25-block  1
+       38:   25-block  2
 branch  2 taken 0
-branch  3 taken 30
-       30:   25-block  3
+branch  3 taken 38
+       38:   25-block  3
         8:   26:      return true;
         8:   26-block  0
     $$$$$:   26-block  1
-       14:   27:  return false;
+       17:   27:  return false;
         1:   27-block  0
-       13:   27-block  1
-       22:   28:}
+       16:   27-block  1
+       25:   28:}
         9:   28-block  0
-       13:   28-block  1
+       16:   28-block  1
         -:   29:
         -:   30:_LIBCPP_END_NAMESPACE_STD
         -:   31:

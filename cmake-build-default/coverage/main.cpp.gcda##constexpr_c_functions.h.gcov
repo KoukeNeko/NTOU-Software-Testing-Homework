@@ -40,8 +40,8 @@
         -:   35:// of elements as opposed to a number of bytes.
         -:   36:enum class __element_count : size_t {};
         -:   37:
-function _ZNSt3__118__constexpr_strlenB8ne180100EPKc called 94 returned 100% blocks executed 100%
-       94:   38:inline _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX14 size_t __constexpr_strlen(const char* __str) {
+function _ZNSt3__118__constexpr_strlenB8ne180100EPKc called 101 returned 100% blocks executed 100%
+      101:   38:inline _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX14 size_t __constexpr_strlen(const char* __str) {
         -:   39:  // GCC currently doesn't support __builtin_strlen for heap-allocated memory during constant evaluation.
         -:   40:  // https://gcc.gnu.org/bugzilla/show_bug.cgi?id=70816
         -:   41:#ifdef _LIBCPP_COMPILER_GCC
@@ -52,8 +52,8 @@ function _ZNSt3__118__constexpr_strlenB8ne180100EPKc called 94 returned 100% blo
         -:   46:    return __i;
         -:   47:  }
         -:   48:#endif
-       94:   49:  return __builtin_strlen(__str);
-       94:   49-block  0
+      101:   49:  return __builtin_strlen(__str);
+      101:   49-block  0
         -:   50:}
         -:   51:
         -:   52:// Because of __libcpp_is_trivially_lexicographically_comparable we know that comparing the object representations is

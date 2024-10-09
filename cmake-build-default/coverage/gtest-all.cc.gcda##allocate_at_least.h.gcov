@@ -66,14 +66,14 @@ function _ZNSt3__119__allocate_at_leastB8ne180100INS_9allocatorIN7testing8intern
 function _ZNSt3__119__allocate_at_leastB8ne180100INS_9allocatorINS_6vectorIN7testing8internal13edit_distance8EditTypeENS1_IS6_EEEEEEEENS_19__allocation_resultINS_16allocator_traitsIT_E7pointerEEERSC_m called 0 returned 0% blocks executed 0%
 function _ZNSt3__119__allocate_at_leastB8ne180100INS_9allocatorImEEEENS_19__allocation_resultINS_16allocator_traitsIT_E7pointerEEERS5_m called 0 returned 0% blocks executed 0%
 function _ZNSt3__119__allocate_at_leastB8ne180100INS_9allocatorIN7testing12TestPropertyEEEEENS_19__allocation_resultINS_16allocator_traitsIT_E7pointerEEERS7_m called 0 returned 0% blocks executed 0%
-function _ZNSt3__119__allocate_at_leastB8ne180100INS_9allocatorIPN7testing8TestInfoEEEEENS_19__allocation_resultINS_16allocator_traitsIT_E7pointerEEERS8_m called 3 returned 100% blocks executed 100%
+function _ZNSt3__119__allocate_at_leastB8ne180100INS_9allocatorIPN7testing8TestInfoEEEEENS_19__allocation_resultINS_16allocator_traitsIT_E7pointerEEERS8_m called 4 returned 100% blocks executed 100%
 function _ZNSt3__119__allocate_at_leastB8ne180100INS_9allocatorIiEEEENS_19__allocation_resultINS_16allocator_traitsIT_E7pointerEEERS5_m called 0 returned 0% blocks executed 0%
 function _ZNSt3__119__allocate_at_leastB8ne180100INS_9allocatorIPN7testing17TestEventListenerEEEEENS_19__allocation_resultINS_16allocator_traitsIT_E7pointerEEERS8_m called 1 returned 100% blocks executed 100%
 function _ZNSt3__119__allocate_at_leastB8ne180100INS_9allocatorIPN7testing11EnvironmentEEEEENS_19__allocation_resultINS_16allocator_traitsIT_E7pointerEEERS8_m called 0 returned 0% blocks executed 0%
 function _ZNSt3__119__allocate_at_leastB8ne180100INS_9allocatorIN7testing8internal9TraceInfoEEEEENS_19__allocation_resultINS_16allocator_traitsIT_E7pointerEEERS8_m called 0 returned 0% blocks executed 0%
 function _ZNSt3__119__allocate_at_leastB8ne180100INS_9allocatorIPN7testing9TestSuiteEEEEENS_19__allocation_resultINS_16allocator_traitsIT_E7pointerEEERS8_m called 1 returned 100% blocks executed 100%
-        5:   54:    __allocate_at_least(_Alloc& __alloc, size_t __n) {
-        5:   55:  return {__alloc.allocate(__n), __n};
+        6:   54:    __allocate_at_least(_Alloc& __alloc, size_t __n) {
+        6:   55:  return {__alloc.allocate(__n), __n};
     $$$$$:   55-block  0
     $$$$$:   55-block  1
     $$$$$:   55-block  2
@@ -84,7 +84,7 @@ function _ZNSt3__119__allocate_at_leastB8ne180100INS_9allocatorIPN7testing9TestS
     $$$$$:   55-block  7
     $$$$$:   55-block  8
     $$$$$:   55-block  9
-        3:   55-block 10
+        4:   55-block 10
     $$$$$:   55-block 11
         1:   55-block 12
     $$$$$:   55-block 13

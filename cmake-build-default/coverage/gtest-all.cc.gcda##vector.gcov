@@ -420,8 +420,8 @@
 function _ZNSt3__16vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS4_IS6_EEEC1B8ne180100Ev called 13 returned 100% blocks executed 100%
 function _ZNSt3__16vectorIN7testing8internal13edit_distance8EditTypeENS_9allocatorIS4_EEEC1B8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNSt3__16vectorImNS_9allocatorImEEEC1B8ne180100Ev called 0 returned 0% blocks executed 0%
-function _ZNSt3__16vectorIN7testing14TestPartResultENS_9allocatorIS2_EEEC1B8ne180100Ev called 6 returned 100% blocks executed 100%
-function _ZNSt3__16vectorIN7testing12TestPropertyENS_9allocatorIS2_EEEC1B8ne180100Ev called 6 returned 100% blocks executed 100%
+function _ZNSt3__16vectorIN7testing14TestPartResultENS_9allocatorIS2_EEEC1B8ne180100Ev called 7 returned 100% blocks executed 100%
+function _ZNSt3__16vectorIN7testing12TestPropertyENS_9allocatorIS2_EEEC1B8ne180100Ev called 7 returned 100% blocks executed 100%
 function _ZNSt3__16vectorIPN7testing8TestInfoENS_9allocatorIS3_EEEC1B8ne180100Ev called 1 returned 100% blocks executed 100%
 function _ZNSt3__16vectorIiNS_9allocatorIiEEEC1B8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNSt3__16vectorIPN7testing11EnvironmentENS_9allocatorIS3_EEEC1B8ne180100Ev called 1 returned 100% blocks executed 100%
@@ -431,8 +431,8 @@ function _ZNSt3__16vectorIPcNS_9allocatorIS1_EEEC2B8ne180100Ev called 0 returned
 function _ZNSt3__16vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS4_IS6_EEEC2B8ne180100Ev called 13 returned 100% blocks executed 66%
 function _ZNSt3__16vectorIN7testing8internal13edit_distance8EditTypeENS_9allocatorIS4_EEEC2B8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNSt3__16vectorImNS_9allocatorImEEEC2B8ne180100Ev called 0 returned 0% blocks executed 0%
-function _ZNSt3__16vectorIN7testing14TestPartResultENS_9allocatorIS2_EEEC2B8ne180100Ev called 6 returned 100% blocks executed 66%
-function _ZNSt3__16vectorIN7testing12TestPropertyENS_9allocatorIS2_EEEC2B8ne180100Ev called 6 returned 100% blocks executed 66%
+function _ZNSt3__16vectorIN7testing14TestPartResultENS_9allocatorIS2_EEEC2B8ne180100Ev called 7 returned 100% blocks executed 66%
+function _ZNSt3__16vectorIN7testing12TestPropertyENS_9allocatorIS2_EEEC2B8ne180100Ev called 7 returned 100% blocks executed 66%
 function _ZNSt3__16vectorIPN7testing8TestInfoENS_9allocatorIS3_EEEC2B8ne180100Ev called 1 returned 100% blocks executed 66%
 function _ZNSt3__16vectorIiNS_9allocatorIiEEEC2B8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNSt3__16vectorIPN7testing17TestEventListenerENS_9allocatorIS3_EEEC1B8ne180100Ev called 1 returned 100% blocks executed 100%
@@ -443,13 +443,13 @@ function _ZNSt3__16vectorIPN7testing8internal30ParameterizedTestSuiteInfoBaseENS
 function _ZNSt3__16vectorIPN7testing8internal30ParameterizedTestSuiteInfoBaseENS_9allocatorIS4_EEEC2B8ne180100Ev called 1 returned 100% blocks executed 66%
 function _ZNSt3__16vectorIN7testing8internal9TraceInfoENS_9allocatorIS3_EEEC1B8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNSt3__16vectorIN7testing8internal9TraceInfoENS_9allocatorIS3_EEEC2B8ne180100Ev called 0 returned 0% blocks executed 0%
-       60:  415:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI vector()
-       60:  416:      _NOEXCEPT_(is_nothrow_default_constructible<allocator_type>::value) {}
+       64:  415:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI vector()
+       64:  416:      _NOEXCEPT_(is_nothrow_default_constructible<allocator_type>::value) {}
        13:  416-block  0
     $$$$$:  416-block  1
     $$$$$:  416-block  2
-        6:  416-block  3
-        6:  416-block  4
+        7:  416-block  3
+        7:  416-block  4
         1:  416-block  5
     $$$$$:  416-block  6
         1:  416-block  7
@@ -459,8 +459,8 @@ function _ZNSt3__16vectorIN7testing8internal9TraceInfoENS_9allocatorIS3_EEEC2B8n
        13:  416-block 11
     $$$$$:  416-block 12
     $$$$$:  416-block 13
-        6:  416-block 14
-        6:  416-block 15
+        7:  416-block 14
+        7:  416-block 15
         1:  416-block 16
     $$$$$:  416-block 17
         1:  416-block 18
@@ -888,14 +888,14 @@ branch  7 never executed
         -:  571:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI iterator end() _NOEXCEPT;
         -:  572:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI const_iterator end() const _NOEXCEPT;
         -:  573:
-function _ZNSt3__16vectorIPN7testing9TestSuiteENS_9allocatorIS3_EEE6rbeginB8ne180100Ev called 6 returned 100% blocks executed 66%
+function _ZNSt3__16vectorIPN7testing9TestSuiteENS_9allocatorIS3_EEE6rbeginB8ne180100Ev called 8 returned 100% blocks executed 66%
 function _ZNSt3__16vectorIPN7testing11EnvironmentENS_9allocatorIS3_EEE6rbeginB8ne180100Ev called 1 returned 100% blocks executed 66%
-        7:  574:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI reverse_iterator rbegin() _NOEXCEPT {
-        7:  575:    return reverse_iterator(end());
-        6:  575-block  0
-branch  0 taken 6
+        9:  574:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI reverse_iterator rbegin() _NOEXCEPT {
+        9:  575:    return reverse_iterator(end());
+        8:  575-block  0
+branch  0 taken 8
 branch  1 taken 0
-        6:  575-block  1
+        8:  575-block  1
     $$$$$:  575-block  2
         1:  575-block  3
 branch  2 taken 1
@@ -929,30 +929,30 @@ function _ZNKSt3__16vectorIPN7testing17TestEventListenerENS_9allocatorIS3_EEE6cb
         -:  592:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI const_reverse_iterator crend() const _NOEXCEPT { return rend(); }
         -:  593:
 function _ZNKSt3__16vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS4_IS6_EEE4sizeB8ne180100Ev called 46 returned 100% blocks executed 100%
-function _ZNKSt3__16vectorIN7testing14TestPartResultENS_9allocatorIS2_EEE4sizeB8ne180100Ev called 22 returned 100% blocks executed 100%
+function _ZNKSt3__16vectorIN7testing14TestPartResultENS_9allocatorIS2_EEE4sizeB8ne180100Ev called 23 returned 100% blocks executed 100%
 function _ZNKSt3__16vectorIPN7testing9TestSuiteENS_9allocatorIS3_EEE4sizeB8ne180100Ev called 17 returned 100% blocks executed 100%
 function _ZNKSt3__16vectorImNS_9allocatorImEEE4sizeB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNKSt3__16vectorINS0_IdNS_9allocatorIdEEEENS1_IS3_EEE4sizeB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNKSt3__16vectorIdNS_9allocatorIdEEE4sizeB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNKSt3__16vectorIN7testing8internal13edit_distance8EditTypeENS_9allocatorIS4_EEE4sizeB8ne180100Ev called 0 returned 0% blocks executed 0%
-function _ZNKSt3__16vectorIN7testing12TestPropertyENS_9allocatorIS2_EEE4sizeB8ne180100Ev called 5 returned 100% blocks executed 100%
-function _ZNKSt3__16vectorIPN7testing8TestInfoENS_9allocatorIS3_EEE4sizeB8ne180100Ev called 14 returned 100% blocks executed 100%
+function _ZNKSt3__16vectorIN7testing12TestPropertyENS_9allocatorIS2_EEE4sizeB8ne180100Ev called 6 returned 100% blocks executed 100%
+function _ZNKSt3__16vectorIPN7testing8TestInfoENS_9allocatorIS3_EEE4sizeB8ne180100Ev called 18 returned 100% blocks executed 100%
 function _ZNKSt3__16vectorIiNS_9allocatorIiEEE4sizeB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNKSt3__16vectorIPN7testing17TestEventListenerENS_9allocatorIS3_EEE4sizeB8ne180100Ev called 25 returned 100% blocks executed 100%
 function _ZNKSt3__16vectorIN7testing8internal9TraceInfoENS_9allocatorIS3_EEE4sizeB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNKSt3__16vectorIPcNS_9allocatorIS1_EEE4sizeB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNKSt3__16vectorIPN7testing11EnvironmentENS_9allocatorIS3_EEE4sizeB8ne180100Ev called 1 returned 100% blocks executed 100%
-      130:  594:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI size_type size() const _NOEXCEPT {
-      130:  595:    return static_cast<size_type>(this->__end_ - this->__begin_);
+      136:  594:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI size_type size() const _NOEXCEPT {
+      136:  595:    return static_cast<size_type>(this->__end_ - this->__begin_);
        46:  595-block  0
-       22:  595-block  1
+       23:  595-block  1
        17:  595-block  2
     $$$$$:  595-block  3
     $$$$$:  595-block  4
     $$$$$:  595-block  5
     $$$$$:  595-block  6
-        5:  595-block  7
-       14:  595-block  8
+        6:  595-block  7
+       18:  595-block  8
     $$$$$:  595-block  9
        25:  595-block 10
     $$$$$:  595-block 11
@@ -969,14 +969,14 @@ function _ZNKSt3__16vectorINS0_IN7testing8internal13edit_distance8EditTypeENS_9a
 function _ZNKSt3__16vectorImNS_9allocatorImEEE8capacityB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNKSt3__16vectorIN7testing12TestPropertyENS_9allocatorIS2_EEE8capacityB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNKSt3__16vectorIiNS_9allocatorIiEEE8capacityB8ne180100Ev called 0 returned 0% blocks executed 0%
-function _ZNKSt3__16vectorIPN7testing8TestInfoENS_9allocatorIS3_EEE8capacityB8ne180100Ev called 3 returned 100% blocks executed 100%
+function _ZNKSt3__16vectorIPN7testing8TestInfoENS_9allocatorIS3_EEE8capacityB8ne180100Ev called 4 returned 100% blocks executed 100%
 function _ZNKSt3__16vectorIPN7testing17TestEventListenerENS_9allocatorIS3_EEE8capacityB8ne180100Ev called 1 returned 100% blocks executed 100%
 function _ZNKSt3__16vectorIPN7testing11EnvironmentENS_9allocatorIS3_EEE8capacityB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNKSt3__16vectorIN7testing8internal9TraceInfoENS_9allocatorIS3_EEE8capacityB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNKSt3__16vectorIPN7testing8internal30ParameterizedTestSuiteInfoBaseENS_9allocatorIS4_EEE8capacityB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNKSt3__16vectorIPN7testing9TestSuiteENS_9allocatorIS3_EEE8capacityB8ne180100Ev called 1 returned 100% blocks executed 100%
-        5:  597:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI size_type capacity() const _NOEXCEPT {
-        5:  598:    return static_cast<size_type>(__end_cap() - this->__begin_);
+        6:  597:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI size_type capacity() const _NOEXCEPT {
+        6:  598:    return static_cast<size_type>(__end_cap() - this->__begin_);
     $$$$$:  598-block  0
     $$$$$:  598-block  1
     $$$$$:  598-block  2
@@ -987,7 +987,7 @@ function _ZNKSt3__16vectorIPN7testing9TestSuiteENS_9allocatorIS3_EEE8capacityB8n
     $$$$$:  598-block  7
     $$$$$:  598-block  8
     $$$$$:  598-block  9
-        3:  598-block 10
+        4:  598-block 10
         1:  598-block 11
     $$$$$:  598-block 12
     $$$$$:  598-block 13
@@ -996,12 +996,12 @@ function _ZNKSt3__16vectorIPN7testing9TestSuiteENS_9allocatorIS3_EEE8capacityB8n
         -:  599:  }
 function _ZNKSt3__16vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS4_IS6_EEE5emptyB8ne180100Ev called 2 returned 100% blocks executed 100%
 function _ZNKSt3__16vectorIN7testing8internal9TraceInfoENS_9allocatorIS3_EEE5emptyB8ne180100Ev called 0 returned 0% blocks executed 0%
-function _ZNKSt3__16vectorIPN7testing9TestSuiteENS_9allocatorIS3_EEE5emptyB8ne180100Ev called 4 returned 100% blocks executed 100%
-        6:  600:  _LIBCPP_NODISCARD_AFTER_CXX17 _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI bool empty() const _NOEXCEPT {
-        6:  601:    return this->__begin_ == this->__end_;
+function _ZNKSt3__16vectorIPN7testing9TestSuiteENS_9allocatorIS3_EEE5emptyB8ne180100Ev called 5 returned 100% blocks executed 100%
+        7:  600:  _LIBCPP_NODISCARD_AFTER_CXX17 _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI bool empty() const _NOEXCEPT {
+        7:  601:    return this->__begin_ == this->__end_;
         2:  601-block  0
     $$$$$:  601-block  1
-        4:  601-block  2
+        5:  601-block  2
         -:  602:  }
         -:  603:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI size_type max_size() const _NOEXCEPT;
         -:  604:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI void reserve(size_type __n);
@@ -1111,17 +1111,17 @@ function _ZNSt3__16vectorIPcNS_9allocatorIS1_EEE4dataB8ne180100Ev called 0 retur
         -:  704:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI iterator erase(const_iterator __position);
         -:  705:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI iterator erase(const_iterator __first, const_iterator __last);
         -:  706:
-function _ZNSt3__16vectorIN7testing14TestPartResultENS_9allocatorIS2_EEE5clearB8ne180100Ev called 5 returned 100% blocks executed 100%
-function _ZNSt3__16vectorIN7testing12TestPropertyENS_9allocatorIS2_EEE5clearB8ne180100Ev called 5 returned 100% blocks executed 100%
+function _ZNSt3__16vectorIN7testing14TestPartResultENS_9allocatorIS2_EEE5clearB8ne180100Ev called 6 returned 100% blocks executed 100%
+function _ZNSt3__16vectorIN7testing12TestPropertyENS_9allocatorIS2_EEE5clearB8ne180100Ev called 6 returned 100% blocks executed 100%
 function _ZNSt3__16vectorIPN7testing11EnvironmentENS_9allocatorIS3_EEE5clearB8ne180100Ev called 1 returned 100% blocks executed 100%
 function _ZNSt3__16vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS4_IS6_EEE5clearB8ne180100Ev called 1 returned 100% blocks executed 100%
-       12:  707:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI void clear() _NOEXCEPT {
-       12:  708:    size_type __old_size = size();
-       12:  709:    __clear();
-       12:  710:    __annotate_shrink(__old_size);
-       12:  711:  }
-        5:  711-block  0
-        5:  711-block  1
+       14:  707:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI void clear() _NOEXCEPT {
+       14:  708:    size_type __old_size = size();
+       14:  709:    __clear();
+       14:  710:    __annotate_shrink(__old_size);
+       14:  711:  }
+        6:  711-block  0
+        6:  711-block  1
         1:  711-block  2
         1:  711-block  3
         -:  712:
@@ -1138,10 +1138,10 @@ function _ZNSt3__16vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIc
         -:  723:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI bool __invariants() const;
         -:  724:
         -:  725:private:
-       32:  726:  pointer __begin_ = nullptr;
-       32:  727:  pointer __end_   = nullptr;
-       30:  728:  __compressed_pair<pointer, allocator_type> __end_cap_ =
-       30:  729:      __compressed_pair<pointer, allocator_type>(nullptr, __default_init_tag());
+       34:  726:  pointer __begin_ = nullptr;
+       34:  727:  pointer __end_   = nullptr;
+       32:  728:  __compressed_pair<pointer, allocator_type> __end_cap_ =
+       32:  729:      __compressed_pair<pointer, allocator_type>(nullptr, __default_init_tag());
     $$$$$:  729-block  0
 branch  0 never executed
 branch  1 never executed
@@ -1158,12 +1158,12 @@ branch  5 never executed
 branch  6 never executed
 branch  7 never executed
     $$$$$:  729-block  7
-        6:  729-block  8
-branch  8 taken 6
+        7:  729-block  8
+branch  8 taken 7
 branch  9 taken 0
     $$$$$:  729-block  9
-        6:  729-block 10
-branch 10 taken 6
+        7:  729-block 10
+branch 10 taken 7
 branch 11 taken 0
     $$$$$:  729-block 11
         1:  729-block 12
@@ -1343,34 +1343,34 @@ function _ZNSt3__16vectorIN7testing12TestPropertyENS_9allocatorIS2_EEE11__make_i
 function _ZNSt3__16vectorIPN7testing8internal30ParameterizedTestSuiteInfoBaseENS_9allocatorIS4_EEE11__make_iterB8ne180100EPS4_ called 2 returned 100% blocks executed 100%
 function _ZNSt3__16vectorIPN7testing8TestInfoENS_9allocatorIS3_EEE11__make_iterB8ne180100EPS3_ called 4 returned 100% blocks executed 100%
 function _ZNSt3__16vectorIPN7testing17TestEventListenerENS_9allocatorIS3_EEE11__make_iterB8ne180100EPS3_ called 0 returned 0% blocks executed 0%
-function _ZNSt3__16vectorIPN7testing9TestSuiteENS_9allocatorIS3_EEE11__make_iterB8ne180100EPS3_ called 8 returned 100% blocks executed 100%
+function _ZNSt3__16vectorIPN7testing9TestSuiteENS_9allocatorIS3_EEE11__make_iterB8ne180100EPS3_ called 10 returned 100% blocks executed 100%
 function _ZNSt3__16vectorIPN7testing11EnvironmentENS_9allocatorIS3_EEE11__make_iterB8ne180100EPS3_ called 2 returned 100% blocks executed 100%
-       16:  798:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI iterator __make_iter(pointer __p) _NOEXCEPT {
-       16:  799:    return iterator(__p);
+       18:  798:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI iterator __make_iter(pointer __p) _NOEXCEPT {
+       18:  799:    return iterator(__p);
     $$$$$:  799-block  0
     $$$$$:  799-block  1
     $$$$$:  799-block  2
         2:  799-block  3
         4:  799-block  4
     $$$$$:  799-block  5
-        8:  799-block  6
+       10:  799-block  6
         2:  799-block  7
         -:  800:  }
-function _ZNKSt3__16vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS4_IS6_EEE11__make_iterB8ne180100EPKS6_ called 26 returned 100% blocks executed 100%
+function _ZNKSt3__16vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS4_IS6_EEE11__make_iterB8ne180100EPKS6_ called 32 returned 100% blocks executed 100%
 function _ZNKSt3__16vectorIN7testing8internal13edit_distance8EditTypeENS_9allocatorIS4_EEE11__make_iterB8ne180100EPKS4_ called 0 returned 0% blocks executed 0%
 function _ZNKSt3__16vectorIPN7testing17TestEventListenerENS_9allocatorIS3_EEE11__make_iterB8ne180100EPKS3_ called 0 returned 0% blocks executed 0%
 function _ZNKSt3__16vectorIPN7testing9TestSuiteENS_9allocatorIS3_EEE11__make_iterB8ne180100EPKS3_ called 14 returned 100% blocks executed 100%
 function _ZNKSt3__16vectorIN7testing14TestPartResultENS_9allocatorIS2_EEE11__make_iterB8ne180100EPKS2_ called 20 returned 100% blocks executed 100%
-function _ZNKSt3__16vectorIPN7testing8TestInfoENS_9allocatorIS3_EEE11__make_iterB8ne180100EPKS3_ called 56 returned 100% blocks executed 100%
+function _ZNKSt3__16vectorIPN7testing8TestInfoENS_9allocatorIS3_EEE11__make_iterB8ne180100EPKS3_ called 65 returned 100% blocks executed 100%
 function _ZNKSt3__16vectorIPN7testing11EnvironmentENS_9allocatorIS3_EEE11__make_iterB8ne180100EPKS3_ called 4 returned 100% blocks executed 100%
-      120:  801:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI const_iterator __make_iter(const_pointer __p) const _NOEXCEPT {
-      120:  802:    return const_iterator(__p);
-       26:  802-block  0
+      135:  801:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI const_iterator __make_iter(const_pointer __p) const _NOEXCEPT {
+      135:  802:    return const_iterator(__p);
+       32:  802-block  0
     $$$$$:  802-block  1
     $$$$$:  802-block  2
        14:  802-block  3
        20:  802-block  4
-       56:  802-block  5
+       65:  802-block  5
         4:  802-block  6
         -:  803:  }
         -:  804:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI void
@@ -1429,18 +1429,18 @@ function _ZNKSt3__16vectorIN7testing8internal13edit_distance8EditTypeENS_9alloca
 function _ZNKSt3__16vectorINS0_IN7testing8internal13edit_distance8EditTypeENS_9allocatorIS4_EEEENS5_IS7_EEE14__annotate_newB8ne180100Em called 0 returned 0% blocks executed 0%
 function _ZNKSt3__16vectorImNS_9allocatorImEEE14__annotate_newB8ne180100Em called 0 returned 0% blocks executed 0%
 function _ZNKSt3__16vectorIN7testing12TestPropertyENS_9allocatorIS2_EEE14__annotate_newB8ne180100Em called 0 returned 0% blocks executed 0%
-function _ZNKSt3__16vectorIPN7testing8TestInfoENS_9allocatorIS3_EEE14__annotate_newB8ne180100Em called 3 returned 100% blocks executed 100%
+function _ZNKSt3__16vectorIPN7testing8TestInfoENS_9allocatorIS3_EEE14__annotate_newB8ne180100Em called 4 returned 100% blocks executed 100%
 function _ZNKSt3__16vectorIiNS_9allocatorIiEEE14__annotate_newB8ne180100Em called 0 returned 0% blocks executed 0%
 function _ZNKSt3__16vectorIPN7testing17TestEventListenerENS_9allocatorIS3_EEE14__annotate_newB8ne180100Em called 1 returned 100% blocks executed 100%
 function _ZNKSt3__16vectorIPN7testing11EnvironmentENS_9allocatorIS3_EEE14__annotate_newB8ne180100Em called 0 returned 0% blocks executed 0%
 function _ZNKSt3__16vectorIN7testing8internal9TraceInfoENS_9allocatorIS3_EEE14__annotate_newB8ne180100Em called 0 returned 0% blocks executed 0%
 function _ZNKSt3__16vectorIPN7testing9TestSuiteENS_9allocatorIS3_EEE14__annotate_newB8ne180100Em called 1 returned 100% blocks executed 100%
-        5:  847:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI void __annotate_new(size_type __current_size) const _NOEXCEPT {
+        6:  847:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI void __annotate_new(size_type __current_size) const _NOEXCEPT {
         -:  848:    (void)__current_size;
         -:  849:#ifndef _LIBCPP_HAS_NO_ASAN
         -:  850:    __annotate_contiguous_container(data() + capacity(), data() + __current_size);
         -:  851:#endif
-        5:  852:  }
+        6:  852:  }
     $$$$$:  852-block  0
     $$$$$:  852-block  1
     $$$$$:  852-block  2
@@ -1450,7 +1450,7 @@ function _ZNKSt3__16vectorIPN7testing9TestSuiteENS_9allocatorIS3_EEE14__annotate
     $$$$$:  852-block  6
     $$$$$:  852-block  7
     $$$$$:  852-block  8
-        3:  852-block  9
+        4:  852-block  9
     $$$$$:  852-block 10
         1:  852-block 11
     $$$$$:  852-block 12
@@ -1467,17 +1467,17 @@ function _ZNKSt3__16vectorINS0_IN7testing8internal13edit_distance8EditTypeENS_9a
 function _ZNKSt3__16vectorImNS_9allocatorImEEE17__annotate_deleteB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNKSt3__16vectorIN7testing12TestPropertyENS_9allocatorIS2_EEE17__annotate_deleteB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNKSt3__16vectorIiNS_9allocatorIiEEE17__annotate_deleteB8ne180100Ev called 0 returned 0% blocks executed 0%
-function _ZNKSt3__16vectorIPN7testing8TestInfoENS_9allocatorIS3_EEE17__annotate_deleteB8ne180100Ev called 3 returned 100% blocks executed 100%
+function _ZNKSt3__16vectorIPN7testing8TestInfoENS_9allocatorIS3_EEE17__annotate_deleteB8ne180100Ev called 4 returned 100% blocks executed 100%
 function _ZNKSt3__16vectorIPN7testing17TestEventListenerENS_9allocatorIS3_EEE17__annotate_deleteB8ne180100Ev called 1 returned 100% blocks executed 100%
 function _ZNKSt3__16vectorIPN7testing11EnvironmentENS_9allocatorIS3_EEE17__annotate_deleteB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNKSt3__16vectorIN7testing8internal9TraceInfoENS_9allocatorIS3_EEE17__annotate_deleteB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNKSt3__16vectorIPN7testing8internal30ParameterizedTestSuiteInfoBaseENS_9allocatorIS4_EEE17__annotate_deleteB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNKSt3__16vectorIPN7testing9TestSuiteENS_9allocatorIS3_EEE17__annotate_deleteB8ne180100Ev called 1 returned 100% blocks executed 100%
-        5:  854:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI void __annotate_delete() const _NOEXCEPT {
+        6:  854:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI void __annotate_delete() const _NOEXCEPT {
         -:  855:#ifndef _LIBCPP_HAS_NO_ASAN
         -:  856:    __annotate_contiguous_container(data() + size(), data() + capacity());
         -:  857:#endif
-        5:  858:  }
+        6:  858:  }
     $$$$$:  858-block  0
     $$$$$:  858-block  1
     $$$$$:  858-block  2
@@ -1488,7 +1488,7 @@ function _ZNKSt3__16vectorIPN7testing9TestSuiteENS_9allocatorIS3_EEE17__annotate
     $$$$$:  858-block  7
     $$$$$:  858-block  8
     $$$$$:  858-block  9
-        3:  858-block 10
+        4:  858-block 10
         1:  858-block 11
     $$$$$:  858-block 12
     $$$$$:  858-block 13
@@ -1503,20 +1503,20 @@ function _ZNKSt3__16vectorIPN7testing9TestSuiteENS_9allocatorIS3_EEE17__annotate
         -:  865:  }
         -:  866:
 function _ZNKSt3__16vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS4_IS6_EEE17__annotate_shrinkB8ne180100Em called 1 returned 100% blocks executed 100%
-function _ZNKSt3__16vectorIN7testing14TestPartResultENS_9allocatorIS2_EEE17__annotate_shrinkB8ne180100Em called 5 returned 100% blocks executed 100%
-function _ZNKSt3__16vectorIN7testing12TestPropertyENS_9allocatorIS2_EEE17__annotate_shrinkB8ne180100Em called 5 returned 100% blocks executed 100%
+function _ZNKSt3__16vectorIN7testing14TestPartResultENS_9allocatorIS2_EEE17__annotate_shrinkB8ne180100Em called 6 returned 100% blocks executed 100%
+function _ZNKSt3__16vectorIN7testing12TestPropertyENS_9allocatorIS2_EEE17__annotate_shrinkB8ne180100Em called 6 returned 100% blocks executed 100%
 function _ZNKSt3__16vectorIPN7testing17TestEventListenerENS_9allocatorIS3_EEE17__annotate_shrinkB8ne180100Em called 0 returned 0% blocks executed 0%
 function _ZNKSt3__16vectorIN7testing8internal9TraceInfoENS_9allocatorIS3_EEE17__annotate_shrinkB8ne180100Em called 0 returned 0% blocks executed 0%
 function _ZNKSt3__16vectorIPN7testing11EnvironmentENS_9allocatorIS3_EEE17__annotate_shrinkB8ne180100Em called 1 returned 100% blocks executed 100%
-       12:  867:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI void __annotate_shrink(size_type __old_size) const _NOEXCEPT {
+       14:  867:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI void __annotate_shrink(size_type __old_size) const _NOEXCEPT {
         -:  868:    (void)__old_size;
         -:  869:#ifndef _LIBCPP_HAS_NO_ASAN
         -:  870:    __annotate_contiguous_container(data() + __old_size, data() + size());
         -:  871:#endif
-       12:  872:  }
+       14:  872:  }
         1:  872-block  0
-        5:  872-block  1
-        5:  872-block  2
+        6:  872-block  1
+        6:  872-block  2
     $$$$$:  872-block  3
     $$$$$:  872-block  4
         1:  872-block  5
@@ -1774,14 +1774,14 @@ function _ZNSt3__16vectorINS0_IN7testing8internal13edit_distance8EditTypeENS_9al
 function _ZNSt3__16vectorImNS_9allocatorImEEE7__allocB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNSt3__16vectorIN7testing12TestPropertyENS_9allocatorIS2_EEE7__allocB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNSt3__16vectorIiNS_9allocatorIiEEE7__allocB8ne180100Ev called 0 returned 0% blocks executed 0%
-function _ZNSt3__16vectorIPN7testing8TestInfoENS_9allocatorIS3_EEE7__allocB8ne180100Ev called 7 returned 100% blocks executed 100%
+function _ZNSt3__16vectorIPN7testing8TestInfoENS_9allocatorIS3_EEE7__allocB8ne180100Ev called 9 returned 100% blocks executed 100%
 function _ZNSt3__16vectorIPN7testing17TestEventListenerENS_9allocatorIS3_EEE7__allocB8ne180100Ev called 2 returned 100% blocks executed 100%
 function _ZNSt3__16vectorIPN7testing11EnvironmentENS_9allocatorIS3_EEE7__allocB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNSt3__16vectorIN7testing8internal9TraceInfoENS_9allocatorIS3_EEE7__allocB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNSt3__16vectorIPN7testing8internal30ParameterizedTestSuiteInfoBaseENS_9allocatorIS4_EEE7__allocB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNSt3__16vectorIPN7testing9TestSuiteENS_9allocatorIS3_EEE7__allocB8ne180100Ev called 2 returned 100% blocks executed 100%
-       11:  906:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI allocator_type& __alloc() _NOEXCEPT {
-       11:  907:    return this->__end_cap_.second();
+       13:  906:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI allocator_type& __alloc() _NOEXCEPT {
+       13:  907:    return this->__end_cap_.second();
     $$$$$:  907-block  0
     $$$$$:  907-block  1
     $$$$$:  907-block  2
@@ -1792,7 +1792,7 @@ function _ZNSt3__16vectorIPN7testing9TestSuiteENS_9allocatorIS3_EEE7__allocB8ne1
     $$$$$:  907-block  7
     $$$$$:  907-block  8
     $$$$$:  907-block  9
-        7:  907-block 10
+        9:  907-block 10
         2:  907-block 11
     $$$$$:  907-block 12
     $$$$$:  907-block 13
@@ -1808,14 +1808,14 @@ function _ZNKSt3__16vectorIN7testing8internal13edit_distance8EditTypeENS_9alloca
 function _ZNKSt3__16vectorINS0_IN7testing8internal13edit_distance8EditTypeENS_9allocatorIS4_EEEENS5_IS7_EEE7__allocB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNKSt3__16vectorImNS_9allocatorImEEE7__allocB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNKSt3__16vectorIN7testing12TestPropertyENS_9allocatorIS2_EEE7__allocB8ne180100Ev called 0 returned 0% blocks executed 0%
-function _ZNKSt3__16vectorIPN7testing8TestInfoENS_9allocatorIS3_EEE7__allocB8ne180100Ev called 3 returned 100% blocks executed 100%
+function _ZNKSt3__16vectorIPN7testing8TestInfoENS_9allocatorIS3_EEE7__allocB8ne180100Ev called 4 returned 100% blocks executed 100%
 function _ZNKSt3__16vectorIiNS_9allocatorIiEEE7__allocB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNKSt3__16vectorIPN7testing17TestEventListenerENS_9allocatorIS3_EEE7__allocB8ne180100Ev called 1 returned 100% blocks executed 100%
 function _ZNKSt3__16vectorIPN7testing11EnvironmentENS_9allocatorIS3_EEE7__allocB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNKSt3__16vectorIN7testing8internal9TraceInfoENS_9allocatorIS3_EEE7__allocB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNKSt3__16vectorIPN7testing9TestSuiteENS_9allocatorIS3_EEE7__allocB8ne180100Ev called 1 returned 100% blocks executed 100%
-        5:  909:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI const allocator_type& __alloc() const _NOEXCEPT {
-        5:  910:    return this->__end_cap_.second();
+        6:  909:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI const allocator_type& __alloc() const _NOEXCEPT {
+        6:  910:    return this->__end_cap_.second();
     $$$$$:  910-block  0
     $$$$$:  910-block  1
     $$$$$:  910-block  2
@@ -1825,7 +1825,7 @@ function _ZNKSt3__16vectorIPN7testing9TestSuiteENS_9allocatorIS3_EEE7__allocB8ne
     $$$$$:  910-block  6
     $$$$$:  910-block  7
     $$$$$:  910-block  8
-        3:  910-block  9
+        4:  910-block  9
     $$$$$:  910-block 10
         1:  910-block 11
     $$$$$:  910-block 12
@@ -1841,14 +1841,14 @@ function _ZNSt3__16vectorIN7testing8internal13edit_distance8EditTypeENS_9allocat
 function _ZNSt3__16vectorINS0_IN7testing8internal13edit_distance8EditTypeENS_9allocatorIS4_EEEENS5_IS7_EEE9__end_capB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNSt3__16vectorImNS_9allocatorImEEE9__end_capB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNSt3__16vectorIN7testing12TestPropertyENS_9allocatorIS2_EEE9__end_capB8ne180100Ev called 0 returned 0% blocks executed 0%
-function _ZNSt3__16vectorIPN7testing8TestInfoENS_9allocatorIS3_EEE9__end_capB8ne180100Ev called 7 returned 100% blocks executed 100%
+function _ZNSt3__16vectorIPN7testing8TestInfoENS_9allocatorIS3_EEE9__end_capB8ne180100Ev called 9 returned 100% blocks executed 100%
 function _ZNSt3__16vectorIiNS_9allocatorIiEEE9__end_capB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNSt3__16vectorIPN7testing17TestEventListenerENS_9allocatorIS3_EEE9__end_capB8ne180100Ev called 2 returned 100% blocks executed 100%
 function _ZNSt3__16vectorIPN7testing11EnvironmentENS_9allocatorIS3_EEE9__end_capB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNSt3__16vectorIN7testing8internal9TraceInfoENS_9allocatorIS3_EEE9__end_capB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNSt3__16vectorIPN7testing9TestSuiteENS_9allocatorIS3_EEE9__end_capB8ne180100Ev called 2 returned 100% blocks executed 100%
-       11:  912:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI pointer& __end_cap() _NOEXCEPT {
-       11:  913:    return this->__end_cap_.first();
+       13:  912:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI pointer& __end_cap() _NOEXCEPT {
+       13:  913:    return this->__end_cap_.first();
     $$$$$:  913-block  0
     $$$$$:  913-block  1
     $$$$$:  913-block  2
@@ -1858,7 +1858,7 @@ function _ZNSt3__16vectorIPN7testing9TestSuiteENS_9allocatorIS3_EEE9__end_capB8n
     $$$$$:  913-block  6
     $$$$$:  913-block  7
     $$$$$:  913-block  8
-        7:  913-block  9
+        9:  913-block  9
     $$$$$:  913-block 10
         2:  913-block 11
     $$$$$:  913-block 12
@@ -1875,14 +1875,14 @@ function _ZNKSt3__16vectorINS0_IN7testing8internal13edit_distance8EditTypeENS_9a
 function _ZNKSt3__16vectorImNS_9allocatorImEEE9__end_capB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNKSt3__16vectorIN7testing12TestPropertyENS_9allocatorIS2_EEE9__end_capB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNKSt3__16vectorIiNS_9allocatorIiEEE9__end_capB8ne180100Ev called 0 returned 0% blocks executed 0%
-function _ZNKSt3__16vectorIPN7testing8TestInfoENS_9allocatorIS3_EEE9__end_capB8ne180100Ev called 3 returned 100% blocks executed 100%
+function _ZNKSt3__16vectorIPN7testing8TestInfoENS_9allocatorIS3_EEE9__end_capB8ne180100Ev called 4 returned 100% blocks executed 100%
 function _ZNKSt3__16vectorIPN7testing17TestEventListenerENS_9allocatorIS3_EEE9__end_capB8ne180100Ev called 1 returned 100% blocks executed 100%
 function _ZNKSt3__16vectorIPN7testing11EnvironmentENS_9allocatorIS3_EEE9__end_capB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNKSt3__16vectorIN7testing8internal9TraceInfoENS_9allocatorIS3_EEE9__end_capB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNKSt3__16vectorIPN7testing8internal30ParameterizedTestSuiteInfoBaseENS_9allocatorIS4_EEE9__end_capB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNKSt3__16vectorIPN7testing9TestSuiteENS_9allocatorIS3_EEE9__end_capB8ne180100Ev called 1 returned 100% blocks executed 100%
-        5:  915:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI const pointer& __end_cap() const _NOEXCEPT {
-        5:  916:    return this->__end_cap_.first();
+        6:  915:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI const pointer& __end_cap() const _NOEXCEPT {
+        6:  916:    return this->__end_cap_.first();
     $$$$$:  916-block  0
     $$$$$:  916-block  1
     $$$$$:  916-block  2
@@ -1893,7 +1893,7 @@ function _ZNKSt3__16vectorIPN7testing9TestSuiteENS_9allocatorIS3_EEE9__end_capB8
     $$$$$:  916-block  7
     $$$$$:  916-block  8
     $$$$$:  916-block  9
-        3:  916-block 10
+        4:  916-block 10
         1:  916-block 11
     $$$$$:  916-block 12
     $$$$$:  916-block 13
@@ -1908,8 +1908,8 @@ function _ZNSt3__16vectorINS0_IdNS_9allocatorIdEEEENS1_IS3_EEE7__clearB8ne180100
 function _ZNSt3__16vectorIN7testing8internal13edit_distance8EditTypeENS_9allocatorIS4_EEE7__clearB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNSt3__16vectorINS0_IN7testing8internal13edit_distance8EditTypeENS_9allocatorIS4_EEEENS5_IS7_EEE7__clearB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNSt3__16vectorImNS_9allocatorImEEE7__clearB8ne180100Ev called 0 returned 0% blocks executed 0%
-function _ZNSt3__16vectorIN7testing12TestPropertyENS_9allocatorIS2_EEE7__clearB8ne180100Ev called 5 returned 100% blocks executed 100%
-function _ZNSt3__16vectorIN7testing14TestPartResultENS_9allocatorIS2_EEE7__clearB8ne180100Ev called 5 returned 100% blocks executed 100%
+function _ZNSt3__16vectorIN7testing12TestPropertyENS_9allocatorIS2_EEE7__clearB8ne180100Ev called 6 returned 100% blocks executed 100%
+function _ZNSt3__16vectorIN7testing14TestPartResultENS_9allocatorIS2_EEE7__clearB8ne180100Ev called 6 returned 100% blocks executed 100%
 function _ZNSt3__16vectorIiNS_9allocatorIiEEE7__clearB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNSt3__16vectorIPN7testing8TestInfoENS_9allocatorIS3_EEE7__clearB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNSt3__16vectorIPN7testing17TestEventListenerENS_9allocatorIS3_EEE7__clearB8ne180100Ev called 0 returned 0% blocks executed 0%
@@ -1917,9 +1917,9 @@ function _ZNSt3__16vectorIPN7testing8internal30ParameterizedTestSuiteInfoBaseENS
 function _ZNSt3__16vectorIPN7testing9TestSuiteENS_9allocatorIS3_EEE7__clearB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNSt3__16vectorIPN7testing11EnvironmentENS_9allocatorIS3_EEE7__clearB8ne180100Ev called 1 returned 100% blocks executed 100%
 function _ZNSt3__16vectorIN7testing8internal9TraceInfoENS_9allocatorIS3_EEE7__clearB8ne180100Ev called 0 returned 0% blocks executed 0%
-       11:  919:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI void __clear() _NOEXCEPT {
-       11:  920:    __base_destruct_at_end(this->__begin_);
-       11:  921:  }
+       13:  919:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI void __clear() _NOEXCEPT {
+       13:  920:    __base_destruct_at_end(this->__begin_);
+       13:  921:  }
     $$$$$:  921-block  0
     $$$$$:  921-block  1
     $$$$$:  921-block  2
@@ -1927,8 +1927,8 @@ function _ZNSt3__16vectorIN7testing8internal9TraceInfoENS_9allocatorIS3_EEE7__cl
     $$$$$:  921-block  4
     $$$$$:  921-block  5
     $$$$$:  921-block  6
-        5:  921-block  7
-        5:  921-block  8
+        6:  921-block  7
+        6:  921-block  8
     $$$$$:  921-block  9
     $$$$$:  921-block 10
     $$$$$:  921-block 11
@@ -1944,8 +1944,8 @@ function _ZNSt3__16vectorINS0_IdNS_9allocatorIdEEEENS1_IS3_EEE22__base_destruct_
 function _ZNSt3__16vectorIN7testing8internal13edit_distance8EditTypeENS_9allocatorIS4_EEE22__base_destruct_at_endB8ne180100EPS4_ called 0 returned 0% blocks executed 0%
 function _ZNSt3__16vectorINS0_IN7testing8internal13edit_distance8EditTypeENS_9allocatorIS4_EEEENS5_IS7_EEE22__base_destruct_at_endB8ne180100EPS7_ called 0 returned 0% blocks executed 0%
 function _ZNSt3__16vectorImNS_9allocatorImEEE22__base_destruct_at_endB8ne180100EPm called 0 returned 0% blocks executed 0%
-function _ZNSt3__16vectorIN7testing12TestPropertyENS_9allocatorIS2_EEE22__base_destruct_at_endB8ne180100EPS2_ called 5 returned 100% blocks executed 50%
-function _ZNSt3__16vectorIN7testing14TestPartResultENS_9allocatorIS2_EEE22__base_destruct_at_endB8ne180100EPS2_ called 5 returned 100% blocks executed 50%
+function _ZNSt3__16vectorIN7testing12TestPropertyENS_9allocatorIS2_EEE22__base_destruct_at_endB8ne180100EPS2_ called 6 returned 100% blocks executed 50%
+function _ZNSt3__16vectorIN7testing14TestPartResultENS_9allocatorIS2_EEE22__base_destruct_at_endB8ne180100EPS2_ called 6 returned 100% blocks executed 50%
 function _ZNSt3__16vectorIiNS_9allocatorIiEEE22__base_destruct_at_endB8ne180100EPi called 0 returned 0% blocks executed 0%
 function _ZNSt3__16vectorIPN7testing8TestInfoENS_9allocatorIS3_EEE22__base_destruct_at_endB8ne180100EPS3_ called 0 returned 0% blocks executed 0%
 function _ZNSt3__16vectorIPN7testing17TestEventListenerENS_9allocatorIS3_EEE22__base_destruct_at_endB8ne180100EPS3_ called 0 returned 0% blocks executed 0%
@@ -1953,9 +1953,9 @@ function _ZNSt3__16vectorIN7testing8internal9TraceInfoENS_9allocatorIS3_EEE22__b
 function _ZNSt3__16vectorIPN7testing8internal30ParameterizedTestSuiteInfoBaseENS_9allocatorIS4_EEE22__base_destruct_at_endB8ne180100EPS4_ called 0 returned 0% blocks executed 0%
 function _ZNSt3__16vectorIPN7testing9TestSuiteENS_9allocatorIS3_EEE22__base_destruct_at_endB8ne180100EPS3_ called 0 returned 0% blocks executed 0%
 function _ZNSt3__16vectorIPN7testing11EnvironmentENS_9allocatorIS3_EEE22__base_destruct_at_endB8ne180100EPS3_ called 1 returned 100% blocks executed 50%
-       11:  923:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI void __base_destruct_at_end(pointer __new_last) _NOEXCEPT {
-       11:  924:    pointer __soon_to_be_end = this->__end_;
-       11:  925:    while (__new_last != __soon_to_be_end)
+       13:  923:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI void __base_destruct_at_end(pointer __new_last) _NOEXCEPT {
+       13:  924:    pointer __soon_to_be_end = this->__end_;
+       13:  925:    while (__new_last != __soon_to_be_end)
     $$$$$:  925-block  0
     $$$$$:  925-block  1
 branch  0 never executed
@@ -1991,15 +1991,15 @@ branch 11 never executed
 branch 12 never executed
 branch 13 never executed
     $$$$$:  925-block 20
-        5:  925-block 21
-        5:  925-block 22
+        6:  925-block 21
+        6:  925-block 22
 branch 14 taken 0
-branch 15 taken 5
+branch 15 taken 6
     $$$$$:  925-block 23
-        5:  925-block 24
-        5:  925-block 25
+        6:  925-block 24
+        6:  925-block 25
 branch 16 taken 0
-branch 17 taken 5
+branch 17 taken 6
     $$$$$:  925-block 26
     $$$$$:  925-block 27
     $$$$$:  925-block 28
@@ -2101,8 +2101,8 @@ branch 29 never executed
 branch 30 never executed
 branch 31 never executed
     $$$$$:  926-block 31
-       11:  927:    this->__end_ = __new_last;
-       11:  928:  }
+       13:  927:    this->__end_ = __new_last;
+       13:  928:  }
     $$$$$:  928-block  0
     $$$$$:  928-block  1
     $$$$$:  928-block  2
@@ -2110,8 +2110,8 @@ branch 31 never executed
     $$$$$:  928-block  4
     $$$$$:  928-block  5
     $$$$$:  928-block  6
-        5:  928-block  7
-        5:  928-block  8
+        6:  928-block  7
+        6:  928-block  8
     $$$$$:  928-block  9
     $$$$$:  928-block 10
     $$$$$:  928-block 11
@@ -2221,32 +2221,32 @@ function _ZNSt3__16vectorIN7testing14TestPartResultENS_9allocatorIS2_EEE26__swap
 function _ZNSt3__16vectorIN7testing8internal13edit_distance8EditTypeENS_9allocatorIS4_EEE26__swap_out_circular_bufferERNS_14__split_bufferIS4_RS6_EE called 0 returned 0% blocks executed 0%
 function _ZNSt3__16vectorImNS_9allocatorImEEE26__swap_out_circular_bufferERNS_14__split_bufferImRS2_EE called 0 returned 0% blocks executed 0%
 function _ZNSt3__16vectorIN7testing12TestPropertyENS_9allocatorIS2_EEE26__swap_out_circular_bufferERNS_14__split_bufferIS2_RS4_EE called 0 returned 0% blocks executed 0%
-function _ZNSt3__16vectorIPN7testing8TestInfoENS_9allocatorIS3_EEE26__swap_out_circular_bufferERNS_14__split_bufferIS3_RS5_EE called 3 returned 100% blocks executed 100%
-function _ZNSt3__16vectorIiNS_9allocatorIiEEE26__swap_out_circular_bufferERNS_14__split_bufferIiRS2_EE called 4 returned 100% blocks executed 100%
+function _ZNSt3__16vectorIPN7testing8TestInfoENS_9allocatorIS3_EEE26__swap_out_circular_bufferERNS_14__split_bufferIS3_RS5_EE called 4 returned 100% blocks executed 100%
+function _ZNSt3__16vectorIiNS_9allocatorIiEEE26__swap_out_circular_bufferERNS_14__split_bufferIiRS2_EE called 5 returned 100% blocks executed 100%
 function _ZNSt3__16vectorIPN7testing17TestEventListenerENS_9allocatorIS3_EEE26__swap_out_circular_bufferERNS_14__split_bufferIS3_RS5_EE called 1 returned 100% blocks executed 100%
 function _ZNSt3__16vectorIPN7testing11EnvironmentENS_9allocatorIS3_EEE26__swap_out_circular_bufferERNS_14__split_bufferIS3_RS5_EE called 0 returned 0% blocks executed 0%
 function _ZNSt3__16vectorIN7testing8internal9TraceInfoENS_9allocatorIS3_EEE26__swap_out_circular_bufferERNS_14__split_bufferIS3_RS5_EE called 0 returned 0% blocks executed 0%
 function _ZNSt3__16vectorIPN7testing9TestSuiteENS_9allocatorIS3_EEE26__swap_out_circular_bufferERNS_14__split_bufferIS3_RS5_EE called 1 returned 100% blocks executed 100%
-       24:  987:vector<_Tp, _Allocator>::__swap_out_circular_buffer(__split_buffer<value_type, allocator_type&>& __v) {
-       24:  988:  __annotate_delete();
+       26:  987:vector<_Tp, _Allocator>::__swap_out_circular_buffer(__split_buffer<value_type, allocator_type&>& __v) {
+       26:  988:  __annotate_delete();
         -:  989:  using _RevIter = std::reverse_iterator<pointer>;
-       48:  990:  __v.__begin_   = std::__uninitialized_allocator_move_if_noexcept(
-       24:  991:                     __alloc(), _RevIter(__end_), _RevIter(__begin_), _RevIter(__v.__begin_))
-       24:  992:                     .base();
-       24:  993:  std::swap(this->__begin_, __v.__begin_);
-       24:  994:  std::swap(this->__end_, __v.__end_);
-       24:  995:  std::swap(this->__end_cap(), __v.__end_cap());
-       24:  996:  __v.__first_ = __v.__begin_;
-       24:  997:  __annotate_new(size());
-       24:  998:}
+       52:  990:  __v.__begin_   = std::__uninitialized_allocator_move_if_noexcept(
+       26:  991:                     __alloc(), _RevIter(__end_), _RevIter(__begin_), _RevIter(__v.__begin_))
+       26:  992:                     .base();
+       26:  993:  std::swap(this->__begin_, __v.__begin_);
+       26:  994:  std::swap(this->__end_, __v.__end_);
+       26:  995:  std::swap(this->__end_cap(), __v.__end_cap());
+       26:  996:  __v.__first_ = __v.__begin_;
+       26:  997:  __annotate_new(size());
+       26:  998:}
        15:  998-block  0
     $$$$$:  998-block  1
     $$$$$:  998-block  2
     $$$$$:  998-block  3
     $$$$$:  998-block  4
     $$$$$:  998-block  5
-        3:  998-block  6
-        4:  998-block  7
+        4:  998-block  6
+        5:  998-block  7
         1:  998-block  8
     $$$$$:  998-block  9
     $$$$$:  998-block 10
@@ -2300,14 +2300,14 @@ function _ZNKSt3__16vectorIN7testing8internal13edit_distance8EditTypeENS_9alloca
 function _ZNKSt3__16vectorINS0_IN7testing8internal13edit_distance8EditTypeENS_9allocatorIS4_EEEENS5_IS7_EEE8max_sizeEv called 0 returned 0% blocks executed 0%
 function _ZNKSt3__16vectorImNS_9allocatorImEEE8max_sizeEv called 0 returned 0% blocks executed 0%
 function _ZNKSt3__16vectorIN7testing12TestPropertyENS_9allocatorIS2_EEE8max_sizeEv called 0 returned 0% blocks executed 0%
-function _ZNKSt3__16vectorIPN7testing8TestInfoENS_9allocatorIS3_EEE8max_sizeEv called 3 returned 100% blocks executed 66%
+function _ZNKSt3__16vectorIPN7testing8TestInfoENS_9allocatorIS3_EEE8max_sizeEv called 4 returned 100% blocks executed 66%
 function _ZNKSt3__16vectorIiNS_9allocatorIiEEE8max_sizeEv called 0 returned 0% blocks executed 0%
 function _ZNKSt3__16vectorIPN7testing17TestEventListenerENS_9allocatorIS3_EEE8max_sizeEv called 1 returned 100% blocks executed 66%
 function _ZNKSt3__16vectorIPN7testing11EnvironmentENS_9allocatorIS3_EEE8max_sizeEv called 0 returned 0% blocks executed 0%
 function _ZNKSt3__16vectorIN7testing8internal9TraceInfoENS_9allocatorIS3_EEE8max_sizeEv called 0 returned 0% blocks executed 0%
 function _ZNKSt3__16vectorIPN7testing9TestSuiteENS_9allocatorIS3_EEE8max_sizeEv called 1 returned 100% blocks executed 66%
-        5: 1030:vector<_Tp, _Allocator>::max_size() const _NOEXCEPT {
-        5: 1031:  return std::min<size_type>(__alloc_traits::max_size(this->__alloc()), numeric_limits<difference_type>::max());
+        6: 1030:vector<_Tp, _Allocator>::max_size() const _NOEXCEPT {
+        6: 1031:  return std::min<size_type>(__alloc_traits::max_size(this->__alloc()), numeric_limits<difference_type>::max());
     $$$$$: 1031-block  0
 branch  0 never executed
 branch  1 never executed
@@ -2353,10 +2353,10 @@ branch 16 never executed
 branch 17 never executed
     $$$$$: 1031-block 25
     $$$$$: 1031-block 26
-        3: 1031-block 27
-branch 18 taken 3
+        4: 1031-block 27
+branch 18 taken 4
 branch 19 taken 0
-        3: 1031-block 28
+        4: 1031-block 28
     $$$$$: 1031-block 29
     $$$$$: 1031-block 30
 branch 20 never executed
@@ -2394,15 +2394,15 @@ function _ZNKSt3__16vectorIN7testing14TestPartResultENS_9allocatorIS2_EEE11__rec
 function _ZNKSt3__16vectorIN7testing8internal13edit_distance8EditTypeENS_9allocatorIS4_EEE11__recommendB8ne180100Em called 0 returned 0% blocks executed 0%
 function _ZNKSt3__16vectorImNS_9allocatorImEEE11__recommendB8ne180100Em called 0 returned 0% blocks executed 0%
 function _ZNKSt3__16vectorIN7testing12TestPropertyENS_9allocatorIS2_EEE11__recommendB8ne180100Em called 0 returned 0% blocks executed 0%
-function _ZNKSt3__16vectorIPN7testing8TestInfoENS_9allocatorIS3_EEE11__recommendB8ne180100Em called 3 returned 100% blocks executed 66%
-function _ZNKSt3__16vectorIiNS_9allocatorIiEEE11__recommendB8ne180100Em called 4 returned 100% blocks executed 66%
+function _ZNKSt3__16vectorIPN7testing8TestInfoENS_9allocatorIS3_EEE11__recommendB8ne180100Em called 4 returned 100% blocks executed 66%
+function _ZNKSt3__16vectorIiNS_9allocatorIiEEE11__recommendB8ne180100Em called 5 returned 100% blocks executed 66%
 function _ZNKSt3__16vectorIPN7testing17TestEventListenerENS_9allocatorIS3_EEE11__recommendB8ne180100Em called 1 returned 100% blocks executed 66%
 function _ZNKSt3__16vectorIPN7testing11EnvironmentENS_9allocatorIS3_EEE11__recommendB8ne180100Em called 0 returned 0% blocks executed 0%
 function _ZNKSt3__16vectorIN7testing8internal9TraceInfoENS_9allocatorIS3_EEE11__recommendB8ne180100Em called 0 returned 0% blocks executed 0%
 function _ZNKSt3__16vectorIPN7testing9TestSuiteENS_9allocatorIS3_EEE11__recommendB8ne180100Em called 1 returned 100% blocks executed 66%
-       21: 1037:vector<_Tp, _Allocator>::__recommend(size_type __new_size) const {
-       21: 1038:  const size_type __ms = max_size();
-       21: 1039:  if (__new_size > __ms)
+       23: 1037:vector<_Tp, _Allocator>::__recommend(size_type __new_size) const {
+       23: 1038:  const size_type __ms = max_size();
+       23: 1039:  if (__new_size > __ms)
        12: 1039-block  0
 branch  0 taken 0
 branch  1 taken 12
@@ -2421,12 +2421,12 @@ branch  9 never executed
     $$$$$: 1039-block  5
 branch 10 never executed
 branch 11 never executed
-        3: 1039-block  6
+        4: 1039-block  6
 branch 12 taken 0
-branch 13 taken 3
-        4: 1039-block  7
+branch 13 taken 4
+        5: 1039-block  7
 branch 14 taken 0
-branch 15 taken 4
+branch 15 taken 5
         1: 1039-block  8
 branch 16 taken 0
 branch 17 taken 1
@@ -2452,8 +2452,8 @@ branch 23 taken 1
     $$$$$: 1040-block  9
     $$$$$: 1040-block 10
     $$$$$: 1040-block 11
-       21: 1041:  const size_type __cap = capacity();
-       21: 1042:  if (__cap >= __ms / 2)
+       23: 1041:  const size_type __cap = capacity();
+       23: 1042:  if (__cap >= __ms / 2)
        12: 1042-block  0
 branch  0 taken 0
 branch  1 taken 12
@@ -2472,12 +2472,12 @@ branch  9 never executed
     $$$$$: 1042-block  5
 branch 10 never executed
 branch 11 never executed
-        3: 1042-block  6
+        4: 1042-block  6
 branch 12 taken 0
-branch 13 taken 3
-        4: 1042-block  7
+branch 13 taken 4
+        5: 1042-block  7
 branch 14 taken 0
-branch 15 taken 4
+branch 15 taken 5
         1: 1042-block  8
 branch 16 taken 0
 branch 17 taken 1
@@ -2503,28 +2503,28 @@ branch 23 taken 1
     $$$$$: 1043-block  9
     $$$$$: 1043-block 10
     $$$$$: 1043-block 11
-       21: 1044:  return std::max<size_type>(2 * __cap, __new_size);
+       23: 1044:  return std::max<size_type>(2 * __cap, __new_size);
        12: 1044-block  0
     $$$$$: 1044-block  1
     $$$$$: 1044-block  2
     $$$$$: 1044-block  3
     $$$$$: 1044-block  4
     $$$$$: 1044-block  5
-        3: 1044-block  6
-        4: 1044-block  7
+        4: 1044-block  6
+        5: 1044-block  7
         1: 1044-block  8
     $$$$$: 1044-block  9
     $$$$$: 1044-block 10
         1: 1044-block 11
-       21: 1045:}
+       23: 1045:}
        12: 1045-block  0
     $$$$$: 1045-block  1
     $$$$$: 1045-block  2
     $$$$$: 1045-block  3
     $$$$$: 1045-block  4
     $$$$$: 1045-block  5
-        3: 1045-block  6
-        4: 1045-block  7
+        4: 1045-block  6
+        5: 1045-block  7
         1: 1045-block  8
     $$$$$: 1045-block  9
     $$$$$: 1045-block 10
@@ -3028,16 +3028,16 @@ function _ZNSt3__16vectorIPN7testing11EnvironmentENS_9allocatorIS3_EEE5beginB8ne
         -: 1371:
         -: 1372:template <class _Tp, class _Allocator>
         -: 1373:_LIBCPP_CONSTEXPR_SINCE_CXX20 inline _LIBCPP_HIDE_FROM_ABI typename vector<_Tp, _Allocator>::const_iterator
-function _ZNKSt3__16vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS4_IS6_EEE5beginB8ne180100Ev called 13 returned 100% blocks executed 100%
+function _ZNKSt3__16vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS4_IS6_EEE5beginB8ne180100Ev called 16 returned 100% blocks executed 100%
 function _ZNKSt3__16vectorIN7testing8internal13edit_distance8EditTypeENS_9allocatorIS4_EEE5beginB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNKSt3__16vectorIPN7testing9TestSuiteENS_9allocatorIS3_EEE5beginB8ne180100Ev called 5 returned 100% blocks executed 100%
 function _ZNKSt3__16vectorIPN7testing17TestEventListenerENS_9allocatorIS3_EEE5beginB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNKSt3__16vectorIN7testing14TestPartResultENS_9allocatorIS2_EEE5beginB8ne180100Ev called 10 returned 100% blocks executed 100%
 function _ZNKSt3__16vectorIPN7testing8TestInfoENS_9allocatorIS3_EEE5beginB8ne180100Ev called 10 returned 100% blocks executed 100%
 function _ZNKSt3__16vectorIPN7testing11EnvironmentENS_9allocatorIS3_EEE5beginB8ne180100Ev called 2 returned 100% blocks executed 100%
-       40: 1374:vector<_Tp, _Allocator>::begin() const _NOEXCEPT {
-       40: 1375:  return __make_iter(this->__begin_);
-       13: 1375-block  0
+       43: 1374:vector<_Tp, _Allocator>::begin() const _NOEXCEPT {
+       43: 1375:  return __make_iter(this->__begin_);
+       16: 1375-block  0
     $$$$$: 1375-block  1
         5: 1375-block  2
     $$$$$: 1375-block  3
@@ -3052,36 +3052,36 @@ function _ZNSt3__16vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIc
 function _ZNSt3__16vectorIN7testing8internal13edit_distance8EditTypeENS_9allocatorIS4_EEE3endB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNSt3__16vectorIN7testing12TestPropertyENS_9allocatorIS2_EEE3endB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNSt3__16vectorIPN7testing8TestInfoENS_9allocatorIS3_EEE3endB8ne180100Ev called 2 returned 100% blocks executed 100%
-function _ZNSt3__16vectorIPN7testing9TestSuiteENS_9allocatorIS3_EEE3endB8ne180100Ev called 7 returned 100% blocks executed 100%
+function _ZNSt3__16vectorIPN7testing9TestSuiteENS_9allocatorIS3_EEE3endB8ne180100Ev called 9 returned 100% blocks executed 100%
 function _ZNSt3__16vectorIPN7testing8internal30ParameterizedTestSuiteInfoBaseENS_9allocatorIS4_EEE3endB8ne180100Ev called 1 returned 100% blocks executed 100%
 function _ZNSt3__16vectorIPN7testing11EnvironmentENS_9allocatorIS3_EEE3endB8ne180100Ev called 1 returned 100% blocks executed 100%
-       11: 1380:vector<_Tp, _Allocator>::end() _NOEXCEPT {
-       11: 1381:  return __make_iter(this->__end_);
+       13: 1380:vector<_Tp, _Allocator>::end() _NOEXCEPT {
+       13: 1381:  return __make_iter(this->__end_);
     $$$$$: 1381-block  0
     $$$$$: 1381-block  1
     $$$$$: 1381-block  2
         2: 1381-block  3
-        7: 1381-block  4
+        9: 1381-block  4
         1: 1381-block  5
         1: 1381-block  6
         -: 1382:}
         -: 1383:
         -: 1384:template <class _Tp, class _Allocator>
         -: 1385:_LIBCPP_CONSTEXPR_SINCE_CXX20 inline _LIBCPP_HIDE_FROM_ABI typename vector<_Tp, _Allocator>::const_iterator
-function _ZNKSt3__16vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS4_IS6_EEE3endB8ne180100Ev called 13 returned 100% blocks executed 100%
+function _ZNKSt3__16vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS4_IS6_EEE3endB8ne180100Ev called 16 returned 100% blocks executed 100%
 function _ZNKSt3__16vectorIN7testing8internal13edit_distance8EditTypeENS_9allocatorIS4_EEE3endB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNKSt3__16vectorIPN7testing9TestSuiteENS_9allocatorIS3_EEE3endB8ne180100Ev called 9 returned 100% blocks executed 100%
 function _ZNKSt3__16vectorIN7testing14TestPartResultENS_9allocatorIS2_EEE3endB8ne180100Ev called 10 returned 100% blocks executed 100%
-function _ZNKSt3__16vectorIPN7testing8TestInfoENS_9allocatorIS3_EEE3endB8ne180100Ev called 46 returned 100% blocks executed 100%
+function _ZNKSt3__16vectorIPN7testing8TestInfoENS_9allocatorIS3_EEE3endB8ne180100Ev called 55 returned 100% blocks executed 100%
 function _ZNKSt3__16vectorIPN7testing17TestEventListenerENS_9allocatorIS3_EEE3endB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNKSt3__16vectorIPN7testing11EnvironmentENS_9allocatorIS3_EEE3endB8ne180100Ev called 2 returned 100% blocks executed 100%
-       80: 1386:vector<_Tp, _Allocator>::end() const _NOEXCEPT {
-       80: 1387:  return __make_iter(this->__end_);
-       13: 1387-block  0
+       92: 1386:vector<_Tp, _Allocator>::end() const _NOEXCEPT {
+       92: 1387:  return __make_iter(this->__end_);
+       16: 1387-block  0
     $$$$$: 1387-block  1
         9: 1387-block  2
        10: 1387-block  3
-       46: 1387-block  4
+       55: 1387-block  4
     $$$$$: 1387-block  5
         2: 1387-block  6
         -: 1388:}
@@ -3093,20 +3093,20 @@ function _ZNSt3__16vectorINS0_IdNS_9allocatorIdEEEENS1_IS3_EEEixB8ne180100Em cal
 function _ZNSt3__16vectorIdNS_9allocatorIdEEEixB8ne180100Em called 0 returned 0% blocks executed 0%
 function _ZNSt3__16vectorINS0_IN7testing8internal13edit_distance8EditTypeENS_9allocatorIS4_EEEENS5_IS7_EEEixB8ne180100Em called 0 returned 0% blocks executed 0%
 function _ZNSt3__16vectorIN7testing8internal13edit_distance8EditTypeENS_9allocatorIS4_EEEixB8ne180100Em called 0 returned 0% blocks executed 0%
-function _ZNSt3__16vectorIPN7testing8TestInfoENS_9allocatorIS3_EEEixB8ne180100Em called 4 returned 100% blocks executed 100%
+function _ZNSt3__16vectorIPN7testing8TestInfoENS_9allocatorIS3_EEEixB8ne180100Em called 5 returned 100% blocks executed 100%
 function _ZNSt3__16vectorIiNS_9allocatorIiEEEixB8ne180100Em called 0 returned 0% blocks executed 0%
 function _ZNSt3__16vectorIPN7testing17TestEventListenerENS_9allocatorIS3_EEEixB8ne180100Em called 14 returned 100% blocks executed 100%
 function _ZNSt3__16vectorIN7testing8internal9TraceInfoENS_9allocatorIS3_EEEixB8ne180100Em called 0 returned 0% blocks executed 0%
 function _ZNSt3__16vectorIPN7testing9TestSuiteENS_9allocatorIS3_EEEixB8ne180100Em called 2 returned 100% blocks executed 100%
-       20: 1392:vector<_Tp, _Allocator>::operator[](size_type __n) _NOEXCEPT {
+       21: 1392:vector<_Tp, _Allocator>::operator[](size_type __n) _NOEXCEPT {
         -: 1393:  _LIBCPP_ASSERT_VALID_ELEMENT_ACCESS(__n < size(), "vector[] index out of bounds");
-       20: 1394:  return this->__begin_[__n];
+       21: 1394:  return this->__begin_[__n];
     $$$$$: 1394-block  0
     $$$$$: 1394-block  1
     $$$$$: 1394-block  2
     $$$$$: 1394-block  3
     $$$$$: 1394-block  4
-        4: 1394-block  5
+        5: 1394-block  5
     $$$$$: 1394-block  6
        14: 1394-block  7
     $$$$$: 1394-block  8
@@ -3121,17 +3121,17 @@ function _ZNKSt3__16vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorI
 function _ZNKSt3__16vectorIN7testing8internal13edit_distance8EditTypeENS_9allocatorIS4_EEEixB8ne180100Em called 0 returned 0% blocks executed 0%
 function _ZNKSt3__16vectorIPN7testing8TestInfoENS_9allocatorIS3_EEEixB8ne180100Em called 1 returned 100% blocks executed 100%
 function _ZNKSt3__16vectorIPN7testing9TestSuiteENS_9allocatorIS3_EEEixB8ne180100Em called 5 returned 100% blocks executed 100%
-function _ZNKSt3__16vectorIiNS_9allocatorIiEEEixB8ne180100Em called 5 returned 100% blocks executed 100%
-       11: 1399:vector<_Tp, _Allocator>::operator[](size_type __n) const _NOEXCEPT {
+function _ZNKSt3__16vectorIiNS_9allocatorIiEEEixB8ne180100Em called 6 returned 100% blocks executed 100%
+       12: 1399:vector<_Tp, _Allocator>::operator[](size_type __n) const _NOEXCEPT {
         -: 1400:  _LIBCPP_ASSERT_VALID_ELEMENT_ACCESS(__n < size(), "vector[] index out of bounds");
-       11: 1401:  return this->__begin_[__n];
+       12: 1401:  return this->__begin_[__n];
     $$$$$: 1401-block  0
     $$$$$: 1401-block  1
     $$$$$: 1401-block  2
     $$$$$: 1401-block  3
         1: 1401-block  4
         5: 1401-block  5
-        5: 1401-block  6
+        6: 1401-block  6
         -: 1402:}
         -: 1403:
         -: 1404:template <class _Tp, class _Allocator>
@@ -3226,17 +3226,17 @@ function _ZNSt3__16vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIc
 function _ZNSt3__16vectorIN7testing8internal13edit_distance8EditTypeENS_9allocatorIS4_EEE21__push_back_slow_pathIRKS4_EEPS4_OT_ called 0 returned 0% blocks executed 0%
 function _ZNSt3__16vectorImNS_9allocatorImEEE21__push_back_slow_pathImEEPmOT_ called 0 returned 0% blocks executed 0%
 function _ZNSt3__16vectorIN7testing12TestPropertyENS_9allocatorIS2_EEE21__push_back_slow_pathIRKS2_EEPS2_OT_ called 0 returned 0% blocks executed 0%
-function _ZNSt3__16vectorIPN7testing8TestInfoENS_9allocatorIS3_EEE21__push_back_slow_pathIRKS3_EEPS3_OT_ called 3 returned 100% blocks executed 60%
-function _ZNSt3__16vectorIiNS_9allocatorIiEEE21__push_back_slow_pathIiEEPiOT_ called 4 returned 100% blocks executed 60%
+function _ZNSt3__16vectorIPN7testing8TestInfoENS_9allocatorIS3_EEE21__push_back_slow_pathIRKS3_EEPS3_OT_ called 4 returned 100% blocks executed 60%
+function _ZNSt3__16vectorIiNS_9allocatorIiEEE21__push_back_slow_pathIiEEPiOT_ called 5 returned 100% blocks executed 60%
 function _ZNSt3__16vectorIPN7testing17TestEventListenerENS_9allocatorIS3_EEE21__push_back_slow_pathIRKS3_EEPS3_OT_ called 1 returned 100% blocks executed 60%
 function _ZNSt3__16vectorIPN7testing11EnvironmentENS_9allocatorIS3_EEE21__push_back_slow_pathIRKS3_EEPS3_OT_ called 0 returned 0% blocks executed 0%
 function _ZNSt3__16vectorIN7testing8internal9TraceInfoENS_9allocatorIS3_EEE21__push_back_slow_pathIRKS3_EEPS3_OT_ called 0 returned 0% blocks executed 0%
 function _ZNSt3__16vectorIPN7testing9TestSuiteENS_9allocatorIS3_EEE21__push_back_slow_pathIRKS3_EEPS3_OT_ called 1 returned 100% blocks executed 60%
-       21: 1449:vector<_Tp, _Allocator>::__push_back_slow_path(_Up&& __x) {
-       21: 1450:  allocator_type& __a = this->__alloc();
-       21: 1451:  __split_buffer<value_type, allocator_type&> __v(__recommend(size() + 1), size(), __a);
+       23: 1449:vector<_Tp, _Allocator>::__push_back_slow_path(_Up&& __x) {
+       23: 1450:  allocator_type& __a = this->__alloc();
+       23: 1451:  __split_buffer<value_type, allocator_type&> __v(__recommend(size() + 1), size(), __a);
         -: 1452:  // __v.push_back(std::forward<_Up>(__x));
-       21: 1453:  __alloc_traits::construct(__a, std::__to_address(__v.__end_), std::forward<_Up>(__x));
+       23: 1453:  __alloc_traits::construct(__a, std::__to_address(__v.__end_), std::forward<_Up>(__x));
     $$$$$: 1453-block  0
     $$$$$: 1453-block  1
     $$$$$: 1453-block  2
@@ -3244,14 +3244,14 @@ function _ZNSt3__16vectorIPN7testing9TestSuiteENS_9allocatorIS3_EEE21__push_back
     $$$$$: 1453-block  4
     $$$$$: 1453-block  5
     $$$$$: 1453-block  6
-        3: 1453-block  7
-        4: 1453-block  8
+        4: 1453-block  7
+        5: 1453-block  8
         1: 1453-block  9
     $$$$$: 1453-block 10
     $$$$$: 1453-block 11
         1: 1453-block 12
-       21: 1454:  __v.__end_++;
-       21: 1455:  __swap_out_circular_buffer(__v);
+       23: 1454:  __v.__end_++;
+       23: 1455:  __swap_out_circular_buffer(__v);
     $$$$$: 1455-block  0
     $$$$$: 1455-block  1
     $$$$$: 1455-block  2
@@ -3259,14 +3259,14 @@ function _ZNSt3__16vectorIPN7testing9TestSuiteENS_9allocatorIS3_EEE21__push_back
     $$$$$: 1455-block  4
     $$$$$: 1455-block  5
     $$$$$: 1455-block  6
-        3: 1455-block  7
-        4: 1455-block  8
+        4: 1455-block  7
+        5: 1455-block  8
         1: 1455-block  9
     $$$$$: 1455-block 10
     $$$$$: 1455-block 11
         1: 1455-block 12
-       21: 1456:  return this->__end_;
-       21: 1457:}
+       23: 1456:  return this->__end_;
+       23: 1457:}
     $$$$$: 1457-block  0
     $$$$$: 1457-block  1
     $$$$$: 1457-block  2
@@ -3288,10 +3288,10 @@ function _ZNSt3__16vectorIPN7testing9TestSuiteENS_9allocatorIS3_EEE21__push_back
     $$$$$: 1457-block 18
     $$$$$: 1457-block 19
     $$$$$: 1457-block 20
-        3: 1457-block 21
+        4: 1457-block 21
     $$$$$: 1457-block 22
     $$$$$: 1457-block 23
-        4: 1457-block 24
+        5: 1457-block 24
     $$$$$: 1457-block 25
     $$$$$: 1457-block 26
         1: 1457-block 27
@@ -3313,14 +3313,14 @@ function _ZNSt3__16vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIc
 function _ZNSt3__16vectorIN7testing14TestPartResultENS_9allocatorIS2_EEE9push_backB8ne180100ERKS2_ called 0 returned 0% blocks executed 0%
 function _ZNSt3__16vectorIN7testing8internal13edit_distance8EditTypeENS_9allocatorIS4_EEE9push_backB8ne180100ERKS4_ called 0 returned 0% blocks executed 0%
 function _ZNSt3__16vectorIN7testing12TestPropertyENS_9allocatorIS2_EEE9push_backB8ne180100ERKS2_ called 0 returned 0% blocks executed 0%
-function _ZNSt3__16vectorIPN7testing8TestInfoENS_9allocatorIS3_EEE9push_backB8ne180100ERKS3_ called 4 returned 100% blocks executed 100%
+function _ZNSt3__16vectorIPN7testing8TestInfoENS_9allocatorIS3_EEE9push_backB8ne180100ERKS3_ called 5 returned 100% blocks executed 100%
 function _ZNSt3__16vectorIPN7testing17TestEventListenerENS_9allocatorIS3_EEE9push_backB8ne180100ERKS3_ called 1 returned 100% blocks executed 75%
 function _ZNSt3__16vectorIPN7testing11EnvironmentENS_9allocatorIS3_EEE9push_backB8ne180100ERKS3_ called 0 returned 0% blocks executed 0%
 function _ZNSt3__16vectorIN7testing8internal9TraceInfoENS_9allocatorIS3_EEE9push_backB8ne180100ERKS3_ called 0 returned 0% blocks executed 0%
 function _ZNSt3__16vectorIPN7testing9TestSuiteENS_9allocatorIS3_EEE9push_backB8ne180100ERKS3_ called 1 returned 100% blocks executed 75%
-        6: 1461:vector<_Tp, _Allocator>::push_back(const_reference __x) {
-        6: 1462:  pointer __end = this->__end_;
-        6: 1463:  if (__end < this->__end_cap()) {
+        7: 1461:vector<_Tp, _Allocator>::push_back(const_reference __x) {
+        7: 1462:  pointer __end = this->__end_;
+        7: 1463:  if (__end < this->__end_cap()) {
     $$$$$: 1463-block  0
 branch  0 never executed
 branch  1 never executed
@@ -3333,9 +3333,9 @@ branch  5 never executed
     $$$$$: 1463-block  3
 branch  6 never executed
 branch  7 never executed
-        4: 1463-block  4
+        5: 1463-block  4
 branch  8 taken 1
-branch  9 taken 3
+branch  9 taken 4
         1: 1463-block  5
 branch 10 taken 0
 branch 11 taken 1
@@ -3360,24 +3360,24 @@ branch 17 taken 1
     $$$$$: 1466-block  6
     $$$$$: 1466-block  7
     $$$$$: 1466-block  8
-        5: 1467:    __end = __push_back_slow_path(__x);
+        6: 1467:    __end = __push_back_slow_path(__x);
     $$$$$: 1467-block  0
     $$$$$: 1467-block  1
     $$$$$: 1467-block  2
     $$$$$: 1467-block  3
-        3: 1467-block  4
+        4: 1467-block  4
         1: 1467-block  5
     $$$$$: 1467-block  6
     $$$$$: 1467-block  7
         1: 1467-block  8
         -: 1468:  }
-        6: 1469:  this->__end_ = __end;
-        6: 1470:}
+        7: 1469:  this->__end_ = __end;
+        7: 1470:}
     $$$$$: 1470-block  0
     $$$$$: 1470-block  1
     $$$$$: 1470-block  2
     $$$$$: 1470-block  3
-        4: 1470-block  4
+        5: 1470-block  4
         1: 1470-block  5
     $$$$$: 1470-block  6
     $$$$$: 1470-block  7
@@ -3386,20 +3386,20 @@ branch 17 taken 1
         -: 1472:template <class _Tp, class _Allocator>
 function _ZNSt3__16vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS4_IS6_EEE9push_backB8ne180100EOS6_ called 13 returned 100% blocks executed 100%
 function _ZNSt3__16vectorImNS_9allocatorImEEE9push_backB8ne180100EOm called 0 returned 0% blocks executed 0%
-function _ZNSt3__16vectorIiNS_9allocatorIiEEE9push_backB8ne180100EOi called 5 returned 100% blocks executed 100%
+function _ZNSt3__16vectorIiNS_9allocatorIiEEE9push_backB8ne180100EOi called 6 returned 100% blocks executed 100%
 function _ZNSt3__16vectorIPcNS_9allocatorIS1_EEE9push_backB8ne180100EOS1_ called 0 returned 0% blocks executed 0%
-       18: 1473:_LIBCPP_CONSTEXPR_SINCE_CXX20 inline _LIBCPP_HIDE_FROM_ABI void vector<_Tp, _Allocator>::push_back(value_type&& __x) {
-       18: 1474:  pointer __end = this->__end_;
-       18: 1475:  if (__end < this->__end_cap()) {
+       19: 1473:_LIBCPP_CONSTEXPR_SINCE_CXX20 inline _LIBCPP_HIDE_FROM_ABI void vector<_Tp, _Allocator>::push_back(value_type&& __x) {
+       19: 1474:  pointer __end = this->__end_;
+       19: 1475:  if (__end < this->__end_cap()) {
        13: 1475-block  0
 branch  0 taken 1
 branch  1 taken 12
     $$$$$: 1475-block  1
 branch  2 never executed
 branch  3 never executed
-        5: 1475-block  2
+        6: 1475-block  2
 branch  4 taken 1
-branch  5 taken 4
+branch  5 taken 5
     $$$$$: 1475-block  3
 branch  6 never executed
 branch  7 never executed
@@ -3410,17 +3410,17 @@ branch  7 never executed
     $$$$$: 1478-block  1
         1: 1478-block  2
     $$$$$: 1478-block  3
-       16: 1479:    __end = __push_back_slow_path(std::move(__x));
+       17: 1479:    __end = __push_back_slow_path(std::move(__x));
        12: 1479-block  0
     $$$$$: 1479-block  1
-        4: 1479-block  2
+        5: 1479-block  2
     $$$$$: 1479-block  3
         -: 1480:  }
-       18: 1481:  this->__end_ = __end;
-       18: 1482:}
+       19: 1481:  this->__end_ = __end;
+       19: 1482:}
        13: 1482-block  0
     $$$$$: 1482-block  1
-        5: 1482-block  2
+        6: 1482-block  2
     $$$$$: 1482-block  3
         -: 1483:
         -: 1484:template <class _Tp, class _Allocator>

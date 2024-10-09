@@ -847,25 +847,25 @@
         -:  842:  // Construct a string with the given allocator and enough storage to hold `__size` characters, but
         -:  843:  // don't initialize the characters. The contents of the string, including the null terminator, must be
         -:  844:  // initialized separately.
-function _ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC1B8ne180100ENS_24__uninitialized_size_tagEmRKS4_ called 4 returned 100% blocks executed 100%
-function _ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC2B8ne180100ENS_24__uninitialized_size_tagEmRKS4_ called 4 returned 100% blocks executed 66%
-        8:  845:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 explicit basic_string(
+function _ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC1B8ne180100ENS_24__uninitialized_size_tagEmRKS4_ called 5 returned 100% blocks executed 100%
+function _ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC2B8ne180100ENS_24__uninitialized_size_tagEmRKS4_ called 5 returned 100% blocks executed 66%
+       10:  845:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 explicit basic_string(
         -:  846:      __uninitialized_size_tag, size_type __size, const allocator_type& __a)
-        8:  847:      : __r_(__default_init_tag(), __a) {
-        4:  848:    if (__size > max_size())
-        4:  848-block  0
+       10:  847:      : __r_(__default_init_tag(), __a) {
+        5:  848:    if (__size > max_size())
+        5:  848-block  0
 branch  0 taken 0
-branch  1 taken 4
+branch  1 taken 5
     #####:  849:      __throw_length_error();
     $$$$$:  849-block  0
-        4:  850:    if (__fits_in_sso(__size)) {
-        4:  850-block  0
-branch  0 taken 4
+        5:  850:    if (__fits_in_sso(__size)) {
+        5:  850-block  0
+branch  0 taken 5
 branch  1 taken 0
-        4:  851:      __r_.first() = __rep();
-        4:  852:      __set_short_size(__size);
-        4:  853:    } else {
-        4:  853-block  0
+        5:  851:      __r_.first() = __rep();
+        5:  852:      __set_short_size(__size);
+        5:  853:    } else {
+        5:  853-block  0
     #####:  854:      auto __capacity   = __recommend(__size) + 1;
     #####:  855:      auto __allocation = __alloc_traits::allocate(__alloc(), __capacity);
     #####:  856:      __begin_lifetime(__allocation, __capacity);
@@ -874,10 +874,10 @@ branch  1 taken 0
     #####:  859:      __set_long_size(__size);
     $$$$$:  859-block  0
         -:  860:    }
-        4:  861:    __annotate_new(__size);
-        8:  862:  }
-        4:  862-block  0
-        4:  862-block  1
+        5:  861:    __annotate_new(__size);
+       10:  862:  }
+        5:  862-block  0
+        5:  862-block  1
         -:  863:
         -:  864:  template <class _Iter, class _Sent>
         -:  865:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20
@@ -1315,27 +1315,27 @@ function _ZNKSt3__112basic_stringIwNS_11char_traitsIwEENS_9allocatorIwEEE6length
       504: 1179-block  0
     $$$$$: 1179-block  1
         -: 1180:
-function _ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE8max_sizeB8ne180100Ev called 4 returned 100% blocks executed 71%
-        4: 1181:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 size_type max_size() const _NOEXCEPT {
-        4: 1182:    size_type __m = __alloc_traits::max_size(__alloc());
-        4: 1183:    if (__m <= std::numeric_limits<size_type>::max() / 2) {
-        4: 1183-block  0
+function _ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE8max_sizeB8ne180100Ev called 5 returned 100% blocks executed 71%
+        5: 1181:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 size_type max_size() const _NOEXCEPT {
+        5: 1182:    size_type __m = __alloc_traits::max_size(__alloc());
+        5: 1183:    if (__m <= std::numeric_limits<size_type>::max() / 2) {
+        5: 1183-block  0
 branch  0 taken 0
-branch  1 taken 4
+branch  1 taken 5
     #####: 1184:      return __m - __alignment;
     $$$$$: 1184-block  0
         -: 1185:    } else {
-        4: 1186:      bool __uses_lsb = __endian_factor == 2;
-        4: 1187:      return __uses_lsb ? __m - __alignment : (__m / 2) - __alignment;
-        4: 1187-block  0
+        5: 1186:      bool __uses_lsb = __endian_factor == 2;
+        5: 1187:      return __uses_lsb ? __m - __alignment : (__m / 2) - __alignment;
+        5: 1187-block  0
 branch  0 taken 0
-branch  1 taken 4
+branch  1 taken 5
     $$$$$: 1187-block  1
-        4: 1187-block  2
-        4: 1187-block  3
+        5: 1187-block  2
+        5: 1187-block  3
         -: 1188:    }
-        4: 1189:  }
-        4: 1189-block  0
+        5: 1189:  }
+        5: 1189-block  0
         -: 1190:
         -: 1191:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 size_type capacity() const _NOEXCEPT {
         -: 1192:    return (__is_long() ? __get_long_cap() : static_cast<size_type>(__min_cap)) - 1;
@@ -1362,10 +1362,10 @@ branch  1 taken 4
         -: 1213:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 void shrink_to_fit() _NOEXCEPT;
         -: 1214:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 void clear() _NOEXCEPT;
         -: 1215:
-function _ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE5emptyB8ne180100Ev called 11 returned 100% blocks executed 100%
-       11: 1216:  _LIBCPP_NODISCARD_AFTER_CXX17 _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 bool empty() const _NOEXCEPT {
-       11: 1217:    return size() == 0;
-       11: 1217-block  0
+function _ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE5emptyB8ne180100Ev called 12 returned 100% blocks executed 100%
+       12: 1216:  _LIBCPP_NODISCARD_AFTER_CXX17 _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 bool empty() const _NOEXCEPT {
+       12: 1217:    return size() == 0;
+       12: 1217-block  0
         -: 1218:  }
         -: 1219:
 function _ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEixB8ne180100Em called 0 returned 0% blocks executed 0%
@@ -1429,11 +1429,11 @@ function _ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEpLB8ne18
     $$$$$: 1254-block  0
         -: 1255:  }
         -: 1256:
-function _ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEpLB8ne180100Ec called 1192 returned 100% blocks executed 100%
-     1192: 1257:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 basic_string& operator+=(value_type __c) {
-     1192: 1258:    push_back(__c);
-     1192: 1259:    return *this;
-     1192: 1259-block  0
+function _ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEpLB8ne180100Ec called 1182 returned 100% blocks executed 100%
+     1182: 1257:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 basic_string& operator+=(value_type __c) {
+     1182: 1258:    push_back(__c);
+     1182: 1259:    return *this;
+     1182: 1259-block  0
         -: 1260:  }
         -: 1261:
         -: 1262:#ifndef _LIBCPP_CXX03_LANG
@@ -1996,9 +1996,9 @@ function _ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE16__begi
     #####: 1786:  }
     $$$$$: 1786-block  0
         -: 1787:
-function _ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE13__fits_in_ssoB8ne180100Em called 4 returned 100% blocks executed 100%
-        4: 1788:  _LIBCPP_CONSTEXPR _LIBCPP_HIDE_FROM_ABI static bool __fits_in_sso(size_type __sz) { return __sz < __min_cap; }
-        4: 1788-block  0
+function _ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE13__fits_in_ssoB8ne180100Em called 5 returned 100% blocks executed 100%
+        5: 1788:  _LIBCPP_CONSTEXPR _LIBCPP_HIDE_FROM_ABI static bool __fits_in_sso(size_type __sz) { return __sz < __min_cap; }
+        5: 1788-block  0
         -: 1789:
         -: 1790:  template <class _Iterator, class _Sentinel>
         -: 1791:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI void
@@ -2044,13 +2044,13 @@ function _ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE7__allo
     $$$$$: 1827-block  0
         -: 1828:
         -: 1829:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_STRING_INTERNAL_MEMORY_ACCESS void
-function _ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE16__set_short_sizeB8ne180100Em called 5 returned 100% blocks executed 100%
-        5: 1830:  __set_short_size(size_type __s) _NOEXCEPT {
+function _ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE16__set_short_sizeB8ne180100Em called 6 returned 100% blocks executed 100%
+        6: 1830:  __set_short_size(size_type __s) _NOEXCEPT {
         -: 1831:    _LIBCPP_ASSERT_INTERNAL(__s < __min_cap, "__s should never be greater than or equal to the short string capacity");
-        5: 1832:    __r_.first().__s.__size_    = __s;
-        5: 1833:    __r_.first().__s.__is_long_ = false;
-        5: 1834:  }
-        5: 1834-block  0
+        6: 1832:    __r_.first().__s.__size_    = __s;
+        6: 1833:    __r_.first().__s.__is_long_ = false;
+        6: 1834:  }
+        6: 1834-block  0
         -: 1835:
         -: 1836:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_STRING_INTERNAL_MEMORY_ACCESS size_type
 function _ZNKSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE16__get_short_sizeB8ne180100Ev called 0 returned 0% blocks executed 0%
@@ -4337,24 +4337,24 @@ function _ZNSt3__1ssB8ne180100IcNS_11char_traitsIcEENS_9allocatorIcEEEEDaRKNS_12
         -: 3910:
         -: 3911:template <class _CharT, class _Traits, class _Allocator>
         -: 3912:inline _LIBCPP_CONSTEXPR_SINCE_CXX20 basic_string<_CharT, _Traits, _Allocator>
-function _ZNSt3__1plB8ne180100IcNS_11char_traitsIcEENS_9allocatorIcEEEENS_12basic_stringIT_T0_T1_EERKS9_PKS6_ called 4 returned 100% blocks executed 50%
-        4: 3913:operator+(const basic_string<_CharT, _Traits, _Allocator>& __lhs, const _CharT* __rhs) {
+function _ZNSt3__1plB8ne180100IcNS_11char_traitsIcEENS_9allocatorIcEEEENS_12basic_stringIT_T0_T1_EERKS9_PKS6_ called 5 returned 100% blocks executed 50%
+        5: 3913:operator+(const basic_string<_CharT, _Traits, _Allocator>& __lhs, const _CharT* __rhs) {
         -: 3914:  using _String                        = basic_string<_CharT, _Traits, _Allocator>;
-        4: 3915:  typename _String::size_type __lhs_sz = __lhs.size();
-        4: 3916:  typename _String::size_type __rhs_sz = _Traits::length(__rhs);
-        8: 3917:  _String __r(__uninitialized_size_tag(),
-        4: 3918:              __lhs_sz + __rhs_sz,
-        4: 3919:              _String::__alloc_traits::select_on_container_copy_construction(__lhs.get_allocator()));
-        4: 3920:  auto __ptr = std::__to_address(__r.__get_pointer());
-        4: 3921:  _Traits::copy(__ptr, __lhs.data(), __lhs_sz);
-        4: 3922:  _Traits::copy(__ptr + __lhs_sz, __rhs, __rhs_sz);
-        4: 3923:  _Traits::assign(__ptr + __lhs_sz + __rhs_sz, 1, _CharT());
-        4: 3924:  return __r;
-        4: 3925:}
+        5: 3915:  typename _String::size_type __lhs_sz = __lhs.size();
+        5: 3916:  typename _String::size_type __rhs_sz = _Traits::length(__rhs);
+       10: 3917:  _String __r(__uninitialized_size_tag(),
+        5: 3918:              __lhs_sz + __rhs_sz,
+        5: 3919:              _String::__alloc_traits::select_on_container_copy_construction(__lhs.get_allocator()));
+        5: 3920:  auto __ptr = std::__to_address(__r.__get_pointer());
+        5: 3921:  _Traits::copy(__ptr, __lhs.data(), __lhs_sz);
+        5: 3922:  _Traits::copy(__ptr + __lhs_sz, __rhs, __rhs_sz);
+        5: 3923:  _Traits::assign(__ptr + __lhs_sz + __rhs_sz, 1, _CharT());
+        5: 3924:  return __r;
+        5: 3925:}
     $$$$$: 3925-block  0
-        4: 3925-block  1
+        5: 3925-block  1
     $$$$$: 3925-block  2
-        4: 3925-block  3
+        5: 3925-block  3
         -: 3926:
         -: 3927:template <class _CharT, class _Traits, class _Allocator>
         -: 3928:_LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 basic_string<_CharT, _Traits, _Allocator>
@@ -4380,10 +4380,10 @@ function _ZNSt3__1plB8ne180100IcNS_11char_traitsIcEENS_9allocatorIcEEEENS_12basi
         -: 3943:
         -: 3944:template <class _CharT, class _Traits, class _Allocator>
         -: 3945:inline _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 basic_string<_CharT, _Traits, _Allocator>
-function _ZNSt3__1plB8ne180100IcNS_11char_traitsIcEENS_9allocatorIcEEEENS_12basic_stringIT_T0_T1_EEOS9_RKS9_ called 4 returned 100% blocks executed 100%
-        4: 3946:operator+(basic_string<_CharT, _Traits, _Allocator>&& __lhs, const basic_string<_CharT, _Traits, _Allocator>& __rhs) {
-        4: 3947:  return std::move(__lhs.append(__rhs));
-        4: 3947-block  0
+function _ZNSt3__1plB8ne180100IcNS_11char_traitsIcEENS_9allocatorIcEEEENS_12basic_stringIT_T0_T1_EEOS9_RKS9_ called 5 returned 100% blocks executed 100%
+        5: 3946:operator+(basic_string<_CharT, _Traits, _Allocator>&& __lhs, const basic_string<_CharT, _Traits, _Allocator>& __rhs) {
+        5: 3947:  return std::move(__lhs.append(__rhs));
+        5: 3947-block  0
         -: 3948:}
         -: 3949:
         -: 3950:template <class _CharT, class _Traits, class _Allocator>
@@ -4492,13 +4492,13 @@ function _ZNSt3__14swapB8ne180100IcNS_11char_traitsIcEENS_9allocatorIcEEEEvRNS_1
         -: 4045:template <class _CharT, class _Allocator>
         -: 4046:struct __string_hash : public __unary_function<basic_string<_CharT, char_traits<_CharT>, _Allocator>, size_t> {
         -: 4047:  _LIBCPP_HIDE_FROM_ABI size_t
-function _ZNKSt3__113__string_hashIcNS_9allocatorIcEEEclB8ne180100ERKNS_12basic_stringIcNS_11char_traitsIcEES2_EE called 17 returned 100% blocks executed 66%
-       17: 4048:  operator()(const basic_string<_CharT, char_traits<_CharT>, _Allocator>& __val) const _NOEXCEPT {
-       17: 4049:    return std::__do_string_hash(__val.data(), __val.data() + __val.size());
-       17: 4049-block  0
-branch  0 taken 17
+function _ZNKSt3__113__string_hashIcNS_9allocatorIcEEEclB8ne180100ERKNS_12basic_stringIcNS_11char_traitsIcEES2_EE called 20 returned 100% blocks executed 66%
+       20: 4048:  operator()(const basic_string<_CharT, char_traits<_CharT>, _Allocator>& __val) const _NOEXCEPT {
+       20: 4049:    return std::__do_string_hash(__val.data(), __val.data() + __val.size());
+       20: 4049-block  0
+branch  0 taken 20
 branch  1 taken 0
-       17: 4049-block  1
+       20: 4049-block  1
     $$$$$: 4049-block  2
         -: 4050:  }
         -: 4051:};

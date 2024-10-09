@@ -67,27 +67,35 @@
         -:   62:template <class _Iter>
         -:   63:struct __unwrap_range_impl<_Iter, _Iter> {
 function _ZNSt3__119__unwrap_range_implIPKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEES8_E8__unwrapB8ne180100ES8_S8_ called 1 returned 100% blocks executed 100%
-        1:   64:  _LIBCPP_HIDE_FROM_ABI static constexpr auto __unwrap(_Iter __first, _Iter __last) {
-        1:   65:    return pair{std::__unwrap_iter(std::move(__first)), std::__unwrap_iter(std::move(__last))};
+function _ZNSt3__119__unwrap_range_implINS_11__wrap_iterIPNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEES9_E8__unwrapB8ne180100ES9_S9_ called 8 returned 100% blocks executed 100%
+        9:   64:  _LIBCPP_HIDE_FROM_ABI static constexpr auto __unwrap(_Iter __first, _Iter __last) {
+        9:   65:    return pair{std::__unwrap_iter(std::move(__first)), std::__unwrap_iter(std::move(__last))};
         1:   65-block  0
+        8:   65-block  1
         -:   66:  }
         -:   67:
         -:   68:  _LIBCPP_HIDE_FROM_ABI static constexpr auto
-        -:   69:  __rewrap(_Iter __orig_iter, decltype(std::__unwrap_iter(__orig_iter)) __iter) {
-        -:   70:    return std::__rewrap_iter(std::move(__orig_iter), std::move(__iter));
+function _ZNSt3__119__unwrap_range_implINS_11__wrap_iterIPNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEES9_E8__rewrapB8ne180100ES9_S8_ called 8 returned 100% blocks executed 100%
+        8:   69:  __rewrap(_Iter __orig_iter, decltype(std::__unwrap_iter(__orig_iter)) __iter) {
+        8:   70:    return std::__rewrap_iter(std::move(__orig_iter), std::move(__iter));
+        8:   70-block  0
         -:   71:  }
         -:   72:};
         -:   73:
         -:   74:template <class _Iter, class _Sent>
 function _ZNSt3__114__unwrap_rangeB8ne180100IPKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEES8_EEDaT_T0_ called 1 returned 100% blocks executed 100%
-        1:   75:_LIBCPP_HIDE_FROM_ABI constexpr auto __unwrap_range(_Iter __first, _Sent __last) {
-        1:   76:  return __unwrap_range_impl<_Iter, _Sent>::__unwrap(std::move(__first), std::move(__last));
+function _ZNSt3__114__unwrap_rangeB8ne180100INS_11__wrap_iterIPNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEES9_EEDaT_T0_ called 8 returned 100% blocks executed 100%
+        9:   75:_LIBCPP_HIDE_FROM_ABI constexpr auto __unwrap_range(_Iter __first, _Sent __last) {
+        9:   76:  return __unwrap_range_impl<_Iter, _Sent>::__unwrap(std::move(__first), std::move(__last));
         1:   76-block  0
+        8:   76-block  1
         -:   77:}
         -:   78:
         -:   79:template < class _Sent, class _Iter, class _Unwrapped>
-        -:   80:_LIBCPP_HIDE_FROM_ABI constexpr _Iter __rewrap_range(_Iter __orig_iter, _Unwrapped __iter) {
-        -:   81:  return __unwrap_range_impl<_Iter, _Sent>::__rewrap(std::move(__orig_iter), std::move(__iter));
+function _ZNSt3__114__rewrap_rangeB8ne180100INS_11__wrap_iterIPNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEES9_S8_EET0_SA_T1_ called 8 returned 100% blocks executed 100%
+        8:   80:_LIBCPP_HIDE_FROM_ABI constexpr _Iter __rewrap_range(_Iter __orig_iter, _Unwrapped __iter) {
+        8:   81:  return __unwrap_range_impl<_Iter, _Sent>::__rewrap(std::move(__orig_iter), std::move(__iter));
+        8:   81-block  0
         -:   82:}
         -:   83:#else  // _LIBCPP_STD_VER >= 20
         -:   84:template <class _Iter, class _Unwrapped = decltype(std::__unwrap_iter(std::declval<_Iter>()))>

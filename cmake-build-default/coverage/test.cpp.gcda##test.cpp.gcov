@@ -8,427 +8,287 @@
         -:    3:
         -:    4:using namespace std;
         -:    5:
-        -:    6:// 測試 "plus" 功能
-function _ZN25ModuleATest_TestPlus_Test8TestBodyEv called 1 returned 100% blocks executed 33%
-function _ZN25ModuleATest_TestPlus_TestD1Ev called 1 returned 100% blocks executed 100%
-function _ZN25ModuleATest_TestPlus_TestD0Ev called 1 returned 100% blocks executed 100%
-function _ZN25ModuleATest_TestPlus_TestC1Ev called 1 returned 100% blocks executed 100%
-function _ZN25ModuleATest_TestPlus_TestC2Ev called 1 returned 100% blocks executed 100%
-function _ZN25ModuleATest_TestPlus_TestD2Ev called 1 returned 100% blocks executed 100%
-        7:    7:TEST(ModuleATest, TestPlus) {
-        1:    7-block  0
+        -:    6:
+        -:    7:// Test for both "plus" and "sort" functionalities
+function _ZN24ModuleATest_TestAll_Test8TestBodyEv called 1 returned 100% blocks executed 34%
+function _ZN24ModuleATest_TestAll_TestD1Ev called 1 returned 100% blocks executed 100%
+function _ZN24ModuleATest_TestAll_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN24ModuleATest_TestAll_TestC1Ev called 1 returned 100% blocks executed 100%
+function _ZN24ModuleATest_TestAll_TestC2Ev called 1 returned 100% blocks executed 100%
+function _ZN24ModuleATest_TestAll_TestD2Ev called 1 returned 100% blocks executed 100%
+        7:    8:TEST(ModuleATest, TestAll) {
+        1:    8-block  0
 branch  0 taken 1
 branch  1 taken 0
-        1:    7-block  1
+        1:    8-block  1
 branch  2 taken 1
 branch  3 taken 0
-        1:    7-block  2
+        1:    8-block  2
 branch  4 taken 1
 branch  5 taken 0
-        1:    7-block  3
+        1:    8-block  3
 branch  6 taken 1
 branch  7 taken 0
-        1:    7-block  4
+        1:    8-block  4
 branch  8 taken 1
 branch  9 taken 0
-        1:    7-block  5
+        1:    8-block  5
 branch 10 taken 1
 branch 11 taken 0
-        1:    7-block  6
+        1:    8-block  6
 branch 12 taken 1
 branch 13 taken 0
-        1:    7-block  7
+        1:    8-block  7
 branch 14 taken 1
 branch 15 taken 0
-        1:    7-block  8
-    $$$$$:    7-block  9
-    $$$$$:    7-block 10
-    $$$$$:    7-block 11
-    $$$$$:    7-block 12
-    $$$$$:    7-block 13
-    $$$$$:    7-block 14
-    $$$$$:    7-block 15
-    $$$$$:    7-block 16
-        1:    7-block 17
-        1:    7-block 18
-        1:    7-block 19
-        1:    7-block 20
-        1:    7-block 21
-        1:    8:    vector nums = {1, 2, 3, 4};
-        1:    9:    EXPECT_EQ(module_A(nums, "plus"), 10);  // 測試總和是否為 10
-        1:    9-block  0
+        1:    8-block  8
+    $$$$$:    8-block  9
+    $$$$$:    8-block 10
+    $$$$$:    8-block 11
+    $$$$$:    8-block 12
+    $$$$$:    8-block 13
+    $$$$$:    8-block 14
+    $$$$$:    8-block 15
+    $$$$$:    8-block 16
+        1:    8-block 17
+        1:    8-block 18
+        1:    8-block 19
+        1:    8-block 20
+        1:    8-block 21
+        1:    9:    vector nums = {5, 3, 8, 6};
+        1:   10:    vector<int> nums_copy = nums;
+        1:   10-block  0
 branch  0 taken 1
 branch  1 taken 0
-        1:    9-block  1
-branch  2 taken 1
-branch  3 taken 0
-        1:    9-block  2
-branch  4 taken 1
-branch  5 taken 0
-        1:    9-block  3
-branch  6 taken 1
-branch  7 taken 0
-        1:    9-block  4
-branch  8 taken 0
-branch  9 taken 1
-        1:    9-block  5
-    $$$$$:    9-block  6
-    $$$$$:    9-block  7
-branch 10 never executed
-branch 11 never executed
-    $$$$$:    9-block  8
-branch 12 never executed
-branch 13 never executed
-    $$$$$:    9-block  9
-branch 14 never executed
-branch 15 never executed
-    $$$$$:    9-block 10
-branch 16 never executed
-branch 17 never executed
-    $$$$$:    9-block 11
-    $$$$$:    9-block 12
-    $$$$$:    9-block 13
-    $$$$$:    9-block 14
-        1:   10:}
-    $$$$$:   10-block  0
-    $$$$$:   10-block  1
-    $$$$$:   10-block  2
-        1:   10-block  3
-    $$$$$:   10-block  4
-    $$$$$:   10-block  5
         -:   11:
-        -:   12:// 測試 "sort" 功能
-function _ZN25ModuleATest_TestSort_Test8TestBodyEv called 0 returned 0% blocks executed 0%
-function _ZN25ModuleATest_TestSort_TestD1Ev called 0 returned 0% blocks executed 0%
-function _ZN25ModuleATest_TestSort_TestD0Ev called 0 returned 0% blocks executed 0%
-function _ZN25ModuleATest_TestSort_TestC1Ev called 0 returned 0% blocks executed 0%
-function _ZN25ModuleATest_TestSort_TestC2Ev called 0 returned 0% blocks executed 0%
-function _ZN25ModuleATest_TestSort_TestD2Ev called 0 returned 0% blocks executed 0%
-        1:   13:TEST(ModuleATest, TestSort) {
+        -:   12:    // Test the "plus" configuration
+        1:   13:    int sum_result = module_A(nums, "plus");
         1:   13-block  0
 branch  0 taken 1
 branch  1 taken 0
         1:   13-block  1
 branch  2 taken 1
 branch  3 taken 0
-        1:   13-block  2
-branch  4 taken 1
-branch  5 taken 0
-        1:   13-block  3
-branch  6 taken 1
-branch  7 taken 0
-        1:   13-block  4
-branch  8 taken 1
-branch  9 taken 0
-        1:   13-block  5
-branch 10 taken 1
-branch 11 taken 0
-        1:   13-block  6
-branch 12 taken 1
-branch 13 taken 0
-        1:   13-block  7
-branch 14 taken 1
-branch 15 taken 0
-        1:   13-block  8
-    $$$$$:   13-block  9
-    $$$$$:   13-block 10
-    $$$$$:   13-block 11
-    $$$$$:   13-block 12
-    $$$$$:   13-block 13
-    $$$$$:   13-block 14
-    $$$$$:   13-block 15
-    $$$$$:   13-block 16
-    $$$$$:   13-block 17
-    $$$$$:   13-block 18
-    $$$$$:   13-block 19
-    $$$$$:   13-block 20
-    $$$$$:   13-block 21
-    #####:   14:    vector nums = {4, 2, 1, 3};
-    #####:   15:    module_A(nums, "sort");
-    $$$$$:   15-block  0
-branch  0 never executed
-branch  1 never executed
-    $$$$$:   15-block  1
-branch  2 never executed
-branch  3 never executed
-    $$$$$:   15-block  2
-    #####:   16:    const vector expected = {1, 2, 3, 4};  // 預期結果
-    $$$$$:   16-block  0
-branch  0 never executed
-branch  1 never executed
-    #####:   17:    EXPECT_EQ(nums, expected);  // 測試排序後的數列是否正確
-    $$$$$:   17-block  0
-branch  0 never executed
-branch  1 never executed
-    $$$$$:   17-block  1
-branch  2 never executed
-branch  3 never executed
-    $$$$$:   17-block  2
-branch  4 never executed
-branch  5 never executed
-    $$$$$:   17-block  3
-    $$$$$:   17-block  4
-branch  6 never executed
-branch  7 never executed
-    $$$$$:   17-block  5
-branch  8 never executed
-branch  9 never executed
-    $$$$$:   17-block  6
-branch 10 never executed
-branch 11 never executed
-    $$$$$:   17-block  7
-branch 12 never executed
-branch 13 never executed
-    $$$$$:   17-block  8
-    $$$$$:   17-block  9
-    $$$$$:   17-block 10
-    $$$$$:   17-block 11
-    #####:   18:}
-    $$$$$:   18-block  0
-    $$$$$:   18-block  1
-    $$$$$:   18-block  2
-    $$$$$:   18-block  3
-    $$$$$:   18-block  4
-    $$$$$:   18-block  5
-    $$$$$:   18-block  6
-    $$$$$:   18-block  7
-        -:   19:
-        -:   20:// ����不合法的 config
-function _ZN34ModuleATest_TestInvalidConfig_Test8TestBodyEv called 0 returned 0% blocks executed 0%
-function _ZN34ModuleATest_TestInvalidConfig_TestD1Ev called 0 returned 0% blocks executed 0%
-function _ZN34ModuleATest_TestInvalidConfig_TestD0Ev called 0 returned 0% blocks executed 0%
-function _ZN34ModuleATest_TestInvalidConfig_TestC1Ev called 0 returned 0% blocks executed 0%
-function _ZN34ModuleATest_TestInvalidConfig_TestC2Ev called 0 returned 0% blocks executed 0%
-function _ZN34ModuleATest_TestInvalidConfig_TestD2Ev called 0 returned 0% blocks executed 0%
-        1:   21:TEST(ModuleATest, TestInvalidConfig) {
-        1:   21-block  0
+    $$$$$:   13-block  2
+        1:   14:    EXPECT_EQ(sum_result, 22);  // 5 + 3 + 8 + 6 = 22
+        1:   14-block  0
 branch  0 taken 1
 branch  1 taken 0
-        1:   21-block  1
+        1:   14-block  1
 branch  2 taken 1
 branch  3 taken 0
-        1:   21-block  2
-branch  4 taken 1
-branch  5 taken 0
-        1:   21-block  3
-branch  6 taken 1
-branch  7 taken 0
-        1:   21-block  4
-branch  8 taken 1
-branch  9 taken 0
-        1:   21-block  5
-branch 10 taken 1
-branch 11 taken 0
-        1:   21-block  6
-branch 12 taken 1
-branch 13 taken 0
-        1:   21-block  7
-branch 14 taken 1
-branch 15 taken 0
-        1:   21-block  8
-    $$$$$:   21-block  9
-    $$$$$:   21-block 10
-    $$$$$:   21-block 11
-    $$$$$:   21-block 12
-    $$$$$:   21-block 13
-    $$$$$:   21-block 14
-    $$$$$:   21-block 15
-    $$$$$:   21-block 16
-    $$$$$:   21-block 17
-    $$$$$:   21-block 18
-    $$$$$:   21-block 19
-    $$$$$:   21-block 20
-    $$$$$:   21-block 21
-    #####:   22:    vector nums = {1, 2, 3};
-    #####:   23:    EXPECT_THROW(module_A(nums, "unknown"), std::invalid_argument);  // 測試是否丟出錯誤
-    $$$$$:   23-block  0
-branch  0 never executed
-branch  1 never executed
-    $$$$$:   23-block  1
-branch  2 never executed
-branch  3 never executed
-    $$$$$:   23-block  2
-branch  4 never executed
-branch  5 never executed
-    $$$$$:   23-block  3
+        1:   14-block  2
+branch  4 taken 0
+branch  5 taken 1
+        1:   14-block  3
+    $$$$$:   14-block  4
 branch  6 never executed
 branch  7 never executed
-    $$$$$:   23-block  4
+    $$$$$:   14-block  5
 branch  8 never executed
 branch  9 never executed
-    $$$$$:   23-block  5
+    $$$$$:   14-block  6
 branch 10 never executed
 branch 11 never executed
-    $$$$$:   23-block  6
-    $$$$$:   23-block  7
-    $$$$$:   23-block  8
+    $$$$$:   14-block  7
 branch 12 never executed
 branch 13 never executed
+    $$$$$:   14-block  8
+    $$$$$:   14-block  9
+    $$$$$:   14-block 10
+    $$$$$:   14-block 11
+        -:   15:
+        -:   16:    // Test the "sort" configuration on a copy to avoid interference
+        1:   17:    module_A(nums_copy, "sort");
+        1:   17-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:   17-block  1
+branch  2 taken 1
+branch  3 taken 0
+    $$$$$:   17-block  2
+        1:   18:    const vector<int> expected_sorted = {3, 5, 6, 8};
+        1:   18-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:   19:    EXPECT_EQ(nums_copy, expected_sorted);  // Check sorted order
+        1:   19-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:   19-block  1
+branch  2 taken 1
+branch  3 taken 0
+        1:   19-block  2
+branch  4 taken 0
+branch  5 taken 1
+        1:   19-block  3
+    $$$$$:   19-block  4
+branch  6 never executed
+branch  7 never executed
+    $$$$$:   19-block  5
+branch  8 never executed
+branch  9 never executed
+    $$$$$:   19-block  6
+branch 10 never executed
+branch 11 never executed
+    $$$$$:   19-block  7
+branch 12 never executed
+branch 13 never executed
+    $$$$$:   19-block  8
+    $$$$$:   19-block  9
+    $$$$$:   19-block 10
+    $$$$$:   19-block 11
+        1:   20:}
+    $$$$$:   20-block  0
+    $$$$$:   20-block  1
+    $$$$$:   20-block  2
+    $$$$$:   20-block  3
+    $$$$$:   20-block  4
+    $$$$$:   20-block  5
+    $$$$$:   20-block  6
+        1:   20-block  7
+    $$$$$:   20-block  8
+    $$$$$:   20-block  9
+    $$$$$:   20-block 10
+    $$$$$:   20-block 11
+        -:   21:
+        -:   22:// 測試 "plus" 功能
+function _ZN25ModuleATest_TestPlus_Test8TestBodyEv called 0 returned 0% blocks executed 0%
+function _ZN25ModuleATest_TestPlus_TestD1Ev called 0 returned 0% blocks executed 0%
+function _ZN25ModuleATest_TestPlus_TestD0Ev called 0 returned 0% blocks executed 0%
+function _ZN25ModuleATest_TestPlus_TestC1Ev called 0 returned 0% blocks executed 0%
+function _ZN25ModuleATest_TestPlus_TestC2Ev called 0 returned 0% blocks executed 0%
+function _ZN25ModuleATest_TestPlus_TestD2Ev called 0 returned 0% blocks executed 0%
+        1:   23:TEST(ModuleATest, TestPlus) {
+        1:   23-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:   23-block  1
+branch  2 taken 1
+branch  3 taken 0
+        1:   23-block  2
+branch  4 taken 1
+branch  5 taken 0
+        1:   23-block  3
+branch  6 taken 1
+branch  7 taken 0
+        1:   23-block  4
+branch  8 taken 1
+branch  9 taken 0
+        1:   23-block  5
+branch 10 taken 1
+branch 11 taken 0
+        1:   23-block  6
+branch 12 taken 1
+branch 13 taken 0
+        1:   23-block  7
+branch 14 taken 1
+branch 15 taken 0
+        1:   23-block  8
     $$$$$:   23-block  9
-branch 14 never executed
-branch 15 never executed
     $$$$$:   23-block 10
     $$$$$:   23-block 11
-branch 16 never executed
-branch 17 never executed
     $$$$$:   23-block 12
-branch 18 never executed
-branch 19 never executed
     $$$$$:   23-block 13
     $$$$$:   23-block 14
-branch 20 never executed
-branch 21 never executed
     $$$$$:   23-block 15
-branch 22 never executed
-branch 23 never executed
     $$$$$:   23-block 16
-branch 24 never executed
-branch 25 never executed
     $$$$$:   23-block 17
-branch 26 never executed
-branch 27 never executed
     $$$$$:   23-block 18
-branch 28 never executed
-branch 29 never executed
     $$$$$:   23-block 19
-branch 30 never executed
-branch 31 never executed
     $$$$$:   23-block 20
-branch 32 never executed
-branch 33 never executed
     $$$$$:   23-block 21
-branch 34 never executed
-branch 35 never executed
-    $$$$$:   23-block 22
-branch 36 never executed
-branch 37 never executed
-    $$$$$:   23-block 23
-branch 38 never executed
-branch 39 never executed
-    $$$$$:   23-block 24
-    $$$$$:   23-block 25
-branch 40 never executed
-branch 41 never executed
-    $$$$$:   23-block 26
-    $$$$$:   23-block 27
-    $$$$$:   23-block 28
-branch 42 never executed
-branch 43 never executed
-    $$$$$:   23-block 29
-    $$$$$:   23-block 30
-    $$$$$:   23-block 31
-    $$$$$:   23-block 32
-branch 44 never executed
-branch 45 never executed
-    $$$$$:   23-block 33
-branch 46 never executed
-branch 47 never executed
-    $$$$$:   23-block 34
-branch 48 never executed
-branch 49 never executed
-    $$$$$:   23-block 35
-    $$$$$:   23-block 36
-    $$$$$:   23-block 37
-    $$$$$:   23-block 38
-    #####:   24:}
-    $$$$$:   24-block  0
-    $$$$$:   24-block  1
-    $$$$$:   24-block  2
-    $$$$$:   24-block  3
-    $$$$$:   24-block  4
-    $$$$$:   24-block  5
-    $$$$$:   24-block  6
-        -:   25:
-        -:   26:// 空數列
-function _ZN30ModuleATest_TestEmptyList_Test8TestBodyEv called 0 returned 0% blocks executed 0%
-function _ZN30ModuleATest_TestEmptyList_TestD1Ev called 0 returned 0% blocks executed 0%
-function _ZN30ModuleATest_TestEmptyList_TestD0Ev called 0 returned 0% blocks executed 0%
-function _ZN30ModuleATest_TestEmptyList_TestC1Ev called 0 returned 0% blocks executed 0%
-function _ZN30ModuleATest_TestEmptyList_TestC2Ev called 0 returned 0% blocks executed 0%
-function _ZN30ModuleATest_TestEmptyList_TestD2Ev called 0 returned 0% blocks executed 0%
-        1:   27:TEST(ModuleATest, TestEmptyList) {
-        1:   27-block  0
-branch  0 taken 1
-branch  1 taken 0
-        1:   27-block  1
-branch  2 taken 1
-branch  3 taken 0
-        1:   27-block  2
-branch  4 taken 1
-branch  5 taken 0
-        1:   27-block  3
-branch  6 taken 1
-branch  7 taken 0
-        1:   27-block  4
-branch  8 taken 1
-branch  9 taken 0
-        1:   27-block  5
-branch 10 taken 1
-branch 11 taken 0
-        1:   27-block  6
-branch 12 taken 1
-branch 13 taken 0
-        1:   27-block  7
-branch 14 taken 1
-branch 15 taken 0
-        1:   27-block  8
-    $$$$$:   27-block  9
-    $$$$$:   27-block 10
-    $$$$$:   27-block 11
-    $$$$$:   27-block 12
-    $$$$$:   27-block 13
-    $$$$$:   27-block 14
-    $$$$$:   27-block 15
-    $$$$$:   27-block 16
-    $$$$$:   27-block 17
-    $$$$$:   27-block 18
-    $$$$$:   27-block 19
-    $$$$$:   27-block 20
-    $$$$$:   27-block 21
-    #####:   28:    vector<int> nums = {};
-    #####:   29:    EXPECT_EQ(module_A(nums, "plus"), 0);  // 測試空數列的總和應為 0
-    $$$$$:   29-block  0
+    #####:   24:    vector nums = {1, 2, 3, 4};
+    #####:   25:    EXPECT_EQ(module_A(nums, "plus"), 10);  // 測試總和是否為 10
+    $$$$$:   25-block  0
 branch  0 never executed
 branch  1 never executed
-    $$$$$:   29-block  1
+    $$$$$:   25-block  1
 branch  2 never executed
 branch  3 never executed
-    $$$$$:   29-block  2
+    $$$$$:   25-block  2
 branch  4 never executed
 branch  5 never executed
-    $$$$$:   29-block  3
+    $$$$$:   25-block  3
 branch  6 never executed
 branch  7 never executed
-    $$$$$:   29-block  4
+    $$$$$:   25-block  4
 branch  8 never executed
 branch  9 never executed
-    $$$$$:   29-block  5
-    $$$$$:   29-block  6
-    $$$$$:   29-block  7
+    $$$$$:   25-block  5
+    $$$$$:   25-block  6
+    $$$$$:   25-block  7
 branch 10 never executed
 branch 11 never executed
-    $$$$$:   29-block  8
+    $$$$$:   25-block  8
 branch 12 never executed
 branch 13 never executed
-    $$$$$:   29-block  9
+    $$$$$:   25-block  9
 branch 14 never executed
 branch 15 never executed
-    $$$$$:   29-block 10
+    $$$$$:   25-block 10
 branch 16 never executed
 branch 17 never executed
+    $$$$$:   25-block 11
+    $$$$$:   25-block 12
+    $$$$$:   25-block 13
+    $$$$$:   25-block 14
+    #####:   26:}
+    $$$$$:   26-block  0
+    $$$$$:   26-block  1
+    $$$$$:   26-block  2
+    $$$$$:   26-block  3
+    $$$$$:   26-block  4
+    $$$$$:   26-block  5
+        -:   27:
+        -:   28:// 測試 "sort" 功能
+function _ZN25ModuleATest_TestSort_Test8TestBodyEv called 0 returned 0% blocks executed 0%
+function _ZN25ModuleATest_TestSort_TestD1Ev called 0 returned 0% blocks executed 0%
+function _ZN25ModuleATest_TestSort_TestD0Ev called 0 returned 0% blocks executed 0%
+function _ZN25ModuleATest_TestSort_TestC1Ev called 0 returned 0% blocks executed 0%
+function _ZN25ModuleATest_TestSort_TestC2Ev called 0 returned 0% blocks executed 0%
+function _ZN25ModuleATest_TestSort_TestD2Ev called 0 returned 0% blocks executed 0%
+        1:   29:TEST(ModuleATest, TestSort) {
+        1:   29-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:   29-block  1
+branch  2 taken 1
+branch  3 taken 0
+        1:   29-block  2
+branch  4 taken 1
+branch  5 taken 0
+        1:   29-block  3
+branch  6 taken 1
+branch  7 taken 0
+        1:   29-block  4
+branch  8 taken 1
+branch  9 taken 0
+        1:   29-block  5
+branch 10 taken 1
+branch 11 taken 0
+        1:   29-block  6
+branch 12 taken 1
+branch 13 taken 0
+        1:   29-block  7
+branch 14 taken 1
+branch 15 taken 0
+        1:   29-block  8
+    $$$$$:   29-block  9
+    $$$$$:   29-block 10
     $$$$$:   29-block 11
     $$$$$:   29-block 12
     $$$$$:   29-block 13
     $$$$$:   29-block 14
-    #####:   30:    module_A(nums, "sort");
-    $$$$$:   30-block  0
-branch  0 never executed
-branch  1 never executed
-    $$$$$:   30-block  1
-branch  2 never executed
-branch  3 never executed
-    $$$$$:   30-block  2
-    #####:   31:    EXPECT_TRUE(nums.empty());  // 測試空數列排序後仍為空
+    $$$$$:   29-block 15
+    $$$$$:   29-block 16
+    $$$$$:   29-block 17
+    $$$$$:   29-block 18
+    $$$$$:   29-block 19
+    $$$$$:   29-block 20
+    $$$$$:   29-block 21
+    #####:   30:    vector nums = {4, 2, 1, 3};
+    #####:   31:    module_A(nums, "sort");
     $$$$$:   31-block  0
 branch  0 never executed
 branch  1 never executed
@@ -436,33 +296,317 @@ branch  1 never executed
 branch  2 never executed
 branch  3 never executed
     $$$$$:   31-block  2
+    #####:   32:    const vector expected = {1, 2, 3, 4};  // 預期結果
+    $$$$$:   32-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:   33:    EXPECT_EQ(nums, expected);  // 測試排序後的數列是否正確
+    $$$$$:   33-block  0
+branch  0 never executed
+branch  1 never executed
+    $$$$$:   33-block  1
+branch  2 never executed
+branch  3 never executed
+    $$$$$:   33-block  2
 branch  4 never executed
 branch  5 never executed
-    $$$$$:   31-block  3
-    $$$$$:   31-block  4
+    $$$$$:   33-block  3
+    $$$$$:   33-block  4
 branch  6 never executed
 branch  7 never executed
-    $$$$$:   31-block  5
+    $$$$$:   33-block  5
 branch  8 never executed
 branch  9 never executed
-    $$$$$:   31-block  6
+    $$$$$:   33-block  6
 branch 10 never executed
 branch 11 never executed
-    $$$$$:   31-block  7
+    $$$$$:   33-block  7
 branch 12 never executed
 branch 13 never executed
-    $$$$$:   31-block  8
-    $$$$$:   31-block  9
-    $$$$$:   31-block 10
-    $$$$$:   31-block 11
-    $$$$$:   31-block 12
-    #####:   32:}
-    $$$$$:   32-block  0
-    $$$$$:   32-block  1
-    $$$$$:   32-block  2
-    $$$$$:   32-block  3
-    $$$$$:   32-block  4
-    $$$$$:   32-block  5
-    $$$$$:   32-block  6
-    $$$$$:   32-block  7
-    $$$$$:   32-block  8
+    $$$$$:   33-block  8
+    $$$$$:   33-block  9
+    $$$$$:   33-block 10
+    $$$$$:   33-block 11
+    #####:   34:}
+    $$$$$:   34-block  0
+    $$$$$:   34-block  1
+    $$$$$:   34-block  2
+    $$$$$:   34-block  3
+    $$$$$:   34-block  4
+    $$$$$:   34-block  5
+    $$$$$:   34-block  6
+    $$$$$:   34-block  7
+        -:   35:
+        -:   36:// 測試不合法的 config
+function _ZN34ModuleATest_TestInvalidConfig_Test8TestBodyEv called 0 returned 0% blocks executed 0%
+function _ZN34ModuleATest_TestInvalidConfig_TestD1Ev called 0 returned 0% blocks executed 0%
+function _ZN34ModuleATest_TestInvalidConfig_TestD0Ev called 0 returned 0% blocks executed 0%
+function _ZN34ModuleATest_TestInvalidConfig_TestC1Ev called 0 returned 0% blocks executed 0%
+function _ZN34ModuleATest_TestInvalidConfig_TestC2Ev called 0 returned 0% blocks executed 0%
+function _ZN34ModuleATest_TestInvalidConfig_TestD2Ev called 0 returned 0% blocks executed 0%
+        1:   37:TEST(ModuleATest, TestInvalidConfig) {
+        1:   37-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:   37-block  1
+branch  2 taken 1
+branch  3 taken 0
+        1:   37-block  2
+branch  4 taken 1
+branch  5 taken 0
+        1:   37-block  3
+branch  6 taken 1
+branch  7 taken 0
+        1:   37-block  4
+branch  8 taken 1
+branch  9 taken 0
+        1:   37-block  5
+branch 10 taken 1
+branch 11 taken 0
+        1:   37-block  6
+branch 12 taken 1
+branch 13 taken 0
+        1:   37-block  7
+branch 14 taken 1
+branch 15 taken 0
+        1:   37-block  8
+    $$$$$:   37-block  9
+    $$$$$:   37-block 10
+    $$$$$:   37-block 11
+    $$$$$:   37-block 12
+    $$$$$:   37-block 13
+    $$$$$:   37-block 14
+    $$$$$:   37-block 15
+    $$$$$:   37-block 16
+    $$$$$:   37-block 17
+    $$$$$:   37-block 18
+    $$$$$:   37-block 19
+    $$$$$:   37-block 20
+    $$$$$:   37-block 21
+    #####:   38:    vector nums = {1, 2, 3};
+    #####:   39:    EXPECT_THROW(module_A(nums, "unknown"), std::invalid_argument);  // 測試是否丟出錯誤
+    $$$$$:   39-block  0
+branch  0 never executed
+branch  1 never executed
+    $$$$$:   39-block  1
+branch  2 never executed
+branch  3 never executed
+    $$$$$:   39-block  2
+branch  4 never executed
+branch  5 never executed
+    $$$$$:   39-block  3
+branch  6 never executed
+branch  7 never executed
+    $$$$$:   39-block  4
+branch  8 never executed
+branch  9 never executed
+    $$$$$:   39-block  5
+branch 10 never executed
+branch 11 never executed
+    $$$$$:   39-block  6
+    $$$$$:   39-block  7
+    $$$$$:   39-block  8
+branch 12 never executed
+branch 13 never executed
+    $$$$$:   39-block  9
+branch 14 never executed
+branch 15 never executed
+    $$$$$:   39-block 10
+    $$$$$:   39-block 11
+branch 16 never executed
+branch 17 never executed
+    $$$$$:   39-block 12
+branch 18 never executed
+branch 19 never executed
+    $$$$$:   39-block 13
+    $$$$$:   39-block 14
+branch 20 never executed
+branch 21 never executed
+    $$$$$:   39-block 15
+branch 22 never executed
+branch 23 never executed
+    $$$$$:   39-block 16
+branch 24 never executed
+branch 25 never executed
+    $$$$$:   39-block 17
+branch 26 never executed
+branch 27 never executed
+    $$$$$:   39-block 18
+branch 28 never executed
+branch 29 never executed
+    $$$$$:   39-block 19
+branch 30 never executed
+branch 31 never executed
+    $$$$$:   39-block 20
+branch 32 never executed
+branch 33 never executed
+    $$$$$:   39-block 21
+branch 34 never executed
+branch 35 never executed
+    $$$$$:   39-block 22
+branch 36 never executed
+branch 37 never executed
+    $$$$$:   39-block 23
+branch 38 never executed
+branch 39 never executed
+    $$$$$:   39-block 24
+    $$$$$:   39-block 25
+branch 40 never executed
+branch 41 never executed
+    $$$$$:   39-block 26
+    $$$$$:   39-block 27
+    $$$$$:   39-block 28
+branch 42 never executed
+branch 43 never executed
+    $$$$$:   39-block 29
+    $$$$$:   39-block 30
+    $$$$$:   39-block 31
+    $$$$$:   39-block 32
+branch 44 never executed
+branch 45 never executed
+    $$$$$:   39-block 33
+branch 46 never executed
+branch 47 never executed
+    $$$$$:   39-block 34
+branch 48 never executed
+branch 49 never executed
+    $$$$$:   39-block 35
+    $$$$$:   39-block 36
+    $$$$$:   39-block 37
+    $$$$$:   39-block 38
+    #####:   40:}
+    $$$$$:   40-block  0
+    $$$$$:   40-block  1
+    $$$$$:   40-block  2
+    $$$$$:   40-block  3
+    $$$$$:   40-block  4
+    $$$$$:   40-block  5
+    $$$$$:   40-block  6
+        -:   41:
+        -:   42:// 測試空數列
+function _ZN30ModuleATest_TestEmptyList_Test8TestBodyEv called 0 returned 0% blocks executed 0%
+function _ZN30ModuleATest_TestEmptyList_TestD1Ev called 0 returned 0% blocks executed 0%
+function _ZN30ModuleATest_TestEmptyList_TestD0Ev called 0 returned 0% blocks executed 0%
+function _ZN30ModuleATest_TestEmptyList_TestC1Ev called 0 returned 0% blocks executed 0%
+function _ZN30ModuleATest_TestEmptyList_TestC2Ev called 0 returned 0% blocks executed 0%
+function _ZN30ModuleATest_TestEmptyList_TestD2Ev called 0 returned 0% blocks executed 0%
+        1:   43:TEST(ModuleATest, TestEmptyList) {
+        1:   43-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:   43-block  1
+branch  2 taken 1
+branch  3 taken 0
+        1:   43-block  2
+branch  4 taken 1
+branch  5 taken 0
+        1:   43-block  3
+branch  6 taken 1
+branch  7 taken 0
+        1:   43-block  4
+branch  8 taken 1
+branch  9 taken 0
+        1:   43-block  5
+branch 10 taken 1
+branch 11 taken 0
+        1:   43-block  6
+branch 12 taken 1
+branch 13 taken 0
+        1:   43-block  7
+branch 14 taken 1
+branch 15 taken 0
+        1:   43-block  8
+    $$$$$:   43-block  9
+    $$$$$:   43-block 10
+    $$$$$:   43-block 11
+    $$$$$:   43-block 12
+    $$$$$:   43-block 13
+    $$$$$:   43-block 14
+    $$$$$:   43-block 15
+    $$$$$:   43-block 16
+    $$$$$:   43-block 17
+    $$$$$:   43-block 18
+    $$$$$:   43-block 19
+    $$$$$:   43-block 20
+    $$$$$:   43-block 21
+    #####:   44:    vector<int> nums = {};
+    #####:   45:    EXPECT_EQ(module_A(nums, "plus"), 0);  // 測試空數列的總和應為 0
+    $$$$$:   45-block  0
+branch  0 never executed
+branch  1 never executed
+    $$$$$:   45-block  1
+branch  2 never executed
+branch  3 never executed
+    $$$$$:   45-block  2
+branch  4 never executed
+branch  5 never executed
+    $$$$$:   45-block  3
+branch  6 never executed
+branch  7 never executed
+    $$$$$:   45-block  4
+branch  8 never executed
+branch  9 never executed
+    $$$$$:   45-block  5
+    $$$$$:   45-block  6
+    $$$$$:   45-block  7
+branch 10 never executed
+branch 11 never executed
+    $$$$$:   45-block  8
+branch 12 never executed
+branch 13 never executed
+    $$$$$:   45-block  9
+branch 14 never executed
+branch 15 never executed
+    $$$$$:   45-block 10
+branch 16 never executed
+branch 17 never executed
+    $$$$$:   45-block 11
+    $$$$$:   45-block 12
+    $$$$$:   45-block 13
+    $$$$$:   45-block 14
+    #####:   46:    module_A(nums, "sort");
+    $$$$$:   46-block  0
+branch  0 never executed
+branch  1 never executed
+    $$$$$:   46-block  1
+branch  2 never executed
+branch  3 never executed
+    $$$$$:   46-block  2
+    #####:   47:    EXPECT_TRUE(nums.empty());  // 測試空數列排序後仍為空
+    $$$$$:   47-block  0
+branch  0 never executed
+branch  1 never executed
+    $$$$$:   47-block  1
+branch  2 never executed
+branch  3 never executed
+    $$$$$:   47-block  2
+branch  4 never executed
+branch  5 never executed
+    $$$$$:   47-block  3
+    $$$$$:   47-block  4
+branch  6 never executed
+branch  7 never executed
+    $$$$$:   47-block  5
+branch  8 never executed
+branch  9 never executed
+    $$$$$:   47-block  6
+branch 10 never executed
+branch 11 never executed
+    $$$$$:   47-block  7
+branch 12 never executed
+branch 13 never executed
+    $$$$$:   47-block  8
+    $$$$$:   47-block  9
+    $$$$$:   47-block 10
+    $$$$$:   47-block 11
+    $$$$$:   47-block 12
+    #####:   48:}
+    $$$$$:   48-block  0
+    $$$$$:   48-block  1
+    $$$$$:   48-block  2
+    $$$$$:   48-block  3
+    $$$$$:   48-block  4
+    $$$$$:   48-block  5
+    $$$$$:   48-block  6
+    $$$$$:   48-block  7
+    $$$$$:   48-block  8

@@ -1,0 +1,222 @@
+        -:    0:Source:/Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/c++/v1/__ranges/access.h
+        -:    0:Graph:/Users/doeshing/temp/untitled2/cmake-build-default/CMakeFiles/untitled2.dir/main.cpp.gcno
+        -:    0:Data:/Users/doeshing/temp/untitled2/cmake-build-default/CMakeFiles/untitled2.dir/main.cpp.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:// -*- C++ -*-
+        -:    2://===----------------------------------------------------------------------===//
+        -:    3://
+        -:    4:// Part of the LLVM Project, under the Apache License v2.0 with LLVM Exceptions.
+        -:    5:// See https://llvm.org/LICENSE.txt for license information.
+        -:    6:// SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
+        -:    7://
+        -:    8://===----------------------------------------------------------------------===//
+        -:    9:
+        -:   10:#ifndef _LIBCPP___RANGES_ACCESS_H
+        -:   11:#define _LIBCPP___RANGES_ACCESS_H
+        -:   12:
+        -:   13:#include <__concepts/class_or_enum.h>
+        -:   14:#include <__config>
+        -:   15:#include <__iterator/concepts.h>
+        -:   16:#include <__iterator/readable_traits.h>
+        -:   17:#include <__ranges/enable_borrowed_range.h>
+        -:   18:#include <__type_traits/decay.h>
+        -:   19:#include <__type_traits/is_reference.h>
+        -:   20:#include <__type_traits/remove_cvref.h>
+        -:   21:#include <__type_traits/remove_reference.h>
+        -:   22:#include <__utility/auto_cast.h>
+        -:   23:#include <__utility/declval.h>
+        -:   24:#include <cstddef>
+        -:   25:
+        -:   26:#if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
+        -:   27:#  pragma GCC system_header
+        -:   28:#endif
+        -:   29:
+        -:   30:_LIBCPP_BEGIN_NAMESPACE_STD
+        -:   31:
+        -:   32:#if _LIBCPP_STD_VER >= 20
+        -:   33:
+        -:   34:namespace ranges {
+        -:   35:template <class _Tp>
+        -:   36:concept __can_borrow = is_lvalue_reference_v<_Tp> || enable_borrowed_range<remove_cvref_t<_Tp>>;
+        -:   37:} // namespace ranges
+        -:   38:
+        -:   39:// [range.access.begin]
+        -:   40:
+        -:   41:namespace ranges {
+        -:   42:namespace __begin {
+        -:   43:template <class _Tp>
+        -:   44:concept __member_begin = __can_borrow<_Tp> && __workaround_52970<_Tp> && requires(_Tp&& __t) {
+        -:   45:  { _LIBCPP_AUTO_CAST(__t.begin()) } -> input_or_output_iterator;
+        -:   46:};
+        -:   47:
+        -:   48:void begin(auto&)       = delete;
+        -:   49:void begin(const auto&) = delete;
+        -:   50:
+        -:   51:template <class _Tp>
+        -:   52:concept __unqualified_begin =
+        -:   53:    !__member_begin<_Tp> && __can_borrow<_Tp> && __class_or_enum<remove_cvref_t<_Tp>> && requires(_Tp&& __t) {
+        -:   54:      { _LIBCPP_AUTO_CAST(begin(__t)) } -> input_or_output_iterator;
+        -:   55:    };
+        -:   56:
+        -:   57:struct __fn {
+        -:   58:  template <class _Tp>
+        -:   59:  [[nodiscard]] _LIBCPP_HIDE_FROM_ABI constexpr auto operator()(_Tp (&__t)[]) const noexcept
+        -:   60:    requires(sizeof(_Tp) >= 0) // Disallow incomplete element types.
+        -:   61:  {
+        -:   62:    return __t + 0;
+        -:   63:  }
+        -:   64:
+        -:   65:  template <class _Tp, size_t _Np>
+        -:   66:  [[nodiscard]] _LIBCPP_HIDE_FROM_ABI constexpr auto operator()(_Tp (&__t)[_Np]) const noexcept
+        -:   67:    requires(sizeof(_Tp) >= 0) // Disallow incomplete element types.
+        -:   68:  {
+        -:   69:    return __t + 0;
+        -:   70:  }
+        -:   71:
+        -:   72:  template <class _Tp>
+        -:   73:    requires __member_begin<_Tp>
+function _ZNKSt3__16ranges7__begin4__fnclB8ne180100IRNS_6vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS8_ISA_EEEEEEDaOT_ called 2 returned 100% blocks executed 100%
+        2:   74:  [[nodiscard]] _LIBCPP_HIDE_FROM_ABI constexpr auto operator()(_Tp&& __t) const
+        -:   75:      noexcept(noexcept(_LIBCPP_AUTO_CAST(__t.begin()))) {
+        2:   76:    return _LIBCPP_AUTO_CAST(__t.begin());
+        2:   76-block  0
+        -:   77:  }
+        -:   78:
+        -:   79:  template <class _Tp>
+        -:   80:    requires __unqualified_begin<_Tp>
+        -:   81:  [[nodiscard]] _LIBCPP_HIDE_FROM_ABI constexpr auto operator()(_Tp&& __t) const
+        -:   82:      noexcept(noexcept(_LIBCPP_AUTO_CAST(begin(__t)))) {
+        -:   83:    return _LIBCPP_AUTO_CAST(begin(__t));
+        -:   84:  }
+        -:   85:
+        -:   86:  void operator()(auto&&) const = delete;
+        -:   87:};
+        -:   88:} // namespace __begin
+        -:   89:
+        -:   90:inline namespace __cpo {
+        -:   91:inline constexpr auto begin = __begin::__fn{};
+        -:   92:} // namespace __cpo
+        -:   93:} // namespace ranges
+        -:   94:
+        -:   95:// [range.range]
+        -:   96:
+        -:   97:namespace ranges {
+        -:   98:template <class _Tp>
+        -:   99:using iterator_t = decltype(ranges::begin(std::declval<_Tp&>()));
+        -:  100:} // namespace ranges
+        -:  101:
+        -:  102:// [range.access.end]
+        -:  103:
+        -:  104:namespace ranges {
+        -:  105:namespace __end {
+        -:  106:template <class _Tp>
+        -:  107:concept __member_end = __can_borrow<_Tp> && __workaround_52970<_Tp> && requires(_Tp&& __t) {
+        -:  108:  typename iterator_t<_Tp>;
+        -:  109:  { _LIBCPP_AUTO_CAST(__t.end()) } -> sentinel_for<iterator_t<_Tp>>;
+        -:  110:};
+        -:  111:
+        -:  112:void end(auto&)       = delete;
+        -:  113:void end(const auto&) = delete;
+        -:  114:
+        -:  115:template <class _Tp>
+        -:  116:concept __unqualified_end =
+        -:  117:    !__member_end<_Tp> && __can_borrow<_Tp> && __class_or_enum<remove_cvref_t<_Tp>> && requires(_Tp&& __t) {
+        -:  118:      typename iterator_t<_Tp>;
+        -:  119:      { _LIBCPP_AUTO_CAST(end(__t)) } -> sentinel_for<iterator_t<_Tp>>;
+        -:  120:    };
+        -:  121:
+        -:  122:struct __fn {
+        -:  123:  template <class _Tp, size_t _Np>
+        -:  124:  [[nodiscard]] _LIBCPP_HIDE_FROM_ABI constexpr auto operator()(_Tp (&__t)[_Np]) const noexcept
+        -:  125:    requires(sizeof(_Tp) >= 0) // Disallow incomplete element types.
+        -:  126:  {
+        -:  127:    return __t + _Np;
+        -:  128:  }
+        -:  129:
+        -:  130:  template <class _Tp>
+        -:  131:    requires __member_end<_Tp>
+function _ZNKSt3__16ranges5__end4__fnclB8ne180100IRNS_6vectorINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS8_ISA_EEEEEEDaOT_ called 2 returned 100% blocks executed 100%
+        2:  132:  [[nodiscard]] _LIBCPP_HIDE_FROM_ABI constexpr auto operator()(_Tp&& __t) const
+        -:  133:      noexcept(noexcept(_LIBCPP_AUTO_CAST(__t.end()))) {
+        2:  134:    return _LIBCPP_AUTO_CAST(__t.end());
+        2:  134-block  0
+        -:  135:  }
+        -:  136:
+        -:  137:  template <class _Tp>
+        -:  138:    requires __unqualified_end<_Tp>
+        -:  139:  [[nodiscard]] _LIBCPP_HIDE_FROM_ABI constexpr auto operator()(_Tp&& __t) const
+        -:  140:      noexcept(noexcept(_LIBCPP_AUTO_CAST(end(__t)))) {
+        -:  141:    return _LIBCPP_AUTO_CAST(end(__t));
+        -:  142:  }
+        -:  143:
+        -:  144:  void operator()(auto&&) const = delete;
+        -:  145:};
+        -:  146:} // namespace __end
+        -:  147:
+        -:  148:inline namespace __cpo {
+        -:  149:inline constexpr auto end = __end::__fn{};
+        -:  150:} // namespace __cpo
+        -:  151:} // namespace ranges
+        -:  152:
+        -:  153:// [range.access.cbegin]
+        -:  154:
+        -:  155:namespace ranges {
+        -:  156:namespace __cbegin {
+        -:  157:struct __fn {
+        -:  158:  template <class _Tp>
+        -:  159:    requires is_lvalue_reference_v<_Tp&&>
+        -:  160:  [[nodiscard]] _LIBCPP_HIDE_FROM_ABI constexpr auto operator()(_Tp&& __t) const
+        -:  161:      noexcept(noexcept(ranges::begin(static_cast<const remove_reference_t<_Tp>&>(__t))))
+        -:  162:          -> decltype(ranges::begin(static_cast<const remove_reference_t<_Tp>&>(__t))) {
+        -:  163:    return ranges::begin(static_cast<const remove_reference_t<_Tp>&>(__t));
+        -:  164:  }
+        -:  165:
+        -:  166:  template <class _Tp>
+        -:  167:    requires is_rvalue_reference_v<_Tp&&>
+        -:  168:  [[nodiscard]] _LIBCPP_HIDE_FROM_ABI constexpr auto operator()(_Tp&& __t) const
+        -:  169:      noexcept(noexcept(ranges::begin(static_cast<const _Tp&&>(__t))))
+        -:  170:          -> decltype(ranges::begin(static_cast<const _Tp&&>(__t))) {
+        -:  171:    return ranges::begin(static_cast<const _Tp&&>(__t));
+        -:  172:  }
+        -:  173:};
+        -:  174:} // namespace __cbegin
+        -:  175:
+        -:  176:inline namespace __cpo {
+        -:  177:inline constexpr auto cbegin = __cbegin::__fn{};
+        -:  178:} // namespace __cpo
+        -:  179:} // namespace ranges
+        -:  180:
+        -:  181:// [range.access.cend]
+        -:  182:
+        -:  183:namespace ranges {
+        -:  184:namespace __cend {
+        -:  185:struct __fn {
+        -:  186:  template <class _Tp>
+        -:  187:    requires is_lvalue_reference_v<_Tp&&>
+        -:  188:  [[nodiscard]] _LIBCPP_HIDE_FROM_ABI constexpr auto operator()(_Tp&& __t) const
+        -:  189:      noexcept(noexcept(ranges::end(static_cast<const remove_reference_t<_Tp>&>(__t))))
+        -:  190:          -> decltype(ranges::end(static_cast<const remove_reference_t<_Tp>&>(__t))) {
+        -:  191:    return ranges::end(static_cast<const remove_reference_t<_Tp>&>(__t));
+        -:  192:  }
+        -:  193:
+        -:  194:  template <class _Tp>
+        -:  195:    requires is_rvalue_reference_v<_Tp&&>
+        -:  196:  [[nodiscard]] _LIBCPP_HIDE_FROM_ABI constexpr auto operator()(_Tp&& __t) const
+        -:  197:      noexcept(noexcept(ranges::end(static_cast<const _Tp&&>(__t))))
+        -:  198:          -> decltype(ranges::end(static_cast<const _Tp&&>(__t))) {
+        -:  199:    return ranges::end(static_cast<const _Tp&&>(__t));
+        -:  200:  }
+        -:  201:};
+        -:  202:} // namespace __cend
+        -:  203:
+        -:  204:inline namespace __cpo {
+        -:  205:inline constexpr auto cend = __cend::__fn{};
+        -:  206:} // namespace __cpo
+        -:  207:} // namespace ranges
+        -:  208:
+        -:  209:#endif // _LIBCPP_STD_VER >= 20
+        -:  210:
+        -:  211:_LIBCPP_END_NAMESPACE_STD
+        -:  212:
+        -:  213:#endif // _LIBCPP___RANGES_ACCESS_H

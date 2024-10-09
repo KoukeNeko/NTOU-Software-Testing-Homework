@@ -94,12 +94,12 @@ function _ZNSt3__118__constexpr_strlenB8ne180100EPKc called 0 returned 0% blocks
         -:   87:// of invoking it on every object individually.
         -:   88:template <class _Tp, class _Up>
         -:   89:_LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX14 bool
-function _ZNSt3__124__constexpr_memcmp_equalB8ne180100IiiEEbPKT_PKT0_NS_15__element_countE called 0 returned 0% blocks executed 0%
-    #####:   90:__constexpr_memcmp_equal(const _Tp* __lhs, const _Up* __rhs, __element_count __n) {
+function _ZNSt3__124__constexpr_memcmp_equalB8ne180100IiiEEbPKT_PKT0_NS_15__element_countE called 1 returned 100% blocks executed 100%
+        1:   90:__constexpr_memcmp_equal(const _Tp* __lhs, const _Up* __rhs, __element_count __n) {
         -:   91:  static_assert(__libcpp_is_trivially_equality_comparable<_Tp, _Up>::value,
         -:   92:                "_Tp and _Up have to be trivially equality comparable");
         -:   93:
-    #####:   94:  auto __count = static_cast<size_t>(__n);
+        1:   94:  auto __count = static_cast<size_t>(__n);
         -:   95:
         -:   96:  if (__libcpp_is_constant_evaluated()) {
         -:   97:#ifdef _LIBCPP_COMPILER_CLANG_BASED
@@ -116,8 +116,8 @@ function _ZNSt3__124__constexpr_memcmp_equalB8ne180100IiiEEbPKT_PKT0_NS_15__elem
         -:  108:    }
         -:  109:    return true;
         -:  110:  } else {
-    #####:  111:    return __builtin_memcmp(__lhs, __rhs, __count * sizeof(_Tp)) == 0;
-    $$$$$:  111-block  0
+        1:  111:    return __builtin_memcmp(__lhs, __rhs, __count * sizeof(_Tp)) == 0;
+        1:  111-block  0
         -:  112:  }
         -:  113:}
         -:  114:
@@ -203,9 +203,10 @@ function _ZNSt3__118__constexpr_memchrB8ne180100IKccEEPT_S3_T0_m called 0 return
         -:  192:
         -:  193:template <class _Tp, class _Up, __enable_if_t<__is_always_bitcastable<_Up, _Tp>::value, int> = 0>
         -:  194:_LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX14 _Tp*
-function _ZNSt3__119__constexpr_memmoveB8ne180100IiKiLi0EEEPT_S3_PT0_NS_15__element_countE called 1 returned 100% blocks executed 100%
-        1:  195:__constexpr_memmove(_Tp* __dest, _Up* __src, __element_count __n) {
-        1:  196:  size_t __count = static_cast<size_t>(__n);
+function _ZNSt3__119__constexpr_memmoveB8ne180100IiKiLi0EEEPT_S3_PT0_NS_15__element_countE called 2 returned 100% blocks executed 100%
+function _ZNSt3__119__constexpr_memmoveB8ne180100IiiLi0EEEPT_S2_PT0_NS_15__element_countE called 1 returned 100% blocks executed 100%
+        3:  195:__constexpr_memmove(_Tp* __dest, _Up* __src, __element_count __n) {
+        3:  196:  size_t __count = static_cast<size_t>(__n);
         -:  197:  if (__libcpp_is_constant_evaluated()) {
         -:  198:#ifdef _LIBCPP_COMPILER_CLANG_BASED
         -:  199:    if (is_same<__remove_cv_t<_Tp>, __remove_cv_t<_Up> >::value) {
@@ -220,15 +221,20 @@ function _ZNSt3__119__constexpr_memmoveB8ne180100IiKiLi0EEEPT_S3_PT0_NS_15__elem
         -:  208:      for (size_t __i = 0; __i != __count; ++__i)
         -:  209:        std::__assign_trivially_copyable(__dest[__i], __src[__i]);
         -:  210:    }
-        1:  211:  } else if (__count > 0) {
-        1:  211-block  0
+        3:  211:  } else if (__count > 0) {
+        2:  211-block  0
 branch  0 taken 0
-branch  1 taken 1
-        1:  212:    ::__builtin_memmove(__dest, __src, (__count - 1) * sizeof(_Tp) + __libcpp_datasizeof<_Tp>::value);
-        1:  213:  }
-        1:  213-block  0
-        1:  214:  return __dest;
-        1:  214-block  0
+branch  1 taken 2
+        1:  211-block  1
+branch  2 taken 0
+branch  3 taken 1
+        3:  212:    ::__builtin_memmove(__dest, __src, (__count - 1) * sizeof(_Tp) + __libcpp_datasizeof<_Tp>::value);
+        3:  213:  }
+        2:  213-block  0
+        1:  213-block  1
+        3:  214:  return __dest;
+        2:  214-block  0
+        1:  214-block  1
         -:  215:}
         -:  216:
         -:  217:_LIBCPP_END_NAMESPACE_STD

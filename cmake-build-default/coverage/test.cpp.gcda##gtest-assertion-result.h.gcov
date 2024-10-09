@@ -135,8 +135,8 @@
         -:  130://   Expected: Foo() is even
         -:  131://     Actual: it's 5
         -:  132:
-function _ZN7testing15AssertionResultD1Ev called 1 returned 100% blocks executed 100%
-function _ZN7testing15AssertionResultD2Ev called 1 returned 100% blocks executed 100%
+function _ZN7testing15AssertionResultD1Ev called 2 returned 100% blocks executed 100%
+function _ZN7testing15AssertionResultD2Ev called 2 returned 100% blocks executed 100%
         -:  133:class GTEST_API_ AssertionResult {
         -:  134: public:
         -:  135:  // Copy constructor.
@@ -159,18 +159,18 @@ function _ZN7testing15AssertionResultD2Ev called 1 returned 100% blocks executed
         -:  152:  // the argument is implicitly convertible to AssertionResult. In that case
         -:  153:  // we want AssertionResult's copy constructor to be used.
         -:  154:  template <typename T>
-function _ZN7testing15AssertionResultC1IbEERKT_PNSt3__19enable_ifIXntsr3std14is_convertibleIS2_S0_EE5valueEvE4typeE called 1 returned 100% blocks executed 100%
-function _ZN7testing15AssertionResultC2IbEERKT_PNSt3__19enable_ifIXntsr3std14is_convertibleIS2_S0_EE5valueEvE4typeE called 1 returned 100% blocks executed 100%
-        3:  155:  explicit AssertionResult(
+function _ZN7testing15AssertionResultC1IbEERKT_PNSt3__19enable_ifIXntsr3std14is_convertibleIS2_S0_EE5valueEvE4typeE called 2 returned 100% blocks executed 100%
+function _ZN7testing15AssertionResultC2IbEERKT_PNSt3__19enable_ifIXntsr3std14is_convertibleIS2_S0_EE5valueEvE4typeE called 2 returned 100% blocks executed 100%
+        6:  155:  explicit AssertionResult(
         -:  156:      const T& success,
         -:  157:      typename std::enable_if<
         -:  158:          !std::is_convertible<T, AssertionResult>::value>::type*
         -:  159:      /*enabler*/
         -:  160:      = nullptr)
-        3:  161:      : success_(success) {}
-        1:  161-block  0
-        1:  161-block  1
-        1:  161-block  2
+        6:  161:      : success_(success) {}
+        2:  161-block  0
+        2:  161-block  1
+        2:  161-block  2
         -:  162:
         -:  163:#if defined(_MSC_VER) && (_MSC_VER < 1910 || _MSC_VER >= 1920)
         -:  164:  GTEST_DISABLE_MSC_WARNINGS_POP_()
@@ -183,9 +183,9 @@ function _ZN7testing15AssertionResultC2IbEERKT_PNSt3__19enable_ifIXntsr3std14is_
         -:  171:  }
         -:  172:
         -:  173:  // Returns true if and only if the assertion succeeded.
-function _ZNK7testing15AssertionResultcvbEv called 1 returned 100% blocks executed 100%
-        1:  174:  operator bool() const { return success_; }  // NOLINT
-        1:  174-block  0
+function _ZNK7testing15AssertionResultcvbEv called 2 returned 100% blocks executed 100%
+        2:  174:  operator bool() const { return success_; }  // NOLINT
+        2:  174-block  0
         -:  175:
         -:  176:  // Returns the assertion's negation. Used with EXPECT/ASSERT_FALSE.
         -:  177:  AssertionResult operator!() const;

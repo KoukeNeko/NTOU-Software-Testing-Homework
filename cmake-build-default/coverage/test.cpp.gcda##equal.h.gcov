@@ -56,27 +56,27 @@
         -:   51:                            !is_volatile<_Up>::value && __libcpp_is_trivially_equality_comparable<_Tp, _Up>::value,
         -:   52:                        int> = 0>
         -:   53:_LIBCPP_NODISCARD inline _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 bool
-function _ZNSt3__117__equal_iter_implB8ne180100IKiS1_NS_10__equal_toELi0EEEbPT_S4_PT0_RT1_ called 0 returned 0% blocks executed 0%
-    #####:   54:__equal_iter_impl(_Tp* __first1, _Tp* __last1, _Up* __first2, _BinaryPredicate&) {
-    #####:   55:  return std::__constexpr_memcmp_equal(__first1, __first2, __element_count(__last1 - __first1));
-    $$$$$:   55-block  0
+function _ZNSt3__117__equal_iter_implB8ne180100IKiS1_NS_10__equal_toELi0EEEbPT_S4_PT0_RT1_ called 1 returned 100% blocks executed 100%
+        1:   54:__equal_iter_impl(_Tp* __first1, _Tp* __last1, _Up* __first2, _BinaryPredicate&) {
+        1:   55:  return std::__constexpr_memcmp_equal(__first1, __first2, __element_count(__last1 - __first1));
+        1:   55-block  0
         -:   56:}
         -:   57:
         -:   58:template <class _InputIterator1, class _InputIterator2, class _BinaryPredicate>
         -:   59:_LIBCPP_NODISCARD_EXT inline _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 bool
-function _ZNSt3__15equalB8ne180100INS_11__wrap_iterIPKiEES4_NS_10__equal_toEEEbT_S6_T0_T1_ called 0 returned 0% blocks executed 0%
-    #####:   60:equal(_InputIterator1 __first1, _InputIterator1 __last1, _InputIterator2 __first2, _BinaryPredicate __pred) {
-    #####:   61:  return std::__equal_iter_impl(
-    $$$$$:   61-block  0
-    #####:   62:      std::__unwrap_iter(__first1), std::__unwrap_iter(__last1), std::__unwrap_iter(__first2), __pred);
+function _ZNSt3__15equalB8ne180100INS_11__wrap_iterIPKiEES4_NS_10__equal_toEEEbT_S6_T0_T1_ called 1 returned 100% blocks executed 100%
+        1:   60:equal(_InputIterator1 __first1, _InputIterator1 __last1, _InputIterator2 __first2, _BinaryPredicate __pred) {
+        1:   61:  return std::__equal_iter_impl(
+        1:   61-block  0
+        1:   62:      std::__unwrap_iter(__first1), std::__unwrap_iter(__last1), std::__unwrap_iter(__first2), __pred);
         -:   63:}
         -:   64:
         -:   65:template <class _InputIterator1, class _InputIterator2>
         -:   66:_LIBCPP_NODISCARD_EXT inline _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 bool
-function _ZNSt3__15equalB8ne180100INS_11__wrap_iterIPKiEES4_EEbT_S5_T0_ called 0 returned 0% blocks executed 0%
-    #####:   67:equal(_InputIterator1 __first1, _InputIterator1 __last1, _InputIterator2 __first2) {
-    #####:   68:  return std::equal(__first1, __last1, __first2, __equal_to());
-    $$$$$:   68-block  0
+function _ZNSt3__15equalB8ne180100INS_11__wrap_iterIPKiEES4_EEbT_S5_T0_ called 1 returned 100% blocks executed 100%
+        1:   67:equal(_InputIterator1 __first1, _InputIterator1 __last1, _InputIterator2 __first2) {
+        1:   68:  return std::equal(__first1, __last1, __first2, __equal_to());
+        1:   68-block  0
         -:   69:}
         -:   70:
         -:   71:#if _LIBCPP_STD_VER >= 14

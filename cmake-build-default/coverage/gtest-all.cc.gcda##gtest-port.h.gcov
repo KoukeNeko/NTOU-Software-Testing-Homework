@@ -1816,22 +1816,22 @@ function _ZN7testing8internal9MutexBase6UnlockEv called 4 returned 100% blocks e
         -: 1743:// shares its API with MutexBase otherwise.
         -: 1744:class Mutex : public MutexBase {
         -: 1745: public:
-function _ZN7testing8internal5MutexC1Ev called 8 returned 100% blocks executed 100%
-function _ZN7testing8internal5MutexC2Ev called 8 returned 100% blocks executed 22%
-       16: 1746:  Mutex() {
-        8: 1747:    GTEST_CHECK_POSIX_SUCCESS_(pthread_mutex_init(&mutex_, nullptr));
+function _ZN7testing8internal5MutexC1Ev called 9 returned 100% blocks executed 100%
+function _ZN7testing8internal5MutexC2Ev called 9 returned 100% blocks executed 22%
+       18: 1746:  Mutex() {
+        9: 1747:    GTEST_CHECK_POSIX_SUCCESS_(pthread_mutex_init(&mutex_, nullptr));
     $$$$$: 1747-block  0
-        8: 1747-block  1
+        9: 1747-block  1
     $$$$$: 1747-block  2
     $$$$$: 1747-block  3
     $$$$$: 1747-block  4
     $$$$$: 1747-block  5
     $$$$$: 1747-block  6
     $$$$$: 1747-block  7
-        8: 1748:    has_owner_ = false;
-       16: 1749:  }
-        8: 1749-block  0
-        8: 1749-block  1
+        9: 1748:    has_owner_ = false;
+       18: 1749:  }
+        9: 1749-block  0
+        9: 1749-block  1
 function _ZN7testing8internal5MutexD1Ev called 0 returned 0% blocks executed 0%
 function _ZN7testing8internal5MutexD2Ev called 0 returned 0% blocks executed 0%
     #####: 1750:  ~Mutex() { GTEST_CHECK_POSIX_SUCCESS_(pthread_mutex_destroy(&mutex_)); }

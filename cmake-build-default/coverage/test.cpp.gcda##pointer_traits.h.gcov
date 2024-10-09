@@ -164,11 +164,11 @@
         -:  159:public:
         -:  160:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 static pointer
 function _ZNSt3__114pointer_traitsIPKcE10pointer_toB8ne180100ERS1_ called 0 returned 0% blocks executed 0%
-function _ZNSt3__114pointer_traitsIPcE10pointer_toB8ne180100ERc called 5 returned 100% blocks executed 100%
-        5:  161:  pointer_to(__conditional_t<is_void<element_type>::value, __nat, element_type>& __r) _NOEXCEPT {
-        5:  162:    return std::addressof(__r);
+function _ZNSt3__114pointer_traitsIPcE10pointer_toB8ne180100ERc called 6 returned 100% blocks executed 100%
+        6:  161:  pointer_to(__conditional_t<is_void<element_type>::value, __nat, element_type>& __r) _NOEXCEPT {
+        6:  162:    return std::addressof(__r);
     $$$$$:  162-block  0
-        5:  162-block  1
+        6:  162-block  1
         -:  163:  }
         -:  164:};
         -:  165:
@@ -186,17 +186,17 @@ function _ZNSt3__114pointer_traitsIPcE10pointer_toB8ne180100ERc called 5 returne
         -:  177:struct __to_address_helper;
         -:  178:
         -:  179:template <class _Tp>
-function _ZNSt3__112__to_addressB8ne180100IKiEEPT_S3_ called 5 returned 100% blocks executed 100%
-function _ZNSt3__112__to_addressB8ne180100IiEEPT_S2_ called 16 returned 100% blocks executed 100%
+function _ZNSt3__112__to_addressB8ne180100IKiEEPT_S3_ called 13 returned 100% blocks executed 100%
+function _ZNSt3__112__to_addressB8ne180100IiEEPT_S2_ called 42 returned 100% blocks executed 100%
 function _ZNSt3__112__to_addressB8ne180100IKcEEPT_S3_ called 0 returned 0% blocks executed 0%
-function _ZNSt3__112__to_addressB8ne180100IcEEPT_S2_ called 77 returned 100% blocks executed 100%
-       98:  180:_LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR _Tp* __to_address(_Tp* __p) _NOEXCEPT {
+function _ZNSt3__112__to_addressB8ne180100IcEEPT_S2_ called 82 returned 100% blocks executed 100%
+      137:  180:_LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR _Tp* __to_address(_Tp* __p) _NOEXCEPT {
         -:  181:  static_assert(!is_function<_Tp>::value, "_Tp is a function type");
-       98:  182:  return __p;
-        5:  182-block  0
-       16:  182-block  1
+      137:  182:  return __p;
+       13:  182-block  0
+       42:  182-block  1
     $$$$$:  182-block  2
-       77:  182-block  3
+       82:  182-block  3
         -:  183:}
         -:  184:
         -:  185:template <class _Pointer, class = void>
@@ -221,10 +221,10 @@ function _ZNSt3__112__to_addressB8ne180100IcEEPT_S2_ called 77 returned 100% blo
         -:  204:template <class _Pointer, class = __enable_if_t< _And<is_class<_Pointer>, _IsFancyPointer<_Pointer> >::value > >
         -:  205:_LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR
         -:  206:    __decay_t<decltype(__to_address_helper<_Pointer>::__call(std::declval<const _Pointer&>()))>
-function _ZNSt3__112__to_addressB8ne180100INS_11__wrap_iterIPKiEEvEEu7__decayIDTclsr19__to_address_helperIT_EE6__callclsr3stdE7declvalIRKS5_EEEEES7_ called 0 returned 0% blocks executed 0%
-    #####:  207:    __to_address(const _Pointer& __p) _NOEXCEPT {
-    #####:  208:  return __to_address_helper<_Pointer>::__call(__p);
-    $$$$$:  208-block  0
+function _ZNSt3__112__to_addressB8ne180100INS_11__wrap_iterIPKiEEvEEu7__decayIDTclsr19__to_address_helperIT_EE6__callclsr3stdE7declvalIRKS5_EEEEES7_ called 3 returned 100% blocks executed 100%
+        3:  207:    __to_address(const _Pointer& __p) _NOEXCEPT {
+        3:  208:  return __to_address_helper<_Pointer>::__call(__p);
+        3:  208-block  0
         -:  209:}
         -:  210:
         -:  211:template <class _Pointer, class>
@@ -241,10 +241,10 @@ function _ZNSt3__112__to_addressB8ne180100INS_11__wrap_iterIPKiEEvEEu7__decayIDT
         -:  222:                           decltype((void)pointer_traits<_Pointer>::to_address(std::declval<const _Pointer&>()))> {
         -:  223:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR static decltype(pointer_traits<_Pointer>::to_address(
         -:  224:      std::declval<const _Pointer&>()))
-function _ZNSt3__119__to_address_helperINS_11__wrap_iterIPKiEEvE6__callB8ne180100ERKS4_ called 0 returned 0% blocks executed 0%
-    #####:  225:  __call(const _Pointer& __p) _NOEXCEPT {
-    #####:  226:    return pointer_traits<_Pointer>::to_address(__p);
-    $$$$$:  226-block  0
+function _ZNSt3__119__to_address_helperINS_11__wrap_iterIPKiEEvE6__callB8ne180100ERKS4_ called 3 returned 100% blocks executed 100%
+        3:  225:  __call(const _Pointer& __p) _NOEXCEPT {
+        3:  226:    return pointer_traits<_Pointer>::to_address(__p);
+        3:  226-block  0
         -:  227:  }
         -:  228:};
         -:  229:

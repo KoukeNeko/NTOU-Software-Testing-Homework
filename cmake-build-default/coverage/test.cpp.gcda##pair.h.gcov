@@ -206,23 +206,31 @@
         -:  201:      class _U2,
         -:  202:#  endif
         -:  203:      __enable_if_t<_CheckArgs::template __enable_implicit<_U1, _U2>(), int> = 0 >
-function _ZNSt3__14pairIPKiS2_EC1B8ne180100IS2_S2_Li0EEEOT_OT0_ called 2 returned 100% blocks executed 100%
-function _ZNSt3__14pairIPKiS2_EC2B8ne180100IS2_S2_Li0EEEOT_OT0_ called 2 returned 100% blocks executed 100%
-function _ZNSt3__14pairIPKiPiEC1B8ne180100IRS2_S3_Li0EEEOT_OT0_ called 1 returned 100% blocks executed 100%
-function _ZNSt3__14pairIPKiPiEC2B8ne180100IRS2_S3_Li0EEEOT_OT0_ called 1 returned 100% blocks executed 100%
-function _ZNSt3__14pairIPKiPiEC1B8ne180100IS2_S3_Li0EEEOT_OT0_ called 1 returned 100% blocks executed 100%
-function _ZNSt3__14pairIPKiPiEC2B8ne180100IS2_S3_Li0EEEOT_OT0_ called 1 returned 100% blocks executed 100%
-        8:  204:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX14 pair(_U1&& __u1, _U2&& __u2)
+function _ZNSt3__14pairIPKiS2_EC1B8ne180100IS2_S2_Li0EEEOT_OT0_ called 4 returned 100% blocks executed 100%
+function _ZNSt3__14pairIPKiS2_EC2B8ne180100IS2_S2_Li0EEEOT_OT0_ called 4 returned 100% blocks executed 100%
+function _ZNSt3__14pairIPKiPiEC1B8ne180100IRS2_S3_Li0EEEOT_OT0_ called 2 returned 100% blocks executed 100%
+function _ZNSt3__14pairIPKiPiEC2B8ne180100IRS2_S3_Li0EEEOT_OT0_ called 2 returned 100% blocks executed 100%
+function _ZNSt3__14pairIPKiPiEC1B8ne180100IS2_S3_Li0EEEOT_OT0_ called 2 returned 100% blocks executed 100%
+function _ZNSt3__14pairIPKiPiEC2B8ne180100IS2_S3_Li0EEEOT_OT0_ called 2 returned 100% blocks executed 100%
+function _ZNSt3__14pairIPiS1_EC1B8ne180100IS1_S1_Li0EEEOT_OT0_ called 3 returned 100% blocks executed 100%
+function _ZNSt3__14pairIPiS1_EC2B8ne180100IS1_S1_Li0EEEOT_OT0_ called 3 returned 100% blocks executed 100%
+function _ZNSt3__14pairIPiS1_EC1B8ne180100IRS1_S1_Li0EEEOT_OT0_ called 1 returned 100% blocks executed 100%
+function _ZNSt3__14pairIPiS1_EC2B8ne180100IRS1_S1_Li0EEEOT_OT0_ called 1 returned 100% blocks executed 100%
+       24:  204:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX14 pair(_U1&& __u1, _U2&& __u2)
         -:  205:      _NOEXCEPT_((is_nothrow_constructible<first_type, _U1>::value &&
         -:  206:                  is_nothrow_constructible<second_type, _U2>::value))
-        8:  207:      : first(std::forward<_U1>(__u1)), second(std::forward<_U2>(__u2)) {
-        8:  208:  }
-        2:  208-block  0
-        2:  208-block  1
-        1:  208-block  2
-        1:  208-block  3
-        1:  208-block  4
-        1:  208-block  5
+       24:  207:      : first(std::forward<_U1>(__u1)), second(std::forward<_U2>(__u2)) {
+       24:  208:  }
+        4:  208-block  0
+        4:  208-block  1
+        2:  208-block  2
+        2:  208-block  3
+        2:  208-block  4
+        2:  208-block  5
+        3:  208-block  6
+        3:  208-block  7
+        1:  208-block  8
+        1:  208-block  9
         -:  209:
         -:  210:#  if _LIBCPP_STD_VER >= 23
         -:  211:  template <class _U1,
@@ -613,13 +621,17 @@ function _ZNSt3__14pairIPKiPiEC2B8ne180100IS2_S3_Li0EEEOT_OT0_ called 1 returned
         -:  596:template <class _T1, class _T2>
         -:  597:inline _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX14
         -:  598:    pair<typename __unwrap_ref_decay<_T1>::type, typename __unwrap_ref_decay<_T2>::type>
-function _ZNSt3__19make_pairB8ne180100IPKiPiEENS_4pairINS_18__unwrap_ref_decayIT_E4typeENS5_IT0_E4typeEEEOS6_OS9_ called 1 returned 100% blocks executed 100%
-function _ZNSt3__19make_pairB8ne180100IRPKiPiEENS_4pairINS_18__unwrap_ref_decayIT_E4typeENS6_IT0_E4typeEEEOS7_OSA_ called 1 returned 100% blocks executed 100%
-        2:  599:    make_pair(_T1&& __t1, _T2&& __t2) {
-        2:  600:  return pair<typename __unwrap_ref_decay<_T1>::type, typename __unwrap_ref_decay<_T2>::type>(
-        1:  600-block  0
-        1:  600-block  1
-        2:  601:      std::forward<_T1>(__t1), std::forward<_T2>(__t2));
+function _ZNSt3__19make_pairB8ne180100IPKiPiEENS_4pairINS_18__unwrap_ref_decayIT_E4typeENS5_IT0_E4typeEEEOS6_OS9_ called 2 returned 100% blocks executed 100%
+function _ZNSt3__19make_pairB8ne180100IRPKiPiEENS_4pairINS_18__unwrap_ref_decayIT_E4typeENS6_IT0_E4typeEEEOS7_OSA_ called 2 returned 100% blocks executed 100%
+function _ZNSt3__19make_pairB8ne180100IPiS1_EENS_4pairINS_18__unwrap_ref_decayIT_E4typeENS3_IT0_E4typeEEEOS4_OS7_ called 1 returned 100% blocks executed 100%
+function _ZNSt3__19make_pairB8ne180100IRPiS1_EENS_4pairINS_18__unwrap_ref_decayIT_E4typeENS4_IT0_E4typeEEEOS5_OS8_ called 1 returned 100% blocks executed 100%
+        6:  599:    make_pair(_T1&& __t1, _T2&& __t2) {
+        6:  600:  return pair<typename __unwrap_ref_decay<_T1>::type, typename __unwrap_ref_decay<_T2>::type>(
+        2:  600-block  0
+        2:  600-block  1
+        1:  600-block  2
+        1:  600-block  3
+        6:  601:      std::forward<_T1>(__t1), std::forward<_T2>(__t2));
         -:  602:}
         -:  603:
         -:  604:template <class _T1, class _T2>

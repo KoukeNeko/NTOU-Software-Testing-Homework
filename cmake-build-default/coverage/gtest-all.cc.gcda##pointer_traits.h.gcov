@@ -242,15 +242,15 @@ function _ZNSt3__112__to_addressB8ne180100ImEEPT_S2_ called 0 returned 0% blocks
 function _ZNSt3__112__to_addressB8ne180100IN7testing12TestPropertyEEEPT_S4_ called 0 returned 0% blocks executed 0%
 function _ZNSt3__112__to_addressB8ne180100IKPKcEEPT_S5_ called 0 returned 0% blocks executed 0%
 function _ZNSt3__112__to_addressB8ne180100IiEEPT_S2_ called 0 returned 0% blocks executed 0%
-function _ZNSt3__112__to_addressB8ne180100IPN7testing8TestInfoEEEPT_S5_ called 7 returned 100% blocks executed 100%
+function _ZNSt3__112__to_addressB8ne180100IPN7testing8TestInfoEEEPT_S5_ called 12 returned 100% blocks executed 100%
 function _ZNSt3__112__to_addressB8ne180100IPN7testing17TestEventListenerEEEPT_S5_ called 1 returned 100% blocks executed 100%
 function _ZNSt3__112__to_addressB8ne180100IPN7testing11EnvironmentEEEPT_S5_ called 0 returned 0% blocks executed 0%
 function _ZNSt3__112__to_addressB8ne180100IN7testing8internal9TraceInfoEEEPT_S5_ called 0 returned 0% blocks executed 0%
 function _ZNSt3__112__to_addressB8ne180100IPN7testing8internal30ParameterizedTestSuiteInfoBaseEEEPT_S6_ called 0 returned 0% blocks executed 0%
 function _ZNSt3__112__to_addressB8ne180100IPN7testing9TestSuiteEEEPT_S5_ called 1 returned 100% blocks executed 100%
-        9:  180:_LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR _Tp* __to_address(_Tp* __p) _NOEXCEPT {
+       14:  180:_LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR _Tp* __to_address(_Tp* __p) _NOEXCEPT {
         -:  181:  static_assert(!is_function<_Tp>::value, "_Tp is a function type");
-        9:  182:  return __p;
+       14:  182:  return __p;
     $$$$$:  182-block  0
     $$$$$:  182-block  1
     $$$$$:  182-block  2
@@ -269,7 +269,7 @@ function _ZNSt3__112__to_addressB8ne180100IPN7testing9TestSuiteEEEPT_S5_ called 
     $$$$$:  182-block 15
     $$$$$:  182-block 16
     $$$$$:  182-block 17
-        7:  182-block 18
+       12:  182-block 18
         1:  182-block 19
     $$$$$:  182-block 20
     $$$$$:  182-block 21

@@ -112,21 +112,21 @@ function _ZNSt3__114__split_bufferIN7testing14TestPartResultERNS_9allocatorIS2_E
 function _ZNSt3__114__split_bufferIN7testing8internal13edit_distance8EditTypeERNS_9allocatorIS4_EEE7__allocB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNSt3__114__split_bufferImRNS_9allocatorImEEE7__allocB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNSt3__114__split_bufferIN7testing12TestPropertyERNS_9allocatorIS2_EEE7__allocB8ne180100Ev called 0 returned 0% blocks executed 0%
-function _ZNSt3__114__split_bufferIPN7testing8TestInfoERNS_9allocatorIS3_EEE7__allocB8ne180100Ev called 8 returned 100% blocks executed 100%
-function _ZNSt3__114__split_bufferIiRNS_9allocatorIiEEE7__allocB8ne180100Ev called 9 returned 100% blocks executed 100%
+function _ZNSt3__114__split_bufferIPN7testing8TestInfoERNS_9allocatorIS3_EEE7__allocB8ne180100Ev called 14 returned 100% blocks executed 100%
+function _ZNSt3__114__split_bufferIiRNS_9allocatorIiEEE7__allocB8ne180100Ev called 15 returned 100% blocks executed 100%
 function _ZNSt3__114__split_bufferIPN7testing17TestEventListenerERNS_9allocatorIS3_EEE7__allocB8ne180100Ev called 1 returned 100% blocks executed 100%
 function _ZNSt3__114__split_bufferIPN7testing11EnvironmentERNS_9allocatorIS3_EEE7__allocB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNSt3__114__split_bufferIN7testing8internal9TraceInfoERNS_9allocatorIS3_EEE7__allocB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNSt3__114__split_bufferIPN7testing9TestSuiteERNS_9allocatorIS3_EEE7__allocB8ne180100Ev called 1 returned 100% blocks executed 100%
-       53:  104:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI __alloc_rr& __alloc() _NOEXCEPT { return __end_cap_.second(); }
+       65:  104:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI __alloc_rr& __alloc() _NOEXCEPT { return __end_cap_.second(); }
        34:  104-block  0
     $$$$$:  104-block  1
     $$$$$:  104-block  2
     $$$$$:  104-block  3
     $$$$$:  104-block  4
     $$$$$:  104-block  5
-        8:  104-block  6
-        9:  104-block  7
+       14:  104-block  6
+       15:  104-block  7
         1:  104-block  8
     $$$$$:  104-block  9
     $$$$$:  104-block 10
@@ -141,21 +141,21 @@ function _ZNSt3__114__split_bufferIN7testing14TestPartResultERNS_9allocatorIS2_E
 function _ZNSt3__114__split_bufferIN7testing8internal13edit_distance8EditTypeERNS_9allocatorIS4_EEE9__end_capB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNSt3__114__split_bufferImRNS_9allocatorImEEE9__end_capB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNSt3__114__split_bufferIN7testing12TestPropertyERNS_9allocatorIS2_EEE9__end_capB8ne180100Ev called 0 returned 0% blocks executed 0%
-function _ZNSt3__114__split_bufferIPN7testing8TestInfoERNS_9allocatorIS3_EEE9__end_capB8ne180100Ev called 6 returned 100% blocks executed 100%
-function _ZNSt3__114__split_bufferIiRNS_9allocatorIiEEE9__end_capB8ne180100Ev called 8 returned 100% blocks executed 100%
+function _ZNSt3__114__split_bufferIPN7testing8TestInfoERNS_9allocatorIS3_EEE9__end_capB8ne180100Ev called 8 returned 100% blocks executed 100%
+function _ZNSt3__114__split_bufferIiRNS_9allocatorIiEEE9__end_capB8ne180100Ev called 10 returned 100% blocks executed 100%
 function _ZNSt3__114__split_bufferIPN7testing17TestEventListenerERNS_9allocatorIS3_EEE9__end_capB8ne180100Ev called 2 returned 100% blocks executed 100%
 function _ZNSt3__114__split_bufferIPN7testing11EnvironmentERNS_9allocatorIS3_EEE9__end_capB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNSt3__114__split_bufferIN7testing8internal9TraceInfoERNS_9allocatorIS3_EEE9__end_capB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNSt3__114__split_bufferIPN7testing9TestSuiteERNS_9allocatorIS3_EEE9__end_capB8ne180100Ev called 2 returned 100% blocks executed 100%
-       48:  109:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI pointer& __end_cap() _NOEXCEPT { return __end_cap_.first(); }
+       52:  109:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI pointer& __end_cap() _NOEXCEPT { return __end_cap_.first(); }
        30:  109-block  0
     $$$$$:  109-block  1
     $$$$$:  109-block  2
     $$$$$:  109-block  3
     $$$$$:  109-block  4
     $$$$$:  109-block  5
-        6:  109-block  6
-        8:  109-block  7
+        8:  109-block  6
+       10:  109-block  7
         2:  109-block  8
     $$$$$:  109-block  9
     $$$$$:  109-block 10
@@ -166,22 +166,22 @@ function _ZNKSt3__114__split_bufferIN7testing14TestPartResultERNS_9allocatorIS2_
 function _ZNKSt3__114__split_bufferIN7testing8internal13edit_distance8EditTypeERNS_9allocatorIS4_EEE9__end_capB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNKSt3__114__split_bufferImRNS_9allocatorImEEE9__end_capB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNKSt3__114__split_bufferIN7testing12TestPropertyERNS_9allocatorIS2_EEE9__end_capB8ne180100Ev called 0 returned 0% blocks executed 0%
-function _ZNKSt3__114__split_bufferIPN7testing8TestInfoERNS_9allocatorIS3_EEE9__end_capB8ne180100Ev called 2 returned 100% blocks executed 100%
-function _ZNKSt3__114__split_bufferIiRNS_9allocatorIiEEE9__end_capB8ne180100Ev called 2 returned 100% blocks executed 100%
+function _ZNKSt3__114__split_bufferIPN7testing8TestInfoERNS_9allocatorIS3_EEE9__end_capB8ne180100Ev called 3 returned 100% blocks executed 100%
+function _ZNKSt3__114__split_bufferIiRNS_9allocatorIiEEE9__end_capB8ne180100Ev called 3 returned 100% blocks executed 100%
 function _ZNKSt3__114__split_bufferIPN7testing17TestEventListenerERNS_9allocatorIS3_EEE9__end_capB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNKSt3__114__split_bufferIPN7testing11EnvironmentERNS_9allocatorIS3_EEE9__end_capB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNKSt3__114__split_bufferIN7testing8internal9TraceInfoERNS_9allocatorIS3_EEE9__end_capB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNKSt3__114__split_bufferIPN7testing9TestSuiteERNS_9allocatorIS3_EEE9__end_capB8ne180100Ev called 0 returned 0% blocks executed 0%
-       11:  110:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI const pointer& __end_cap() const _NOEXCEPT {
-       11:  111:    return __end_cap_.first();
+       13:  110:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI const pointer& __end_cap() const _NOEXCEPT {
+       13:  111:    return __end_cap_.first();
         7:  111-block  0
     $$$$$:  111-block  1
     $$$$$:  111-block  2
     $$$$$:  111-block  3
     $$$$$:  111-block  4
     $$$$$:  111-block  5
-        2:  111-block  6
-        2:  111-block  7
+        3:  111-block  6
+        3:  111-block  7
     $$$$$:  111-block  8
     $$$$$:  111-block  9
     $$$$$:  111-block 10
@@ -200,21 +200,21 @@ function _ZNSt3__114__split_bufferIN7testing14TestPartResultERNS_9allocatorIS2_E
 function _ZNSt3__114__split_bufferIN7testing8internal13edit_distance8EditTypeERNS_9allocatorIS4_EEE5clearB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNSt3__114__split_bufferImRNS_9allocatorImEEE5clearB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNSt3__114__split_bufferIN7testing12TestPropertyERNS_9allocatorIS2_EEE5clearB8ne180100Ev called 0 returned 0% blocks executed 0%
-function _ZNSt3__114__split_bufferIPN7testing8TestInfoERNS_9allocatorIS3_EEE5clearB8ne180100Ev called 3 returned 100% blocks executed 100%
-function _ZNSt3__114__split_bufferIiRNS_9allocatorIiEEE5clearB8ne180100Ev called 4 returned 100% blocks executed 100%
+function _ZNSt3__114__split_bufferIPN7testing8TestInfoERNS_9allocatorIS3_EEE5clearB8ne180100Ev called 4 returned 100% blocks executed 100%
+function _ZNSt3__114__split_bufferIiRNS_9allocatorIiEEE5clearB8ne180100Ev called 5 returned 100% blocks executed 100%
 function _ZNSt3__114__split_bufferIPN7testing17TestEventListenerERNS_9allocatorIS3_EEE5clearB8ne180100Ev called 1 returned 100% blocks executed 100%
 function _ZNSt3__114__split_bufferIPN7testing11EnvironmentERNS_9allocatorIS3_EEE5clearB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNSt3__114__split_bufferIN7testing8internal9TraceInfoERNS_9allocatorIS3_EEE5clearB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNSt3__114__split_bufferIPN7testing9TestSuiteERNS_9allocatorIS3_EEE5clearB8ne180100Ev called 1 returned 100% blocks executed 100%
-       24:  120:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI void clear() _NOEXCEPT { __destruct_at_end(__begin_); }
+       26:  120:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI void clear() _NOEXCEPT { __destruct_at_end(__begin_); }
        15:  120-block  0
     $$$$$:  120-block  1
     $$$$$:  120-block  2
     $$$$$:  120-block  3
     $$$$$:  120-block  4
     $$$$$:  120-block  5
-        3:  120-block  6
-        4:  120-block  7
+        4:  120-block  6
+        5:  120-block  7
         1:  120-block  8
     $$$$$:  120-block  9
     $$$$$:  120-block 10
@@ -232,22 +232,22 @@ function _ZNKSt3__114__split_bufferIN7testing14TestPartResultERNS_9allocatorIS2_
 function _ZNKSt3__114__split_bufferIN7testing8internal13edit_distance8EditTypeERNS_9allocatorIS4_EEE8capacityB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNKSt3__114__split_bufferImRNS_9allocatorImEEE8capacityB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNKSt3__114__split_bufferIN7testing12TestPropertyERNS_9allocatorIS2_EEE8capacityB8ne180100Ev called 0 returned 0% blocks executed 0%
-function _ZNKSt3__114__split_bufferIPN7testing8TestInfoERNS_9allocatorIS3_EEE8capacityB8ne180100Ev called 2 returned 100% blocks executed 100%
-function _ZNKSt3__114__split_bufferIiRNS_9allocatorIiEEE8capacityB8ne180100Ev called 2 returned 100% blocks executed 100%
+function _ZNKSt3__114__split_bufferIPN7testing8TestInfoERNS_9allocatorIS3_EEE8capacityB8ne180100Ev called 3 returned 100% blocks executed 100%
+function _ZNKSt3__114__split_bufferIiRNS_9allocatorIiEEE8capacityB8ne180100Ev called 3 returned 100% blocks executed 100%
 function _ZNKSt3__114__split_bufferIPN7testing17TestEventListenerERNS_9allocatorIS3_EEE8capacityB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNKSt3__114__split_bufferIPN7testing11EnvironmentERNS_9allocatorIS3_EEE8capacityB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNKSt3__114__split_bufferIN7testing8internal9TraceInfoERNS_9allocatorIS3_EEE8capacityB8ne180100Ev called 0 returned 0% blocks executed 0%
 function _ZNKSt3__114__split_bufferIPN7testing9TestSuiteERNS_9allocatorIS3_EEE8capacityB8ne180100Ev called 0 returned 0% blocks executed 0%
-       11:  128:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI size_type capacity() const {
-       11:  129:    return static_cast<size_type>(__end_cap() - __first_);
+       13:  128:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI size_type capacity() const {
+       13:  129:    return static_cast<size_type>(__end_cap() - __first_);
         7:  129-block  0
     $$$$$:  129-block  1
     $$$$$:  129-block  2
     $$$$$:  129-block  3
     $$$$$:  129-block  4
     $$$$$:  129-block  5
-        2:  129-block  6
-        2:  129-block  7
+        3:  129-block  6
+        3:  129-block  7
     $$$$$:  129-block  8
     $$$$$:  129-block  9
     $$$$$:  129-block 10
@@ -311,23 +311,23 @@ function _ZNSt3__114__split_bufferIN7testing14TestPartResultERNS_9allocatorIS2_E
 function _ZNSt3__114__split_bufferIN7testing8internal13edit_distance8EditTypeERNS_9allocatorIS4_EEE17__destruct_at_endB8ne180100EPS4_ called 0 returned 0% blocks executed 0%
 function _ZNSt3__114__split_bufferImRNS_9allocatorImEEE17__destruct_at_endB8ne180100EPm called 0 returned 0% blocks executed 0%
 function _ZNSt3__114__split_bufferIN7testing12TestPropertyERNS_9allocatorIS2_EEE17__destruct_at_endB8ne180100EPS2_ called 0 returned 0% blocks executed 0%
-function _ZNSt3__114__split_bufferIPN7testing8TestInfoERNS_9allocatorIS3_EEE17__destruct_at_endB8ne180100EPS3_ called 3 returned 100% blocks executed 100%
-function _ZNSt3__114__split_bufferIiRNS_9allocatorIiEEE17__destruct_at_endB8ne180100EPi called 4 returned 100% blocks executed 100%
+function _ZNSt3__114__split_bufferIPN7testing8TestInfoERNS_9allocatorIS3_EEE17__destruct_at_endB8ne180100EPS3_ called 4 returned 100% blocks executed 100%
+function _ZNSt3__114__split_bufferIiRNS_9allocatorIiEEE17__destruct_at_endB8ne180100EPi called 5 returned 100% blocks executed 100%
 function _ZNSt3__114__split_bufferIPN7testing17TestEventListenerERNS_9allocatorIS3_EEE17__destruct_at_endB8ne180100EPS3_ called 1 returned 100% blocks executed 100%
 function _ZNSt3__114__split_bufferIPN7testing11EnvironmentERNS_9allocatorIS3_EEE17__destruct_at_endB8ne180100EPS3_ called 0 returned 0% blocks executed 0%
 function _ZNSt3__114__split_bufferIN7testing8internal9TraceInfoERNS_9allocatorIS3_EEE17__destruct_at_endB8ne180100EPS3_ called 0 returned 0% blocks executed 0%
 function _ZNSt3__114__split_bufferIPN7testing9TestSuiteERNS_9allocatorIS3_EEE17__destruct_at_endB8ne180100EPS3_ called 1 returned 100% blocks executed 100%
-       24:  183:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI void __destruct_at_end(pointer __new_last) _NOEXCEPT {
-       24:  184:    __destruct_at_end(__new_last, false_type());
-       24:  185:  }
+       26:  183:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI void __destruct_at_end(pointer __new_last) _NOEXCEPT {
+       26:  184:    __destruct_at_end(__new_last, false_type());
+       26:  185:  }
        15:  185-block  0
     $$$$$:  185-block  1
     $$$$$:  185-block  2
     $$$$$:  185-block  3
     $$$$$:  185-block  4
     $$$$$:  185-block  5
-        3:  185-block  6
-        4:  185-block  7
+        4:  185-block  6
+        5:  185-block  7
         1:  185-block  8
     $$$$$:  185-block  9
     $$$$$:  185-block 10
@@ -523,14 +523,14 @@ function _ZNSt3__114__split_bufferIN7testing14TestPartResultERNS_9allocatorIS2_E
 function _ZNSt3__114__split_bufferIN7testing8internal13edit_distance8EditTypeERNS_9allocatorIS4_EEE17__destruct_at_endB8ne180100EPS4_NS_17integral_constantIbLb0EEE called 0 returned 0% blocks executed 0%
 function _ZNSt3__114__split_bufferImRNS_9allocatorImEEE17__destruct_at_endB8ne180100EPmNS_17integral_constantIbLb0EEE called 0 returned 0% blocks executed 0%
 function _ZNSt3__114__split_bufferIN7testing12TestPropertyERNS_9allocatorIS2_EEE17__destruct_at_endB8ne180100EPS2_NS_17integral_constantIbLb0EEE called 0 returned 0% blocks executed 0%
-function _ZNSt3__114__split_bufferIPN7testing8TestInfoERNS_9allocatorIS3_EEE17__destruct_at_endB8ne180100EPS3_NS_17integral_constantIbLb0EEE called 3 returned 100% blocks executed 83%
-function _ZNSt3__114__split_bufferIiRNS_9allocatorIiEEE17__destruct_at_endB8ne180100EPiNS_17integral_constantIbLb0EEE called 4 returned 100% blocks executed 83%
+function _ZNSt3__114__split_bufferIPN7testing8TestInfoERNS_9allocatorIS3_EEE17__destruct_at_endB8ne180100EPS3_NS_17integral_constantIbLb0EEE called 4 returned 100% blocks executed 83%
+function _ZNSt3__114__split_bufferIiRNS_9allocatorIiEEE17__destruct_at_endB8ne180100EPiNS_17integral_constantIbLb0EEE called 5 returned 100% blocks executed 83%
 function _ZNSt3__114__split_bufferIPN7testing17TestEventListenerERNS_9allocatorIS3_EEE17__destruct_at_endB8ne180100EPS3_NS_17integral_constantIbLb0EEE called 1 returned 100% blocks executed 50%
 function _ZNSt3__114__split_bufferIPN7testing11EnvironmentERNS_9allocatorIS3_EEE17__destruct_at_endB8ne180100EPS3_NS_17integral_constantIbLb0EEE called 0 returned 0% blocks executed 0%
 function _ZNSt3__114__split_bufferIN7testing8internal9TraceInfoERNS_9allocatorIS3_EEE17__destruct_at_endB8ne180100EPS3_NS_17integral_constantIbLb0EEE called 0 returned 0% blocks executed 0%
 function _ZNSt3__114__split_bufferIPN7testing9TestSuiteERNS_9allocatorIS3_EEE17__destruct_at_endB8ne180100EPS3_NS_17integral_constantIbLb0EEE called 1 returned 100% blocks executed 50%
-       24:  325:__split_buffer<_Tp, _Allocator>::__destruct_at_end(pointer __new_last, false_type) _NOEXCEPT {
-       42:  326:  while (__new_last != __end_)
+       26:  325:__split_buffer<_Tp, _Allocator>::__destruct_at_end(pointer __new_last, false_type) _NOEXCEPT {
+       52:  326:  while (__new_last != __end_)
        15:  326-block  0
        27:  326-block  1
 branch  0 taken 12
@@ -561,16 +561,16 @@ branch  9 never executed
 branch 10 never executed
 branch 11 never executed
     $$$$$:  326-block 17
-        3:  326-block 18
-        6:  326-block 19
-branch 12 taken 3
-branch 13 taken 3
-        3:  326-block 20
-        4:  326-block 21
-        7:  326-block 22
-branch 14 taken 3
-branch 15 taken 4
-        3:  326-block 23
+        4:  326-block 18
+       11:  326-block 19
+branch 12 taken 7
+branch 13 taken 4
+        7:  326-block 20
+        5:  326-block 21
+       12:  326-block 22
+branch 14 taken 7
+branch 15 taken 5
+        7:  326-block 23
         1:  326-block 24
         1:  326-block 25
 branch 16 taken 0
@@ -591,7 +591,7 @@ branch 21 never executed
 branch 22 taken 0
 branch 23 taken 1
     $$$$$:  326-block 35
-       18:  327:    __alloc_traits::destroy(__alloc(), std::__to_address(--__end_));
+       26:  327:    __alloc_traits::destroy(__alloc(), std::__to_address(--__end_));
        12:  327-block  0
 branch  0 taken 12
 branch  1 taken 0
@@ -616,12 +616,12 @@ branch  9 never executed
 branch 10 never executed
 branch 11 never executed
     $$$$$:  327-block 11
-        3:  327-block 12
-branch 12 taken 3
+        7:  327-block 12
+branch 12 taken 7
 branch 13 taken 0
     $$$$$:  327-block 13
-        3:  327-block 14
-branch 14 taken 3
+        7:  327-block 14
+branch 14 taken 7
 branch 15 taken 0
     $$$$$:  327-block 15
     $$$$$:  327-block 16
@@ -640,15 +640,15 @@ branch 21 never executed
 branch 22 never executed
 branch 23 never executed
     $$$$$:  327-block 23
-       24:  328:}
+       26:  328:}
        15:  328-block  0
     $$$$$:  328-block  1
     $$$$$:  328-block  2
     $$$$$:  328-block  3
     $$$$$:  328-block  4
     $$$$$:  328-block  5
-        3:  328-block  6
-        4:  328-block  7
+        4:  328-block  6
+        5:  328-block  7
         1:  328-block  8
     $$$$$:  328-block  9
     $$$$$:  328-block 10
@@ -674,10 +674,10 @@ function _ZNSt3__114__split_bufferImRNS_9allocatorImEEEC1EmmS3_ called 0 returne
 function _ZNSt3__114__split_bufferImRNS_9allocatorImEEEC2EmmS3_ called 0 returned 0% blocks executed 0%
 function _ZNSt3__114__split_bufferIN7testing12TestPropertyERNS_9allocatorIS2_EEEC1EmmS5_ called 0 returned 0% blocks executed 0%
 function _ZNSt3__114__split_bufferIN7testing12TestPropertyERNS_9allocatorIS2_EEEC2EmmS5_ called 0 returned 0% blocks executed 0%
-function _ZNSt3__114__split_bufferIPN7testing8TestInfoERNS_9allocatorIS3_EEEC1EmmS6_ called 3 returned 100% blocks executed 100%
-function _ZNSt3__114__split_bufferIPN7testing8TestInfoERNS_9allocatorIS3_EEEC2EmmS6_ called 3 returned 100% blocks executed 75%
-function _ZNSt3__114__split_bufferIiRNS_9allocatorIiEEEC1EmmS3_ called 4 returned 100% blocks executed 100%
-function _ZNSt3__114__split_bufferIiRNS_9allocatorIiEEEC2EmmS3_ called 4 returned 100% blocks executed 75%
+function _ZNSt3__114__split_bufferIPN7testing8TestInfoERNS_9allocatorIS3_EEEC1EmmS6_ called 4 returned 100% blocks executed 100%
+function _ZNSt3__114__split_bufferIPN7testing8TestInfoERNS_9allocatorIS3_EEEC2EmmS6_ called 4 returned 100% blocks executed 75%
+function _ZNSt3__114__split_bufferIiRNS_9allocatorIiEEEC1EmmS3_ called 5 returned 100% blocks executed 100%
+function _ZNSt3__114__split_bufferIiRNS_9allocatorIiEEEC2EmmS3_ called 5 returned 100% blocks executed 75%
 function _ZNSt3__114__split_bufferIPN7testing17TestEventListenerERNS_9allocatorIS3_EEEC1EmmS6_ called 1 returned 100% blocks executed 100%
 function _ZNSt3__114__split_bufferIPN7testing17TestEventListenerERNS_9allocatorIS3_EEEC2EmmS6_ called 1 returned 100% blocks executed 75%
 function _ZNSt3__114__split_bufferIPN7testing11EnvironmentERNS_9allocatorIS3_EEEC1EmmS6_ called 0 returned 0% blocks executed 0%
@@ -686,9 +686,9 @@ function _ZNSt3__114__split_bufferIN7testing8internal9TraceInfoERNS_9allocatorIS
 function _ZNSt3__114__split_bufferIN7testing8internal9TraceInfoERNS_9allocatorIS3_EEEC2EmmS6_ called 0 returned 0% blocks executed 0%
 function _ZNSt3__114__split_bufferIPN7testing9TestSuiteERNS_9allocatorIS3_EEEC1EmmS6_ called 1 returned 100% blocks executed 100%
 function _ZNSt3__114__split_bufferIPN7testing9TestSuiteERNS_9allocatorIS3_EEEC2EmmS6_ called 1 returned 100% blocks executed 75%
-       48:  338:__split_buffer<_Tp, _Allocator>::__split_buffer(size_type __cap, size_type __start, __alloc_rr& __a)
-       48:  339:    : __end_cap_(nullptr, __a) {
-       24:  340:  if (__cap == 0) {
+       52:  338:__split_buffer<_Tp, _Allocator>::__split_buffer(size_type __cap, size_type __start, __alloc_rr& __a)
+       52:  339:    : __end_cap_(nullptr, __a) {
+       26:  340:  if (__cap == 0) {
        15:  340-block  0
 branch  0 taken 0
 branch  1 taken 15
@@ -707,12 +707,12 @@ branch  9 never executed
     $$$$$:  340-block  5
 branch 10 never executed
 branch 11 never executed
-        3:  340-block  6
+        4:  340-block  6
 branch 12 taken 0
-branch 13 taken 3
-        4:  340-block  7
+branch 13 taken 4
+        5:  340-block  7
 branch 14 taken 0
-branch 15 taken 4
+branch 15 taken 5
         1:  340-block  8
 branch 16 taken 0
 branch 17 taken 1
@@ -739,25 +739,25 @@ branch 23 taken 1
     $$$$$:  342-block  9
     $$$$$:  342-block 10
     $$$$$:  342-block 11
-       24:  343:    auto __allocation = std::__allocate_at_least(__alloc(), __cap);
-       24:  344:    __first_          = __allocation.ptr;
-       24:  345:    __cap             = __allocation.count;
+       26:  343:    auto __allocation = std::__allocate_at_least(__alloc(), __cap);
+       26:  344:    __first_          = __allocation.ptr;
+       26:  345:    __cap             = __allocation.count;
        15:  345-block  0
     $$$$$:  345-block  1
     $$$$$:  345-block  2
     $$$$$:  345-block  3
     $$$$$:  345-block  4
     $$$$$:  345-block  5
-        3:  345-block  6
-        4:  345-block  7
+        4:  345-block  6
+        5:  345-block  7
         1:  345-block  8
     $$$$$:  345-block  9
     $$$$$:  345-block 10
         1:  345-block 11
         -:  346:  }
-       24:  347:  __begin_ = __end_ = __first_ + __start;
-       24:  348:  __end_cap()       = __first_ + __cap;
-       48:  349:}
+       26:  347:  __begin_ = __end_ = __first_ + __start;
+       26:  348:  __end_cap()       = __first_ + __cap;
+       52:  349:}
        15:  349-block  0
        15:  349-block  1
     $$$$$:  349-block  2
@@ -770,10 +770,10 @@ branch 23 taken 1
     $$$$$:  349-block  9
     $$$$$:  349-block 10
     $$$$$:  349-block 11
-        3:  349-block 12
-        3:  349-block 13
-        4:  349-block 14
-        4:  349-block 15
+        4:  349-block 12
+        4:  349-block 13
+        5:  349-block 14
+        5:  349-block 15
         1:  349-block 16
         1:  349-block 17
     $$$$$:  349-block 18
@@ -796,10 +796,10 @@ function _ZNSt3__114__split_bufferImRNS_9allocatorImEEED1Ev called 0 returned 0%
 function _ZNSt3__114__split_bufferImRNS_9allocatorImEEED2Ev called 0 returned 0% blocks executed 0%
 function _ZNSt3__114__split_bufferIN7testing12TestPropertyERNS_9allocatorIS2_EEED1Ev called 0 returned 0% blocks executed 0%
 function _ZNSt3__114__split_bufferIN7testing12TestPropertyERNS_9allocatorIS2_EEED2Ev called 0 returned 0% blocks executed 0%
-function _ZNSt3__114__split_bufferIPN7testing8TestInfoERNS_9allocatorIS3_EEED1Ev called 3 returned 100% blocks executed 100%
-function _ZNSt3__114__split_bufferIPN7testing8TestInfoERNS_9allocatorIS3_EEED2Ev called 3 returned 100% blocks executed 83%
-function _ZNSt3__114__split_bufferIiRNS_9allocatorIiEEED1Ev called 4 returned 100% blocks executed 100%
-function _ZNSt3__114__split_bufferIiRNS_9allocatorIiEEED2Ev called 4 returned 100% blocks executed 83%
+function _ZNSt3__114__split_bufferIPN7testing8TestInfoERNS_9allocatorIS3_EEED1Ev called 4 returned 100% blocks executed 100%
+function _ZNSt3__114__split_bufferIPN7testing8TestInfoERNS_9allocatorIS3_EEED2Ev called 4 returned 100% blocks executed 83%
+function _ZNSt3__114__split_bufferIiRNS_9allocatorIiEEED1Ev called 5 returned 100% blocks executed 100%
+function _ZNSt3__114__split_bufferIiRNS_9allocatorIiEEED2Ev called 5 returned 100% blocks executed 83%
 function _ZNSt3__114__split_bufferIPN7testing17TestEventListenerERNS_9allocatorIS3_EEED1Ev called 1 returned 100% blocks executed 100%
 function _ZNSt3__114__split_bufferIPN7testing17TestEventListenerERNS_9allocatorIS3_EEED2Ev called 1 returned 100% blocks executed 33%
 function _ZNSt3__114__split_bufferIPN7testing11EnvironmentERNS_9allocatorIS3_EEED1Ev called 0 returned 0% blocks executed 0%
@@ -808,9 +808,9 @@ function _ZNSt3__114__split_bufferIN7testing8internal9TraceInfoERNS_9allocatorIS
 function _ZNSt3__114__split_bufferIN7testing8internal9TraceInfoERNS_9allocatorIS3_EEED2Ev called 0 returned 0% blocks executed 0%
 function _ZNSt3__114__split_bufferIPN7testing9TestSuiteERNS_9allocatorIS3_EEED1Ev called 1 returned 100% blocks executed 100%
 function _ZNSt3__114__split_bufferIPN7testing9TestSuiteERNS_9allocatorIS3_EEED2Ev called 1 returned 100% blocks executed 33%
-       48:  352:_LIBCPP_CONSTEXPR_SINCE_CXX20 __split_buffer<_Tp, _Allocator>::~__split_buffer() {
-       24:  353:  clear();
-       24:  354:  if (__first_)
+       52:  352:_LIBCPP_CONSTEXPR_SINCE_CXX20 __split_buffer<_Tp, _Allocator>::~__split_buffer() {
+       26:  353:  clear();
+       26:  354:  if (__first_)
         7:  354-block  0
         8:  354-block  1
     $$$$$:  354-block  2
@@ -823,9 +823,9 @@ function _ZNSt3__114__split_bufferIPN7testing9TestSuiteERNS_9allocatorIS3_EEED2E
     $$$$$:  354-block  9
     $$$$$:  354-block 10
     $$$$$:  354-block 11
-        2:  354-block 12
+        3:  354-block 12
         1:  354-block 13
-        2:  354-block 14
+        3:  354-block 14
         2:  354-block 15
     $$$$$:  354-block 16
         1:  354-block 17
@@ -835,7 +835,7 @@ function _ZNSt3__114__split_bufferIPN7testing9TestSuiteERNS_9allocatorIS3_EEED2E
     $$$$$:  354-block 21
     $$$$$:  354-block 22
         1:  354-block 23
-       11:  355:    __alloc_traits::deallocate(__alloc(), __first_, capacity());
+       13:  355:    __alloc_traits::deallocate(__alloc(), __first_, capacity());
         7:  355-block  0
 branch  0 taken 7
 branch  1 taken 0
@@ -866,15 +866,15 @@ branch 10 never executed
 branch 11 never executed
     $$$$$:  355-block 16
     $$$$$:  355-block 17
-        2:  355-block 18
-branch 12 taken 2
+        3:  355-block 18
+branch 12 taken 3
 branch 13 taken 0
-        2:  355-block 19
+        3:  355-block 19
     $$$$$:  355-block 20
-        2:  355-block 21
-branch 14 taken 2
+        3:  355-block 21
+branch 14 taken 3
 branch 15 taken 0
-        2:  355-block 22
+        3:  355-block 22
     $$$$$:  355-block 23
     $$$$$:  355-block 24
 branch 16 never executed
@@ -896,7 +896,7 @@ branch 22 never executed
 branch 23 never executed
     $$$$$:  355-block 34
     $$$$$:  355-block 35
-       48:  356:}
+       52:  356:}
        15:  356-block  0
        15:  356-block  1
     $$$$$:  356-block  2
@@ -909,10 +909,10 @@ branch 23 never executed
     $$$$$:  356-block  9
     $$$$$:  356-block 10
     $$$$$:  356-block 11
-        3:  356-block 12
-        3:  356-block 13
-        4:  356-block 14
-        4:  356-block 15
+        4:  356-block 12
+        4:  356-block 13
+        5:  356-block 14
+        5:  356-block 15
         1:  356-block 16
         1:  356-block 17
     $$$$$:  356-block 18

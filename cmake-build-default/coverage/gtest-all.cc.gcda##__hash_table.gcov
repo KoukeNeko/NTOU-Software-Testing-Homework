@@ -112,10 +112,10 @@ function _ZNSt3__116__hash_node_baseIPNS_11__hash_nodeINS_17__hash_value_typeINS
     $$$$$:   97-block  2
         -:   98:  }
         -:   99:
-function _ZNKSt3__116__hash_node_baseIPNS_11__hash_nodeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEPvEEE6__hashB8ne180100Ev called 9 returned 100% blocks executed 100%
+function _ZNKSt3__116__hash_node_baseIPNS_11__hash_nodeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEPvEEE6__hashB8ne180100Ev called 6 returned 100% blocks executed 100%
 function _ZNKSt3__116__hash_node_baseIPNS_11__hash_nodeINS_17__hash_value_typeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEPN7testing9TestSuiteEEEPvEEE6__hashB8ne180100Ev called 0 returned 0% blocks executed 0%
-        9:  100:  _LIBCPP_HIDE_FROM_ABI size_t __hash() const _NOEXCEPT { return static_cast<__node_type const&>(*this).__hash_; }
-        9:  100-block  0
+        6:  100:  _LIBCPP_HIDE_FROM_ABI size_t __hash() const _NOEXCEPT { return static_cast<__node_type const&>(*this).__hash_; }
+        6:  100-block  0
     $$$$$:  100-block  1
         -:  101:
 function _ZNSt3__116__hash_node_baseIPNS_11__hash_nodeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEPvEEEC1B8ne180100Ev called 5 returned 100% blocks executed 100%
@@ -472,23 +472,23 @@ function _ZNSt3__121__hash_const_iteratorIPNS_11__hash_nodeINS_12basic_stringIcN
         -:  361:    return __t;
         -:  362:  }
         -:  363:
-function _ZNSt3__1eqB8ne180100ERKNS_21__hash_const_iteratorIPNS_11__hash_nodeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEPvEEEESD_ called 14 returned 100% blocks executed 100%
-       14:  364:  friend _LIBCPP_HIDE_FROM_ABI bool operator==(const __hash_const_iterator& __x, const __hash_const_iterator& __y) {
-       14:  365:    return __x.__node_ == __y.__node_;
-       14:  365-block  0
+function _ZNSt3__1eqB8ne180100ERKNS_21__hash_const_iteratorIPNS_11__hash_nodeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEPvEEEESD_ called 17 returned 100% blocks executed 100%
+       17:  364:  friend _LIBCPP_HIDE_FROM_ABI bool operator==(const __hash_const_iterator& __x, const __hash_const_iterator& __y) {
+       17:  365:    return __x.__node_ == __y.__node_;
+       17:  365-block  0
         -:  366:  }
-function _ZNSt3__1neB8ne180100ERKNS_21__hash_const_iteratorIPNS_11__hash_nodeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEPvEEEESD_ called 14 returned 100% blocks executed 100%
-       14:  367:  friend _LIBCPP_HIDE_FROM_ABI bool operator!=(const __hash_const_iterator& __x, const __hash_const_iterator& __y) {
-       14:  368:    return !(__x == __y);
-       14:  368-block  0
+function _ZNSt3__1neB8ne180100ERKNS_21__hash_const_iteratorIPNS_11__hash_nodeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEPvEEEESD_ called 17 returned 100% blocks executed 100%
+       17:  367:  friend _LIBCPP_HIDE_FROM_ABI bool operator!=(const __hash_const_iterator& __x, const __hash_const_iterator& __y) {
+       17:  368:    return !(__x == __y);
+       17:  368-block  0
         -:  369:  }
         -:  370:
         -:  371:private:
-function _ZNSt3__121__hash_const_iteratorIPNS_11__hash_nodeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEPvEEEC1B8ne180100EPNS_16__hash_node_baseISA_EE called 28 returned 100% blocks executed 100%
-function _ZNSt3__121__hash_const_iteratorIPNS_11__hash_nodeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEPvEEEC2B8ne180100EPNS_16__hash_node_baseISA_EE called 28 returned 100% blocks executed 100%
-       56:  372:  _LIBCPP_HIDE_FROM_ABI explicit __hash_const_iterator(__next_pointer __node) _NOEXCEPT : __node_(__node) {}
-       28:  372-block  0
-       28:  372-block  1
+function _ZNSt3__121__hash_const_iteratorIPNS_11__hash_nodeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEPvEEEC1B8ne180100EPNS_16__hash_node_baseISA_EE called 34 returned 100% blocks executed 100%
+function _ZNSt3__121__hash_const_iteratorIPNS_11__hash_nodeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEPvEEEC2B8ne180100EPNS_16__hash_node_baseISA_EE called 34 returned 100% blocks executed 100%
+       68:  372:  _LIBCPP_HIDE_FROM_ABI explicit __hash_const_iterator(__next_pointer __node) _NOEXCEPT : __node_(__node) {}
+       34:  372-block  0
+       34:  372-block  1
         -:  373:
         -:  374:  template <class, class, class, class>
         -:  375:  friend class __hash_table;
@@ -693,10 +693,10 @@ function _ZNSt3__125__bucket_list_deallocatorINS_9allocatorIPNS_16__hash_node_ba
         5:  546-block  0
     $$$$$:  546-block  1
         1:  546-block  2
-function _ZNKSt3__125__bucket_list_deallocatorINS_9allocatorIPNS_16__hash_node_baseIPNS_11__hash_nodeINS_12basic_stringIcNS_11char_traitsIcEENS1_IcEEEEPvEEEEEEE4sizeB8ne180100Ev called 18 returned 100% blocks executed 100%
+function _ZNKSt3__125__bucket_list_deallocatorINS_9allocatorIPNS_16__hash_node_baseIPNS_11__hash_nodeINS_12basic_stringIcNS_11char_traitsIcEENS1_IcEEEEPvEEEEEEE4sizeB8ne180100Ev called 21 returned 100% blocks executed 100%
 function _ZNKSt3__125__bucket_list_deallocatorINS_9allocatorIPNS_16__hash_node_baseIPNS_11__hash_nodeINS_17__hash_value_typeINS_12basic_stringIcNS_11char_traitsIcEENS1_IcEEEEPN7testing9TestSuiteEEEPvEEEEEEE4sizeB8ne180100Ev called 4 returned 100% blocks executed 100%
-       22:  547:  _LIBCPP_HIDE_FROM_ABI size_type size() const _NOEXCEPT { return __data_.first(); }
-       18:  547-block  0
+       25:  547:  _LIBCPP_HIDE_FROM_ABI size_type size() const _NOEXCEPT { return __data_.first(); }
+       21:  547-block  0
         4:  547-block  1
         -:  548:
 function _ZNSt3__125__bucket_list_deallocatorINS_9allocatorIPNS_16__hash_node_baseIPNS_11__hash_nodeINS_12basic_stringIcNS_11char_traitsIcEENS1_IcEEEEPvEEEEEEE7__allocB8ne180100Ev called 4 returned 100% blocks executed 100%
@@ -901,9 +901,9 @@ function _ZNSt3__112__hash_tableINS_17__hash_value_typeINS_12basic_stringIcNS_11
         5:  700:  _LIBCPP_HIDE_FROM_ABI hasher& hash_function() _NOEXCEPT { return __p2_.second(); }
         3:  700-block  0
         2:  700-block  1
-function _ZNKSt3__112__hash_tableINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_4hashIS6_EENS_8equal_toIS6_EENS4_IS6_EEE13hash_functionB8ne180100Ev called 14 returned 100% blocks executed 100%
-       14:  701:  _LIBCPP_HIDE_FROM_ABI const hasher& hash_function() const _NOEXCEPT { return __p2_.second(); }
-       14:  701-block  0
+function _ZNKSt3__112__hash_tableINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_4hashIS6_EENS_8equal_toIS6_EENS4_IS6_EEE13hash_functionB8ne180100Ev called 17 returned 100% blocks executed 100%
+       17:  701:  _LIBCPP_HIDE_FROM_ABI const hasher& hash_function() const _NOEXCEPT { return __p2_.second(); }
+       17:  701-block  0
         -:  702:
 function _ZNSt3__112__hash_tableINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_4hashIS6_EENS_8equal_toIS6_EENS4_IS6_EEE15max_load_factorB8ne180100Ev called 4 returned 100% blocks executed 100%
 function _ZNSt3__112__hash_tableINS_17__hash_value_typeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEPN7testing9TestSuiteEEENS_22__unordered_map_hasherIS7_SB_NS_4hashIS7_EENS_8equal_toIS7_EELb1EEENS_21__unordered_map_equalIS7_SB_SG_SE_Lb1EEENS5_ISB_EEE15max_load_factorB8ne180100Ev called 2 returned 100% blocks executed 100%
@@ -1087,10 +1087,10 @@ function _ZNSt3__112__hash_tableINS_17__hash_value_typeINS_12basic_stringIcNS_11
         -:  852:    __rehash_multi(static_cast<size_type>(std::ceil(__n / max_load_factor())));
         -:  853:  }
         -:  854:
-function _ZNKSt3__112__hash_tableINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_4hashIS6_EENS_8equal_toIS6_EENS4_IS6_EEE12bucket_countB8ne180100Ev called 18 returned 100% blocks executed 100%
+function _ZNKSt3__112__hash_tableINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_4hashIS6_EENS_8equal_toIS6_EENS4_IS6_EEE12bucket_countB8ne180100Ev called 21 returned 100% blocks executed 100%
 function _ZNKSt3__112__hash_tableINS_17__hash_value_typeINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEPN7testing9TestSuiteEEENS_22__unordered_map_hasherIS7_SB_NS_4hashIS7_EENS_8equal_toIS7_EELb1EEENS_21__unordered_map_equalIS7_SB_SG_SE_Lb1EEENS5_ISB_EEE12bucket_countB8ne180100Ev called 4 returned 100% blocks executed 100%
-       22:  855:  _LIBCPP_HIDE_FROM_ABI size_type bucket_count() const _NOEXCEPT { return __bucket_list_.get_deleter().size(); }
-       18:  855-block  0
+       25:  855:  _LIBCPP_HIDE_FROM_ABI size_type bucket_count() const _NOEXCEPT { return __bucket_list_.get_deleter().size(); }
+       21:  855-block  0
         4:  855-block  1
         -:  856:
         -:  857:  _LIBCPP_HIDE_FROM_ABI iterator begin() _NOEXCEPT;
@@ -1592,10 +1592,10 @@ function _ZNSt3__112__hash_tableINS_17__hash_value_typeINS_12basic_stringIcNS_11
         -: 1277:
         -: 1278:template <class _Tp, class _Hash, class _Equal, class _Alloc>
         -: 1279:inline typename __hash_table<_Tp, _Hash, _Equal, _Alloc>::const_iterator
-function _ZNKSt3__112__hash_tableINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_4hashIS6_EENS_8equal_toIS6_EENS4_IS6_EEE3endEv called 27 returned 100% blocks executed 100%
-       27: 1280:__hash_table<_Tp, _Hash, _Equal, _Alloc>::end() const _NOEXCEPT {
-       27: 1281:  return const_iterator(nullptr);
-       27: 1281-block  0
+function _ZNKSt3__112__hash_tableINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_4hashIS6_EENS_8equal_toIS6_EENS4_IS6_EEE3endEv called 33 returned 100% blocks executed 100%
+       33: 1280:__hash_table<_Tp, _Hash, _Equal, _Alloc>::end() const _NOEXCEPT {
+       33: 1281:  return const_iterator(nullptr);
+       33: 1281-block  0
         -: 1282:}
         -: 1283:
         -: 1284:template <class _Tp, class _Hash, class _Equal, class _Alloc>
@@ -2298,48 +2298,48 @@ branch  1 never executed
         -: 1737:template <class _Tp, class _Hash, class _Equal, class _Alloc>
         -: 1738:template <class _Key>
         -: 1739:typename __hash_table<_Tp, _Hash, _Equal, _Alloc>::const_iterator
-function _ZNKSt3__112__hash_tableINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_4hashIS6_EENS_8equal_toIS6_EENS4_IS6_EEE4findIS6_EENS_21__hash_const_iteratorIPNS_11__hash_nodeIS6_PvEEEERKT_ called 14 returned 100% blocks executed 95%
-       14: 1740:__hash_table<_Tp, _Hash, _Equal, _Alloc>::find(const _Key& __k) const {
-       14: 1741:  size_t __hash  = hash_function()(__k);
-       14: 1742:  size_type __bc = bucket_count();
-       14: 1743:  if (__bc != 0) {
-        4: 1743-block  0
-       10: 1743-block  1
-        4: 1744:    size_t __chash      = std::__constrain_hash(__hash, __bc);
-        4: 1745:    __next_pointer __nd = __bucket_list_[__chash];
-        4: 1746:    if (__nd != nullptr) {
-        3: 1746-block  0
-        1: 1746-block  1
-       10: 1747:      for (__nd = __nd->__next_;
-        3: 1747-block  0
-        5: 1747-block  1
-branch  0 taken 3
-branch  1 taken 2
-        2: 1747-block  2
-        5: 1748:           __nd != nullptr && (__hash == __nd->__hash() || std::__constrain_hash(__nd->__hash(), __bc) == __chash);
-        3: 1748-block  0
-        2: 1748-block  1
-        2: 1748-block  2
+function _ZNKSt3__112__hash_tableINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEENS_4hashIS6_EENS_8equal_toIS6_EENS4_IS6_EEE4findIS6_EENS_21__hash_const_iteratorIPNS_11__hash_nodeIS6_PvEEEERKT_ called 17 returned 100% blocks executed 95%
+       17: 1740:__hash_table<_Tp, _Hash, _Equal, _Alloc>::find(const _Key& __k) const {
+       17: 1741:  size_t __hash  = hash_function()(__k);
+       17: 1742:  size_type __bc = bucket_count();
+       17: 1743:  if (__bc != 0) {
+        5: 1743-block  0
+       12: 1743-block  1
+        5: 1744:    size_t __chash      = std::__constrain_hash(__hash, __bc);
+        5: 1745:    __next_pointer __nd = __bucket_list_[__chash];
+        5: 1746:    if (__nd != nullptr) {
+        2: 1746-block  0
+        3: 1746-block  1
+        6: 1747:      for (__nd = __nd->__next_;
+        2: 1747-block  0
+        3: 1747-block  1
+branch  0 taken 2
+branch  1 taken 1
+        1: 1747-block  2
+        3: 1748:           __nd != nullptr && (__hash == __nd->__hash() || std::__constrain_hash(__nd->__hash(), __bc) == __chash);
+        2: 1748-block  0
+        1: 1748-block  1
+        1: 1748-block  2
         1: 1748-block  3
-        2: 1748-block  4
-        2: 1749:           __nd = __nd->__next_) {
-        3: 1750:        if ((__nd->__hash() == __hash) && key_eq()(__nd->__upcast()->__get_value(), __k))
+        1: 1748-block  4
+        1: 1749:           __nd = __nd->__next_) {
+        2: 1750:        if ((__nd->__hash() == __hash) && key_eq()(__nd->__upcast()->__get_value(), __k))
         1: 1750-block  0
-        2: 1750-block  1
+        1: 1750-block  1
         1: 1750-block  2
     $$$$$: 1750-block  3
         1: 1751:          return const_iterator(__nd);
         1: 1751-block  0
-        2: 1752:      }
-        2: 1752-block  0
-        2: 1753:    }
-        2: 1753-block  0
-        3: 1754:  }
-        3: 1754-block  0
-       13: 1755:  return end();
-       13: 1755-block  0
-       14: 1756:}
-       14: 1756-block  0
+        1: 1752:      }
+        1: 1752-block  0
+        1: 1753:    }
+        1: 1753-block  0
+        4: 1754:  }
+        4: 1754-block  0
+       16: 1755:  return end();
+       16: 1755-block  0
+       17: 1756:}
+       17: 1756-block  0
         -: 1757:
         -: 1758:template <class _Tp, class _Hash, class _Equal, class _Alloc>
         -: 1759:template <class... _Args>

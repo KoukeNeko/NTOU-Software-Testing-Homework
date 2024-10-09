@@ -112,8 +112,8 @@ function _ZNSt3__18_IterOpsINS_17_ClassicAlgPolicyEE25__validate_iter_referenceB
 function _ZNSt3__18_IterOpsINS_17_ClassicAlgPolicyEE25__validate_iter_referenceB8ne180100IRPNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEvv called 9 returned 100% blocks executed 100%
 function _ZNSt3__18_IterOpsINS_17_ClassicAlgPolicyEE25__validate_iter_referenceB8ne180100IRNS_16reverse_iteratorIPN7testing8internal13edit_distance8EditTypeEEEEEvv called 0 returned 0% blocks executed 0%
 function _ZNSt3__18_IterOpsINS_17_ClassicAlgPolicyEE25__validate_iter_referenceB8ne180100IRNS_16reverse_iteratorIPmEEEEvv called 0 returned 0% blocks executed 0%
-function _ZNSt3__18_IterOpsINS_17_ClassicAlgPolicyEE25__validate_iter_referenceB8ne180100IRNS_16reverse_iteratorIPPN7testing8TestInfoEEEEEvv called 3 returned 100% blocks executed 100%
-function _ZNSt3__18_IterOpsINS_17_ClassicAlgPolicyEE25__validate_iter_referenceB8ne180100IRNS_16reverse_iteratorIPiEEEEvv called 3 returned 100% blocks executed 100%
+function _ZNSt3__18_IterOpsINS_17_ClassicAlgPolicyEE25__validate_iter_referenceB8ne180100IRNS_16reverse_iteratorIPPN7testing8TestInfoEEEEEvv called 7 returned 100% blocks executed 100%
+function _ZNSt3__18_IterOpsINS_17_ClassicAlgPolicyEE25__validate_iter_referenceB8ne180100IRNS_16reverse_iteratorIPiEEEEvv called 7 returned 100% blocks executed 100%
 function _ZNSt3__18_IterOpsINS_17_ClassicAlgPolicyEE25__validate_iter_referenceB8ne180100IRNS_16reverse_iteratorIPPN7testing17TestEventListenerEEEEEvv called 0 returned 0% blocks executed 0%
 function _ZNSt3__18_IterOpsINS_17_ClassicAlgPolicyEE25__validate_iter_referenceB8ne180100IRNS_16reverse_iteratorIPPN7testing11EnvironmentEEEEEvv called 0 returned 0% blocks executed 0%
 function _ZNSt3__18_IterOpsINS_17_ClassicAlgPolicyEE25__validate_iter_referenceB8ne180100IRNS_16reverse_iteratorIPPN7testing9TestSuiteEEEEEvv called 0 returned 0% blocks executed 0%
@@ -121,19 +121,19 @@ function _ZNSt3__18_IterOpsINS_17_ClassicAlgPolicyEE25__validate_iter_referenceB
 function _ZNSt3__18_IterOpsINS_17_ClassicAlgPolicyEE25__validate_iter_referenceB8ne180100IRPPN7testing8TestInfoEEEvv called 0 returned 0% blocks executed 0%
 function _ZNSt3__18_IterOpsINS_17_ClassicAlgPolicyEE25__validate_iter_referenceB8ne180100IRNS_32__unconstrained_reverse_iteratorINS_11__wrap_iterIPPN7testing8TestInfoEEEEEEEvv called 0 returned 0% blocks executed 0%
 function _ZNSt3__18_IterOpsINS_17_ClassicAlgPolicyEE25__validate_iter_referenceB8ne180100IRNS_32__unconstrained_reverse_iteratorIPPN7testing8TestInfoEEEEEvv called 0 returned 0% blocks executed 0%
-       15:  102:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX14 static void __validate_iter_reference() {
+       23:  102:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX14 static void __validate_iter_reference() {
         -:  103:    static_assert(
         -:  104:        is_same<__deref_t<_Iter>, typename iterator_traits<__remove_cvref_t<_Iter> >::reference>::value,
         -:  105:        "It looks like your iterator's `iterator_traits<It>::reference` does not match the return type of "
         -:  106:        "dereferencing the iterator, i.e., calling `*it`. This is undefined behavior according to [input.iterators] "
         -:  107:        "and can lead to dangling reference issues at runtime, so we are flagging this.");
-       15:  108:  }
+       23:  108:  }
     $$$$$:  108-block  0
         9:  108-block  1
     $$$$$:  108-block  2
     $$$$$:  108-block  3
-        3:  108-block  4
-        3:  108-block  5
+        7:  108-block  4
+        7:  108-block  5
     $$$$$:  108-block  6
     $$$$$:  108-block  7
     $$$$$:  108-block  8
@@ -152,8 +152,8 @@ function _ZNSt3__18_IterOpsINS_17_ClassicAlgPolicyEE11__iter_moveB8ne180100IRNS_
 function _ZNSt3__18_IterOpsINS_17_ClassicAlgPolicyEE11__iter_moveB8ne180100IRPNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEELi0EEEDTclsr3stdE4movedeclsr3stdE7declvalIRT_EEEEOSC_ called 9 returned 100% blocks executed 100%
 function _ZNSt3__18_IterOpsINS_17_ClassicAlgPolicyEE11__iter_moveB8ne180100IRNS_16reverse_iteratorIPN7testing8internal13edit_distance8EditTypeEEELi0EEEDTclsr3stdE4movedeclsr3stdE7declvalIRT_EEEEOSC_ called 0 returned 0% blocks executed 0%
 function _ZNSt3__18_IterOpsINS_17_ClassicAlgPolicyEE11__iter_moveB8ne180100IRNS_16reverse_iteratorIPmEELi0EEEDTclsr3stdE4movedeclsr3stdE7declvalIRT_EEEEOS8_ called 0 returned 0% blocks executed 0%
-function _ZNSt3__18_IterOpsINS_17_ClassicAlgPolicyEE11__iter_moveB8ne180100IRNS_16reverse_iteratorIPPN7testing8TestInfoEEELi0EEEDTclsr3stdE4movedeclsr3stdE7declvalIRT_EEEEOSB_ called 3 returned 100% blocks executed 100%
-function _ZNSt3__18_IterOpsINS_17_ClassicAlgPolicyEE11__iter_moveB8ne180100IRNS_16reverse_iteratorIPiEELi0EEEDTclsr3stdE4movedeclsr3stdE7declvalIRT_EEEEOS8_ called 3 returned 100% blocks executed 100%
+function _ZNSt3__18_IterOpsINS_17_ClassicAlgPolicyEE11__iter_moveB8ne180100IRNS_16reverse_iteratorIPPN7testing8TestInfoEEELi0EEEDTclsr3stdE4movedeclsr3stdE7declvalIRT_EEEEOSB_ called 7 returned 100% blocks executed 100%
+function _ZNSt3__18_IterOpsINS_17_ClassicAlgPolicyEE11__iter_moveB8ne180100IRNS_16reverse_iteratorIPiEELi0EEEDTclsr3stdE4movedeclsr3stdE7declvalIRT_EEEEOS8_ called 7 returned 100% blocks executed 100%
 function _ZNSt3__18_IterOpsINS_17_ClassicAlgPolicyEE11__iter_moveB8ne180100IRNS_16reverse_iteratorIPPN7testing17TestEventListenerEEELi0EEEDTclsr3stdE4movedeclsr3stdE7declvalIRT_EEEEOSB_ called 0 returned 0% blocks executed 0%
 function _ZNSt3__18_IterOpsINS_17_ClassicAlgPolicyEE11__iter_moveB8ne180100IRNS_16reverse_iteratorIPPN7testing11EnvironmentEEELi0EEEDTclsr3stdE4movedeclsr3stdE7declvalIRT_EEEEOSB_ called 0 returned 0% blocks executed 0%
 function _ZNSt3__18_IterOpsINS_17_ClassicAlgPolicyEE11__iter_moveB8ne180100IRNS_16reverse_iteratorIPPN7testing9TestSuiteEEELi0EEEDTclsr3stdE4movedeclsr3stdE7declvalIRT_EEEEOSB_ called 0 returned 0% blocks executed 0%
@@ -161,16 +161,16 @@ function _ZNSt3__18_IterOpsINS_17_ClassicAlgPolicyEE11__iter_moveB8ne180100IRNS_
 function _ZNSt3__18_IterOpsINS_17_ClassicAlgPolicyEE11__iter_moveB8ne180100IRPPN7testing8TestInfoELi0EEEDTclsr3stdE4movedeclsr3stdE7declvalIRT_EEEEOS9_ called 0 returned 0% blocks executed 0%
 function _ZNSt3__18_IterOpsINS_17_ClassicAlgPolicyEE11__iter_moveB8ne180100IRNS_32__unconstrained_reverse_iteratorINS_11__wrap_iterIPPN7testing8TestInfoEEEEELi0EEEDTclsr3stdE4movedeclsr3stdE7declvalIRT_EEEEOSD_ called 0 returned 0% blocks executed 0%
 function _ZNSt3__18_IterOpsINS_17_ClassicAlgPolicyEE11__iter_moveB8ne180100IRNS_32__unconstrained_reverse_iteratorIPPN7testing8TestInfoEEELi0EEEDTclsr3stdE4movedeclsr3stdE7declvalIRT_EEEEOSB_ called 0 returned 0% blocks executed 0%
-       15:  116:      __iter_move(_Iter&& __i) {
-       15:  117:    __validate_iter_reference<_Iter>();
+       23:  116:      __iter_move(_Iter&& __i) {
+       23:  117:    __validate_iter_reference<_Iter>();
         -:  118:
-       15:  119:    return std::move(*std::forward<_Iter>(__i));
+       23:  119:    return std::move(*std::forward<_Iter>(__i));
     $$$$$:  119-block  0
         9:  119-block  1
     $$$$$:  119-block  2
     $$$$$:  119-block  3
-        3:  119-block  4
-        3:  119-block  5
+        7:  119-block  4
+        7:  119-block  5
     $$$$$:  119-block  6
     $$$$$:  119-block  7
     $$$$$:  119-block  8

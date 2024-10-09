@@ -208,13 +208,17 @@
         -:  203:      __enable_if_t<_CheckArgs::template __enable_implicit<_U1, _U2>(), int> = 0 >
 function _ZNSt3__14pairIPKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEES8_EC1B8ne180100IS8_S8_Li0EEEOT_OT0_ called 1 returned 100% blocks executed 100%
 function _ZNSt3__14pairIPKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEES8_EC2B8ne180100IS8_S8_Li0EEEOT_OT0_ called 1 returned 100% blocks executed 100%
-        2:  204:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX14 pair(_U1&& __u1, _U2&& __u2)
+function _ZNSt3__14pairIPNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEES7_EC1B8ne180100IS7_S7_Li0EEEOT_OT0_ called 9 returned 100% blocks executed 100%
+function _ZNSt3__14pairIPNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEES7_EC2B8ne180100IS7_S7_Li0EEEOT_OT0_ called 9 returned 100% blocks executed 100%
+       20:  204:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX14 pair(_U1&& __u1, _U2&& __u2)
         -:  205:      _NOEXCEPT_((is_nothrow_constructible<first_type, _U1>::value &&
         -:  206:                  is_nothrow_constructible<second_type, _U2>::value))
-        2:  207:      : first(std::forward<_U1>(__u1)), second(std::forward<_U2>(__u2)) {
-        2:  208:  }
+       20:  207:      : first(std::forward<_U1>(__u1)), second(std::forward<_U2>(__u2)) {
+       20:  208:  }
         1:  208-block  0
         1:  208-block  1
+        9:  208-block  2
+        9:  208-block  3
         -:  209:
         -:  210:#  if _LIBCPP_STD_VER >= 23
         -:  211:  template <class _U1,
@@ -644,8 +648,10 @@ function _ZNSt3__14pairIPKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIc
         -:  635:  }
         -:  636:
         -:  637:  template <class _T1, class _T2>
-        -:  638:  static _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX14 _T1&& get(pair<_T1, _T2>&& __p) _NOEXCEPT {
-        -:  639:    return std::forward<_T1>(__p.first);
+function _ZNSt3__110__get_pairILm0EE3getB8ne180100IPNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEES9_EEOT_ONS_4pairISA_T0_EE called 2 returned 100% blocks executed 100%
+        2:  638:  static _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX14 _T1&& get(pair<_T1, _T2>&& __p) _NOEXCEPT {
+        2:  639:    return std::forward<_T1>(__p.first);
+        2:  639-block  0
         -:  640:  }
         -:  641:
         -:  642:  template <class _T1, class _T2>
@@ -667,8 +673,10 @@ function _ZNSt3__14pairIPKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIc
         -:  658:  }
         -:  659:
         -:  660:  template <class _T1, class _T2>
-        -:  661:  static _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX14 _T2&& get(pair<_T1, _T2>&& __p) _NOEXCEPT {
-        -:  662:    return std::forward<_T2>(__p.second);
+function _ZNSt3__110__get_pairILm1EE3getB8ne180100IPNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEES9_EEOT0_ONS_4pairIT_SA_EE called 2 returned 100% blocks executed 100%
+        2:  661:  static _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX14 _T2&& get(pair<_T1, _T2>&& __p) _NOEXCEPT {
+        2:  662:    return std::forward<_T2>(__p.second);
+        2:  662-block  0
         -:  663:  }
         -:  664:
         -:  665:  template <class _T1, class _T2>
@@ -691,8 +699,12 @@ function _ZNSt3__14pairIPKNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIc
         -:  682:
         -:  683:template <size_t _Ip, class _T1, class _T2>
         -:  684:inline _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX14 typename tuple_element<_Ip, pair<_T1, _T2> >::type&&
-        -:  685:get(pair<_T1, _T2>&& __p) _NOEXCEPT {
-        -:  686:  return __get_pair<_Ip>::get(std::move(__p));
+function _ZNSt3__13getB8ne180100ILm0EPNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEES7_EEONS_13tuple_elementIXT_ENS_4pairIT0_T1_EEE4typeEOSC_ called 2 returned 100% blocks executed 100%
+function _ZNSt3__13getB8ne180100ILm1EPNS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEES7_EEONS_13tuple_elementIXT_ENS_4pairIT0_T1_EEE4typeEOSC_ called 2 returned 100% blocks executed 100%
+        4:  685:get(pair<_T1, _T2>&& __p) _NOEXCEPT {
+        4:  686:  return __get_pair<_Ip>::get(std::move(__p));
+        2:  686-block  0
+        2:  686-block  1
         -:  687:}
         -:  688:
         -:  689:template <size_t _Ip, class _T1, class _T2>

@@ -206,8 +206,8 @@
         -:  201:  // __constexpr_memcmp requires a trivially lexicographically comparable type, but char is not when char is a signed
         -:  202:  // type
         -:  203:  static _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX17 int
-function _ZNSt3__111char_traitsIcE7compareB8ne180100EPKcS3_m called 1 returned 100% blocks executed 100%
-        1:  204:  compare(const char_type* __lhs, const char_type* __rhs, size_t __count) _NOEXCEPT {
+function _ZNSt3__111char_traitsIcE7compareB8ne180100EPKcS3_m called 3 returned 100% blocks executed 100%
+        3:  204:  compare(const char_type* __lhs, const char_type* __rhs, size_t __count) _NOEXCEPT {
         -:  205:    if (__libcpp_is_constant_evaluated()) {
         -:  206:#ifdef _LIBCPP_COMPILER_CLANG_BASED
         -:  207:      return __builtin_memcmp(__lhs, __rhs, __count);
@@ -225,18 +225,18 @@ function _ZNSt3__111char_traitsIcE7compareB8ne180100EPKcS3_m called 1 returned 1
         -:  219:      return 0;
         -:  220:#endif // _LIBCPP_COMPILER_CLANG_BASED
         -:  221:    } else {
-        1:  222:      return __builtin_memcmp(__lhs, __rhs, __count);
-        1:  222-block  0
+        3:  222:      return __builtin_memcmp(__lhs, __rhs, __count);
+        3:  222-block  0
         -:  223:    }
         -:  224:  }
         -:  225:
-function _ZNSt3__111char_traitsIcE6lengthB8ne180100EPKc called 94 returned 100% blocks executed 66%
-       94:  226:  static inline _LIBCPP_HIDE_FROM_ABI size_t _LIBCPP_CONSTEXPR_SINCE_CXX17 length(const char_type* __s) _NOEXCEPT {
-       94:  227:    return std::__constexpr_strlen(__s);
-       94:  227-block  0
-branch  0 taken 94
+function _ZNSt3__111char_traitsIcE6lengthB8ne180100EPKc called 101 returned 100% blocks executed 66%
+      101:  226:  static inline _LIBCPP_HIDE_FROM_ABI size_t _LIBCPP_CONSTEXPR_SINCE_CXX17 length(const char_type* __s) _NOEXCEPT {
+      101:  227:    return std::__constexpr_strlen(__s);
+      101:  227-block  0
+branch  0 taken 101
 branch  1 taken 0
-       94:  227-block  1
+      101:  227-block  1
     $$$$$:  227-block  2
         -:  228:  }
         -:  229:

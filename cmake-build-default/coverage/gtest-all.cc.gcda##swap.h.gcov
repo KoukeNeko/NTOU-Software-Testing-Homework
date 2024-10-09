@@ -51,8 +51,8 @@ function _ZNSt3__14swapB8ne180100IPN7testing8internal13edit_distance8EditTypeEEE
 function _ZNSt3__14swapB8ne180100IN7testing8internal13edit_distance8EditTypeEEENS_9enable_ifIXaasr21is_move_constructibleIT_EE5valuesr18is_move_assignableIS6_EE5valueEvE4typeERS6_S9_ called 0 returned 0% blocks executed 0%
 function _ZNSt3__14swapB8ne180100IPmEENS_9enable_ifIXaasr21is_move_constructibleIT_EE5valuesr18is_move_assignableIS3_EE5valueEvE4typeERS3_S6_ called 0 returned 0% blocks executed 0%
 function _ZNSt3__14swapB8ne180100IPN7testing12TestPropertyEEENS_9enable_ifIXaasr21is_move_constructibleIT_EE5valuesr18is_move_assignableIS5_EE5valueEvE4typeERS5_S8_ called 0 returned 0% blocks executed 0%
-function _ZNSt3__14swapB8ne180100IPPN7testing8TestInfoEEENS_9enable_ifIXaasr21is_move_constructibleIT_EE5valuesr18is_move_assignableIS6_EE5valueEvE4typeERS6_S9_ called 9 returned 100% blocks executed 100%
-function _ZNSt3__14swapB8ne180100IPiEENS_9enable_ifIXaasr21is_move_constructibleIT_EE5valuesr18is_move_assignableIS3_EE5valueEvE4typeERS3_S6_ called 12 returned 100% blocks executed 100%
+function _ZNSt3__14swapB8ne180100IPPN7testing8TestInfoEEENS_9enable_ifIXaasr21is_move_constructibleIT_EE5valuesr18is_move_assignableIS6_EE5valueEvE4typeERS6_S9_ called 12 returned 100% blocks executed 100%
+function _ZNSt3__14swapB8ne180100IPiEENS_9enable_ifIXaasr21is_move_constructibleIT_EE5valuesr18is_move_assignableIS3_EE5valueEvE4typeERS3_S6_ called 15 returned 100% blocks executed 100%
 function _ZNSt3__14swapB8ne180100IPPN7testing17TestEventListenerEEENS_9enable_ifIXaasr21is_move_constructibleIT_EE5valuesr18is_move_assignableIS6_EE5valueEvE4typeERS6_S9_ called 3 returned 100% blocks executed 100%
 function _ZNSt3__14swapB8ne180100IPPN7testing11EnvironmentEEENS_9enable_ifIXaasr21is_move_constructibleIT_EE5valuesr18is_move_assignableIS6_EE5valueEvE4typeERS6_S9_ called 0 returned 0% blocks executed 0%
 function _ZNSt3__14swapB8ne180100IPN7testing8internal9TraceInfoEEENS_9enable_ifIXaasr21is_move_constructibleIT_EE5valuesr18is_move_assignableIS6_EE5valueEvE4typeERS6_S9_ called 0 returned 0% blocks executed 0%
@@ -61,12 +61,12 @@ function _ZNSt3__14swapB8ne180100INS_12basic_stringIcNS_11char_traitsIcEENS_9all
 function _ZNSt3__14swapB8ne180100INS_14default_deleteINS_12basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEEEEEENS_9enable_ifIXaasr21is_move_constructibleIT_EE5valuesr18is_move_assignableISA_EE5valueEvE4typeERSA_SD_ called 0 returned 0% blocks executed 0%
 function _ZNSt3__14swapB8ne180100IPN7testing8TestInfoEEENS_9enable_ifIXaasr21is_move_constructibleIT_EE5valuesr18is_move_assignableIS5_EE5valueEvE4typeERS5_S8_ called 0 returned 0% blocks executed 0%
 function _ZNSt3__14swapB8ne180100IiEENS_9enable_ifIXaasr21is_move_constructibleIT_EE5valuesr18is_move_assignableIS2_EE5valueEvE4typeERS2_S5_ called 0 returned 0% blocks executed 0%
-       85:   40:inline _LIBCPP_HIDE_FROM_ABI __swap_result_t<_Tp> _LIBCPP_CONSTEXPR_SINCE_CXX20 swap(_Tp& __x, _Tp& __y)
+       91:   40:inline _LIBCPP_HIDE_FROM_ABI __swap_result_t<_Tp> _LIBCPP_CONSTEXPR_SINCE_CXX20 swap(_Tp& __x, _Tp& __y)
         -:   41:    _NOEXCEPT_(is_nothrow_move_constructible<_Tp>::value&& is_nothrow_move_assignable<_Tp>::value) {
-       85:   42:  _Tp __t(std::move(__x));
-       85:   43:  __x = std::move(__y);
-       85:   44:  __y = std::move(__t);
-       85:   45:}
+       91:   42:  _Tp __t(std::move(__x));
+       91:   43:  __x = std::move(__y);
+       91:   44:  __y = std::move(__t);
+       91:   45:}
     $$$$$:   45-block  0
        57:   45-block  1
     $$$$$:   45-block  2
@@ -76,8 +76,8 @@ function _ZNSt3__14swapB8ne180100IiEENS_9enable_ifIXaasr21is_move_constructibleI
     $$$$$:   45-block  6
     $$$$$:   45-block  7
     $$$$$:   45-block  8
-        9:   45-block  9
-       12:   45-block 10
+       12:   45-block  9
+       15:   45-block 10
         3:   45-block 11
     $$$$$:   45-block 12
     $$$$$:   45-block 13

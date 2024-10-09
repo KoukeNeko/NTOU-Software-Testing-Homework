@@ -493,15 +493,15 @@ branch  3 never executed
         -:  415:// returned for different types.  Calling the function twice with the
         -:  416:// same type argument is guaranteed to return the same ID.
         -:  417:template <typename T>
-function _ZN7testing8internal9GetTypeIdINS_4TestEEEPKvv called 5 returned 100% blocks executed 100%
+function _ZN7testing8internal9GetTypeIdINS_4TestEEEPKvv called 6 returned 100% blocks executed 100%
 function _ZN7testing8internal9GetTypeIdINS0_12_GLOBAL__N_111FailureTestEEEPKvv called 0 returned 0% blocks executed 0%
-        5:  418:TypeId GetTypeId() {
+        6:  418:TypeId GetTypeId() {
         -:  419:  // The compiler is required to allocate a different
         -:  420:  // TypeIdHelper<T>::dummy_ variable for each T used to instantiate
         -:  421:  // the template.  Therefore, the address of dummy_ is guaranteed to
         -:  422:  // be unique.
-        5:  423:  return &(TypeIdHelper<T>::dummy_);
-        5:  423-block  0
+        6:  423:  return &(TypeIdHelper<T>::dummy_);
+        6:  423-block  0
     $$$$$:  423-block  1
         -:  424:}
         -:  425:
@@ -565,10 +565,10 @@ function _ZN7testing8internal15TestFactoryBaseC2Ev called 0 returned 0% blocks e
         -:  475:
 function _ZN7testing8internal12CodeLocationD1Ev called 0 returned 0% blocks executed 0%
 function _ZN7testing8internal12CodeLocationC1ERKS1_ called 0 returned 0% blocks executed 0%
-function _ZN7testing8internal12CodeLocationC1EOS1_ called 8 returned 100% blocks executed 100%
+function _ZN7testing8internal12CodeLocationC1EOS1_ called 10 returned 100% blocks executed 100%
 function _ZN7testing8internal12CodeLocationD2Ev called 0 returned 0% blocks executed 0%
 function _ZN7testing8internal12CodeLocationC2ERKS1_ called 0 returned 0% blocks executed 0%
-function _ZN7testing8internal12CodeLocationC2EOS1_ called 8 returned 100% blocks executed 100%
+function _ZN7testing8internal12CodeLocationC2EOS1_ called 10 returned 100% blocks executed 100%
         -:  476:struct CodeLocation {
 function _ZN7testing8internal12CodeLocationC1ENSt3__112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEEi called 0 returned 0% blocks executed 0%
 function _ZN7testing8internal12CodeLocationC2ENSt3__112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEEi called 0 returned 0% blocks executed 0%

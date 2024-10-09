@@ -266,29 +266,29 @@ branch  1 never executed
         -:  240:  }
         -:  241:
         -:  242:  static inline _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 char_type*
-function _ZNSt3__111char_traitsIcE4copyB8ne180100EPcPKcm called 8 returned 100% blocks executed 66%
-        8:  243:  copy(char_type* __s1, const char_type* __s2, size_t __n) _NOEXCEPT {
+function _ZNSt3__111char_traitsIcE4copyB8ne180100EPcPKcm called 10 returned 100% blocks executed 66%
+       10:  243:  copy(char_type* __s1, const char_type* __s2, size_t __n) _NOEXCEPT {
         -:  244:    _LIBCPP_ASSERT_NON_OVERLAPPING_RANGES(!std::__is_pointer_in_range(__s1, __s1 + __n, __s2),
         -:  245:                                          "char_traits::copy: source and destination ranges overlap");
-        8:  246:    std::copy_n(__s2, __n, __s1);
-        8:  246-block  0
-branch  0 taken 8
+       10:  246:    std::copy_n(__s2, __n, __s1);
+       10:  246-block  0
+branch  0 taken 10
 branch  1 taken 0
     $$$$$:  246-block  1
-        8:  247:    return __s1;
-        8:  247-block  0
+       10:  247:    return __s1;
+       10:  247-block  0
         -:  248:  }
         -:  249:
         -:  250:  static inline _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 char_type*
-function _ZNSt3__111char_traitsIcE6assignB8ne180100EPcmc called 4 returned 100% blocks executed 66%
-        4:  251:  assign(char_type* __s, size_t __n, char_type __a) _NOEXCEPT {
-        4:  252:    std::fill_n(__s, __n, __a);
-        4:  252-block  0
-branch  0 taken 4
+function _ZNSt3__111char_traitsIcE6assignB8ne180100EPcmc called 5 returned 100% blocks executed 66%
+        5:  251:  assign(char_type* __s, size_t __n, char_type __a) _NOEXCEPT {
+        5:  252:    std::fill_n(__s, __n, __a);
+        5:  252-block  0
+branch  0 taken 5
 branch  1 taken 0
     $$$$$:  252-block  1
-        4:  253:    return __s;
-        4:  253-block  0
+        5:  253:    return __s;
+        5:  253-block  0
         -:  254:  }
         -:  255:
         -:  256:  static inline _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR int_type not_eof(int_type __c) _NOEXCEPT {
@@ -969,11 +969,11 @@ branch  3 never executed
         -:  789:}
         -:  790:
         -:  791:template <class _Ptr>
-function _ZNSt3__116__do_string_hashB8ne180100IPKcEEmT_S3_ called 17 returned 100% blocks executed 100%
-       17:  792:inline _LIBCPP_HIDE_FROM_ABI size_t __do_string_hash(_Ptr __p, _Ptr __e) {
+function _ZNSt3__116__do_string_hashB8ne180100IPKcEEmT_S3_ called 20 returned 100% blocks executed 100%
+       20:  792:inline _LIBCPP_HIDE_FROM_ABI size_t __do_string_hash(_Ptr __p, _Ptr __e) {
         -:  793:  typedef typename iterator_traits<_Ptr>::value_type value_type;
-       17:  794:  return __murmur2_or_cityhash<size_t>()(__p, (__e - __p) * sizeof(value_type));
-       17:  794-block  0
+       20:  794:  return __murmur2_or_cityhash<size_t>()(__p, (__e - __p) * sizeof(value_type));
+       20:  794-block  0
         -:  795:}
         -:  796:
         -:  797:_LIBCPP_END_NAMESPACE_STD

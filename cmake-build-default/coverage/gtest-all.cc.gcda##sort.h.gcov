@@ -298,16 +298,16 @@ branch  1 taken 1
     #####:  289:    return;
     $$$$$:  289-block  0
         1:  290:  _BidirectionalIterator __i = __first;
-        4:  291:  for (++__i; __i != __last; ++__i) {
+        5:  291:  for (++__i; __i != __last; ++__i) {
         1:  291-block  0
-        3:  291-block  1
+        4:  291-block  1
         1:  291-block  2
-        3:  291-block  3
-        3:  292:    _BidirectionalIterator __j = __i;
-        3:  293:    --__j;
-        3:  294:    if (__comp(*__i, *__j)) {
+        4:  291-block  3
+        4:  292:    _BidirectionalIterator __j = __i;
+        4:  293:    --__j;
+        4:  294:    if (__comp(*__i, *__j)) {
     $$$$$:  294-block  0
-        3:  294-block  1
+        4:  294-block  1
     #####:  295:      value_type __t(_Ops::__iter_move(__i));
     #####:  296:      _BidirectionalIterator __k = __j;
     #####:  297:      __j                        = __i;
@@ -325,8 +325,8 @@ branch  1 taken 1
     #####:  302:      *__j = std::move(__t);
     #####:  303:    }
     $$$$$:  303-block  0
-        3:  304:  }
-        3:  304-block  0
+        4:  304:  }
+        4:  304-block  0
         1:  305:}
         1:  305-block  0
         -:  306:

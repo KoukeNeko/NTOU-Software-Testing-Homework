@@ -492,39 +492,39 @@ function _ZNSt3__16vectorIiNS_9allocatorIiEEEC2B8ne180100Ev called 2 returned 10
         -:  483:private:
         -:  484:  class __destroy_vector {
         -:  485:  public:
-function _ZNSt3__16vectorIiNS_9allocatorIiEEE16__destroy_vectorC1B8ne180100ERS3_ called 2 returned 100% blocks executed 100%
-function _ZNSt3__16vectorIiNS_9allocatorIiEEE16__destroy_vectorC2B8ne180100ERS3_ called 2 returned 100% blocks executed 100%
-        4:  486:    _LIBCPP_CONSTEXPR _LIBCPP_HIDE_FROM_ABI __destroy_vector(vector& __vec) : __vec_(__vec) {}
-        2:  486-block  0
-        2:  486-block  1
+function _ZNSt3__16vectorIiNS_9allocatorIiEEE16__destroy_vectorC1B8ne180100ERS3_ called 6 returned 100% blocks executed 100%
+function _ZNSt3__16vectorIiNS_9allocatorIiEEE16__destroy_vectorC2B8ne180100ERS3_ called 6 returned 100% blocks executed 100%
+       12:  486:    _LIBCPP_CONSTEXPR _LIBCPP_HIDE_FROM_ABI __destroy_vector(vector& __vec) : __vec_(__vec) {}
+        6:  486-block  0
+        6:  486-block  1
         -:  487:
-function _ZNSt3__16vectorIiNS_9allocatorIiEEE16__destroy_vectorclB8ne180100Ev called 1 returned 100% blocks executed 100%
-        1:  488:    _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI void operator()() {
-        1:  489:      if (__vec_.__begin_ != nullptr) {
-        1:  489-block  0
-branch  0 taken 1
+function _ZNSt3__16vectorIiNS_9allocatorIiEEE16__destroy_vectorclB8ne180100Ev called 3 returned 100% blocks executed 100%
+        3:  488:    _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI void operator()() {
+        3:  489:      if (__vec_.__begin_ != nullptr) {
+        3:  489-block  0
+branch  0 taken 3
 branch  1 taken 0
-        1:  490:        __vec_.__clear();
-        1:  491:        __vec_.__annotate_delete();
-        1:  492:        __alloc_traits::deallocate(__vec_.__alloc(), __vec_.__begin_, __vec_.capacity());
-        1:  493:      }
-        1:  493-block  0
-        1:  494:    }
-        1:  494-block  0
+        3:  490:        __vec_.__clear();
+        3:  491:        __vec_.__annotate_delete();
+        3:  492:        __alloc_traits::deallocate(__vec_.__alloc(), __vec_.__begin_, __vec_.capacity());
+        3:  493:      }
+        3:  493-block  0
+        3:  494:    }
+        3:  494-block  0
         -:  495:
         -:  496:  private:
         -:  497:    vector& __vec_;
         -:  498:  };
         -:  499:
         -:  500:public:
-function _ZNSt3__16vectorIiNS_9allocatorIiEEED1B8ne180100Ev called 1 returned 100% blocks executed 100%
-function _ZNSt3__16vectorIiNS_9allocatorIiEEED2B8ne180100Ev called 1 returned 100% blocks executed 66%
-        2:  501:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI ~vector() { __destroy_vector (*this)(); }
-        1:  501-block  0
-        1:  501-block  1
-branch  0 taken 1
+function _ZNSt3__16vectorIiNS_9allocatorIiEEED1B8ne180100Ev called 3 returned 100% blocks executed 100%
+function _ZNSt3__16vectorIiNS_9allocatorIiEEED2B8ne180100Ev called 3 returned 100% blocks executed 66%
+        6:  501:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI ~vector() { __destroy_vector (*this)(); }
+        3:  501-block  0
+        3:  501-block  1
+branch  0 taken 3
 branch  1 taken 0
-        1:  501-block  2
+        3:  501-block  2
     $$$$$:  501-block  3
         -:  502:
         -:  503:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI vector(const vector& __x);
@@ -623,10 +623,10 @@ function _ZNKSt3__16vectorIiNS_9allocatorIiEEE4sizeB8ne180100Ev called 0 returne
     #####:  595:    return static_cast<size_type>(this->__end_ - this->__begin_);
     $$$$$:  595-block  0
         -:  596:  }
-function _ZNKSt3__16vectorIiNS_9allocatorIiEEE8capacityB8ne180100Ev called 5 returned 100% blocks executed 100%
-        5:  597:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI size_type capacity() const _NOEXCEPT {
-        5:  598:    return static_cast<size_type>(__end_cap() - this->__begin_);
-        5:  598-block  0
+function _ZNKSt3__16vectorIiNS_9allocatorIiEEE8capacityB8ne180100Ev called 8 returned 100% blocks executed 100%
+        8:  597:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI size_type capacity() const _NOEXCEPT {
+        8:  598:    return static_cast<size_type>(__end_cap() - this->__begin_);
+        8:  598-block  0
         -:  599:  }
 function _ZNKSt3__16vectorIiNS_9allocatorIiEEE5emptyB8ne180100Ev called 0 returned 0% blocks executed 0%
     #####:  600:  _LIBCPP_NODISCARD_AFTER_CXX17 _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI bool empty() const _NOEXCEPT {
@@ -756,10 +756,10 @@ function _ZNKSt3__16vectorIiNS_9allocatorIiEEE5emptyB8ne180100Ev called 0 return
         -:  723:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI bool __invariants() const;
         -:  724:
         -:  725:private:
-        3:  726:  pointer __begin_ = nullptr;
-        3:  727:  pointer __end_   = nullptr;
-        3:  728:  __compressed_pair<pointer, allocator_type> __end_cap_ =
-        3:  729:      __compressed_pair<pointer, allocator_type>(nullptr, __default_init_tag());
+        5:  726:  pointer __begin_ = nullptr;
+        5:  727:  pointer __end_   = nullptr;
+        4:  728:  __compressed_pair<pointer, allocator_type> __end_cap_ =
+        4:  729:      __compressed_pair<pointer, allocator_type>(nullptr, __default_init_tag());
         2:  729-block  0
 branch  0 taken 2
 branch  1 taken 0
@@ -772,21 +772,21 @@ branch  1 taken 0
         -:  735:  //  Precondition:  __n > 0
         -:  736:  //  Postcondition:  capacity() >= __n
         -:  737:  //  Postcondition:  size() == 0
-function _ZNSt3__16vectorIiNS_9allocatorIiEEE11__vallocateB8ne180100Em called 1 returned 100% blocks executed 66%
-        1:  738:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI void __vallocate(size_type __n) {
-        1:  739:    if (__n > max_size())
-        1:  739-block  0
+function _ZNSt3__16vectorIiNS_9allocatorIiEEE11__vallocateB8ne180100Em called 3 returned 100% blocks executed 66%
+        3:  738:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI void __vallocate(size_type __n) {
+        3:  739:    if (__n > max_size())
+        3:  739-block  0
 branch  0 taken 0
-branch  1 taken 1
+branch  1 taken 3
     #####:  740:      __throw_length_error();
     $$$$$:  740-block  0
-        1:  741:    auto __allocation = std::__allocate_at_least(__alloc(), __n);
-        1:  742:    __begin_          = __allocation.ptr;
-        1:  743:    __end_            = __allocation.ptr;
-        1:  744:    __end_cap()       = __begin_ + __allocation.count;
-        1:  745:    __annotate_new(0);
-        1:  746:  }
-        1:  746-block  0
+        3:  741:    auto __allocation = std::__allocate_at_least(__alloc(), __n);
+        3:  742:    __begin_          = __allocation.ptr;
+        3:  743:    __end_            = __allocation.ptr;
+        3:  744:    __end_cap()       = __begin_ + __allocation.count;
+        3:  745:    __annotate_new(0);
+        3:  746:  }
+        3:  746-block  0
         -:  747:
         -:  748:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI void __vdeallocate() _NOEXCEPT;
         -:  749:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI size_type __recommend(size_type __new_size) const;
@@ -795,16 +795,30 @@ branch  1 taken 1
         -:  752:
         -:  753:  template <class _InputIterator, class _Sentinel>
         -:  754:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI void
-        -:  755:  __init_with_size(_InputIterator __first, _Sentinel __last, size_type __n) {
-        -:  756:    auto __guard = std::__make_exception_guard(__destroy_vector(*this));
+function _ZNSt3__16vectorIiNS_9allocatorIiEEE16__init_with_sizeB8ne180100IPiS5_EEvT_T0_m called 1 returned 100% blocks executed 71%
+        1:  755:  __init_with_size(_InputIterator __first, _Sentinel __last, size_type __n) {
+        1:  756:    auto __guard = std::__make_exception_guard(__destroy_vector(*this));
         -:  757:
-        -:  758:    if (__n > 0) {
-        -:  759:      __vallocate(__n);
-        -:  760:      __construct_at_end(__first, __last, __n);
-        -:  761:    }
+        1:  758:    if (__n > 0) {
+        1:  758-block  0
+branch  0 taken 0
+branch  1 taken 1
+        1:  759:      __vallocate(__n);
+        1:  759-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:  760:      __construct_at_end(__first, __last, __n);
+        1:  760-block  0
+branch  0 taken 1
+branch  1 taken 0
+        1:  761:    }
+        1:  761-block  0
         -:  762:
-        -:  763:    __guard.__complete();
-        -:  764:  }
+        1:  763:    __guard.__complete();
+        1:  764:  }
+    $$$$$:  764-block  0
+        1:  764-block  1
+    $$$$$:  764-block  2
         -:  765:
         -:  766:  template <class _InputIterator, class _Sentinel>
         -:  767:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI void
@@ -841,10 +855,10 @@ branch  1 taken 1
         -:  798:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI iterator __make_iter(pointer __p) _NOEXCEPT {
         -:  799:    return iterator(__p);
         -:  800:  }
-function _ZNKSt3__16vectorIiNS_9allocatorIiEEE11__make_iterB8ne180100EPKi called 0 returned 0% blocks executed 0%
-    #####:  801:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI const_iterator __make_iter(const_pointer __p) const _NOEXCEPT {
-    #####:  802:    return const_iterator(__p);
-    $$$$$:  802-block  0
+function _ZNKSt3__16vectorIiNS_9allocatorIiEEE11__make_iterB8ne180100EPKi called 3 returned 100% blocks executed 100%
+        3:  801:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI const_iterator __make_iter(const_pointer __p) const _NOEXCEPT {
+        3:  802:    return const_iterator(__p);
+        3:  802-block  0
         -:  803:  }
         -:  804:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI void
         -:  805:  __swap_out_circular_buffer(__split_buffer<value_type, allocator_type&>& __v);
@@ -889,22 +903,22 @@ function _ZNKSt3__16vectorIiNS_9allocatorIiEEE11__make_iterB8ne180100EPKi called
         -:  844:#endif
         -:  845:  }
         -:  846:
-function _ZNKSt3__16vectorIiNS_9allocatorIiEEE14__annotate_newB8ne180100Em called 5 returned 100% blocks executed 100%
-        5:  847:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI void __annotate_new(size_type __current_size) const _NOEXCEPT {
+function _ZNKSt3__16vectorIiNS_9allocatorIiEEE14__annotate_newB8ne180100Em called 8 returned 100% blocks executed 100%
+        8:  847:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI void __annotate_new(size_type __current_size) const _NOEXCEPT {
         -:  848:    (void)__current_size;
         -:  849:#ifndef _LIBCPP_HAS_NO_ASAN
         -:  850:    __annotate_contiguous_container(data() + capacity(), data() + __current_size);
         -:  851:#endif
-        5:  852:  }
-        5:  852-block  0
+        8:  852:  }
+        8:  852-block  0
         -:  853:
-function _ZNKSt3__16vectorIiNS_9allocatorIiEEE17__annotate_deleteB8ne180100Ev called 5 returned 100% blocks executed 100%
-        5:  854:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI void __annotate_delete() const _NOEXCEPT {
+function _ZNKSt3__16vectorIiNS_9allocatorIiEEE17__annotate_deleteB8ne180100Ev called 8 returned 100% blocks executed 100%
+        8:  854:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI void __annotate_delete() const _NOEXCEPT {
         -:  855:#ifndef _LIBCPP_HAS_NO_ASAN
         -:  856:    __annotate_contiguous_container(data() + size(), data() + capacity());
         -:  857:#endif
-        5:  858:  }
-        5:  858-block  0
+        8:  858:  }
+        8:  858-block  0
         -:  859:
         -:  860:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI void __annotate_increase(size_type __n) const _NOEXCEPT {
         -:  861:    (void)__n;
@@ -921,28 +935,28 @@ function _ZNKSt3__16vectorIiNS_9allocatorIiEEE17__annotate_deleteB8ne180100Ev ca
         -:  872:  }
         -:  873:
         -:  874:  struct _ConstructTransaction {
-function _ZNSt3__16vectorIiNS_9allocatorIiEEE21_ConstructTransactionC1B8ne180100ERS3_m called 2 returned 100% blocks executed 100%
-function _ZNSt3__16vectorIiNS_9allocatorIiEEE21_ConstructTransactionC2B8ne180100ERS3_m called 2 returned 100% blocks executed 100%
-        4:  875:    _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI explicit _ConstructTransaction(vector& __v, size_type __n)
-        4:  876:        : __v_(__v), __pos_(__v.__end_), __new_end_(__v.__end_ + __n) {
+function _ZNSt3__16vectorIiNS_9allocatorIiEEE21_ConstructTransactionC1B8ne180100ERS3_m called 4 returned 100% blocks executed 100%
+function _ZNSt3__16vectorIiNS_9allocatorIiEEE21_ConstructTransactionC2B8ne180100ERS3_m called 4 returned 100% blocks executed 100%
+        8:  875:    _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI explicit _ConstructTransaction(vector& __v, size_type __n)
+        8:  876:        : __v_(__v), __pos_(__v.__end_), __new_end_(__v.__end_ + __n) {
         -:  877:#ifndef _LIBCPP_HAS_NO_ASAN
         -:  878:      __v_.__annotate_increase(__n);
         -:  879:#endif
-        4:  880:    }
-        2:  880-block  0
-        2:  880-block  1
-function _ZNSt3__16vectorIiNS_9allocatorIiEEE21_ConstructTransactionD1B8ne180100Ev called 2 returned 100% blocks executed 100%
-function _ZNSt3__16vectorIiNS_9allocatorIiEEE21_ConstructTransactionD2B8ne180100Ev called 2 returned 100% blocks executed 100%
-        4:  881:    _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI ~_ConstructTransaction() {
-        2:  882:      __v_.__end_ = __pos_;
+        8:  880:    }
+        4:  880-block  0
+        4:  880-block  1
+function _ZNSt3__16vectorIiNS_9allocatorIiEEE21_ConstructTransactionD1B8ne180100Ev called 4 returned 100% blocks executed 100%
+function _ZNSt3__16vectorIiNS_9allocatorIiEEE21_ConstructTransactionD2B8ne180100Ev called 4 returned 100% blocks executed 100%
+        8:  881:    _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI ~_ConstructTransaction() {
+        4:  882:      __v_.__end_ = __pos_;
         -:  883:#ifndef _LIBCPP_HAS_NO_ASAN
         -:  884:      if (__pos_ != __new_end_) {
         -:  885:        __v_.__annotate_shrink(__new_end_ - __v_.__begin_);
         -:  886:      }
         -:  887:#endif
-        4:  888:    }
-        2:  888-block  0
-        2:  888-block  1
+        8:  888:    }
+        4:  888-block  0
+        4:  888-block  1
         -:  889:
         -:  890:    vector& __v_;
         -:  891:    pointer __pos_;
@@ -960,50 +974,50 @@ function _ZNSt3__16vectorIiNS_9allocatorIiEEE21_ConstructTransactionD2B8ne180100
         -:  903:    ++__tx.__pos_;
         -:  904:  }
         -:  905:
-function _ZNSt3__16vectorIiNS_9allocatorIiEEE7__allocB8ne180100Ev called 16 returned 100% blocks executed 100%
-       16:  906:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI allocator_type& __alloc() _NOEXCEPT {
-       16:  907:    return this->__end_cap_.second();
-       16:  907-block  0
+function _ZNSt3__16vectorIiNS_9allocatorIiEEE7__allocB8ne180100Ev called 32 returned 100% blocks executed 100%
+       32:  906:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI allocator_type& __alloc() _NOEXCEPT {
+       32:  907:    return this->__end_cap_.second();
+       32:  907-block  0
         -:  908:  }
-function _ZNKSt3__16vectorIiNS_9allocatorIiEEE7__allocB8ne180100Ev called 5 returned 100% blocks executed 100%
-        5:  909:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI const allocator_type& __alloc() const _NOEXCEPT {
-        5:  910:    return this->__end_cap_.second();
-        5:  910-block  0
+function _ZNKSt3__16vectorIiNS_9allocatorIiEEE7__allocB8ne180100Ev called 9 returned 100% blocks executed 100%
+        9:  909:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI const allocator_type& __alloc() const _NOEXCEPT {
+        9:  910:    return this->__end_cap_.second();
+        9:  910-block  0
         -:  911:  }
-function _ZNSt3__16vectorIiNS_9allocatorIiEEE9__end_capB8ne180100Ev called 10 returned 100% blocks executed 100%
-       10:  912:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI pointer& __end_cap() _NOEXCEPT {
-       10:  913:    return this->__end_cap_.first();
-       10:  913-block  0
+function _ZNSt3__16vectorIiNS_9allocatorIiEEE9__end_capB8ne180100Ev called 14 returned 100% blocks executed 100%
+       14:  912:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI pointer& __end_cap() _NOEXCEPT {
+       14:  913:    return this->__end_cap_.first();
+       14:  913-block  0
         -:  914:  }
-function _ZNKSt3__16vectorIiNS_9allocatorIiEEE9__end_capB8ne180100Ev called 5 returned 100% blocks executed 100%
-        5:  915:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI const pointer& __end_cap() const _NOEXCEPT {
-        5:  916:    return this->__end_cap_.first();
-        5:  916-block  0
+function _ZNKSt3__16vectorIiNS_9allocatorIiEEE9__end_capB8ne180100Ev called 8 returned 100% blocks executed 100%
+        8:  915:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI const pointer& __end_cap() const _NOEXCEPT {
+        8:  916:    return this->__end_cap_.first();
+        8:  916-block  0
         -:  917:  }
         -:  918:
-function _ZNSt3__16vectorIiNS_9allocatorIiEEE7__clearB8ne180100Ev called 1 returned 100% blocks executed 100%
-        1:  919:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI void __clear() _NOEXCEPT {
-        1:  920:    __base_destruct_at_end(this->__begin_);
-        1:  921:  }
-        1:  921-block  0
+function _ZNSt3__16vectorIiNS_9allocatorIiEEE7__clearB8ne180100Ev called 3 returned 100% blocks executed 100%
+        3:  919:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI void __clear() _NOEXCEPT {
+        3:  920:    __base_destruct_at_end(this->__begin_);
+        3:  921:  }
+        3:  921-block  0
         -:  922:
-function _ZNSt3__16vectorIiNS_9allocatorIiEEE22__base_destruct_at_endB8ne180100EPi called 1 returned 100% blocks executed 83%
-        1:  923:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI void __base_destruct_at_end(pointer __new_last) _NOEXCEPT {
-        1:  924:    pointer __soon_to_be_end = this->__end_;
-        5:  925:    while (__new_last != __soon_to_be_end)
-        1:  925-block  0
-        5:  925-block  1
-branch  0 taken 4
-branch  1 taken 1
-        4:  925-block  2
-        4:  926:      __alloc_traits::destroy(__alloc(), std::__to_address(--__soon_to_be_end));
-        4:  926-block  0
-branch  0 taken 4
+function _ZNSt3__16vectorIiNS_9allocatorIiEEE22__base_destruct_at_endB8ne180100EPi called 3 returned 100% blocks executed 83%
+        3:  923:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI void __base_destruct_at_end(pointer __new_last) _NOEXCEPT {
+        3:  924:    pointer __soon_to_be_end = this->__end_;
+       15:  925:    while (__new_last != __soon_to_be_end)
+        3:  925-block  0
+       15:  925-block  1
+branch  0 taken 12
+branch  1 taken 3
+       12:  925-block  2
+       12:  926:      __alloc_traits::destroy(__alloc(), std::__to_address(--__soon_to_be_end));
+       12:  926-block  0
+branch  0 taken 12
 branch  1 taken 0
     $$$$$:  926-block  1
-        1:  927:    this->__end_ = __new_last;
-        1:  928:  }
-        1:  928-block  0
+        3:  927:    this->__end_ = __new_last;
+        3:  928:  }
+        3:  928-block  0
         -:  929:
         -:  930:  _LIBCPP_CONSTEXPR_SINCE_CXX20 _LIBCPP_HIDE_FROM_ABI void __copy_assign_alloc(const vector& __c) {
         -:  931:    __copy_assign_alloc(__c, integral_constant<bool, __alloc_traits::propagate_on_container_copy_assignment::value>());
@@ -1107,13 +1121,13 @@ function _ZNKSt3__16vectorIiNS_9allocatorIiEEE20__throw_length_errorB8ne180100Ev
         -: 1027:
         -: 1028:template <class _Tp, class _Allocator>
         -: 1029:_LIBCPP_CONSTEXPR_SINCE_CXX20 typename vector<_Tp, _Allocator>::size_type
-function _ZNKSt3__16vectorIiNS_9allocatorIiEEE8max_sizeEv called 5 returned 100% blocks executed 66%
-        5: 1030:vector<_Tp, _Allocator>::max_size() const _NOEXCEPT {
-        5: 1031:  return std::min<size_type>(__alloc_traits::max_size(this->__alloc()), numeric_limits<difference_type>::max());
-        5: 1031-block  0
-branch  0 taken 5
+function _ZNKSt3__16vectorIiNS_9allocatorIiEEE8max_sizeEv called 8 returned 100% blocks executed 66%
+        8: 1030:vector<_Tp, _Allocator>::max_size() const _NOEXCEPT {
+        8: 1031:  return std::min<size_type>(__alloc_traits::max_size(this->__alloc()), numeric_limits<difference_type>::max());
+        8: 1031-block  0
+branch  0 taken 8
 branch  1 taken 0
-        5: 1031-block  1
+        8: 1031-block  1
     $$$$$: 1031-block  2
         -: 1032:}
         -: 1033:
@@ -1163,17 +1177,24 @@ branch  1 taken 0
         -: 1077:template <class _Tp, class _Allocator>
         -: 1078:template <class _InputIterator, class _Sentinel>
         -: 1079:_LIBCPP_CONSTEXPR_SINCE_CXX20 void
-function _ZNSt3__16vectorIiNS_9allocatorIiEEE18__construct_at_endIPKiS6_EEvT_T0_m called 1 returned 100% blocks executed 50%
-        1: 1080:vector<_Tp, _Allocator>::__construct_at_end(_InputIterator __first, _Sentinel __last, size_type __n) {
-        1: 1081:  _ConstructTransaction __tx(*this, __n);
-        1: 1082:  __tx.__pos_ = std::__uninitialized_allocator_copy(__alloc(), __first, __last, __tx.__pos_);
-        1: 1082-block  0
-branch  0 taken 1
+function _ZNSt3__16vectorIiNS_9allocatorIiEEE18__construct_at_endIPKiS6_EEvT_T0_m called 2 returned 100% blocks executed 50%
+function _ZNSt3__16vectorIiNS_9allocatorIiEEE18__construct_at_endIPiS5_EEvT_T0_m called 1 returned 100% blocks executed 50%
+        3: 1080:vector<_Tp, _Allocator>::__construct_at_end(_InputIterator __first, _Sentinel __last, size_type __n) {
+        3: 1081:  _ConstructTransaction __tx(*this, __n);
+        3: 1082:  __tx.__pos_ = std::__uninitialized_allocator_copy(__alloc(), __first, __last, __tx.__pos_);
+        2: 1082-block  0
+branch  0 taken 2
 branch  1 taken 0
-        1: 1083:}
-        1: 1083-block  0
+        1: 1082-block  1
+branch  2 taken 1
+branch  3 taken 0
+        3: 1083:}
+        2: 1083-block  0
     $$$$$: 1083-block  1
     $$$$$: 1083-block  2
+        1: 1083-block  3
+    $$$$$: 1083-block  4
+    $$$$$: 1083-block  5
         -: 1084:
         -: 1085://  Default constructs __n objects starting at __end_
         -: 1086://  throws if construction throws
@@ -1283,10 +1304,14 @@ branch  1 taken 0
         -: 1190:}
         -: 1191:
         -: 1192:template <class _Tp, class _Allocator>
-        -: 1193:_LIBCPP_CONSTEXPR_SINCE_CXX20 vector<_Tp, _Allocator>::vector(const vector& __x)
-        -: 1194:    : __end_cap_(nullptr, __alloc_traits::select_on_container_copy_construction(__x.__alloc())) {
-        -: 1195:  __init_with_size(__x.__begin_, __x.__end_, __x.size());
-        -: 1196:}
+function _ZNSt3__16vectorIiNS_9allocatorIiEEEC1ERKS3_ called 1 returned 100% blocks executed 100%
+function _ZNSt3__16vectorIiNS_9allocatorIiEEEC2ERKS3_ called 1 returned 100% blocks executed 100%
+        2: 1193:_LIBCPP_CONSTEXPR_SINCE_CXX20 vector<_Tp, _Allocator>::vector(const vector& __x)
+        2: 1194:    : __end_cap_(nullptr, __alloc_traits::select_on_container_copy_construction(__x.__alloc())) {
+        1: 1195:  __init_with_size(__x.__begin_, __x.__end_, __x.size());
+        2: 1196:}
+        1: 1196-block  0
+        1: 1196-block  1
         -: 1197:
         -: 1198:template <class _Tp, class _Allocator>
         -: 1199:_LIBCPP_CONSTEXPR_SINCE_CXX20
@@ -1330,29 +1355,29 @@ branch  1 taken 0
         -: 1237:
         -: 1238:template <class _Tp, class _Allocator>
         -: 1239:_LIBCPP_CONSTEXPR_SINCE_CXX20 inline _LIBCPP_HIDE_FROM_ABI
-function _ZNSt3__16vectorIiNS_9allocatorIiEEEC1B8ne180100ESt16initializer_listIiE called 1 returned 100% blocks executed 100%
-function _ZNSt3__16vectorIiNS_9allocatorIiEEEC2B8ne180100ESt16initializer_listIiE called 1 returned 100% blocks executed 71%
-        2: 1240:vector<_Tp, _Allocator>::vector(initializer_list<value_type> __il) {
-        1: 1241:  auto __guard = std::__make_exception_guard(__destroy_vector(*this));
-        1: 1242:  if (__il.size() > 0) {
-        1: 1242-block  0
+function _ZNSt3__16vectorIiNS_9allocatorIiEEEC1B8ne180100ESt16initializer_listIiE called 2 returned 100% blocks executed 100%
+function _ZNSt3__16vectorIiNS_9allocatorIiEEEC2B8ne180100ESt16initializer_listIiE called 2 returned 100% blocks executed 71%
+        4: 1240:vector<_Tp, _Allocator>::vector(initializer_list<value_type> __il) {
+        2: 1241:  auto __guard = std::__make_exception_guard(__destroy_vector(*this));
+        2: 1242:  if (__il.size() > 0) {
+        2: 1242-block  0
 branch  0 taken 0
-branch  1 taken 1
-        1: 1243:    __vallocate(__il.size());
-        1: 1243-block  0
-branch  0 taken 1
+branch  1 taken 2
+        2: 1243:    __vallocate(__il.size());
+        2: 1243-block  0
+branch  0 taken 2
 branch  1 taken 0
-        1: 1244:    __construct_at_end(__il.begin(), __il.end(), __il.size());
-        1: 1244-block  0
-branch  0 taken 1
+        2: 1244:    __construct_at_end(__il.begin(), __il.end(), __il.size());
+        2: 1244-block  0
+branch  0 taken 2
 branch  1 taken 0
-        1: 1245:  }
-        1: 1245-block  0
-        1: 1246:  __guard.__complete();
-        2: 1247:}
-        1: 1247-block  0
+        2: 1245:  }
+        2: 1245-block  0
+        2: 1246:  __guard.__complete();
+        4: 1247:}
+        2: 1247-block  0
     $$$$$: 1247-block  1
-        1: 1247-block  2
+        2: 1247-block  2
     $$$$$: 1247-block  3
         -: 1248:
         -: 1249:template <class _Tp, class _Allocator>
@@ -1480,10 +1505,10 @@ branch  1 taken 0
         -: 1371:
         -: 1372:template <class _Tp, class _Allocator>
         -: 1373:_LIBCPP_CONSTEXPR_SINCE_CXX20 inline _LIBCPP_HIDE_FROM_ABI typename vector<_Tp, _Allocator>::const_iterator
-function _ZNKSt3__16vectorIiNS_9allocatorIiEEE5beginB8ne180100Ev called 0 returned 0% blocks executed 0%
-    #####: 1374:vector<_Tp, _Allocator>::begin() const _NOEXCEPT {
-    #####: 1375:  return __make_iter(this->__begin_);
-    $$$$$: 1375-block  0
+function _ZNKSt3__16vectorIiNS_9allocatorIiEEE5beginB8ne180100Ev called 2 returned 100% blocks executed 100%
+        2: 1374:vector<_Tp, _Allocator>::begin() const _NOEXCEPT {
+        2: 1375:  return __make_iter(this->__begin_);
+        2: 1375-block  0
         -: 1376:}
         -: 1377:
         -: 1378:template <class _Tp, class _Allocator>
@@ -1494,10 +1519,10 @@ function _ZNKSt3__16vectorIiNS_9allocatorIiEEE5beginB8ne180100Ev called 0 return
         -: 1383:
         -: 1384:template <class _Tp, class _Allocator>
         -: 1385:_LIBCPP_CONSTEXPR_SINCE_CXX20 inline _LIBCPP_HIDE_FROM_ABI typename vector<_Tp, _Allocator>::const_iterator
-function _ZNKSt3__16vectorIiNS_9allocatorIiEEE3endB8ne180100Ev called 0 returned 0% blocks executed 0%
-    #####: 1386:vector<_Tp, _Allocator>::end() const _NOEXCEPT {
-    #####: 1387:  return __make_iter(this->__end_);
-    $$$$$: 1387-block  0
+function _ZNKSt3__16vectorIiNS_9allocatorIiEEE3endB8ne180100Ev called 1 returned 100% blocks executed 100%
+        1: 1386:vector<_Tp, _Allocator>::end() const _NOEXCEPT {
+        1: 1387:  return __make_iter(this->__end_);
+        1: 1387-block  0
         -: 1388:}
         -: 1389:
         -: 1390:template <class _Tp, class _Allocator>
@@ -2971,15 +2996,15 @@ function _ZNKSt3__16vectorIiNS_9allocatorIiEEE3endB8ne180100Ev called 0 returned
         -: 2858:
         -: 2859:template <class _Tp, class _Allocator>
         -: 2860:_LIBCPP_CONSTEXPR_SINCE_CXX20 inline _LIBCPP_HIDE_FROM_ABI bool
-function _ZNSt3__1eqB8ne180100IiNS_9allocatorIiEEEEbRKNS_6vectorIT_T0_EES8_ called 0 returned 0% blocks executed 0%
-    #####: 2861:operator==(const vector<_Tp, _Allocator>& __x, const vector<_Tp, _Allocator>& __y) {
-    #####: 2862:  const typename vector<_Tp, _Allocator>::size_type __sz = __x.size();
-    #####: 2863:  return __sz == __y.size() && std::equal(__x.begin(), __x.end(), __y.begin());
-    $$$$$: 2863-block  0
-branch  0 never executed
-branch  1 never executed
-    $$$$$: 2863-block  1
-    $$$$$: 2863-block  2
+function _ZNSt3__1eqB8ne180100IiNS_9allocatorIiEEEEbRKNS_6vectorIT_T0_EES8_ called 1 returned 100% blocks executed 100%
+        1: 2861:operator==(const vector<_Tp, _Allocator>& __x, const vector<_Tp, _Allocator>& __y) {
+        1: 2862:  const typename vector<_Tp, _Allocator>::size_type __sz = __x.size();
+        1: 2863:  return __sz == __y.size() && std::equal(__x.begin(), __x.end(), __y.begin());
+        1: 2863-block  0
+branch  0 taken 0
+branch  1 taken 1
+        1: 2863-block  1
+        1: 2863-block  2
         -: 2864:}
         -: 2865:
         -: 2866:#if _LIBCPP_STD_VER <= 17

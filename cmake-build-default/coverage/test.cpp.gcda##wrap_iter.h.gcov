@@ -97,16 +97,16 @@ function _ZNSt3__111__wrap_iterIPKiEppB8ne180100Ev called 0 returned 0% blocks e
         -:   88:    return __i_[__n];
         -:   89:  }
         -:   90:
-function _ZNKSt3__111__wrap_iterIPKiE4baseB8ne180100Ev called 0 returned 0% blocks executed 0%
-    #####:   91:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX14 iterator_type base() const _NOEXCEPT { return __i_; }
-    $$$$$:   91-block  0
+function _ZNKSt3__111__wrap_iterIPKiE4baseB8ne180100Ev called 3 returned 100% blocks executed 100%
+        3:   91:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX14 iterator_type base() const _NOEXCEPT { return __i_; }
+        3:   91-block  0
         -:   92:
         -:   93:private:
-function _ZNSt3__111__wrap_iterIPKiEC1B8ne180100ES2_ called 0 returned 0% blocks executed 0%
-function _ZNSt3__111__wrap_iterIPKiEC2B8ne180100ES2_ called 0 returned 0% blocks executed 0%
-    #####:   94:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX14 explicit __wrap_iter(iterator_type __x) _NOEXCEPT : __i_(__x) {}
-    $$$$$:   94-block  0
-    $$$$$:   94-block  1
+function _ZNSt3__111__wrap_iterIPKiEC1B8ne180100ES2_ called 3 returned 100% blocks executed 100%
+function _ZNSt3__111__wrap_iterIPKiEC2B8ne180100ES2_ called 3 returned 100% blocks executed 100%
+        6:   94:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX14 explicit __wrap_iter(iterator_type __x) _NOEXCEPT : __i_(__x) {}
+        3:   94-block  0
+        3:   94-block  1
         -:   95:
         -:   96:  template <class _Up>
         -:   97:  friend class __wrap_iter;
@@ -226,10 +226,10 @@ function _ZNSt3__1neB8ne180100IPKiEEbRKNS_11__wrap_iterIT_EES7_ called 0 returne
         -:  207:  typedef typename pointer_traits<_It>::element_type element_type;
         -:  208:  typedef typename pointer_traits<_It>::difference_type difference_type;
         -:  209:
-function _ZNSt3__114pointer_traitsINS_11__wrap_iterIPKiEEE10to_addressB8ne180100ES4_ called 0 returned 0% blocks executed 0%
-    #####:  210:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR static element_type* to_address(pointer __w) _NOEXCEPT {
-    #####:  211:    return std::__to_address(__w.base());
-    $$$$$:  211-block  0
+function _ZNSt3__114pointer_traitsINS_11__wrap_iterIPKiEEE10to_addressB8ne180100ES4_ called 3 returned 100% blocks executed 100%
+        3:  210:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR static element_type* to_address(pointer __w) _NOEXCEPT {
+        3:  211:    return std::__to_address(__w.base());
+        3:  211-block  0
         -:  212:  }
         -:  213:};
         -:  214:

@@ -80,17 +80,17 @@
         -:   75:
         -:   76:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX14 initializer_list() _NOEXCEPT : __begin_(nullptr), __size_(0) {}
         -:   77:
-function _ZNKSt16initializer_listIiE4sizeB8ne180100Ev called 3 returned 100% blocks executed 100%
-        3:   78:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX14 size_t size() const _NOEXCEPT { return __size_; }
-        3:   78-block  0
+function _ZNKSt16initializer_listIiE4sizeB8ne180100Ev called 6 returned 100% blocks executed 100%
+        6:   78:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX14 size_t size() const _NOEXCEPT { return __size_; }
+        6:   78-block  0
         -:   79:
-function _ZNKSt16initializer_listIiE5beginB8ne180100Ev called 1 returned 100% blocks executed 100%
-        1:   80:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX14 const _Ep* begin() const _NOEXCEPT { return __begin_; }
-        1:   80-block  0
+function _ZNKSt16initializer_listIiE5beginB8ne180100Ev called 2 returned 100% blocks executed 100%
+        2:   80:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX14 const _Ep* begin() const _NOEXCEPT { return __begin_; }
+        2:   80-block  0
         -:   81:
-function _ZNKSt16initializer_listIiE3endB8ne180100Ev called 1 returned 100% blocks executed 100%
-        1:   82:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX14 const _Ep* end() const _NOEXCEPT { return __begin_ + __size_; }
-        1:   82-block  0
+function _ZNKSt16initializer_listIiE3endB8ne180100Ev called 2 returned 100% blocks executed 100%
+        2:   82:  _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX14 const _Ep* end() const _NOEXCEPT { return __begin_ + __size_; }
+        2:   82-block  0
         -:   83:};
         -:   84:
         -:   85:template <class _Ep>

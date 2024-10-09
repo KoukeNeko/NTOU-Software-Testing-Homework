@@ -201,14 +201,14 @@ function _ZNSt3__118__constexpr_memchrB8ne180100IKccEEPT_S3_T0_m called 0 return
         -:  192:
         -:  193:template <class _Tp, class _Up, __enable_if_t<__is_always_bitcastable<_Up, _Tp>::value, int> = 0>
         -:  194:_LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX14 _Tp*
-function _ZNSt3__119__constexpr_memmoveB8ne180100IcKcLi0EEEPT_S3_PT0_NS_15__element_countE called 8 returned 100% blocks executed 75%
+function _ZNSt3__119__constexpr_memmoveB8ne180100IcKcLi0EEEPT_S3_PT0_NS_15__element_countE called 10 returned 100% blocks executed 75%
 function _ZNSt3__119__constexpr_memmoveB8ne180100IddLi0EEEPT_S2_PT0_NS_15__element_countE called 0 returned 0% blocks executed 0%
 function _ZNSt3__119__constexpr_memmoveB8ne180100IN7testing8internal13edit_distance8EditTypeES4_Li0EEEPT_S6_PT0_NS_15__element_countE called 0 returned 0% blocks executed 0%
 function _ZNSt3__119__constexpr_memmoveB8ne180100IPN7testing17TestEventListenerES3_Li0EEEPT_S5_PT0_NS_15__element_countE called 0 returned 0% blocks executed 0%
 function _ZNSt3__119__constexpr_memmoveB8ne180100IPN7testing9TestSuiteES3_Li0EEEPT_S5_PT0_NS_15__element_countE called 0 returned 0% blocks executed 0%
 function _ZNSt3__119__constexpr_memmoveB8ne180100IPN7testing8TestInfoES3_Li0EEEPT_S5_PT0_NS_15__element_countE called 0 returned 0% blocks executed 0%
-        8:  195:__constexpr_memmove(_Tp* __dest, _Up* __src, __element_count __n) {
-        8:  196:  size_t __count = static_cast<size_t>(__n);
+       10:  195:__constexpr_memmove(_Tp* __dest, _Up* __src, __element_count __n) {
+       10:  196:  size_t __count = static_cast<size_t>(__n);
         -:  197:  if (__libcpp_is_constant_evaluated()) {
         -:  198:#ifdef _LIBCPP_COMPILER_CLANG_BASED
         -:  199:    if (is_same<__remove_cv_t<_Tp>, __remove_cv_t<_Up> >::value) {
@@ -223,8 +223,8 @@ function _ZNSt3__119__constexpr_memmoveB8ne180100IPN7testing8TestInfoES3_Li0EEEP
         -:  208:      for (size_t __i = 0; __i != __count; ++__i)
         -:  209:        std::__assign_trivially_copyable(__dest[__i], __src[__i]);
         -:  210:    }
-        8:  211:  } else if (__count > 0) {
-        8:  211-block  0
+       10:  211:  } else if (__count > 0) {
+       10:  211-block  0
     $$$$$:  211-block  1
     $$$$$:  211-block  2
     $$$$$:  211-block  3
@@ -236,16 +236,16 @@ function _ZNSt3__119__constexpr_memmoveB8ne180100IPN7testing8TestInfoES3_Li0EEEP
     $$$$$:  211-block  9
     $$$$$:  211-block 10
     $$$$$:  211-block 11
-        8:  212:    ::__builtin_memmove(__dest, __src, (__count - 1) * sizeof(_Tp) + __libcpp_datasizeof<_Tp>::value);
-        8:  213:  }
-        8:  213-block  0
+       10:  212:    ::__builtin_memmove(__dest, __src, (__count - 1) * sizeof(_Tp) + __libcpp_datasizeof<_Tp>::value);
+       10:  213:  }
+       10:  213-block  0
     $$$$$:  213-block  1
     $$$$$:  213-block  2
     $$$$$:  213-block  3
     $$$$$:  213-block  4
     $$$$$:  213-block  5
-        8:  214:  return __dest;
-        8:  214-block  0
+       10:  214:  return __dest;
+       10:  214-block  0
     $$$$$:  214-block  1
     $$$$$:  214-block  2
     $$$$$:  214-block  3

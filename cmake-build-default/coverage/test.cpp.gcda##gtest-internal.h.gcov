@@ -452,9 +452,9 @@ function _ZN7testing8internal15TestFactoryBaseD2Ev called 0 returned 0% blocks e
         -:  441:  virtual Test* CreateTest() = 0;
         -:  442:
         -:  443: protected:
-function _ZN7testing8internal15TestFactoryBaseC2Ev called 4 returned 100% blocks executed 100%
-        4:  444:  TestFactoryBase() {}
-        4:  444-block  0
+function _ZN7testing8internal15TestFactoryBaseC2Ev called 5 returned 100% blocks executed 100%
+        5:  444:  TestFactoryBase() {}
+        5:  444-block  0
         -:  445:
         -:  446: private:
         -:  447:  TestFactoryBase(const TestFactoryBase&) = delete;
@@ -464,10 +464,15 @@ function _ZN7testing8internal15TestFactoryBaseC2Ev called 4 returned 100% blocks
         -:  451:// This class provides implementation of TestFactoryBase interface.
         -:  452:// It is used in TEST and TEST_F macros.
         -:  453:template <class TestClass>
+function _ZN7testing8internal15TestFactoryImplI24ModuleATest_TestAll_TestEC1Ev called 1 returned 100% blocks executed 100%
 function _ZN7testing8internal15TestFactoryImplI25ModuleATest_TestPlus_TestEC1Ev called 1 returned 100% blocks executed 100%
 function _ZN7testing8internal15TestFactoryImplI25ModuleATest_TestSort_TestEC1Ev called 1 returned 100% blocks executed 100%
 function _ZN7testing8internal15TestFactoryImplI34ModuleATest_TestInvalidConfig_TestEC1Ev called 1 returned 100% blocks executed 100%
 function _ZN7testing8internal15TestFactoryImplI30ModuleATest_TestEmptyList_TestEC1Ev called 1 returned 100% blocks executed 100%
+function _ZN7testing8internal15TestFactoryImplI24ModuleATest_TestAll_TestEC2Ev called 1 returned 100% blocks executed 100%
+function _ZN7testing8internal15TestFactoryImplI24ModuleATest_TestAll_TestED1Ev called 0 returned 0% blocks executed 0%
+function _ZN7testing8internal15TestFactoryImplI24ModuleATest_TestAll_TestED0Ev called 0 returned 0% blocks executed 0%
+function _ZN7testing8internal15TestFactoryImplI24ModuleATest_TestAll_TestED2Ev called 0 returned 0% blocks executed 0%
 function _ZN7testing8internal15TestFactoryImplI25ModuleATest_TestPlus_TestEC2Ev called 1 returned 100% blocks executed 100%
 function _ZN7testing8internal15TestFactoryImplI25ModuleATest_TestPlus_TestED1Ev called 0 returned 0% blocks executed 0%
 function _ZN7testing8internal15TestFactoryImplI25ModuleATest_TestPlus_TestED0Ev called 0 returned 0% blocks executed 0%
@@ -486,7 +491,8 @@ function _ZN7testing8internal15TestFactoryImplI30ModuleATest_TestEmptyList_TestE
 function _ZN7testing8internal15TestFactoryImplI30ModuleATest_TestEmptyList_TestED2Ev called 0 returned 0% blocks executed 0%
         -:  454:class TestFactoryImpl : public TestFactoryBase {
         -:  455: public:
-function _ZN7testing8internal15TestFactoryImplI25ModuleATest_TestPlus_TestE10CreateTestEv called 1 returned 100% blocks executed 50%
+function _ZN7testing8internal15TestFactoryImplI24ModuleATest_TestAll_TestE10CreateTestEv called 1 returned 100% blocks executed 50%
+function _ZN7testing8internal15TestFactoryImplI25ModuleATest_TestPlus_TestE10CreateTestEv called 0 returned 0% blocks executed 0%
 function _ZN7testing8internal15TestFactoryImplI25ModuleATest_TestSort_TestE10CreateTestEv called 0 returned 0% blocks executed 0%
 function _ZN7testing8internal15TestFactoryImplI34ModuleATest_TestInvalidConfig_TestE10CreateTestEv called 0 returned 0% blocks executed 0%
 function _ZN7testing8internal15TestFactoryImplI30ModuleATest_TestEmptyList_TestE10CreateTestEv called 0 returned 0% blocks executed 0%
@@ -515,6 +521,12 @@ branch  7 never executed
     $$$$$:  456-block 13
     $$$$$:  456-block 14
     $$$$$:  456-block 15
+    $$$$$:  456-block 16
+branch  8 never executed
+branch  9 never executed
+    $$$$$:  456-block 17
+    $$$$$:  456-block 18
+    $$$$$:  456-block 19
         -:  457:};
         -:  458:
         -:  459:#ifdef GTEST_OS_WINDOWS
@@ -534,15 +546,15 @@ branch  7 never executed
         -:  473:using SetUpTestSuiteFunc = void (*)();
         -:  474:using TearDownTestSuiteFunc = void (*)();
         -:  475:
-function _ZN7testing8internal12CodeLocationD1Ev called 8 returned 100% blocks executed 100%
-function _ZN7testing8internal12CodeLocationD2Ev called 8 returned 100% blocks executed 100%
+function _ZN7testing8internal12CodeLocationD1Ev called 10 returned 100% blocks executed 100%
+function _ZN7testing8internal12CodeLocationD2Ev called 10 returned 100% blocks executed 100%
         -:  476:struct CodeLocation {
-function _ZN7testing8internal12CodeLocationC1ENSt3__112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEEi called 4 returned 100% blocks executed 100%
-function _ZN7testing8internal12CodeLocationC2ENSt3__112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEEi called 4 returned 100% blocks executed 100%
-        8:  477:  CodeLocation(std::string a_file, int a_line)
-        8:  478:      : file(std::move(a_file)), line(a_line) {}
-        4:  478-block  0
-        4:  478-block  1
+function _ZN7testing8internal12CodeLocationC1ENSt3__112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEEi called 5 returned 100% blocks executed 100%
+function _ZN7testing8internal12CodeLocationC2ENSt3__112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEEi called 5 returned 100% blocks executed 100%
+       10:  477:  CodeLocation(std::string a_file, int a_line)
+       10:  478:      : file(std::move(a_file)), line(a_line) {}
+        5:  478-block  0
+        5:  478-block  1
         -:  479:
         -:  480:  std::string file;
         -:  481:  int line;
@@ -554,16 +566,16 @@ function _ZN7testing8internal12CodeLocationC2ENSt3__112basic_stringIcNS2_11char_
         -:  487:// Utility functions to help SuiteApiResolver
         -:  488:using SetUpTearDownSuiteFuncType = void (*)();
         -:  489:
-function _ZN7testing8internal19GetNotDefaultOrNullEPFvvES2_ called 16 returned 100% blocks executed 75%
-       16:  490:inline SetUpTearDownSuiteFuncType GetNotDefaultOrNull(
+function _ZN7testing8internal19GetNotDefaultOrNullEPFvvES2_ called 20 returned 100% blocks executed 75%
+       20:  490:inline SetUpTearDownSuiteFuncType GetNotDefaultOrNull(
         -:  491:    SetUpTearDownSuiteFuncType a, SetUpTearDownSuiteFuncType def) {
-       16:  492:  return a == def ? nullptr : a;
-       16:  492-block  0
-branch  0 taken 16
+       20:  492:  return a == def ? nullptr : a;
+       20:  492-block  0
+branch  0 taken 20
 branch  1 taken 0
-       16:  492-block  1
+       20:  492-block  1
     $$$$$:  492-block  2
-       16:  492-block  3
+       20:  492-block  3
         -:  493:}
         -:  494:
         -:  495:template <typename T>
@@ -576,24 +588,24 @@ branch  1 taken 0
         -:  502:  using Test =
         -:  503:      typename std::conditional<sizeof(T) != 0, ::testing::Test, void>::type;
         -:  504:
-function _ZN7testing8internal16SuiteApiResolverINS_4TestEE19GetSetUpCaseOrSuiteEPKci called 4 returned 100% blocks executed 35%
-        4:  505:  static SetUpTearDownSuiteFuncType GetSetUpCaseOrSuite(const char* filename,
+function _ZN7testing8internal16SuiteApiResolverINS_4TestEE19GetSetUpCaseOrSuiteEPKci called 5 returned 100% blocks executed 35%
+        5:  505:  static SetUpTearDownSuiteFuncType GetSetUpCaseOrSuite(const char* filename,
         -:  506:                                                        int line_num) {
         -:  507:#ifndef GTEST_REMOVE_LEGACY_TEST_CASEAPI_
-        4:  508:    SetUpTearDownSuiteFuncType test_case_fp =
-        4:  509:        GetNotDefaultOrNull(&T::SetUpTestCase, &Test::SetUpTestCase);
-        4:  510:    SetUpTearDownSuiteFuncType test_suite_fp =
-        4:  511:        GetNotDefaultOrNull(&T::SetUpTestSuite, &Test::SetUpTestSuite);
+        5:  508:    SetUpTearDownSuiteFuncType test_case_fp =
+        5:  509:        GetNotDefaultOrNull(&T::SetUpTestCase, &Test::SetUpTestCase);
+        5:  510:    SetUpTearDownSuiteFuncType test_suite_fp =
+        5:  511:        GetNotDefaultOrNull(&T::SetUpTestSuite, &Test::SetUpTestSuite);
         -:  512:
-        4:  513:    GTEST_CHECK_(!test_case_fp || !test_suite_fp)
-        4:  513-block  0
-branch  0 taken 4
+        5:  513:    GTEST_CHECK_(!test_case_fp || !test_suite_fp)
+        5:  513-block  0
+branch  0 taken 5
 branch  1 taken 0
     $$$$$:  513-block  1
-        4:  513-block  2
-branch  2 taken 4
+        5:  513-block  2
+branch  2 taken 5
 branch  3 taken 0
-        4:  513-block  3
+        5:  513-block  3
     $$$$$:  513-block  4
 branch  4 never executed
 branch  5 never executed
@@ -619,13 +631,13 @@ branch  3 never executed
 branch  4 never executed
 branch  5 never executed
         -:  517:
-        4:  518:    return test_case_fp != nullptr ? test_case_fp : test_suite_fp;
-        4:  518-block  0
+        5:  518:    return test_case_fp != nullptr ? test_case_fp : test_suite_fp;
+        5:  518-block  0
 branch  0 taken 0
-branch  1 taken 4
+branch  1 taken 5
     $$$$$:  518-block  1
-        4:  518-block  2
-        4:  518-block  3
+        5:  518-block  2
+        5:  518-block  3
         -:  519:#else
         -:  520:    (void)(filename);
         -:  521:    (void)(line_num);
@@ -633,24 +645,24 @@ branch  1 taken 4
         -:  523:#endif
     #####:  524:  }
         -:  525:
-function _ZN7testing8internal16SuiteApiResolverINS_4TestEE22GetTearDownCaseOrSuiteEPKci called 4 returned 100% blocks executed 37%
-        4:  526:  static SetUpTearDownSuiteFuncType GetTearDownCaseOrSuite(const char* filename,
+function _ZN7testing8internal16SuiteApiResolverINS_4TestEE22GetTearDownCaseOrSuiteEPKci called 5 returned 100% blocks executed 37%
+        5:  526:  static SetUpTearDownSuiteFuncType GetTearDownCaseOrSuite(const char* filename,
         -:  527:                                                           int line_num) {
         -:  528:#ifndef GTEST_REMOVE_LEGACY_TEST_CASEAPI_
-        4:  529:    SetUpTearDownSuiteFuncType test_case_fp =
-        4:  530:        GetNotDefaultOrNull(&T::TearDownTestCase, &Test::TearDownTestCase);
-        4:  531:    SetUpTearDownSuiteFuncType test_suite_fp =
-        4:  532:        GetNotDefaultOrNull(&T::TearDownTestSuite, &Test::TearDownTestSuite);
+        5:  529:    SetUpTearDownSuiteFuncType test_case_fp =
+        5:  530:        GetNotDefaultOrNull(&T::TearDownTestCase, &Test::TearDownTestCase);
+        5:  531:    SetUpTearDownSuiteFuncType test_suite_fp =
+        5:  532:        GetNotDefaultOrNull(&T::TearDownTestSuite, &Test::TearDownTestSuite);
         -:  533:
-        4:  534:    GTEST_CHECK_(!test_case_fp || !test_suite_fp)
-        4:  534-block  0
+        5:  534:    GTEST_CHECK_(!test_case_fp || !test_suite_fp)
+        5:  534-block  0
 branch  0 taken 0
-branch  1 taken 4
+branch  1 taken 5
     $$$$$:  534-block  1
-        4:  534-block  2
-branch  2 taken 4
+        5:  534-block  2
+branch  2 taken 5
 branch  3 taken 0
-        4:  534-block  3
+        5:  534-block  3
     $$$$$:  534-block  4
 branch  4 never executed
 branch  5 never executed
@@ -673,13 +685,13 @@ branch  3 never executed
 branch  4 never executed
 branch  5 never executed
         -:  538:
-        4:  539:    return test_case_fp != nullptr ? test_case_fp : test_suite_fp;
-        4:  539-block  0
+        5:  539:    return test_case_fp != nullptr ? test_case_fp : test_suite_fp;
+        5:  539-block  0
 branch  0 taken 0
-branch  1 taken 4
+branch  1 taken 5
     $$$$$:  539-block  1
-        4:  539-block  2
-        4:  539-block  3
+        5:  539-block  2
+        5:  539-block  3
         -:  540:#else
         -:  541:    (void)(filename);
         -:  542:    (void)(line_num);
