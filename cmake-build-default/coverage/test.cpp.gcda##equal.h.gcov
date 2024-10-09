@@ -1,0 +1,181 @@
+        -:    0:Source:/Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/c++/v1/__algorithm/equal.h
+        -:    0:Graph:/Users/doeshing/temp/untitled2/cmake-build-default/CMakeFiles/untitled2.dir/test.cpp.gcno
+        -:    0:Data:/Users/doeshing/temp/untitled2/cmake-build-default/CMakeFiles/untitled2.dir/test.cpp.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:// -*- C++ -*-
+        -:    2://===----------------------------------------------------------------------===//
+        -:    3://
+        -:    4:// Part of the LLVM Project, under the Apache License v2.0 with LLVM Exceptions.
+        -:    5:// See https://llvm.org/LICENSE.txt for license information.
+        -:    6:// SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
+        -:    7://
+        -:    8://===----------------------------------------------------------------------===//
+        -:    9:
+        -:   10:#ifndef _LIBCPP___ALGORITHM_EQUAL_H
+        -:   11:#define _LIBCPP___ALGORITHM_EQUAL_H
+        -:   12:
+        -:   13:#include <__algorithm/comp.h>
+        -:   14:#include <__algorithm/unwrap_iter.h>
+        -:   15:#include <__config>
+        -:   16:#include <__functional/identity.h>
+        -:   17:#include <__functional/invoke.h>
+        -:   18:#include <__iterator/distance.h>
+        -:   19:#include <__iterator/iterator_traits.h>
+        -:   20:#include <__string/constexpr_c_functions.h>
+        -:   21:#include <__type_traits/enable_if.h>
+        -:   22:#include <__type_traits/integral_constant.h>
+        -:   23:#include <__type_traits/is_constant_evaluated.h>
+        -:   24:#include <__type_traits/is_equality_comparable.h>
+        -:   25:#include <__type_traits/is_volatile.h>
+        -:   26:#include <__type_traits/operation_traits.h>
+        -:   27:#include <__utility/move.h>
+        -:   28:
+        -:   29:#if !defined(_LIBCPP_HAS_NO_PRAGMA_SYSTEM_HEADER)
+        -:   30:#  pragma GCC system_header
+        -:   31:#endif
+        -:   32:
+        -:   33:_LIBCPP_PUSH_MACROS
+        -:   34:#include <__undef_macros>
+        -:   35:
+        -:   36:_LIBCPP_BEGIN_NAMESPACE_STD
+        -:   37:
+        -:   38:template <class _InputIterator1, class _InputIterator2, class _BinaryPredicate>
+        -:   39:_LIBCPP_NODISCARD inline _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 bool __equal_iter_impl(
+        -:   40:    _InputIterator1 __first1, _InputIterator1 __last1, _InputIterator2 __first2, _BinaryPredicate& __pred) {
+        -:   41:  for (; __first1 != __last1; ++__first1, (void)++__first2)
+        -:   42:    if (!__pred(*__first1, *__first2))
+        -:   43:      return false;
+        -:   44:  return true;
+        -:   45:}
+        -:   46:
+        -:   47:template <class _Tp,
+        -:   48:          class _Up,
+        -:   49:          class _BinaryPredicate,
+        -:   50:          __enable_if_t<__desugars_to<__equal_tag, _BinaryPredicate, _Tp, _Up>::value && !is_volatile<_Tp>::value &&
+        -:   51:                            !is_volatile<_Up>::value && __libcpp_is_trivially_equality_comparable<_Tp, _Up>::value,
+        -:   52:                        int> = 0>
+        -:   53:_LIBCPP_NODISCARD inline _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 bool
+function _ZNSt3__117__equal_iter_implB8ne180100IKiS1_NS_10__equal_toELi0EEEbPT_S4_PT0_RT1_ called 0 returned 0% blocks executed 0%
+    #####:   54:__equal_iter_impl(_Tp* __first1, _Tp* __last1, _Up* __first2, _BinaryPredicate&) {
+    #####:   55:  return std::__constexpr_memcmp_equal(__first1, __first2, __element_count(__last1 - __first1));
+    $$$$$:   55-block  0
+        -:   56:}
+        -:   57:
+        -:   58:template <class _InputIterator1, class _InputIterator2, class _BinaryPredicate>
+        -:   59:_LIBCPP_NODISCARD_EXT inline _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 bool
+function _ZNSt3__15equalB8ne180100INS_11__wrap_iterIPKiEES4_NS_10__equal_toEEEbT_S6_T0_T1_ called 0 returned 0% blocks executed 0%
+    #####:   60:equal(_InputIterator1 __first1, _InputIterator1 __last1, _InputIterator2 __first2, _BinaryPredicate __pred) {
+    #####:   61:  return std::__equal_iter_impl(
+    $$$$$:   61-block  0
+    #####:   62:      std::__unwrap_iter(__first1), std::__unwrap_iter(__last1), std::__unwrap_iter(__first2), __pred);
+        -:   63:}
+        -:   64:
+        -:   65:template <class _InputIterator1, class _InputIterator2>
+        -:   66:_LIBCPP_NODISCARD_EXT inline _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 bool
+function _ZNSt3__15equalB8ne180100INS_11__wrap_iterIPKiEES4_EEbT_S5_T0_ called 0 returned 0% blocks executed 0%
+    #####:   67:equal(_InputIterator1 __first1, _InputIterator1 __last1, _InputIterator2 __first2) {
+    #####:   68:  return std::equal(__first1, __last1, __first2, __equal_to());
+    $$$$$:   68-block  0
+        -:   69:}
+        -:   70:
+        -:   71:#if _LIBCPP_STD_VER >= 14
+        -:   72:template <class _BinaryPredicate, class _InputIterator1, class _InputIterator2>
+        -:   73:inline _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 bool
+        -:   74:__equal(_InputIterator1 __first1,
+        -:   75:        _InputIterator1 __last1,
+        -:   76:        _InputIterator2 __first2,
+        -:   77:        _InputIterator2 __last2,
+        -:   78:        _BinaryPredicate __pred,
+        -:   79:        input_iterator_tag,
+        -:   80:        input_iterator_tag) {
+        -:   81:  for (; __first1 != __last1 && __first2 != __last2; ++__first1, (void)++__first2)
+        -:   82:    if (!__pred(*__first1, *__first2))
+        -:   83:      return false;
+        -:   84:  return __first1 == __last1 && __first2 == __last2;
+        -:   85:}
+        -:   86:
+        -:   87:template <class _Iter1, class _Sent1, class _Iter2, class _Sent2, class _Pred, class _Proj1, class _Proj2>
+        -:   88:_LIBCPP_NODISCARD inline _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 bool __equal_impl(
+        -:   89:    _Iter1 __first1, _Sent1 __last1, _Iter2 __first2, _Sent2 __last2, _Pred& __comp, _Proj1& __proj1, _Proj2& __proj2) {
+        -:   90:  while (__first1 != __last1 && __first2 != __last2) {
+        -:   91:    if (!std::__invoke(__comp, std::__invoke(__proj1, *__first1), std::__invoke(__proj2, *__first2)))
+        -:   92:      return false;
+        -:   93:    ++__first1;
+        -:   94:    ++__first2;
+        -:   95:  }
+        -:   96:  return __first1 == __last1 && __first2 == __last2;
+        -:   97:}
+        -:   98:
+        -:   99:template <class _Tp,
+        -:  100:          class _Up,
+        -:  101:          class _Pred,
+        -:  102:          class _Proj1,
+        -:  103:          class _Proj2,
+        -:  104:          __enable_if_t<__desugars_to<__equal_tag, _Pred, _Tp, _Up>::value && __is_identity<_Proj1>::value &&
+        -:  105:                            __is_identity<_Proj2>::value && !is_volatile<_Tp>::value && !is_volatile<_Up>::value &&
+        -:  106:                            __libcpp_is_trivially_equality_comparable<_Tp, _Up>::value,
+        -:  107:                        int> = 0>
+        -:  108:_LIBCPP_NODISCARD inline _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 bool
+        -:  109:__equal_impl(_Tp* __first1, _Tp* __last1, _Up* __first2, _Up*, _Pred&, _Proj1&, _Proj2&) {
+        -:  110:  return std::__constexpr_memcmp_equal(__first1, __first2, __element_count(__last1 - __first1));
+        -:  111:}
+        -:  112:
+        -:  113:template <class _BinaryPredicate, class _RandomAccessIterator1, class _RandomAccessIterator2>
+        -:  114:inline _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 bool
+        -:  115:__equal(_RandomAccessIterator1 __first1,
+        -:  116:        _RandomAccessIterator1 __last1,
+        -:  117:        _RandomAccessIterator2 __first2,
+        -:  118:        _RandomAccessIterator2 __last2,
+        -:  119:        _BinaryPredicate __pred,
+        -:  120:        random_access_iterator_tag,
+        -:  121:        random_access_iterator_tag) {
+        -:  122:  if (std::distance(__first1, __last1) != std::distance(__first2, __last2))
+        -:  123:    return false;
+        -:  124:  __identity __proj;
+        -:  125:  return std::__equal_impl(
+        -:  126:      std::__unwrap_iter(__first1),
+        -:  127:      std::__unwrap_iter(__last1),
+        -:  128:      std::__unwrap_iter(__first2),
+        -:  129:      std::__unwrap_iter(__last2),
+        -:  130:      __pred,
+        -:  131:      __proj,
+        -:  132:      __proj);
+        -:  133:}
+        -:  134:
+        -:  135:template <class _InputIterator1, class _InputIterator2, class _BinaryPredicate>
+        -:  136:_LIBCPP_NODISCARD_EXT inline _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 bool
+        -:  137:equal(_InputIterator1 __first1,
+        -:  138:      _InputIterator1 __last1,
+        -:  139:      _InputIterator2 __first2,
+        -:  140:      _InputIterator2 __last2,
+        -:  141:      _BinaryPredicate __pred) {
+        -:  142:  return std::__equal<_BinaryPredicate&>(
+        -:  143:      __first1,
+        -:  144:      __last1,
+        -:  145:      __first2,
+        -:  146:      __last2,
+        -:  147:      __pred,
+        -:  148:      typename iterator_traits<_InputIterator1>::iterator_category(),
+        -:  149:      typename iterator_traits<_InputIterator2>::iterator_category());
+        -:  150:}
+        -:  151:
+        -:  152:template <class _InputIterator1, class _InputIterator2>
+        -:  153:_LIBCPP_NODISCARD_EXT inline _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR_SINCE_CXX20 bool
+        -:  154:equal(_InputIterator1 __first1, _InputIterator1 __last1, _InputIterator2 __first2, _InputIterator2 __last2) {
+        -:  155:  return std::__equal(
+        -:  156:      __first1,
+        -:  157:      __last1,
+        -:  158:      __first2,
+        -:  159:      __last2,
+        -:  160:      __equal_to(),
+        -:  161:      typename iterator_traits<_InputIterator1>::iterator_category(),
+        -:  162:      typename iterator_traits<_InputIterator2>::iterator_category());
+        -:  163:}
+        -:  164:#endif
+        -:  165:
+        -:  166:_LIBCPP_END_NAMESPACE_STD
+        -:  167:
+        -:  168:_LIBCPP_POP_MACROS
+        -:  169:
+        -:  170:#endif // _LIBCPP___ALGORITHM_EQUAL_H

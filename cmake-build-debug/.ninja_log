@@ -1,0 +1,16 @@
+# ninja log v6
+1	939	1728027405031148335	googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o	4a72d4db12a63991
+476	532	1728027758972876618	untitled2	a9597b0db090fcc8
+1	581	1728027913023360876	build.ninja	d5fd9bbb6fd200b3
+6	953	1728027744888235817	CMakeFiles/untitled2.dir/test.cpp.o	eb5519bbb5c43a88
+2341	2379	1728027407370903420	lib/libgtest_main.a	b7ea2c04e14ab451
+6	476	1728027758502859103	CMakeFiles/untitled2.dir/main.cpp.o	75e283c2501051e2
+1	2249	1728027405030822377	googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o	524d43ed89d32ab9
+2250	2341	1728027407279797465	lib/libgtest.a	8ab3281837c69126
+6	606	1728027916284536593	CMakeFiles/untitled2.dir/main.cpp.o	adb2a05bb0777cf2
+6	773	1728027916284303884	googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o	350562c02d348d2e
+6	801	1728027916284714342	CMakeFiles/untitled2.dir/test.cpp.o	ca58c91c4c88926a
+5	2704	1728027916283286719	googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o	3458c1c419616fa
+2704	2768	1728027918982462048	lib/libgtest.a	8ab3281837c69126
+2768	2801	1728027919046586613	lib/libgtest_main.a	b7ea2c04e14ab451
+2801	2926	1728027919079633748	untitled2	9ae0b0737749f501
